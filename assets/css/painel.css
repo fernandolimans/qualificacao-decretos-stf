@@ -775,3 +775,72 @@ kbd { display: inline-block; min-width: 22px; border: 1px solid var(--s300); bor
 #pergunta .constr p { font-size: 13.5px; }
 #pergunta .nota { padding: 10px 14px; }
 .secao-chip.pista { display: inline-flex; margin-top: 12px; border: 1px dashed var(--s400); border-radius: 999px; background: #fff; padding: 2px 10px; font-size: 12px; font-weight: 600; line-height: 1.5; color: var(--s600); }
+
+/* Texto exato do PDF: números em destaque dentro das frases */
+b.num { font-weight: 700; color: var(--s950); font-variant-numeric: tabular-nums; }
+.card-escuro b.num, .met-res.declarado b.num, .met-res.misto b.num, .met-res.leitura b.num { color: #fff; }
+.prob-card .texto { font-size: 16px; line-height: 1.6; color: var(--s700); }
+.prob-card b.num { font-size: 26px; letter-spacing: -0.02em; }
+.constr-lead { font-size: 15px; line-height: 1.6; color: var(--s700); max-width: 1150px; }
+#pergunta .constr p { margin-top: 10px; font-size: 13.5px; line-height: 1.55; color: var(--s600); }
+.res-grande { margin-top: 10px; font-size: 17px; line-height: 1.45; font-weight: 500; color: #fff; }
+.res-grande b.num { font-size: 30px; letter-spacing: -0.02em; }
+.met-res .res-txt + .res-txt, .res-grande + .res-txt { margin-top: 10px; }
+.res-verif { margin-top: 12px; font-size: 12.5px !important; color: var(--s300) !important; }
+.prisma-mini span { font-size: 12px; line-height: 1.45; color: var(--s300); }
+.prisma-mini li { grid-template-columns: 46px 1fr; }
+.prisma-mini b { font-size: 20px; }
+.planos .tag { display: inline-block; margin: 0 6px 4px 0; border-radius: 999px; background: var(--ambar-50); padding: 1px 8px; font-style: normal; font-size: 10.5px; font-weight: 700; color: var(--ambar-700); }
+.medidor small { font-size: 12px !important; line-height: 1.5; color: var(--s700); margin-top: 6px; }
+.medidor small b.num { font-size: 15px; }
+.res-tela .met-para h3 { font-size: 16.5px; }
+.met-txt b.num, .met-pq b.num { color: var(--s950); }
+.nota-link { color: var(--azul-700); font-weight: 600; text-decoration: none; cursor: help; }
+.tres-item > p { font-size: 13.5px; line-height: 1.55; color: var(--s700); margin-top: 0 !important; }
+.vias li span { font-size: 13px; color: var(--s200); }
+.vias li.nova span { color: var(--ambar-700); }
+.amostra td:first-child { white-space: normal; width: 22%; }
+.notas li { scroll-margin-top: 110px; }
+/* Telas com muito texto do PDF */
+.met.denso .met-para > p:not(.olho):not(.met-rot), .met.denso .met-txt, .met.denso .met-pq, .met.denso .lacunas li,
+.met.denso .res-txt, .met.denso .planos li, .met.denso .discrepancias li, .met.denso .met-itens li, .met.denso .tempo p,
+.met.denso .res-citacao, .met.denso .pd-txt > p:not(.olho) { font-size: 12.5px !important; line-height: 1.45 !important; }
+.met.denso .amostra { font-size: 11.5px; }
+.met.denso .amostra td { padding: 5px 6px; }
+.met.denso .fig-fonte { font-size: 11px; }
+.met.denso .res-grande { font-size: 15px; }
+.met.denso .medidor small { font-size: 11.5px !important; }
+.met.denso .pd-txt h4 { font-size: 15px; }
+.prob-card b.num { font-size: 20px; }
+.prob-card .texto { line-height: 1.7; }
+.met.res-tela.dois { grid-template-columns: minmax(0, 1fr) 460px; grid-template-areas: "para res" "refs refs"; }
+@media (max-width: 900px) { .met.res-tela.dois { grid-template-columns: 1fr; grid-template-areas: "para" "res" "refs"; } }
+.met.res-tela.r-c1 { grid-template-columns: 370px minmax(0, 1fr) 330px; }
+.met.denso .prisma-mini span { font-size: 11.5px; line-height: 1.4; }
+.met.denso .res-verif { font-size: 11.5px !important; }
+#pergunta .card-escuro { padding: 18px 24px; }
+#pergunta .pergunta-txt { font-size: 21px; }
+#pergunta .pergunta-def { font-size: 13.5px !important; }
+#pergunta .hipotese-txt { font-size: 15px !important; }
+#pergunta .constr p { font-size: 13px; line-height: 1.5; }
+#pergunta .constr-lead { font-size: 14px; }
+#pergunta .card { padding: 14px 18px; }
+
+/* Citação no corpo do texto: abre a referência completa sem mudar o texto */
+.ref.ref-txt { display: inline; border: 0; border-bottom: 1px dotted currentColor; border-radius: 0; background: transparent; color: inherit; padding: 0; font: inherit; cursor: help; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.ref.ref-txt:hover, .ref.ref-txt:focus-visible { background: var(--azul-50); color: var(--azul-700); border-bottom-color: var(--azul-700); outline: none; }
+.card-escuro .ref.ref-txt:hover, .card-escuro .ref.ref-txt:focus-visible,
+.met-res.declarado .ref.ref-txt:hover, .met-res.declarado .ref.ref-txt:focus-visible,
+.met-res.misto .ref.ref-txt:hover, .met-res.misto .ref.ref-txt:focus-visible,
+.met-res.leitura .ref.ref-txt:hover, .met-res.leitura .ref.ref-txt:focus-visible { background: rgb(255 255 255 / .12); color: inherit; border-bottom-color: currentColor; }
+@media print { .ref.ref-txt { border-bottom: 0; } }
+/* Ajuste de altura em 1366 × 768 */
+#pergunta > * + * { margin-top: 12px; }
+#pergunta .card-escuro { padding: 16px 24px; }
+.met.res-tela.r-c1 .res-grade { gap: 8px; }
+#resultados .met[data-m="0"] .fig-sub { margin-top: 6px; }
+#pergunta .grade.g3 { margin-top: 8px !important; }
+#pergunta .nota { padding: 8px 14px; }
+@media (max-width: 1100px) { .met.res-tela.r-c1 { grid-template-columns: 300px minmax(0, 1fr); grid-template-areas: "para como" "res res" "refs refs"; } }
+@media (max-width: 900px) { .met.res-tela.r-c1 { grid-template-columns: 1fr; grid-template-areas: "para" "como" "res" "refs"; } }
+@media print { .rodape { margin-top: 6px; padding: 8px 16px; } #referencias .notas { gap: 4px; font-size: 12px; line-height: 1.45; } }

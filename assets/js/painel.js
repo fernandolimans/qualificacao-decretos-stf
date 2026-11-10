@@ -131,7 +131,7 @@
     var cont = {}, semData = 0;
     window.ACOES.forEach(function (a) { if (a.ano) cont[a.ano] = (cont[a.ano] || 0) + 1; else semData++; });
     var anos = []; for (var y = 1988; y <= 2025; y++) anos.push(y);
-    var W = 660, H = 300, ml = 32, mr = 8, mt = 30, mb = 44, pw = W - ml - mr, ph = H - mt - mb;
+    var W = 660, H = 280, ml = 32, mr = 8, mt = 30, mb = 26, pw = W - ml - mr, ph = H - mt - mb;
     var maxv = Math.max.apply(null, anos.map(function (a) { return cont[a] || 0; }));
     var vmax = Math.ceil((maxv + 1) / 5) * 5;
     var passo = pw / anos.length, larg = Math.min(15, passo - 4);
@@ -158,9 +158,8 @@
     html += '<line x1="' + ml + '" x2="' + (W - mr) + '" y1="' + yv(0) + '" y2="' + yv(0) + '" stroke="#94a3b8"/>';
     var x19 = ml + anos.indexOf(2019) * passo;
     html += '<line x1="' + (x19 - 1) + '" x2="' + (x19 - 1) + '" y1="' + (mt - 10) + '" y2="' + yv(0) + '" stroke="#94a3b8" stroke-dasharray="4 3"/>';
-    html += '<text x="' + (x19 - 8) + '" y="' + (mt - 1) + '" text-anchor="end" font-size="13" font-weight="600" fill="#0f172a">' + desde + " a partir de 2019 →</text>";
-    html += '<text x="' + ml + '" y="' + (H - 6) + '" font-size="12" fill="#64748b">' + semData + " ações sem data de autuação no painel (ADI 309, 996, 1.253 e 1.544) não aparecem no gráfico.</text>";
-    grafico.innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Ações por ano de autuação, de 1988 a 2025, com destaque a partir de 2019">' + html + "</svg>";
+    html += '<text x="' + (x19 + 6) + '" y="' + (mt - 1) + '" font-size="13" font-weight="600" fill="#0f172a">a partir de 2019</text>';
+    grafico.innerHTML = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="a partir de 2019">' + html + "</svg>";
 
     var dica = document.createElement("div"); dica.className = "dica"; grafico.appendChild(dica);
     var svg = grafico.querySelector("svg");
@@ -169,7 +168,7 @@
       var barra = svg.querySelector('.barra-ano[data-ano="' + ano + '"]');
       svg.querySelectorAll(".barra-ano").forEach(function (b) { b.style.opacity = b === barra ? 1 : 0.45; });
       var r = barra.getBoundingClientRect(), base = grafico.getBoundingClientRect();
-      dica.innerHTML = "<b>" + ano + "</b><div><span>Ações autuadas</span><span>" + n + "</span></div>";
+      dica.innerHTML = "<b>" + ano + "</b><div><span>ações</span><span>" + n + "</span></div>";
       dica.style.left = (r.left + r.width / 2 - base.left) + "px"; dica.style.top = (r.top - base.top) + "px"; dica.style.opacity = 1;
     }
     function esconder() { dica.style.opacity = 0; svg.querySelectorAll(".barra-ano").forEach(function (b) { b.style.opacity = ""; }); }

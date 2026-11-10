@@ -29,7 +29,7 @@
   var fechar = null, fixo = false, dono = null;
   var refs = lista("#referencias .refs p");
   function conteudo(el) {
-    if (el.matches("sup.nr a")) {
+    if (el.matches("sup.nr a, .nota-link")) {
       var li = document.querySelector(el.getAttribute("href"));
       return li ? "<b>Nota " + li.getAttribute("value") + "</b>" + li.innerHTML : "";
     }
@@ -59,7 +59,7 @@
   }
   function fecharBalao() { fixo = false; dono = null; balao.hidden = true; }
   function agendarFechar() { if (fixo) return; clearTimeout(fechar); fechar = setTimeout(function () { balao.hidden = true; }, 250); }
-  lista(".painel sup.nr a, .painel .ref, .painel .pista").forEach(function (el) {
+  lista("sup.nr a, .nota-link, .painel .ref, .painel .pista").forEach(function (el) {
     el.addEventListener("mouseenter", function () { if (!fixo) abrir(el); });
     el.addEventListener("focus", function () { if (!fixo) abrir(el); });
     el.addEventListener("mouseleave", agendarFechar);
@@ -76,7 +76,7 @@
   balao.addEventListener("mouseenter", function () { clearTimeout(fechar); });
   balao.addEventListener("mouseleave", agendarFechar);
   document.addEventListener("click", function (e) {
-    if (!e.target.closest(".balao-nota") && !e.target.closest("sup.nr, .ref, .pista")) fecharBalao();
+    if (!e.target.closest(".balao-nota") && !e.target.closest("sup.nr, .nota-link, .ref, .pista")) fecharBalao();
   });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") fecharBalao(); });
   window.addEventListener("resize", fecharBalao);
@@ -221,7 +221,7 @@
       if (!alvo) return;
       if (alvo.classList.contains("marco")) {
         var m = D.marcos.find(function (x) { return String(x[0]) === alvo.dataset.marco; });
-        mostrarDicaFig(alvo, "<b>Marco " + m[0] + " · " + m[1] + "</b><div><span>" + esc(m[2]) + "</span></div>");
+        mostrarDicaFig(alvo, "<b>(" + m[0] + ") " + esc(m[2]) + "</b>");
       } else {
         var ano = +alvo.dataset.ano;
         mostrarDicaFig(alvo, "<b>" + ano + "</b>" + porAno[ano].map(function (e) { return '<div class="dica-est ' + e[3] + '"><span>' + esc(e[0]) + "</span><span>" + esc(e[2]) + "</span></div>"; }).join(""));
