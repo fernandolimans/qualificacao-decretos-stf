@@ -11,7 +11,7 @@ Apresentação do Exame de Qualificação de Fernando Lima Nogueira da Silva, Me
 
 ## Como apresentar
 
-A página segue o formato de painel: a capa fica no alto, e as quatorze seções ficam em abas logo abaixo. Troque de seção clicando nas abas, nas setas ‹ e › da barra ou nas teclas ← e → do teclado. A tecla `F` ou o botão "Tela cheia" põe a página em tela cheia. O botão "Explorador das 242 ações" abre a tabela das ações. A página funciona também sem internet, abrindo `index.html` direto do computador, porque as fontes, os ícones e os dados estão neste repositório.
+A página segue o formato de painel: a capa fica no alto, e as quatorze seções ficam em abas logo abaixo. Troque de seção clicando nas abas, nas setas ‹ e › da barra ou nas teclas ← e → do teclado. Na aba Metodologia, as teclas ← e → percorrem antes os oito métodos, e no método do banco de dados também os dez passos, e só depois passam à aba seguinte. A tecla `F` ou o botão "Tela cheia" põe a página em tela cheia. O botão "Explorador das 242 ações" abre a tabela das ações. A página funciona também sem internet, abrindo `index.html` direto do computador, porque as fontes, os ícones e os dados estão neste repositório.
 
 ## O que há aqui
 
