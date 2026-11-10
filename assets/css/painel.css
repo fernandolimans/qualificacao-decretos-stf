@@ -1301,3 +1301,25 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .mt-sub .mt-largo { grid-column: 1 / -1; }
 .mt-estagios { display: inline; margin-left: 6px; font-size: 13.5px; }
 .mt-limites { margin-top: 8px; padding-top: 8px; font-size: 14px; }
+
+/* Metodologia, tela 1: o percurso do PRISMA 2020 um pouco mais detalhado */
+.mt-1 .mt-dupla { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
+.mt-1 .mt-card { padding: 22px 26px; }
+.mt-1 .mt-lead { font-size: 18px; line-height: 1.55; }
+.mt-cond-cab { margin-top: 18px; font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--s500); }
+.mt-cond { margin: 8px 0 0; padding: 0; list-style: none; }
+.mt-cond li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 7px 0; font-size: 15.5px; line-height: 1.45; color: var(--s800); }
+.mt-cond li + li { border-top: 1px solid var(--s100); }
+.mt-cond li span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--s950); color: #fff; font-size: 12px; font-weight: 700; transform: translateY(3px); }
+.mt-fluxo { display: block; }
+.mt-etapa { grid-template-columns: 110px 58px minmax(0, 1fr); row-gap: 2px; padding: 8px 0; }
+.mt-etapa b { font-size: 26px; }
+.mt-desc { grid-column: 3; font-size: 13.5px; line-height: 1.45; color: var(--s500); }
+.mt-fluxo .mt-p { margin-top: 12px; border-top: 1px solid var(--s100); padding-top: 12px; font-size: 14.5px; line-height: 1.6; }
+@media (max-width: 600px) { .mt-desc { grid-column: 1 / -1; } }
+.mt-1 .mt-lead { font-size: 17px; line-height: 1.5; }
+.mt-cond-cab { margin-top: 14px; }
+.mt-cond li { padding: 5px 0; font-size: 15px; }
+.mt-texto .mt-p { margin-top: 12px; border-top: 1px solid var(--s100); padding-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--s600); }
+.mt-fluxo { display: flex; align-items: center; }
+.mt-etapa { padding: 9px 0; }
