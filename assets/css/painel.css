@@ -236,7 +236,7 @@ sup.nr a:hover { text-decoration: underline; }
 .est.apresentar { background: #fff; color: var(--s600); border: 1px dashed var(--s400); }
 .est.apresentar::before { width: 5px; height: 5px; background: transparent; border: 1.5px solid currentColor; }
 
-#metodologia > * + * { margin-top: 16px; }
+#metodologia > * + *, #resultados > * + * { margin-top: 16px; }
 .met-grade { display: block; }
 .met-lista { display: flex; align-items: stretch; gap: 6px; margin-bottom: 12px; }
 .met-grupo { flex: none; width: 1px; align-self: stretch; margin: 8px 5px; overflow: hidden; background: var(--s300); color: transparent; font-size: 1px; }
@@ -362,6 +362,139 @@ sup.nr a:hover { text-decoration: underline; }
 .pd-regras .regras { grid-template-columns: 1fr 1fr; }
 .regras.regras-compactas li { grid-template-columns: 22px 1fr; gap: 8px; padding: 5px 10px; font-size: 13px; line-height: 1.45; }
 .regras.regras-compactas li::before { width: 20px; height: 20px; border-radius: 6px; font-size: 11px; }
+/* Pergunta: o que conta como resolução de mérito */
+.pergunta-def { margin-top: 12px; max-width: 1100px; border-top: 1px solid rgb(255 255 255 / .12); padding-top: 10px; font-size: 14px !important; line-height: 1.6 !important; color: var(--s300) !important; }
+
+/* Selo do objetivo com o texto ao passar o cursor */
+.secao-chip.pista { cursor: help; border-style: dashed; border-color: var(--s400); }
+.secao-chip.pista:hover, .secao-chip.pista:focus-visible { background: var(--s100); outline: none; }
+
+/* Resultado do método 1: o caminho do fluxograma PRISMA */
+.prisma-mini { display: grid; gap: 6px; margin-top: 2px; }
+.prisma-mini li { display: grid; grid-template-columns: 58px 1fr; column-gap: 12px; align-items: baseline; }
+.prisma-mini li::after { content: ""; grid-column: 1 / -1; height: 6px; margin-top: 5px; border-radius: 3px; width: max(calc(100% * var(--l)), 6px); background: var(--s500); }
+.prisma-mini li.fim::after { background: var(--ambar-200); }
+.prisma-mini b { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; color: #fff; font-variant-numeric: tabular-nums; }
+.prisma-mini span { font-size: 13px; color: var(--s200); }
+.prisma-mini small { grid-column: 2; font-size: 11.5px; line-height: 1.4; color: var(--s400); }
+
+/* Resultado do método 2: a conta do universo */
+.conta-mini { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 6px; align-items: start; }
+.conta-mini li { display: flex; flex-direction: column; gap: 3px; }
+.conta-mini b { font-size: 22px; font-weight: 700; color: #fff; }
+.conta-mini span { font-size: 12px; line-height: 1.4; color: var(--s400); }
+.conta-mini .op { align-self: start; padding-top: 2px; font-size: 20px; font-weight: 600; color: var(--s500); }
+.res-ir { margin-top: 10px; }
+.res-ir a, .btn-texto { display: inline-flex; align-items: center; gap: 6px; border-radius: 10px; background: rgb(255 255 255 / .1); color: #fff !important; padding: 5px 11px; font-size: 12.5px; font-weight: 600; text-decoration: none !important; }
+.res-ir a:hover { background: rgb(255 255 255 / .18); }
+.btn-texto { background: var(--s100); color: var(--s800) !important; margin-left: 4px; }
+.btn-texto:hover { background: var(--s200); }
+.ir-tela { display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 10px; background: var(--s100); color: var(--s800); padding: 6px 11px; font: 600 13px/1.4 var(--sans); cursor: pointer; }
+.ir-tela:hover { background: var(--s200); }
+
+/* Métodos 6 a 8 numa só tela */
+.met.met-tres { grid-template-columns: 1fr; grid-template-areas: "para" "tres" "res" "refs"; }
+.tres-cab { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 10px 16px; }
+.tres-cab h3 { margin-top: 0 !important; }
+.tres-grade { grid-area: tres; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.tres-item { border: 1px solid var(--s200); border-radius: 14px; padding: 12px 14px; }
+.tres-item h4 { margin: 0 0 4px; font-size: 16px; line-height: 1.35; font-weight: 700; color: var(--s950); }
+.tres-item .met-rot { margin-top: 10px; }
+.tres-item > p:not(.met-rot) { margin-top: 4px; font-size: 13.5px; line-height: 1.5; color: var(--s700); }
+
+/* Resultados preliminares: mesmas colunas da Metodologia */
+.met.res-tela { grid-template-columns: 290px minmax(0, 1fr) 390px; }
+.met-res.leitura { background: var(--s950); color: var(--s300); }
+.met-res.leitura .met-rot { color: var(--s400); }
+.met-res.leitura .res-txt { color: var(--s200); }
+.met-para .res-n { margin-top: 8px; }
+.met-para .res-n b { color: var(--s950); }
+.met-para .res-n span { color: var(--s600); }
+.met-para .met-txt { margin-top: 8px; font-size: 14px; line-height: 1.55; color: var(--s800); }
+.res-citacao { margin-top: 12px; border-left: 3px solid var(--ambar-600); padding-left: 12px; font-size: 14px; line-height: 1.55; font-weight: 500; color: #fff; }
+.res-mini.claro b { color: var(--s950); }
+.res-mini.claro span { color: var(--s600); }
+.res-mini.claro { grid-template-columns: 1fr; gap: 8px; }
+.res-mini.claro div { flex-direction: row; align-items: baseline; gap: 10px; }
+.res-mini.claro b { flex: none; min-width: 40px; font-size: 20px; }
+.res-mini.claro span { font-size: 12.5px; line-height: 1.4; }
+.proporcao { display: flex; gap: 2px; height: 26px; margin-top: 10px; }
+.proporcao span { display: grid; place-items: center; border-radius: 6px; font-size: 12px; font-weight: 700; color: #fff; }
+.pr-mp { background: #94a3b8; }
+.pr-dec { background: #d97706; }
+.proporcao-leg, .fig-leg { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 12px; color: var(--s600); }
+.proporcao-leg span, .fig-leg span { display: inline-flex; align-items: center; gap: 6px; }
+.proporcao-leg span::before, .fig-leg span::before { content: ""; width: 9px; height: 9px; border-radius: 3px; background: var(--leg, #94a3b8); }
+.lg-mp { --leg: #94a3b8; } .lg-dec { --leg: #d97706; }
+.fig-leg .lg-marco::before { width: 10px; height: 10px; border-radius: 50%; background: #fff; border: 1.5px solid #334155; }
+.met-para .met-pq { margin-top: 10px; }
+.lacunas { display: grid; gap: 8px; margin-top: 10px; }
+.lacunas li { position: relative; padding-left: 16px; font-size: 13px; line-height: 1.45; color: var(--s800); }
+.lacunas li::before { content: ""; position: absolute; left: 0; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--ambar-600); }
+
+.fig-t { font-size: 13.5px; font-weight: 600; line-height: 1.4; color: var(--s900); margin-top: 8px; }
+.fig-sub { margin-top: 10px; font-size: 12px; font-weight: 600; color: var(--s600); transition: opacity .2s; }
+.fig2 { position: relative; margin: 0; }
+.fig2 svg { display: block; width: 100%; height: auto; }
+.fig2-a, .fig2-b { transition: opacity .2s; }
+.fig2[data-realce="a"] [data-painel="b"], .fig2[data-realce="b"] [data-painel="a"] { opacity: .25; }
+.barra-fig { transform: scaleY(0); transform-box: fill-box; transform-origin: bottom; transition: transform .5s ease; }
+.fig2.pronto .barra-fig { transform: scaleY(1); }
+.marco { cursor: help; }
+.marco:hover circle, .marco:focus circle { fill: #0f172a; }
+.marco:hover text, .marco:focus text { fill: #fff; }
+.fig-razao { margin-top: 4px; font-size: 12px; color: var(--s600); }
+.fig-fonte { margin-top: 8px; font-size: 12px; line-height: 1.5; color: var(--s500); }
+.dica-est { display: grid !important; grid-template-columns: 1fr; gap: 0 !important; margin-top: 6px !important; font-size: 12.5px; }
+.dica-est span:first-child { font-weight: 600; color: var(--s900) !important; }
+.dica-est span:last-child { color: var(--s600) !important; font-weight: 400 !important; }
+.dica-est.dec span:first-child { color: var(--ambar-700) !important; }
+.fig2 .dica { min-width: 220px; max-width: 300px; }
+
+.discrepancias, .planos { display: grid; gap: 10px; margin-top: 10px; }
+.discrepancias li, .planos li { border-radius: 12px; background: rgb(255 255 255 / .06); padding: 9px 12px; font-size: 13px; line-height: 1.45; color: var(--s300); transition: background .2s; }
+.discrepancias li { cursor: default; }
+.discrepancias li:hover, .discrepancias li:focus { background: rgb(255 255 255 / .14); outline: none; }
+.discrepancias b, .planos b { display: block; margin-bottom: 2px; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #fff; }
+.planos b i { margin-left: 6px; border-radius: 999px; background: var(--ambar-50); padding: 1px 8px; font-style: normal; font-size: 10.5px; letter-spacing: .02em; text-transform: none; color: var(--ambar-700); }
+
+.amostra-t { margin-top: 8px; font-size: 13.5px; font-weight: 600; color: var(--s900); }
+.amostra { width: 100%; margin-top: 8px; border-collapse: collapse; font-size: 12.5px; line-height: 1.45; }
+.amostra th { padding: 6px 8px; border-bottom: 1px solid var(--s200); background: var(--s50); text-align: left; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--s500); }
+.amostra td { padding: 7px 8px; border-bottom: 1px solid var(--s100); vertical-align: top; color: var(--s700); }
+.amostra td:first-child { font-weight: 600; color: var(--s900); white-space: nowrap; }
+.amostra a { color: var(--azul-700); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.amostra a:hover { text-decoration: underline; }
+
+.medidores { display: grid; gap: 12px; margin-top: 10px; }
+.medidor p { font-size: 13px; color: var(--s700); }
+.medidor p b { font-size: 20px; font-weight: 700; color: var(--s950); margin-right: 2px; }
+.medidor .barra { display: flex; gap: 2px; height: 8px; margin-top: 4px; border-radius: 4px; background: var(--s200); overflow: hidden; }
+.medidor .barra i { display: block; height: 100%; background: var(--s900); }
+.medidor .barra i.b2 { background: var(--ambar-600); }
+.medidor small { display: block; margin-top: 4px; font-size: 11.5px; line-height: 1.45; color: var(--s600); }
+
+.tempo { position: relative; display: grid; gap: 12px; margin-top: 10px; padding-left: 22px; }
+.tempo::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--s200); }
+.tempo li { position: relative; }
+.tempo li::before { content: ""; position: absolute; left: -22px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--s400); }
+.tempo li.chave::before { border-color: var(--ambar-600); background: var(--ambar-600); }
+.t-data { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--s500); }
+.tempo li.chave .t-data { color: var(--ambar-700); }
+.tempo p { margin-top: 2px; font-size: 13.5px; line-height: 1.55; color: var(--s700); }
+.tempo a { color: var(--azul-700); font-weight: 600; text-decoration: none; }
+.tempo a:hover { text-decoration: underline; }
+
+.vias { display: grid; gap: 8px; margin-top: 10px; }
+.vias li { display: grid; gap: 1px; border-radius: 12px; background: rgb(255 255 255 / .06); padding: 9px 12px; }
+.vias b { font-size: 13.5px; color: #fff; }
+.vias span { font-size: 12.5px; line-height: 1.45; color: var(--s400); }
+.vias li.nova { background: var(--ambar-50); }
+.vias li.nova b { color: var(--ambar-700); } .vias li.nova span { color: var(--ambar-700); }
+
+.res-tela .graf-cab { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; }
+.res-tela .graf-cab .legenda { margin: 0; }
+.res-tela .grafico { margin-top: 4px; }
 .notas-fonte { display: none; }
 .balao-nota { position: absolute; z-index: 60; border: 1px solid var(--s200); border-radius: 14px; background: #fff; box-shadow: var(--sombra-xl); padding: 12px 14px; font-size: 13.5px; line-height: 1.55; color: var(--s600); }
 .balao-nota b { display: block; margin-bottom: 4px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--s500); }
@@ -504,6 +637,11 @@ kbd { display: inline-block; min-width: 22px; border: 1px solid var(--s300); bor
   .estagios-mini > .ic { justify-self: center; transform: rotate(90deg); }
   .met-ir { margin-left: 0; }
   .pd-regras .regras { grid-template-columns: 1fr; }
+  .tres-grade { grid-template-columns: 1fr; }
+  .amostra { display: block; overflow-x: auto; }
+  .amostra td:first-child { white-space: normal; }
+  .conta-mini { grid-template-columns: 1fr; }
+  .conta-mini .op { display: none; }
 }
 @media (max-width: 640px) {
   .pagina { padding: 16px 16px 24px; }
@@ -592,3 +730,48 @@ kbd { display: inline-block; min-width: 22px; border: 1px solid var(--s300); bor
   .passos-det { break-inside: auto; }
   .refs p { font-size: 12.5px; margin-bottom: 9px; }
 }
+
+/* Pergunta e hipótese, compacta para caber numa tela */
+#pergunta > * + * { margin-top: 16px; }
+#pergunta .card-escuro { padding: 20px 26px; }
+#pergunta .pergunta-txt { font-size: 24px; }
+#pergunta .card { padding: 16px 20px; }
+#pergunta .constr .suave { margin-top: 10px; padding: 10px 12px; }
+#pergunta .constr p[style] { margin-top: 10px !important; }
+.met.res-tela.r-largo1 { grid-template-columns: 300px minmax(0, 1fr) 420px; }
+.res-tela .met-para .olho .est { margin-left: 4px; letter-spacing: .02em; }
+.proporcao-leg { font-size: 11.5px; }
+.fig-t { font-size: 12.5px; }
+.fig2-b .fig-leg { font-size: 11px; gap: 2px 10px; }
+.fig-razao { font-size: 11px; }
+.topo-com-sub > div:first-child { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.topo-com-sub .olho { margin: 0; }
+.topo-com-sub h2 { font-size: 24px; }
+.topo-com-sub { align-items: center; }
+.met-para h3 { font-size: 18px; }
+.met-para { padding: 12px 14px; }
+.res-tela .met-refs .ref { padding: 2px 9px; font-size: 12.5px; }
+.res-tela .met-para .res-n b { font-size: 28px; }
+.res-tela .met-para .met-rot { margin-top: 10px; }
+.res-mini.claro { gap: 6px; }
+.res-mini.claro span { font-size: 12px; }
+.medidores { gap: 9px; }
+.medidor small { font-size: 11px; }
+.amostra { font-size: 12px; }
+.amostra td { padding: 6px 7px; }
+.planos li, .discrepancias li { padding: 8px 11px; }
+.planos, .discrepancias { gap: 8px; }
+.lacunas { gap: 6px; }
+.r-largo1 .met-refs { gap: 6px; }
+.r-largo1 .met-refs .ref { font-size: 12px; padding: 2px 8px; }
+.fig2-b .fig-leg { font-size: 10.5px; }
+.res-tela .met-para .olho { letter-spacing: .07em; gap: 6px; }
+.r-largo1 .met-refs { gap: 4px; }
+.r-largo1 .met-refs .ref { padding: 2px 7px; }
+.r-largo1 .met-refs .met-rot { margin-right: 0; letter-spacing: .06em; }
+.r-largo1 .met-refs .ref { font-size: 11.5px; }
+#pergunta .pergunta-txt { font-size: 22px; margin-top: 6px; }
+#pergunta .hipotese-txt { font-size: 16px !important; }
+#pergunta .constr p { font-size: 13.5px; }
+#pergunta .nota { padding: 10px 14px; }
+.secao-chip.pista { display: inline-flex; margin-top: 12px; border: 1px dashed var(--s400); border-radius: 999px; background: #fff; padding: 2px 10px; font-size: 12px; font-weight: 600; line-height: 1.5; color: var(--s600); }

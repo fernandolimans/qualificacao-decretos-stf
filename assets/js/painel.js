@@ -38,21 +38,6 @@
     requestAnimationFrame(passo);
   }
 
-  /* Dois estágios: destaca o caminho, um passo por vez */
-  var tEst = [];
-  function percorrerEstagios() {
-    tEst.forEach(clearTimeout); tEst = [];
-    var est = document.querySelectorAll("#estagios .estagio");
-    est.forEach(function (e) { e.classList.remove("ativo"); });
-    if (reduzir) return;
-    est.forEach(function (e, k) {
-      tEst.push(setTimeout(function () {
-        est.forEach(function (o, j) { o.classList.toggle("ativo", j === k); });
-      }, 500 + k * 750));
-    });
-    tEst.push(setTimeout(function () { est.forEach(function (o) { o.classList.remove("ativo"); }); }, 500 + est.length * 750 + 400));
-  }
-
   function mostrar(i, rolar, direcao) {
     i = Math.max(0, Math.min(total - 1, i));
     if (i === atual) return;
@@ -67,8 +52,6 @@
     var p = paineis[i];
     void p.offsetWidth; p.classList.add("entrou");
     p.querySelectorAll("[data-count]").forEach(contar);
-    if (p.id === "plano") percorrerEstagios();
-    if (p.id === "retrato") animarGrafico();
     var ctl = window.etapasPainel && window.etapasPainel[p.id];
     if (ctl) ctl.entrar(direcao || 0);
     contador.textContent = pad(i + 1) + " / " + pad(total);
@@ -148,7 +131,7 @@
     var cont = {}, semData = 0;
     window.ACOES.forEach(function (a) { if (a.ano) cont[a.ano] = (cont[a.ano] || 0) + 1; else semData++; });
     var anos = []; for (var y = 1988; y <= 2025; y++) anos.push(y);
-    var W = 820, H = 340, ml = 36, mr = 10, mt = 34, mb = 46, pw = W - ml - mr, ph = H - mt - mb;
+    var W = 660, H = 300, ml = 32, mr = 8, mt = 30, mb = 44, pw = W - ml - mr, ph = H - mt - mb;
     var maxv = Math.max.apply(null, anos.map(function (a) { return cont[a] || 0; }));
     var vmax = Math.ceil((maxv + 1) / 5) * 5;
     var passo = pw / anos.length, larg = Math.min(15, passo - 4);
@@ -200,6 +183,7 @@
     requestAnimationFrame(function () { grafico.classList.add("pronto"); });
   }
   desenharGrafico();
+  window.animarGrafico = animarGrafico;
 
   /* Impressão: tudo visível e com os valores finais */
   window.addEventListener("beforeprint", function () {

@@ -134,6 +134,7 @@
   <div class="card-escuro">
     <p class="olho">Pergunta de pesquisa</p>
     <p class="pergunta-txt">Sob quais condições o Supremo Tribunal Federal conhece e resolve o mérito das ações de controle concentrado ajuizadas contra decretos presidenciais publicados entre 1988 e 2025?</p>
+    <p class="pergunta-def">A pergunta se limita ao modo como cada processo terminou, ou estava em 30 de junho de 2026, separando os casos com resolução do mérito, em que o STF enfrenta o objeto constitucional e acolhe o pedido, no todo ou em parte, ou o rejeita, daqueles que se encerram sem esse exame.</p>
   </div>
   <div class="card">
     <p class="olho">Hipótese de trabalho</p>
@@ -187,9 +188,7 @@
       <span class="met-grupo">Seção 3.2</span>
       <button type="button" role="tab" class="apresentar" data-m="3"><span class="met-n">4</span><b>Qui-quadrado e V de Cramér</b></button>
       <button type="button" role="tab" class="apresentar" data-m="4"><span class="met-n">5</span><b>Regressão penalizada</b></button>
-      <button type="button" role="tab" class="apresentar" data-m="5"><span class="met-n">6</span><b>Riscos competitivos</b></button>
-      <button type="button" role="tab" class="apresentar" data-m="6"><span class="met-n">7</span><b>Ponto de mudança</b></button>
-      <button type="button" role="tab" class="apresentar" data-m="7"><span class="met-n">8</span><b>Tipologia dos fundamentos</b></button>
+      <button type="button" role="tab" class="apresentar" data-m="5"><span class="met-n">6</span><b>Outras três técnicas</b></button>
     </nav>
 
     <div class="met-telas">
@@ -200,8 +199,9 @@
           <p class="olho">Método 1 · Seção 2.1</p>
           <h3>Revisão sistemática da literatura</h3>
           <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
-          <p>Reconstruir o estado da arte sobre o controle dos atos normativos unilaterais do Executivo federal e explicar por que a literatura privilegiou as medidas provisórias (MPs).</p>
-          <span class="secao-chip">Primeiro objetivo específico</span>
+          <p>Interpretar e organizar as categorias e os achados do campo a fim de entender como ele pensa, no caso, o controle dos atos unilaterais do Executivo.</p>
+          <span class="secao-chip pista" role="button" tabindex="0" data-dica="dica-obj1">Primeiro objetivo específico</span>
+          <div class="dica-fonte" id="dica-obj1" hidden><b>Primeiro objetivo específico</b>Reconstruir, por revisão sistemática conduzida segundo o protocolo PRISMA 2020, o estado da arte sobre o controle dos atos normativos unilaterais do Executivo federal e explicar por que a literatura privilegiou as medidas provisórias (MPs).</div>
         </section>
         <section class="met-como">
           <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como foi feito</p>
@@ -210,14 +210,18 @@
             <li>Buscas em cinco bases principais e duas bases suplementares, com os campos, os filtros e os operadores reproduzidos no Quadro 1.</li>
             <li>Verificação com estudos conhecidos, como recomendam Bramer et al. (2018), a partir de uma lista de nove definida antes de executar a busca, para que a avaliação não fosse feita depois de vistos os resultados.</li>
             <li>Triagem e extração pelo pesquisador, como revisor único, e síntese narrativa e temática, escolha imposta pela heterogeneidade dos desenhos de pesquisa do corpus.</li>
-            <li>Revisão do tipo que Gough, Thomas e Oliver (2012) chamam de configurativa, que interpreta e organiza as categorias e os achados do campo.</li>
+            <li>Revisão do tipo que Gough, Thomas e Oliver (2012) chamam de configurativa, que deixa de somar resultados de estudos para testar conceitos definidos de antemão.</li>
           </ol>
         </section>
         <section class="met-res declarado">
           <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est declarado">Declarado</span></p>
           <div class="res-grade">
-            <div class="res-n"><b data-count="21">21</b><span>estudos no corpus, dezenove sobre MPs e dois sobre o decreto presidencial em sentido estrito</span></div>
-            <p class="res-txt">Não há, na literatura recuperada, levantamento sistemático das ações de controle concentrado contra decretos presidenciais, descrição dos seus desfechos ou estimativa das condições em que o mérito é enfrentado.</p>
+            <ol class="prisma-mini" aria-label="Seleção dos estudos segundo o fluxograma PRISMA 2020 (Figura 1)">
+              <li style="--l:1"><b data-count="400">400</b><span>registros nas cinco bases principais</span><small>32 duplicados e 40 não extraídos do Redalyc saem antes da triagem</small></li>
+              <li style="--l:.82"><b data-count="328">328</b><span>triados por título e resumo</span><small>284 excluídos pelos títulos e 10 pelos resumos</small></li>
+              <li style="--l:.085"><b data-count="34">34</b><span>textos completos lidos por inteiro</span><small>17 excluídos com as razões registradas</small></li>
+              <li style="--l:.0525" class="fim"><b data-count="21">21</b><span>estudos no corpus</span><small>17 das bases principais e 4 das buscas suplementares</small></li>
+            </ol>
             <div class="res-n"><b>5 de 5</b><span>estudos conhecidos e elegíveis recuperados. A verificação indica que a assimetria vem da literatura, e não de uma busca mal calibrada ou desatenta</span></div>
           </div>
         </section>
@@ -226,7 +230,8 @@
           <button type="button" class="ref" data-ref="PAGE, Matthew">Page et al. (2021)</button>
           <button type="button" class="ref" data-ref="BRAMER, Wichor">Bramer et al. (2018)</button>
           <button type="button" class="ref" data-ref="GOUGH, David">Gough, Thomas e Oliver (2012)</button>
-          <span class="met-ir"><a href="#revisao">Fluxograma PRISMA <svg class="ic"><use href="#i-arrow-right"/></svg></a><a href="#lacuna">Lacuna da literatura <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ref-notas">Seção 2.1 e Figura 1</span>
+          <span class="met-ir"><a href="#resultados" data-tela="0">Resultados da revisão <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
       </article>
 
@@ -270,9 +275,8 @@
               <div class="pd-num"><b data-alvo="2234">2.234</b><span>ações com o Executivo federal no polo passivo</span><small>ADC nº 84, 85 e 96 à parte</small></div>
               <div class="pd-txt"><p class="olho">19 de julho · passo 4 de 10</p><h4>Cruzamento com o acervo de decretos</h4><p>Outra rotina tirou do campo de legislação, e do campo de assunto quando ele faltava, o número de cada decreto citado e o procurou entre os decretos baixados. Ela também marcou as 2.234 ações que tinham no polo passivo o Presidente ou a Presidência da República, a União, a Advocacia-Geral ou a Controladoria-Geral da União, um ministério ou um ministro de Estado, e só essas seguiram. As ADCs propostas pelo Presidente da República foram conferidas à parte, porque nelas ele é o autor.</p></div>
             </article>
-            <article class="pd" data-k="4">
-              <div class="pd-num"><b data-alvo="28">28</b><span>colunas, uma linha por ação, no estrato das variáveis codificadas</span></div>
-              <div class="pd-txt"><p class="olho">24 de julho · passo 5 de 10</p><h4>Começa a codificação das variáveis</h4><p>A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p></div>
+            <article class="pd pd-regras" data-k="4">
+              <div class="pd-txt"><p class="olho">24 de julho · passo 5 de 10</p><h4>A codificação das variáveis começou em 24 de julho</h4><p><button type="button" class="ir-tela" data-tela="2">Ver o método 3, coleta dos autos e codificação <svg class="ic"><use href="#i-arrow-right"/></svg></button></p></div>
             </article>
             <article class="pd" data-k="5">
               <div class="pd-num"><b data-alvo="232">232</b><span>ações na base inicial</span><small>223 confirmadas uma a uma</small></div>
@@ -298,9 +302,8 @@
               <div class="pd-num"><b data-alvo="8712">8.712</b><span>processos nas bases inteiras do Corte Aberta</span></div>
               <div class="pd-txt"><p class="olho">25 de outubro de 2026 · passo 9 de 10</p><h4>Bases inteiras do Corte Aberta</h4><p>A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.<sup class="nr"><a href="#nota-16">16</a></sup> A situação processual foi reconstituída até 30 de junho de 2026.<sup class="nr"><a href="#nota-15">15</a></sup></p></div>
             </article>
-            <article class="pd" data-k="9">
-              <div class="pd-num final"><b data-alvo="242">242</b><span>ações no universo final</span><small>227 da base inicial e 15 adicionais</small></div>
-              <div class="pd-txt"><p class="olho">Universo final · passo 10 de 10</p><h4>A decisão de incluir vem dos autos</h4><p>O painel Corte Aberta serviu para encontrar ações, e a decisão de incluir os processos que foram encontrados no percurso vem dos autos, já que os campos exportados falham de vários modos. A inclusão depende do pedido e das partes na petição inicial.</p></div>
+            <article class="pd pd-regras" data-k="9">
+              <div class="pd-txt"><p class="olho">Universo final · passo 10 de 10</p><h4>A decisão de incluir vem dos autos</h4><p>O painel Corte Aberta serviu para encontrar ações, e a decisão de incluir os processos que foram encontrados no percurso vem dos autos, já que os campos exportados falham de vários modos.</p></div>
             </article>
           </div>
         </section>
@@ -308,29 +311,22 @@
           <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est declarado">Declarado</span></p>
           <div class="res-grade">
             <div class="res-n"><b data-count="242">242</b><span>ações no universo final, 227 da base inicial e 15 adicionais</span></div>
-            <div class="res-n"><b>238</b><span>das 242 constam da extração oficial do STF. As ADI nº 309, 996, 1.253 e 1.544 foram identificadas em referências processuais</span></div>
-            <div class="res-falhas">
-              <p class="res-txt">O recorte temporal, o campo vazio, o rótulo errado e o polo escondem ações contra decretos e ameaçam, por isso, a completude do banco.</p>
-              <div class="pistas">
-                <button type="button" class="pista" data-dica="dica-recorte">O recorte temporal</button>
-                <button type="button" class="pista" data-dica="dica-campo">O campo vazio</button>
-                <button type="button" class="pista" data-dica="dica-rotulo">O rótulo errado</button>
-                <button type="button" class="pista" data-dica="dica-polo">O polo</button>
-              </div>
-            </div>
+            <ol class="conta-mini" aria-label="232 da base inicial, mais 16 identificadas depois, menos 6 excluídas, igual a 242">
+              <li><b>232</b><span>da base inicial</span></li>
+              <li class="op">+</li>
+              <li><b>16</b><span>identificadas durante a análise processual e da literatura</span></li>
+              <li class="op">−</li>
+              <li><b>6</b><span>excluídas, cinco da base inicial e uma das identificadas depois</span></li>
+            </ol>
           </div>
-          <div class="dica-fonte" id="dica-recorte" hidden><b>O recorte temporal</b>As bases tendem a priorizar os processos “finalizados a partir do ano 2000”, aviso que está no dicionário de dados do STF<sup class="nr"><a href="#nota-19">19</a></sup> e na ajuda do painel, mas não nas planilhas. Até a última ação de cada classe ajuizada em 2025, faltam 894 números, 806 deles de ações que, pela numeração, devem ter terminado antes de 2000, e 88 sem motivo declarado.</div>
-          <div class="dica-fonte" id="dica-campo" hidden><b>O campo vazio</b>O campo de legislação lista as “normas relacionadas ao processo”, sem separar objeto, parâmetro e norma citada, e na exportação de junho de 2026 vinha preenchido em só 697 dos 3.028 processos do acervo.</div>
-          <div class="dica-fonte" id="dica-rotulo" hidden><b>O rótulo errado</b>Na ADI nº 5.915, o rótulo da espécie normativa apresenta o Decreto nº 9.288/2018 como “Decreto-Lei nº 9288 de 2018”, e por isso a ação ficou fora da triagem original.</div>
-          <div class="dica-fonte" id="dica-polo" hidden><b>O polo</b>O polo passivo registra quem o autor indicou, que nem sempre é quem editou o ato. O filtro de polo deixou de fora, até outubro, a ADPF nº 647, que impugna o Decreto nº 3.048/1999 e tem no polo o Conselho Administrativo de Recursos Fiscais (CARF) e a Receita Federal.</div>
         </section>
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
           <button type="button" class="ref" data-ref="DIAS, Mateus">Dias (2024)</button>
           <button type="button" class="ref" data-ref="BRASIL. Supremo Tribunal Federal. Corte Aberta">Corte Aberta</button>
           <button type="button" class="ref" data-ref="BRASIL. Presidência da República. Legislação">Acervo de decretos</button>
-          <span class="met-ref-notas">Notas 15 a 19</span>
-          <span class="met-ir"><a href="#funil">Funil do universo <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ref-notas">Notas 15 a 18</span>
+          <span class="met-ir"><a href="#resultados" data-tela="3">Falhas do Corte Aberta <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
       </article>
 
@@ -341,7 +337,7 @@
           <h3>Coleta dos autos e codificação</h3>
           <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
           <p>Sem esse trabalho, seria impossível verificar se há separação entre a técnica jurídica e a conveniência política do Tribunal.</p>
-          <p class="met-pq">A leitura integral dos autos será usada para conferir o que as decisões citadas efetivamente dizem.</p>
+          <p class="met-pq">Como os autos completos se concentram nas ações mais recentes, a leitura integral não será usada para reforçar conclusões que dependam do tempo nem como amostra para validar a classificação das demais, mas para conferir o que as decisões citadas efetivamente dizem.</p>
         </section>
         <section class="met-como">
           <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como foi feito</p>
@@ -366,23 +362,16 @@
             <div class="dica-fonte" id="dica-pacotes" hidden><b>Pacotes da área de peticionamento</b>Os pacotes baixados na área de peticionamento trazem impressos o nome e os dados pessoais do pesquisador e, por isso, não integrarão o material disponibilizado para replicação.</div>
           </div>
           <div class="res-metade preliminar">
-            <p class="met-rot">Primeiros números <span class="est preliminar">Preliminar</span></p>
+            <p class="met-rot">Codificação <span class="est preliminar">Preliminar</span></p>
             <p class="res-txt res-pequeno">A planilha de seleção confirma as 242 ações,<sup class="nr"><a href="#nota-21">21</a></sup> mas a codificação ainda não está concluída em todas.</p>
-            <div class="res-mini">
-              <div><b data-count="159">159</b><span><abbr title="Ações Diretas de Inconstitucionalidade">ADI</abbr></span></div>
-              <div><b data-count="75">75</b><span><abbr title="Arguições de Descumprimento de Preceito Fundamental">ADPF</abbr></span></div>
-              <div><b data-count="8">8</b><span><abbr title="Ações Declaratórias de Constitucionalidade">ADC</abbr></span></div>
-              <div><b data-count="210">210</b><span>decididas até junho de 2026</span></div>
-              <div><b data-count="119">119</b><span>ajuizadas a partir de 2019, quase a metade (49,2%)</span></div>
-              <div><b data-count="91">91</b><span>com ao menos um decreto assinado por Jair Bolsonaro no pedido de mérito</span></div>
-            </div>
+            <p class="res-ir"><a href="#resultados" data-tela="2">Primeiros números nos resultados preliminares <svg class="ic"><use href="#i-arrow-right"/></svg></a></p>
           </div>
         </section>
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
           <button type="button" class="ref" data-ref="EPSTEIN, Lee; MARTIN">Epstein e Martin (2014)</button>
           <span class="met-ref-notas">Notas 20 e 21</span>
-          <span class="met-ir"><a href="#acervo">Acervo e codificação <svg class="ic"><use href="#i-arrow-right"/></svg></a><a href="#retrato">Retrato das 242 ações <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          
         </footer>
       </article>
 
@@ -393,8 +382,8 @@
           <h3>Teste qui-quadrado e V de Cramér</h3>
           <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
           <p>Mostrar em que ponto o exame da constitucionalidade é interrompido.</p>
-          <p class="met-pq">Mapear os desfechos dessas ações e descrever a sua associação com os atributos da ação e do decreto impugnado.</p>
-          <span class="secao-chip">Segundo objetivo específico</span>
+          <span class="secao-chip pista" role="button" tabindex="0" data-dica="dica-obj2">Segundo objetivo específico</span>
+          <div class="dica-fonte" id="dica-obj2" hidden><b>Segundo objetivo específico</b>Mapear os desfechos dessas ações e descrever a sua associação com os atributos da ação e do decreto impugnado.</div>
         </section>
         <section class="met-como">
           <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
@@ -424,7 +413,7 @@
           <button type="button" class="ref" data-ref="SILVEIRA, Daniel">Silveira (2016)</button>
           <button type="button" class="ref" data-ref="RECK, Janriê">Reck e Müller (2009)</button>
           <button type="button" class="ref" data-ref="BINENBOJM, Gustavo">Binenbojm (2014)</button>
-          <span class="met-ir"><a href="#plano">Plano de análise <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          
         </footer>
       </article>
 
@@ -434,8 +423,9 @@
           <p class="olho">Método 5 · Seção 3.2 · Plano multivariado</p>
           <h3>Regressão logística penalizada em dois estágios</h3>
           <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
-          <p>Estimar, dentro do que permite o número reduzido de casos, as condições associadas à resolução de mérito em dois estágios, a sobrevivência ao filtro monocrático e o exame do mérito pelo colegiado.</p>
-          <span class="secao-chip">Terceiro objetivo específico</span>
+          <p>Essas técnicas medem, em cada estágio, a associação entre os atributos e a resolução de mérito, o que responde à pergunta de pesquisa.</p>
+          <span class="secao-chip pista" role="button" tabindex="0" data-dica="dica-obj3">Terceiro objetivo específico</span>
+          <div class="dica-fonte" id="dica-obj3" hidden><b>Terceiro objetivo específico</b>Estimar, dentro do que permite o número reduzido de casos, as condições associadas à resolução de mérito em dois estágios, a sobrevivência ao filtro monocrático e o exame do mérito pelo colegiado.</div>
         </section>
         <section class="met-como">
           <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
@@ -466,7 +456,6 @@
           <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est apresentar">A apresentar na Seção 4.3</span></p>
           <div class="res-grade">
             <p class="res-txt">A segunda parte da Seção 4 verificará quais desses atributos permanecem associados à resolução de mérito quando considerados em conjunto, primeiro na chegada da ação ao colegiado e depois, entre as que chegam, no exame do mérito. Desse confronto sairão as proposições teóricas desta dissertação, a começar pelo filtro anterior ao mérito que a Introdução anuncia.</p>
-            <p class="res-txt res-hipotese">Segundo a hipótese, a matéria dos decretos impugnados e o governo que os editou pesam menos, no desfecho das ações, do que os obstáculos processuais.</p>
             <p class="res-txt">A passagem do relator ao colegiado será lida à luz da crítica de Silva (2013) e de Falsarella (2024) a um Supremo que decide sem deliberar.</p>
           </div>
         </section>
@@ -476,87 +465,42 @@
           <button type="button" class="ref" data-ref="EPSTEIN, Lee; KING">Epstein e King (2002)</button>
           <button type="button" class="ref" data-ref="SILVA, Virgílio">Silva (2013)</button>
           <button type="button" class="ref" data-ref="FALSARELLA, Christiane">Falsarella (2024)</button>
-          <span class="met-ir"><a href="#plano">Plano de análise <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          
         </footer>
       </article>
 
-      <!-- 6. Riscos competitivos -->
-      <article class="met" data-m="5">
-        <section class="met-para">
-          <p class="olho">Método 6 · Seção 3.2</p>
-          <h3>Análise de riscos competitivos</h3>
-          <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
-          <p>Mostrar se a perda de objeto costuma chegar antes do julgamento do mérito.</p>
-          <p class="met-pq">Isso testa a ideia de que o decreto precisa continuar em vigor até ser julgado.</p>
+      <!-- 6. Outras três técnicas -->
+      <article class="met met-tres" data-m="5">
+        <section class="met-para tres-cab">
+          <p class="olho">Métodos 6 a 8 · Seção 3.2</p>
+          <h3>Outras três técnicas</h3>
         </section>
-        <section class="met-como">
-          <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
-          <ol class="met-itens">
-            <li>A análise usará as datas de ajuizamento e de decisão para acompanhar cada ação ao longo do tempo.</li>
-            <li>Entram todas as ações em que essas datas são conhecidas, inclusive as que seguem em tramitação, tratadas como ainda sem desfecho na data de corte.</li>
-            <li>A simples contagem dos desfechos não basta para esse teste, porque ignora o tempo e as ações ainda pendentes.</li>
-          </ol>
-        </section>
+        <div class="tres-grade">
+          <section class="tres-item">
+            <h4>Análise de riscos competitivos</h4>
+            <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
+            <p>Mostrar se a perda de objeto costuma chegar antes do julgamento do mérito. Isso testa a ideia de que o decreto precisa continuar em vigor até ser julgado.</p>
+            <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
+            <p>A análise usará as datas de ajuizamento e de decisão para acompanhar cada ação ao longo do tempo. A simples contagem dos desfechos não basta para esse teste, porque ignora o tempo e as ações ainda pendentes.</p>
+          </section>
+          <section class="tres-item">
+            <h4>Busca do ponto de mudança</h4>
+            <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
+            <p>Dizer, a partir dos próprios dados, se o tratamento das ações mudou e em que momento, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</p>
+            <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
+            <p>A análise de riscos competitivos e a busca do ponto de mudança usarão as datas de ajuizamento e de decisão de todas as ações em que elas são conhecidas, inclusive das que seguem em tramitação, tratadas como ainda sem desfecho na data de corte.</p>
+          </section>
+          <section class="tres-item">
+            <h4>Tipologia dos fundamentos das petições iniciais</h4>
+            <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
+            <p>Verificar se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa.</p>
+            <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
+            <p>A tipologia dos fundamentos recai sobre as petições iniciais.</p>
+          </section>
+        </div>
         <section class="met-res apresentar">
           <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est apresentar">A apresentar</span></p>
-          <div class="res-grade">
-            <p class="res-txt">As outras três técnicas também respondem a partes da hipótese.</p>
-            <p class="res-txt res-hipotese">Entre as construções processuais anteriores ao mérito, a hipótese aponta a sobrevivência da norma impugnada até o julgamento, cuja falta leva à prejudicialidade.</p>
-          </div>
-        </section>
-        <footer class="met-refs">
-          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Seção 3.2 e Introdução</span>
-        </footer>
-      </article>
-
-      <!-- 7. Ponto de mudança -->
-      <article class="met" data-m="6">
-        <section class="met-para">
-          <p class="olho">Método 7 · Seção 3.2</p>
-          <h3>Busca do ponto de mudança</h3>
-          <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
-          <p>Dizer, a partir dos próprios dados, se o tratamento das ações mudou e em que momento.</p>
-        </section>
-        <section class="met-como">
-          <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
-          <ol class="met-itens">
-            <li>Sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</li>
-            <li>A busca usará as datas de ajuizamento e de decisão de todas as ações em que elas são conhecidas, inclusive das que seguem em tramitação.</li>
-          </ol>
-        </section>
-        <section class="met-res apresentar">
-          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est apresentar">A apresentar</span></p>
-          <div class="res-grade">
-            <p class="res-txt">As outras três técnicas também respondem a partes da hipótese. Nesta versão, a Seção 4 traz os primeiros números e o plano da análise.</p>
-          </div>
-        </section>
-        <footer class="met-refs">
-          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Seção 3.2 e Introdução</span>
-        </footer>
-      </article>
-
-      <!-- 8. Tipologia dos fundamentos -->
-      <article class="met" data-m="7">
-        <section class="met-para">
-          <p class="olho">Método 8 · Seção 3.2</p>
-          <h3>Tipologia dos fundamentos das petições iniciais</h3>
-          <p class="met-rot"><svg class="ic"><use href="#i-target"/></svg>Para quê</p>
-          <p>Verificar se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa.</p>
-        </section>
-        <section class="met-como">
-          <p class="met-rot"><svg class="ic"><use href="#i-milestone"/></svg>Como será feito</p>
-          <ol class="met-itens">
-            <li>A tipologia dos fundamentos recai sobre as petições iniciais.</li>
-          </ol>
-        </section>
-        <section class="met-res apresentar">
-          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>Resultado <span class="est apresentar">A apresentar</span></p>
-          <div class="res-grade">
-            <p class="res-txt">As outras três técnicas também respondem a partes da hipótese.</p>
-            <p class="res-txt res-hipotese">Entre as construções processuais anteriores ao mérito, a hipótese aponta a qualificação teórica do ato pelo legitimado ativo, que pode dar ao Supremo fundamento para reconhecer a ofensa reflexa.</p>
-          </div>
+          <p class="res-txt" style="margin-top:8px">As outras três técnicas também respondem a partes da hipótese. Nesta versão, a Seção 4 traz os primeiros números e o plano da análise.</p>
         </section>
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
@@ -579,266 +523,278 @@
   <p class="fonte">Introdução e Seções 2.1, 3 e 4. Passe o cursor sobre uma referência, sobre um termo pontilhado ou sobre o número de uma nota para lê-los.</p>
 </section>
 
-<!-- Lacuna da literatura -->
-<section class="painel" id="lacuna" data-rotulo="Lacuna da literatura" data-icone="library-big" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Lacuna da literatura</p>
-    <h2>Por que a literatura privilegiou as MPs</h2>
-    <p class="lead">A assimetria pode ser explicada em três planos.</p>
-  </div>
-  <div class="grade g3">
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-scale"/></svg></span><div><p class="olho">Plano 1</p><h3>Natureza dos institutos</h3><p>A MP tem força de lei e eficácia imediata desde a publicação. O decreto regulamentar submete-se à lei anterior e destina-se à fiel execução dela (Reck; Müller, 2009).</p></div></div>
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-git-branch"/></svg></span><div><p class="olho">Plano 2</p><h3>Arquitetura processual</h3><p>Se a ofensa reflexa barra a ação antes do mérito, o Supremo não chega a dizer se o decreto é constitucional, e ele fica invisível também para a pesquisa acadêmica.</p></div></div>
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-search"/></svg></span><div><p class="olho">Plano 3</p><h3>Condições de produção da pesquisa</h3><p>Existe uma população finita e rastreável de MPs. Decretos não têm rito de tramitação nem desfecho formal comparável. E quatro dos vinte e um estudos chamam a MP de decreto.</p></div></div>
-  </div>
-  <div class="grade g2">
-    <div class="card">
-      <h3 class="card-t">Nenhum estudo do corpus</h3>
-      <ul class="lista-suave nao">
-        <li><svg class="ic"><use href="#i-x"/></svg><span>classifica as ações pelos fundamentos da inicial, pelo vício alegado ou pelo parâmetro constitucional invocado, nem cruza essa classificação com o desfecho</span></li>
-        <li><svg class="ic"><use href="#i-x"/></svg><span>volta ao decreto regulamentar depois de Reck e Müller (2009), de modo que a revisão tampouco permite dizer se a contenção do Tribunal mudou a partir de 2019</span></li>
-        <li><svg class="ic"><use href="#i-x"/></svg><span>refere a extinção por perda superveniente de objeto ao decreto revogado. Ela aparece sempre referida à MP convertida, reeditada ou revogada (Da Ros, 2008; Silveira, 2016)</span></li>
-      </ul>
+<!-- Resultados preliminares -->
+<section class="painel" id="resultados" data-rotulo="Resultados preliminares" data-icone="chart-column" role="tabpanel">
+  <div class="painel-topo topo-com-sub">
+    <div>
+      <p class="olho">Resultados preliminares</p>
+      <h2>Algumas conclusões já são possíveis</h2>
     </div>
-    <div class="card-escuro" style="display:flex; align-items:center">
-      <div class="citacao"><svg class="ic-5"><use href="#i-quote"/></svg><p>A pergunta, por isso, deixa de ser o que a literatura escreveu sobre o decreto e passa a ser o que o Supremo decidiu a respeito dele.</p></div>
+    <div class="legenda-est" aria-label="Situação do resultado">
+      <span class="est declarado">Declarado</span>
+      <span class="est preliminar">Preliminar</span>
     </div>
   </div>
-</section>
 
-<!-- Revisão sistemática -->
-<section class="painel" id="revisao" data-rotulo="Revisão sistemática" data-icone="list-filter" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Revisão sistemática · PRISMA 2020</p>
-    <h2>Vinte e um estudos, dezenove sobre medidas provisórias</h2>
-  </div>
-  <div class="grade g4">
-    <div class="card kpi"><div><p class="kpi-rot">Identificação</p><p class="kpi-val" data-count="400">400</p><p class="kpi-det">registros nas cinco bases principais</p></div><span class="chip-ic"><svg class="ic-5"><use href="#i-database"/></svg></span></div>
-    <div class="card kpi"><div><p class="kpi-rot">Triagem</p><p class="kpi-val" data-count="328">328</p><p class="kpi-det">registros triados por título e resumo</p></div><span class="chip-ic azul"><svg class="ic-5"><use href="#i-list-filter"/></svg></span></div>
-    <div class="card kpi"><div><p class="kpi-rot">Elegibilidade</p><p class="kpi-val" data-count="34">34</p><p class="kpi-det">textos completos lidos por inteiro</p></div><span class="chip-ic ambar"><svg class="ic-5"><use href="#i-file-search"/></svg></span></div>
-    <div class="card kpi"><div><p class="kpi-rot">Inclusão</p><p class="kpi-val" data-count="21">21</p><p class="kpi-det">estudos no corpus, 17 das bases principais e 4 das buscas suplementares</p></div><span class="chip-ic verde"><svg class="ic-5"><use href="#i-circle-check"/></svg></span></div>
-  </div>
-  <div class="card">
-    <h3 class="card-t">Fluxograma PRISMA 2020</h3>
-    <p class="card-sub">Fluxograma do processo de identificação, triagem, elegibilidade e inclusão dos estudos (Figura 1)</p>
-    <div class="prisma" role="img" aria-label="Fluxograma PRISMA 2020: 400 registros nas cinco bases principais; 32 duplicados e 40 do Redalyc removidos; 328 triados; 294 excluídos; 34 textos completos; 17 excluídos; 17 incluídos das bases principais e 4 das buscas suplementares; 21 estudos no corpus.">
-      <span></span><span class="rot">Bases principais</span><span class="rot">Excluídos</span><span class="rot">Buscas suplementares</span>
-      <div class="fase">Identificação</div>
-      <div class="cx"><b>400</b> registros nas cinco bases principais<small>CAPES 239 · Redalyc 90 · SciELO Citation Index 58 · Scopus 7 · Web of Science 6</small></div>
-      <div class="cx exc">Removidos antes da triagem<br><b>32</b> duplicados · <b>40</b> não extraídos do Redalyc</div>
-      <div class="cx sup"><b>208</b> na HeinOnline · <b>36</b> no Catálogo de Teses e Dissertações da CAPES</div>
-      <div class="fase">Triagem</div>
-      <div class="cx"><b>328</b> registros triados por título e resumo</div>
-      <div class="cx exc">Excluídos<br><b>284</b> pelos títulos · <b>10</b> pelos resumos</div>
-      <div class="cx sup"><b>6</b> relatórios buscados<br><b>2</b> sem texto integral no catálogo</div>
-      <div class="fase">Elegibilidade</div>
-      <div class="cx"><b>34</b> textos completos lidos por inteiro</div>
-      <div class="cx exc">Excluídos com razões registradas<br><b>17</b></div>
-      <div class="cx sup"><b>4</b> incluídos<br>3 da HeinOnline · 1 do Catálogo de Teses</div>
-      <div class="fase">Inclusão</div>
-      <div class="cx fim"><b>21</b><span>estudos no corpus, 17 das bases principais e 4 das buscas suplementares</span><span class="bolinhas" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="dec"></i><i class="dec"></i></span></div>
-    </div>
-    <div class="legenda" style="margin-top:14px"><span class="circ" style="--leg:#94a3b8">19 tratam das medidas provisórias</span><span class="circ" style="--leg:#d97706">2 do decreto presidencial (Reck; Müller, 2009; Silva; Oliveira, 2025)</span></div>
-  </div>
-  <p class="fonte">Revisão configurativa (Gough; Thomas; Oliver, 2012), com critérios de elegibilidade fixados antes das buscas, registro das razões de cada exclusão e verificação com um conjunto de estudos conhecidos de antemão. Seção 2.1 e Figura 1.</p>
-</section>
+  <div class="met-grade">
+    <nav class="met-lista" role="tablist" aria-label="Resultados preliminares">
+      <span class="met-grupo">Seção 2</span>
+      <button type="button" role="tab" class="declarado" data-m="0"><span class="met-n">1</span><b>À sombra da medida provisória</b></button>
+      <button type="button" role="tab" class="declarado" data-m="1"><span class="met-n">2</span><b>Causas da assimetria e lacunas</b></button>
+      <span class="met-grupo">Seções 3 e 5</span>
+      <button type="button" role="tab" class="preliminar" data-m="2"><span class="met-n">3</span><b>Quase a metade a partir de 2019</b></button>
+      <button type="button" role="tab" class="declarado" data-m="3"><span class="met-n">4</span><b>Falhas do Corte Aberta</b></button>
+      <button type="button" role="tab" class="declarado" data-m="4"><span class="met-n">5</span><b>O ponto fora da curva</b></button>
+    </nav>
 
-<!-- Funil do universo -->
-<section class="painel" id="funil" data-rotulo="Funil do universo" data-icone="funnel" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Funil do universo</p>
-    <h2>Do painel do STF às 242 ações</h2>
-  </div>
-  <div class="funil-grade">
-    <div class="card">
-      <div class="passos">
-        <div class="passo"><div class="v" data-count="7991">7.991</div><p>ações na planilha em que uma rotina em linguagem R juntou os painéis de decisões (7.612) e de acervo (3.028)</p></div>
-        <div class="liga"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
-        <div class="passo"><div class="v" data-count="2234">2.234</div><p>com o Presidente ou a Presidência da República, a União, a Advocacia-Geral ou a Controladoria-Geral da União, um ministério ou um ministro de Estado no polo passivo</p></div>
-        <div class="liga"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
-        <div class="passo"><div class="v" data-count="223">223</div><p>confirmadas na conferência uma a uma, 152 achadas pela rotina e 71 só na leitura</p></div>
-        <div class="liga"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
-        <div class="passo"><div class="v" data-count="232">232</div><p>na base inicial, com as ADPF nº 964 a 967 e mais cinco ações achadas pela rotina corrigida</p></div>
-        <div class="liga"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
-        <div class="passo mov"><div class="v">+16 −6</div><p>16 identificadas depois, por Dias (2024), notas do Portal da Legislação, referências nos autos e o campo Legislação. Seis foram excluídas, cinco da base inicial e uma das identificadas depois</p></div>
-        <div class="liga"><svg class="ic"><use href="#i-arrow-down"/></svg></div>
-        <div class="passo fim"><div class="v" data-count="242">242</div><p>227 ações da base inicial e 15 adicionais</p></div>
-      </div>
-    </div>
-    <div class="card">
-      <h3 class="card-t">Regras de inclusão</h3>
-      <ol class="regras">
-        <li><span>O ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025.</span></li>
-        <li><span>A ação deve ser ADI, ADO, ADC ou ADPF ajuizada até 31 de dezembro de 2025.</span></li>
-        <li><span>O decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte. Não basta o decreto citado como parâmetro ou apenas mencionado.</span></li>
-        <li><span>O Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor.</span></li>
-      </ol>
-    </div>
-  </div>
-  <p class="fonte">Seções 3 e 3.1. A última extração dos painéis do Corte Aberta aconteceu em 25 de outubro de 2026, com a situação processual reconstituída até 30 de junho de 2026 (Brasil, 2026).</p>
-</section>
+    <div class="met-telas">
 
-<!-- Retrato das 242 ações -->
-<section class="painel" id="retrato" data-rotulo="Retrato das 242 ações" data-icone="chart-column" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Retrato das 242 ações <span class="selo ambar">Preliminar</span></p>
-    <h2>Quase a metade, 119, foi ajuizada a partir de 2019</h2>
-  </div>
-  <div class="grade g5">
-    <div class="card kpi"><div><p class="kpi-rot">ADI</p><p class="kpi-val" data-count="159">159</p><p class="kpi-det">Ações Diretas de Inconstitucionalidade (ADI)</p></div></div>
-    <div class="card kpi"><div><p class="kpi-rot">ADPF</p><p class="kpi-val" data-count="75">75</p><p class="kpi-det">ADPFs</p></div></div>
-    <div class="card kpi"><div><p class="kpi-rot">ADC</p><p class="kpi-val" data-count="8">8</p><p class="kpi-det">Ações Declaratórias de Constitucionalidade (ADC)</p></div></div>
-    <div class="card kpi"><div><p class="kpi-rot">Jair Bolsonaro</p><p class="kpi-val" data-count="91">91</p><p class="kpi-det">com ao menos um decreto assinado por Jair Bolsonaro no pedido de mérito</p></div></div>
-    <div class="card kpi"><div><p class="kpi-rot">Decididas</p><p class="kpi-val" data-count="210">210</p><p class="kpi-det">estavam decididas em 30 de junho de 2026</p></div></div>
-  </div>
-  <div class="retrato-grade">
-    <div class="card">
-      <div class="graf-cab">
-        <div><h3 class="card-t">Ações por ano de autuação</h3><p class="card-sub">Calculadas da planilha das 242 ações. Preliminar. Passe o cursor sobre as barras.</p></div>
-        <div class="legenda"><span style="--leg:#64748b">Antes de 2019</span><span style="--leg:#0f172a">A partir de 2019</span></div>
-      </div>
-      <div class="grafico" id="grafico-anos"></div>
-    </div>
-    <div class="lado">
-      <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-table"/></svg></span><div><h3>Explorador das 242 ações</h3><p>Consulte cada ação no explorador das 242 ações.</p><a class="btn" href="explorador.html" style="margin-top:14px">Abrir o explorador <svg class="ic"><use href="#i-arrow-right"/></svg></a></div></div>
-      <p class="suave">Partidos políticos estão em mais da metade das ações do universo.</p>
-      <p class="suave">Da extração oficial do STF constam 238 das 242 ações.</p>
-    </div>
-  </div>
-  <p class="fonte">Introdução, Seções 2.3, 3.1 e 5.</p>
-</section>
+      <!-- R1. À sombra da medida provisória -->
+      <article class="met res-tela" data-m="0">
+        <section class="met-para">
+          <p class="olho">Resultado 1 · Seção 2.1 <span class="est declarado">Declarado</span></p>
+          <h3>À sombra da medida provisória</h3>
+          <p class="met-rot"><svg class="ic"><use href="#i-search"/></svg>O que se encontrou</p>
+          <div class="res-n"><b data-count="21">21</b><span>estudos no corpus, dos quais dezenove tratam de MPs e dois do decreto presidencial em sentido estrito</span></div>
+          <div class="proporcao" aria-label="19 estudos tratam de medidas provisórias e 2 do decreto presidencial em sentido estrito">
+            <span class="pr-mp" style="flex:19">19 MPs</span><span class="pr-dec" style="flex:2">2</span>
+          </div>
+          <p class="met-pq">Não há, na literatura recuperada, levantamento sistemático das ações de controle concentrado contra decretos presidenciais, descrição dos seus desfechos ou estimativa das condições em que o mérito é enfrentado, mas apenas estudos de caso e análises pontuais de interpretação das normas.</p>
+        </section>
+        <section class="met-como">
+          <p class="met-rot"><svg class="ic"><use href="#i-chart-column"/></svg>Gráfico</p>
+          <figure class="fig2" id="fig2">
+            <figcaption class="fig-t">Figura 2 · Distribuição temporal do corpus e assimetria de objeto na revisão sistemática (n = 21)</figcaption>
+            <p class="fig-sub" data-painel="a">A · Estudos incluídos por ano de publicação e marcos institucionais</p>
+            <div class="fig2-a" data-painel="a"></div>
+            <p class="fig-sub" data-painel="b">B · Objeto normativo e centralidade do STF nos estudos</p>
+            <div class="fig2-b" data-painel="b"></div>
+            <p class="fig-fonte">Fonte: elaborado pelo autor (2026), a partir da matriz de extração de dados da revisão.</p>
+          </figure>
+          <script type="application/json" id="dados-fig2">{
+            "estudos": [
+              ["Loureiro (2000)", 2000, "MP (conceito, natureza e limites materiais)", "mp"],
+              ["Wielewicki (2000)", 2000, "MP (pressupostos de relevância e urgência)", "mp"],
+              ["Arias (2001)", 2001, "MP (significado político e preponderância do Executivo)", "mp"],
+              ["Amorim Neto; Tafner (2002)", 2002, "MP (edição, reedição e delegação legislativa)", "mp"],
+              ["Gontijo (2005)", 2005, "MP (controle dos pressupostos constitucionais)", "mp"],
+              ["Da Ros (2008)", 2008, "MP (“poder de decreto” = MP, accountability horizontal)", "mp"],
+              ["Reck; Müller (2009)", 2009, "Decreto regulamentar (executivo), art. 84, IV", "dec"],
+              ["Silveira (2016)", 2016, "MP (ADIs e poder contramajoritário do STF)", "mp"],
+              ["Oliveira; Amaral Jr. (2017)", 2017, "MP (relevância, urgência e pertinência temática)", "mp"],
+              ["Pinho (2018)", 2018, "MP (veiculação de políticas públicas de saúde)", "mp"],
+              ["Ribeiro; Muniz (2020a)", 2020, "MP (regras de tramitação com quatro casos)", "mp"],
+              ["Ribeiro; Muniz (2020b)", 2020, "MP (sobrestamento de pauta e análise do MS 27.931)", "mp"],
+              ["Squeff; d’Aquino; Targa (2020)", 2020, "MP (MPs 925, 948, 958 e 966, consumidor)", "mp"],
+              ["Vasconcellos et al. (2020)", 2020, "MP (regulação social após a Emenda Constitucional 32/2001)", "mp"],
+              ["Dorneles; Jahn; Simon (2021)", 2021, "MP (quatro MPs trabalhistas, banalização)", "mp"],
+              ["Brazilian [...] (2021)", 2021, "MP 936/2020 e ADI 6363/DF", "mp"],
+              ["Alves (2022)", 2022, "MP (controle judicial das medidas pandêmicas)", "mp"],
+              ["Gaspardo; Santos; Marchioni (2023)", 2023, "MP (MPs 870, 873, 881 e 905/2019)", "mp"],
+              ["Pereira; Lunardi; Correia (2024)", 2024, "MP (rito de tramitação e o Senado Federal)", "mp"],
+              ["Santos; Santana (2024)", 2024, "MP (formulação de políticas, dados até ago. 2009)", "mp"],
+              ["Silva; Oliveira (2025)", 2025, "Decreto de graça constitucional (art. 84, XII)", "dec"]
+            ],
+            "fases": [[2000, 2005, "1ª fase", "2000 a 2005, n = 5"], [2006, 2009, "2ª fase", "2006 a 2009, n = 2"], [2016, 2025, "3ª fase", "2016 a 2025, n = 14"]],
+            "lacuna": [2010, 2015, "nenhum estudo elegível (2010 a 2015)"],
+            "marcos": [[1, 2001, "Emenda Constitucional nº 32/2001"], [2, 2009, "MS nº 27.931"], [3, 2012, "ADI nº 4.029"], [4, 2015, "ADI nº 5.127"], [5, 2017, "Reforma trabalhista"], [6, 2020, "Pandemia de covid-19"], [7, 2022, "Decreto de graça"]],
+            "objeto": [["Medida provisória", 19, [9, 5, 5]], ["Decreto presidencial em sentido estrito", 2, [2, 0, 0]]],
+            "centralidade": ["Análise substantiva das decisões", "Menção periférica", "Nenhuma decisão identificada"],
+            "razao": ["Razão MP : decreto", "19 : 2 (9,5 : 1) nos estudos incluídos", "9 : 2 (4,5 : 1) na análise substantiva"]
+          }</script>
+        </section>
+        <section class="met-res leitura">
+          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>O que indica</p>
+          <p class="res-txt" style="margin-top:10px">Lido em conjunto, o quadro mostra claras discrepâncias.</p>
+          <ol class="discrepancias">
+            <li data-alvo="b"><b>De objeto</b>Está na distância entre a medida provisória, tema de quase todos os estudos, e o decreto, tratado por muito poucos.</li>
+            <li data-alvo="a"><b>Temporal</b>Aparece na produção concentrada em três fases, separadas por intervalos de pouca ou nenhuma publicação, um deles de seis anos.</li>
+            <li data-alvo="b"><b>De centralidade</b>Vem de haver estudos em que o Supremo Tribunal não é objeto de análise, mesmo num corpus construído justamente para captar o controle que ele exerce.</li>
+          </ol>
+        </section>
+        <footer class="met-refs">
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="RECK, Janriê">Reck e Müller (2009)</button>
+          <button type="button" class="ref" data-ref="SILVA, André Luiz">Silva e Oliveira (2025)</button>
+          <span class="met-ref-notas">Seção 2.1, Quadro 2 e Figura 2. Os 21 estudos estão na aba Referências</span>
+        </footer>
+      </article>
 
-<!-- Acervo e codificação -->
-<section class="painel" id="acervo" data-rotulo="Acervo e codificação" data-icone="archive" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Acervo e codificação <span class="selo cinza">A codificação ainda não está concluída em todas</span></p>
-    <h2>Os autos foram obtidos à mão, um a um, no portal do STF</h2>
-  </div>
-  <div class="acervo-grade">
-    <div class="card kpi"><div><p class="kpi-rot">Arquivos</p><p class="kpi-val" data-count="4966">4.966</p><p class="kpi-det">arquivos</p></div><span class="chip-ic"><svg class="ic-5"><use href="#i-files"/></svg></span></div>
-    <div class="card kpi"><div><p class="kpi-rot">Páginas</p><p class="kpi-val" data-count="156654">156.654</p><p class="kpi-det">páginas</p></div><span class="chip-ic azul"><svg class="ic-5"><use href="#i-scan-text"/></svg></span></div>
-    <div class="card">
-      <p class="texto">Cada arquivo foi registrado em inventário, e as páginas que eram apenas imagem passaram por reconhecimento óptico de caracteres, com o original preservado ao lado da versão pesquisável.</p>
-      <p class="suave" style="margin-top:12px">Os pacotes baixados na área de peticionamento trazem impressos o nome e os dados pessoais do pesquisador e, por isso, não integrarão o material disponibilizado para replicação.</p>
-    </div>
-  </div>
-  <div class="card">
-    <h3 class="card-t">Cada ação será codificada a partir da fonte mais completa disponível. A codificação registra</h3>
-    <div class="chips"><span class="chip">o desfecho</span><span class="chip">o seu fundamento</span><span class="chip">o órgão que o proferiu</span><span class="chip">o governo que editou o decreto</span><span class="chip">o proponente</span><span class="chip">a matéria</span><span class="chip">o parâmetro constitucional invocado</span><span class="chip">a natureza do decreto</span><span class="chip">o tipo de ofensa alegada</span></div>
-  </div>
-  <div class="grade g4">
-    <div class="card"><span class="num-chip">1</span><h3 style="margin-top:12px">Variáveis codificadas</h3><p>uma linha por ação e vinte e oito colunas. É a fonte de toda contagem.</p></div>
-    <div class="card"><span class="num-chip">2</span><h3 style="margin-top:12px">Metadados do painel</h3><p>como partes, relator, datas e situação processual.</p></div>
-    <div class="card"><span class="num-chip">3</span><h3 style="margin-top:12px">Uso analítico</h3><p>deriva integralmente do primeiro e pode ser recalculado a qualquer momento.</p></div>
-    <div class="card"><span class="num-chip">4</span><h3 style="margin-top:12px">Origem de cada informação</h3><p>o que falta e por qual via se obtém.</p></div>
-  </div>
-  <p class="nota">Em todos, três colunas de controle indicam a origem do dado, o estado da coleta e o nível de evidência. A confiabilidade será aferida pela releitura de uma amostra sorteada (Epstein; Martin, 2014).</p>
-</section>
+      <!-- R2. As causas da assimetria e as lacunas da literatura -->
+      <article class="met res-tela r-largo1" data-m="1">
+        <section class="met-para">
+          <p class="olho">Resultado 2 · Seção 2.3 <span class="est declarado">Declarado</span></p>
+          <h3>As causas da assimetria e as lacunas da literatura</h3>
+          <p class="met-rot"><svg class="ic"><use href="#i-search"/></svg>O que se encontrou</p>
+          <ul class="lacunas">
+            <li>Nenhum estudo classifica as ações pelos fundamentos da inicial, pelo vício alegado ou pelo parâmetro constitucional invocado, nem cruza essa classificação com o desfecho.</li>
+            <li>Nenhum estudo volta ao decreto regulamentar depois de Reck e Müller (2009), de modo que a revisão tampouco permite dizer se a contenção do Tribunal mudou a partir de 2019.</li>
+            <li>A extinção por perda superveniente de objeto aparece nos estudos sempre referida à MP convertida, reeditada ou revogada (Da Ros, 2008; Silveira, 2016; Oliveira; Amaral Jr., 2017), nunca ao decreto revogado.</li>
+          </ul>
+        </section>
+        <section class="met-como">
+          <p class="met-rot"><svg class="ic"><use href="#i-file-search"/></svg>Amostra</p>
+          <p class="amostra-t">Quatro dos vinte e um estudos chamam a MP de decreto</p>
+          <table class="amostra">
+            <thead><tr><th>Estudo</th><th>Como nomeia a medida provisória</th></tr></thead>
+            <tbody>
+              <tr><td>Vasconcellos et al. (2020)</td><td>intitulam a versão inglesa do artigo “Presidential decrees after the constitutional amendment 32/2001”</td></tr>
+              <tr><td>Gaspardo, Santos e Marchioni (2023)</td><td>vertem o título para “provisional presidential decrees” e adotam, no corpo, a sigla PPD</td></tr>
+              <tr><td>Santos e Santana (2024)</td><td>escrevem, em inglês, “presidential emergency decrees (provisional measures, MPVs)”</td></tr>
+              <tr><td>Da Ros (2008)</td><td>intitula “Poder de decreto e accountability horizontal” um artigo que trata exclusivamente de MPs</td></tr>
+            </tbody>
+          </table>
+          <p class="fig-fonte">Fonte: Seção 2.3. Se quase um quinto do corpus designa um instituto pelo nome do outro, a distinção entre os dois não é clara nem para a indexação internacional nem para parte da própria literatura.</p>
+        </section>
+        <section class="met-res leitura">
+          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>O que indica</p>
+          <p class="res-txt" style="margin-top:10px">A assimetria pode ser explicada em três planos.</p>
+          <ol class="planos">
+            <li><b>Natureza dos institutos</b>A MP tem força de lei e eficácia imediata desde a publicação. O decreto regulamentar submete-se à lei anterior e destina-se à fiel execução dela (Reck; Müller, 2009).</li>
+            <li><b>Arquitetura processual <i>ainda por verificar</i></b>Se a ofensa reflexa barra a ação antes do mérito, o Supremo não chega a dizer se o decreto é constitucional, e ele fica invisível também para a pesquisa acadêmica.</li>
+            <li><b>Condições de produção da pesquisa</b>Existe uma população finita, delimitada e integralmente rastreável de MPs. Decretos não têm rito de tramitação nem desfecho formal comparável ao das MPs.</li>
+          </ol>
+          <p class="res-citacao">A pergunta, por isso, deixa de ser o que a literatura escreveu sobre o decreto e passa a ser o que o Supremo decidiu a respeito dele.</p>
+        </section>
+        <footer class="met-refs">
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="RECK, Janriê">Reck e Müller (2009)</button>
+          <button type="button" class="ref" data-ref="DA ROS, Luciano">Da Ros (2008)</button>
+          <button type="button" class="ref" data-ref="SILVEIRA, Daniel">Silveira (2016)</button>
+          <button type="button" class="ref" data-ref="OLIVEIRA, Clarice">Oliveira e Amaral Jr. (2017)</button>
+          <button type="button" class="ref" data-ref="VASCONCELLOS, Fábio">Vasconcellos et al. (2020)</button>
+          <button type="button" class="ref" data-ref="GASPARDO, Murilo">Gaspardo, Santos e Marchioni (2023)</button>
+          <button type="button" class="ref" data-ref="SANTOS, Diogo">Santos e Santana (2024)</button>
+        </footer>
+      </article>
 
-<!-- Plano de análise -->
-<section class="painel" id="plano" data-rotulo="Plano de análise" data-icone="git-branch" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Plano de análise</p>
-    <h2>A análise separa dois estágios</h2>
-  </div>
-  <div class="card">
-    <div class="estagios" id="estagios">
-      <div class="estagio"><h3>242 ações</h3><p>codificadas a partir da fonte mais completa disponível</p></div>
-      <div class="seta-d"><svg class="ic-5"><use href="#i-arrow-right"/></svg></div>
-      <div class="estagio"><h3>Estágio 1</h3><p>A sobrevivência ao exame do relator</p><div class="saida"><svg class="ic"><use href="#i-x"/></svg>decisão monocrática que encerra a ação</div></div>
-      <div class="seta-d"><svg class="ic-5"><use href="#i-arrow-right"/></svg></div>
-      <div class="estagio"><h3>Estágio 2</h3><p>O exame do mérito pelo colegiado</p><div class="saida"><svg class="ic"><use href="#i-x"/></svg>encerramento sem resolução de mérito</div></div>
-      <div class="seta-d"><svg class="ic-5"><use href="#i-arrow-right"/></svg></div>
-      <div class="estagio merito"><h3>Resolução de mérito</h3><p>O STF enfrenta o objeto constitucional e acolhe o pedido, no todo ou em parte, ou o rejeita</p></div>
-    </div>
-  </div>
-  <div class="grade g5">
-    <div class="card tecnica"><h3>Qui-quadrado e V de Cramér</h3><p>se a diferença entre os grupos vai além do acaso e a intensidade dessa associação</p></div>
-    <div class="card tecnica"><h3>Regressão logística penalizada</h3><p>escolhida pelo número pequeno de casos e pela separação entre os desfechos (Firth, 1993)</p></div>
-    <div class="card tecnica"><h3>Riscos competitivos</h3><p>se a perda de objeto costuma chegar antes do julgamento do mérito</p></div>
-    <div class="card tecnica"><h3>Ponto de mudança</h3><p>se o tratamento das ações mudou e em que momento, sem fixar de antemão um marco como a mudança de governo em 2019</p></div>
-    <div class="card tecnica"><h3>Tipologia das petições iniciais</h3><p>se a forma como o proponente apresenta o decreto antecipa o reconhecimento da ofensa reflexa</p></div>
-  </div>
-  <div class="card comparativo">
-    <p class="kpi-val">60,65%</p>
-    <p class="texto">A proporção de decisões do relator será comparada aos 60,65% de decisões individuais que Reis e Meyer (2021) documentam no controle concentrado entre 1988 e 2018. A passagem do relator ao colegiado será lida à luz da crítica de Silva (2013) e de Falsarella (2024) a um Supremo que decide sem deliberar.</p>
-  </div>
-  <p class="fonte">Os cálculos serão feitos em Python, e a estimação penalizada será conferida com o pacote logistf, do R. Seções 3.2 e 4.</p>
-</section>
+      <!-- R3. Quase a metade a partir de 2019 -->
+      <article class="met res-tela" data-m="2">
+        <section class="met-para">
+          <p class="olho">Resultado 3 · Introdução e Seções 2.3 e 5 <span class="est preliminar">Preliminar</span></p>
+          <h3>Quase a metade, 119, foi ajuizada a partir de 2019</h3>
+          <p class="met-rot"><svg class="ic"><use href="#i-search"/></svg>O que se encontrou</p>
+          <div class="res-n"><b data-count="119">119</b><span>das 242 ações foram ajuizadas a partir de 2019, quase a metade (49,2%)</span></div>
+          <div class="res-mini claro">
+            <div><b data-count="91">91</b><span>com ao menos um decreto assinado por Jair Bolsonaro no pedido de mérito</span></div>
+            <div><b data-count="210">210</b><span>decididas até junho de 2026</span></div>
+            <div><b data-count="159">159</b><span>Ações Diretas de Inconstitucionalidade (ADI)</span></div>
+            <div><b data-count="75">75</b><span>Arguições de Descumprimento de Preceito Fundamental (ADPF)</span></div>
+            <div><b data-count="8">8</b><span>Ações Declaratórias de Constitucionalidade (ADC)</span></div>
+          </div>
+        </section>
+        <section class="met-como">
+          <p class="met-rot"><svg class="ic"><use href="#i-chart-column"/></svg>Gráfico</p>
+          <div class="graf-cab">
+            <p class="fig-t">Ações por ano de autuação</p>
+            <div class="legenda"><span style="--leg:#64748b">Antes de 2019</span><span style="--leg:#0f172a">A partir de 2019</span></div>
+          </div>
+          <div class="grafico" id="grafico-anos"></div>
+          <p class="fig-fonte">Fonte: calculado da planilha de seleção das 242 ações.<sup class="nr"><a href="#nota-21">21</a></sup> Preliminar. Passe o cursor sobre as barras. <a class="btn-texto" href="explorador.html">Abrir o explorador das 242 ações <svg class="ic"><use href="#i-arrow-right"/></svg></a></p>
+        </section>
+        <section class="met-res leitura">
+          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>O que indica</p>
+          <div class="res-grade">
+            <p class="res-txt">Nesse governo, o decreto parece ter virado uma arma política eficaz (Prudente Ribeiro, 2023).</p>
+            <p class="res-txt">O número de ações diretas contra normas federais varia fortemente entre governos, oscilação que acompanha as estratégias da oposição política aos presidentes e a saliência das políticas públicas de cada período, e não as mudanças institucionais (Taylor; Da Ros, 2008).</p>
+            <p class="res-txt">Para quem se opõe a um decreto, o controle concentrado é o único ponto de veto que não depende da maioria, o que ajuda a entender a presença dos partidos políticos em mais da metade das ações do universo.</p>
+            <p class="res-citacao">A concentração das ações a partir de 2019 diz muito sobre quem levou os decretos ao Supremo e quais levou, mas não necessariamente sobre como foram julgados.</p>
+          </div>
+        </section>
+        <footer class="met-refs">
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="PRUDENTE RIBEIRO">Prudente Ribeiro (2023)</button>
+          <button type="button" class="ref" data-ref="TAYLOR, Matthew M.; DA ROS">Taylor e Da Ros (2008)</button>
+          <span class="met-ref-notas">Introdução, Seções 2.3 e 5 e nota 21</span>
+        </footer>
+      </article>
 
-<!-- Daniel Silveira -->
-<section class="painel" id="silveira" data-rotulo="Daniel Silveira" data-icone="gavel" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">O ponto fora da curva</p>
-    <h2>A graça concedida ao então deputado Daniel Silveira</h2>
-  </div>
-  <div class="caso-grade">
-    <div class="card">
-      <div class="cronologia">
-        <div class="evento"><div class="data">2003 e 2019</div><p>Como mostram a ADI nº 2.795 e a ADI nº 5.874, o Supremo controlava os decretos de clemência apenas pelos limites expressos da Constituição, sem entrar no mérito da concessão.</p></div>
-        <div class="evento chave"><div class="data">21 de abril de 2022</div><p>Decreto concede graça constitucional ao então deputado Daniel Silveira.</p></div>
-        <div class="evento chave"><div class="data">10 de maio de 2023</div><p>Ao julgar as ADPF nº 964 a 967, o STF declara inconstitucional, por desvio de finalidade, o decreto de graça (Brasil, 2023).</p></div>
-      </div>
-    </div>
-    <div class="lado">
-      <div class="card-escuro"><div class="citacao"><svg class="ic-5"><use href="#i-quote"/></svg><p>Por que, então, o STF decidiu comprar a briga naquele momento, contra um ato tido como intocável, se não a comprou antes, quando provocado?</p></div></div>
-      <div class="card"><p class="texto">A virada foi argumentativa. A Corte inovou ao usar o desvio de finalidade para anular os efeitos do ato (Silva; Oliveira, 2025). A decisão pode ser lida como um caminho que o STF encontrou para se autopreservar.</p></div>
-      <div class="grade g3">
-        <div class="card via"><h3>Legalidade</h3><p>a ofensa reflexa bloqueia o controle</p></div>
-        <div class="card via"><h3>Politicidade</h3><p>a tese dos atos de governo o limita</p></div>
-        <div class="card via nova"><h3>Desvio de finalidade</h3><p>abre agora uma terceira via de controle</p></div>
-      </div>
-    </div>
-  </div>
-  <p class="fonte">Introdução, Seções 2.3 e 5.</p>
-</section>
+      <!-- R4. Falhas do Corte Aberta -->
+      <article class="met res-tela" data-m="3">
+        <section class="met-para">
+          <p class="olho">Resultado 4 · Seções 3.1 e 5 <span class="est declarado">Declarado</span></p>
+          <h3>O Corte Aberta tem falhas estruturais</h3>
+          <p class="met-rot"><svg class="ic"><use href="#i-search"/></svg>O que se encontrou</p>
+          <p class="met-txt">As ferramentas do próprio STF são uma barreira a mais para a pesquisa empírica sobre decretos presidenciais.</p>
+          <div class="medidores">
+            <div class="medidor"><p><b>894</b> números faltam nas planilhas</p><span class="barra dupla"><i style="width:90.16%"></i><i class="b2" style="width:9.84%"></i></span><small>806 de ações que, pela numeração, devem ter terminado antes de 2000, e 88 sem motivo declarado</small></div>
+            <div class="medidor"><p><b>697</b> de 3.028 processos</p><span class="barra"><i style="width:23.02%"></i></span><small>com o campo de legislação preenchido na exportação de junho de 2026</small></div>
+            <div class="medidor"><p><b>238</b> de 242 ações</p><span class="barra"><i style="width:98.35%"></i></span><small>constam da extração oficial do STF</small></div>
+          </div>
+        </section>
+        <section class="met-como">
+          <p class="met-rot"><svg class="ic"><use href="#i-file-search"/></svg>Amostra</p>
+          <p class="amostra-t">Ações que os campos exportados esconderam</p>
+          <table class="amostra">
+            <thead><tr><th>Falha</th><th>Ação</th><th>O que aconteceu</th></tr></thead>
+            <tbody>
+              <tr><td>Recorte temporal</td><td><a href="https://portal.stf.jus.br/processos/listarProcessos.asp?classe=ADI&amp;numeroProcesso=309">ADI 309</a> e <a href="https://portal.stf.jus.br/processos/listarProcessos.asp?classe=ADI&amp;numeroProcesso=996">996</a></td><td>Citadas por Dias (2024), decididas nos anos 1990 e ausentes das planilhas</td></tr>
+              <tr><td>Fora da extração</td><td><a href="https://portal.stf.jus.br/peticaoInicial/verPeticaoInicial.asp?base=ADI&amp;numProcesso=1253">ADI 1.253</a> e <a href="https://portal.stf.jus.br/peticaoInicial/verPeticaoInicial.asp?base=ADI&amp;numProcesso=1544">1.544</a></td><td>Identificadas em referências processuais e confirmadas nos registros e peças oficiais do STF</td></tr>
+              <tr><td>Rótulo errado</td><td><a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=5372424">ADI 5.915</a></td><td>O rótulo apresenta o Decreto nº 9.288/2018 como “Decreto-Lei nº 9288 de 2018”, e a ação ficou fora da triagem original</td></tr>
+              <tr><td>Polo</td><td><a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=5846267">ADPF 647</a></td><td>Impugna o Decreto nº 3.048/1999 e tem no polo o Conselho Administrativo de Recursos Fiscais (CARF) e a Receita Federal</td></tr>
+              <tr><td>Decisão Final</td><td><a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=3932566">ADI 4.447</a> e <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=5880765">6.341</a></td><td>O subgrupo “Decisão Final” inclui decisões que não encerram o processo, e as duas seguiam em tramitação em 30 de junho de 2026</td></tr>
+            </tbody>
+          </table>
+          <p class="fig-fonte">Fonte: Seção 3.1. Cada número abre a ação no portal do STF.</p>
+        </section>
+        <section class="met-res leitura">
+          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>O que indica</p>
+          <div class="res-grade">
+            <p class="res-txt">As bases tendem a priorizar os processos “finalizados a partir do ano 2000”, aviso que está no dicionário de dados do STF<sup class="nr"><a href="#nota-19">19</a></sup> e na ajuda do painel, mas não nas planilhas.</p>
+            <p class="res-txt">O recorte temporal, o campo vazio, o rótulo errado e o polo escondem ações contra decretos e ameaçam, por isso, a completude do banco.</p>
+            <p class="res-txt">Um decreto presidencial comum pode aparecer como “decreto-lei”, instrumento extinto pela Constituição Federal de 1988 (Nascimento; Van den Boomen, 2025).</p>
+            <p class="res-txt">Sob as regras, nenhuma dessas falhas basta para fazer entrar uma ação, porque a inclusão depende do pedido e das partes na petição inicial.</p>
+            <p class="res-citacao">O Supremo construiu em torno de si um aparato técnico insuficiente para a transparência integral de seus atos, e a pesquisa precisou sobreviver também a isso.</p>
+          </div>
+        </section>
+        <footer class="met-refs">
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="BRASIL. Supremo Tribunal Federal. Corte Aberta">Corte Aberta</button>
+          <button type="button" class="ref" data-ref="NASCIMENTO, Roberta">Nascimento e Van den Boomen (2025)</button>
+          <button type="button" class="ref" data-ref="DIAS, Mateus">Dias (2024)</button>
+          <span class="met-ref-notas">Seções 3.1 e 5 e nota 19</span>
+        </footer>
+      </article>
 
-<!-- Limites -->
-<section class="painel" id="limites" data-rotulo="Limites" data-icone="shield-alert" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Limites</p>
-    <h2>Sem afirmar a intenção do Supremo nem inferir causalidade</h2>
-  </div>
-  <div class="grade g3">
-    <div class="card destaque"><span class="chip-ic"><svg class="ic-5"><use href="#i-sigma"/></svg></span><div><h3>Estimativas exploratórias</h3><p>As estimativas serão associativas e exploratórias, com os limites declarados conforme Epstein e King (2002).</p></div></div>
-    <div class="card destaque"><span class="chip-ic azul"><svg class="ic-5"><use href="#i-layers"/></svg></span><div><h3>Poucos casos</h3><p>A regressão do primeiro estágio excluirá as ADC, por terem poucos casos, e a do segundo estágio se restringirá às ações decididas pelo colegiado.</p></div></div>
-    <div class="card destaque"><span class="chip-ic ambar"><svg class="ic-5"><use href="#i-clock-3"/></svg></span><div><h3>Autos desiguais no tempo</h3><p>Como os autos completos se concentram nas ações mais recentes, a leitura integral não será usada para reforçar conclusões que dependam do tempo.</p></div></div>
-    <div class="card destaque"><span class="chip-ic"><svg class="ic-5"><use href="#i-database"/></svg></span><div><h3>Falhas do Corte Aberta</h3><p>Até a última ação de cada classe ajuizada em 2025, faltam 894 números, 806 deles de ações que devem ter terminado antes de 2000. O campo de legislação vinha preenchido em só 697 dos 3.028 processos do acervo.</p></div></div>
-    <div class="card destaque"><span class="chip-ic azul"><svg class="ic-5"><use href="#i-search"/></svg></span><div><h3>Alcance da revisão</h3><p>A revisão sistemática recupera o que está indexado sob determinados descritores. O que ela não pode fornecer é a medida do fenômeno que descreve.</p></div></div>
-    <div class="card destaque"><span class="chip-ic ambar"><svg class="ic-5"><use href="#i-file-search"/></svg></span><div><h3>Completude do banco</h3><p>O recorte temporal, o campo vazio, o rótulo errado e o polo escondem ações contra decretos e ameaçam a completude do banco. A inclusão depende do pedido e das partes na petição inicial.</p></div></div>
-  </div>
-  <p class="fonte">Seções 2.3, 3.1, 3.2 e 5.</p>
-</section>
+      <!-- R5. O ponto fora da curva -->
+      <article class="met res-tela" data-m="4">
+        <section class="met-para">
+          <p class="olho">Resultado 5 · Introdução e Seções 2.2, 2.3 e 5 <span class="est declarado">Declarado</span></p>
+          <h3>O ponto fora da curva</h3>
+          <p class="met-rot"><svg class="ic"><use href="#i-search"/></svg>O que se encontrou</p>
+          <p class="met-txt">O ponto fora da curva, que desencadeia uma nova maneira de o Supremo julgar os decretos presidenciais, é a graça constitucional concedida ao então deputado Daniel Silveira pelo decreto de 21 de abril de 2022 (Silva; Oliveira, 2025).</p>
+          <p class="met-pq">A virada foi argumentativa. A Corte inovou ao usar o desvio de finalidade para anular os efeitos do ato (Silva; Oliveira, 2025).</p>
+        </section>
+        <section class="met-como">
+          <p class="met-rot"><svg class="ic"><use href="#i-clock-3"/></svg>Linha do tempo</p>
+          <ol class="tempo">
+            <li><span class="t-data">2003 e 2019</span><p>Como mostram a <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=2082819">ADI nº 2.795</a>, de 2003, e a <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=5336271">ADI nº 5.874</a>, de 2019, o Supremo controlava os decretos de clemência apenas pelos limites expressos da Constituição, como a vedação do art. 5º, XLIII, sem entrar no mérito da concessão.</p></li>
+            <li class="chave"><span class="t-data">21 de abril de 2022</span><p>Decreto concede graça constitucional ao então deputado Daniel Silveira.</p></li>
+            <li class="chave"><span class="t-data">10 de maio de 2023</span><p>Ao julgar as ADPF nº <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6389004">964</a>, <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6389107">965</a>, <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6389572">966</a> e <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6390218">967</a>, ajuizadas pela Rede Sustentabilidade, pelo Partido Democrático Trabalhista (PDT), pelo Cidadania e pelo Partido Socialismo e Liberdade (PSOL), o STF declarou inconstitucional, por desvio de finalidade, o decreto de graça (Brasil, 2023).</p></li>
+          </ol>
+          <p class="fig-fonte">Fonte: Introdução e Seção 2.2. Cada número abre a ação no portal do STF.</p>
+        </section>
+        <section class="met-res leitura">
+          <p class="met-rot"><svg class="ic"><use href="#i-flag"/></svg>O que indica</p>
+          <ol class="vias">
+            <li><b>Legalidade</b><span>a ofensa reflexa bloqueia o controle (Reck; Müller, 2009)</span></li>
+            <li><b>Politicidade</b><span>a tese dos atos de governo o limita</span></li>
+            <li class="nova"><b>Desvio de finalidade</b><span>abre agora uma terceira via de controle</span></li>
+          </ol>
+          <p class="res-citacao">Por que, então, o STF decidiu comprar a briga naquele momento, contra um ato tido como intocável, se não a comprou antes, quando provocado?</p>
+          <p class="res-txt" style="margin-top:10px">O Supremo diminuiu os obstáculos procedimentais quando a crise atravessou a Praça dos Três Poderes e ameaçou o Judiciário, batendo à sua porta. A decisão pode ser lida como um caminho que o STF encontrou para se autopreservar.</p>
+        </section>
+        <footer class="met-refs">
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="SILVA, André Luiz">Silva e Oliveira (2025)</button>
+          <button type="button" class="ref" data-ref="BRASIL. Supremo Tribunal Federal. Arguição">Brasil (2023)</button>
+          <button type="button" class="ref" data-ref="RECK, Janriê">Reck e Müller (2009)</button>
+        </footer>
+      </article>
 
-<!-- Considerações finais -->
-<section class="painel" id="consideracoes" data-rotulo="Considerações finais" data-icone="flag" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Considerações finais</p>
-    <h2>Algumas conclusões já são possíveis</h2>
-  </div>
-  <div class="grade g2">
-    <div class="card">
-      <div class="destaque"><span class="chip-ic verde"><svg class="ic-5"><use href="#i-chart-column"/></svg></span><h3 class="card-t" style="align-self:center">Resultados preliminares</h3></div>
-      <ul class="lista-suave ok">
-        <li><svg class="ic"><use href="#i-check"/></svg><span>Dos 21 estudos, 19 tratam da MP e apenas 2 do decreto presidencial em sentido estrito.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>Das 242 ações ajuizadas nesses 37 anos, 119 foram protocoladas a partir de 2019, quase a metade em sete anos. Em 91 delas, o pedido de mérito inclui ao menos um decreto assinado por Jair Bolsonaro.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>O ponto fora da curva é a graça constitucional concedida ao então deputado Daniel Silveira.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>O painel Corte Aberta tem falhas estruturais. Como a extração automática não é suficientemente confiável, a busca processual foi quase toda artesanal.</span></li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="destaque"><span class="chip-ic ambar"><svg class="ic-5"><use href="#i-target"/></svg></span><h3 class="card-t" style="align-self:center">Resultados esperados</h3></div>
-      <ul class="lista-suave esp">
-        <li><svg class="ic"><use href="#i-arrow-right"/></svg><span>Se a hipótese se confirmar, durante anos não terá feito diferença se o decreto tratava de terras indígenas, orçamento, servidores ou armas, nem qual governo o publicou.</span></li>
-        <li><svg class="ic"><use href="#i-arrow-right"/></svg><span>A hipótese é que, nas ações contra decretos, a maioria morra ainda na fase monocrática, pelas mãos do ministro-relator, e que nessa fase não importem o autor da ação nem o capital político do Presidente do momento. Seria um padrão de blindagem técnica.</span></li>
-        <li><svg class="ic"><use href="#i-arrow-right"/></svg><span>Se o mérito dos decretos presidenciais passa despercebido pelo STF, o resultado pode se configurar em um déficit de controle democrático.</span></li>
-      </ul>
     </div>
   </div>
-  <div class="card-escuro fecho">
-    <div class="citacao"><svg class="ic-5"><use href="#i-quote"/></svg><p>Com a virada pelo desvio de finalidade, terá acabado a era de ouro dos decretos imunes ao controle de constitucionalidade?</p></div>
-    <p style="padding-left:34px">É um exame de futuro, que os números do passado não alcançam. Por ora, os dados permitem apenas descrever o caminho percorrido até aqui.</p>
-  </div>
+  <p class="fonte">Seções 2, 3 e 5. Passe o cursor sobre uma referência, sobre um termo pontilhado ou sobre o número de uma nota para lê-los.</p>
 </section>
 
 <!-- Referências -->
@@ -849,29 +805,52 @@
   </div>
   <div class="card refs-card">
     <div class="refs">
+      <p>ALVES, Marcia Fernanda. <strong>A conformação jurídico-constitucional da situação de excepcionalidade no Brasil e o controle judicial do STF frente às medidas de emergência sanitária e à necessária proteção aos direitos fundamentais</strong>. 2022. Dissertação (Mestrado em Direito) – Universidade de Santa Cruz do Sul, Santa Cruz do Sul, 2022. Disponível em: <a href="https://repositorio.unisc.br/jspui/handle/11624/3340">https://repositorio.unisc.br/jspui/handle/11624/3340</a>. Acesso em: 27 out. 2026.</p>
       <p>AMORIM NETO, Octavio; TAFNER, Paulo. Governos de coalizão e mecanismos de alarme de incêndio no controle legislativo das medidas provisórias. <strong>Dados – Revista de Ciências Sociais</strong>, Rio de Janeiro, v. 45, n. 1, p. 5-38, 2002. DOI: 10.1590/S0011-52582002000100001. Disponível em: <a href="https://www.scielo.br/j/dados/a/N5brw9nQzrR5qx3ZjMbtMBr/">https://www.scielo.br/j/dados/a/N5brw9nQzrR5qx3ZjMbtMBr/</a>. Acesso em: 26 maio 2026.</p>
       <p>ARGUELHES, Diego Werneck; RIBEIRO, Leandro Molhano. Ministrocracia: o Supremo Tribunal individual e o processo democrático brasileiro. <strong>Novos Estudos CEBRAP</strong>, São Paulo, v. 37, n. 1, p. 13-32, jan./abr. 2018. Disponível em: <a href="https://doi.org/10.25091/S01013300201800010003">https://doi.org/10.25091/S01013300201800010003</a>. Acesso em: 29 out. 2026.</p>
+      <p>ARIAS, Carmem. Um estudo sobre as medidas provisórias no Brasil. <strong>Revista Mediações</strong>, Londrina, v. 6, n. 2, p. 29-53, jul./dez. 2001. DOI: 10.5433/2176-6665.2001v6n2p29. Disponível em: <a href="https://ojs.uel.br/revistas/uel/index.php/mediacoes/article/view/9120">https://ojs.uel.br/revistas/uel/index.php/mediacoes/article/view/9120</a>. Acesso em: 26 maio 2026.</p>
       <p>BINENBOJM, Gustavo. <strong>Uma teoria do direito administrativo</strong>: direitos fundamentais, democracia e constitucionalização. 3. ed. rev. e atual. Rio de Janeiro: Renovar, 2014.</p>
       <p>BRAMER, Wichor M. et al. A systematic approach to searching: an efficient and complete method to develop literature searches. <strong>Journal of the Medical Library Association</strong>, Pittsburgh, v. 106, n. 4, p. 531-541, 2018. Disponível em: <a href="https://doi.org/10.5195/jmla.2018.283">https://doi.org/10.5195/jmla.2018.283</a>. Acesso em: 16 out. 2026.</p>
       <p>BRASIL. [Constituição (1988)]. <strong>Constituição da República Federativa do Brasil de 1988</strong>. Brasília, DF: Presidência da República, [2026]. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm">https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm</a>. Acesso em: 9 jun. 2026.</p>
+      <p>BRASIL. Emenda Constitucional nº 32, de 11 de setembro de 2001. Altera dispositivos dos arts. 48, 57, 61, 62, 64, 66, 84, 88 e 246 da Constituição Federal, e dá outras providências. <strong>Diário Oficial da União</strong>: seção 1, Brasília, DF, p. 1, 12 set. 2001. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc32.htm">https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc32.htm</a>. Acesso em: 22 set. 2026.</p>
       <p>BRASIL. Presidência da República. <strong>Legislação</strong>: decretos. Brasília, DF: Presidência da República, 2026. Base de atos publicados entre 1988 e 2026. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/">https://www.planalto.gov.br/ccivil_03/</a>. Acesso em: 14 jun. 2026.</p>
+      <p>BRASIL. Supremo Tribunal Federal. <strong>Ação Direta de Inconstitucionalidade nº 4.029/DF</strong>. Relator: Min. Luiz Fux, 8 de março de 2012. Diário da Justiça Eletrônico, Brasília, DF, n. 125, 27 jun. 2012. Disponível em: <a href="https://jurisprudencia.stf.jus.br/pages/search/sjur211240/false">https://jurisprudencia.stf.jus.br/pages/search/sjur211240/false</a>. Acesso em: 22 set. 2026.</p>
+      <p>BRASIL. Supremo Tribunal Federal. <strong>Ação Direta de Inconstitucionalidade nº 5.127/DF</strong>. Relatora: Min. Rosa Weber. Redator do acórdão: Min. Edson Fachin, 15 de outubro de 2015. Diário da Justiça Eletrônico, Brasília, DF, n. 94, 11 maio 2016. Disponível em: <a href="https://jurisprudencia.stf.jus.br/pages/search/sjur347865/false">https://jurisprudencia.stf.jus.br/pages/search/sjur347865/false</a>. Acesso em: 22 set. 2026.</p>
       <p>BRASIL. Supremo Tribunal Federal. <strong>Arguição de Descumprimento de Preceito Fundamental nº 964/DF, nº 965/DF, nº 966/DF e nº 967/DF</strong>. Relatora: Min. Rosa Weber, 10 de maio de 2023. Diário da Justiça Eletrônico, Brasília, DF, 17 ago. 2023. Disponível em: <a href="https://jurisprudencia.stf.jus.br/pages/search/sjur484731/false">https://jurisprudencia.stf.jus.br/pages/search/sjur484731/false</a>. Acesso em: 22 set. 2026.</p>
       <p>BRASIL. Supremo Tribunal Federal. <strong>Corte Aberta</strong>: painéis de dados abertos do controle concentrado. Brasília, DF: STF, 2026. Painéis de decisões, de acervo e de legitimados. Disponível em: <a href="https://transparencia.stf.jus.br/extensions/corte_aberta/corte_aberta.html">https://transparencia.stf.jus.br/extensions/corte_aberta/corte_aberta.html</a>. Acesso em: 9 jun. 2026.</p>
+      <p>BRASIL. Supremo Tribunal Federal. <strong>Mandado de Segurança nº 27.931/DF (medida liminar)</strong>. Relator: Min. Celso de Mello, 27 de março de 2009. Disponível em: <a href="https://jurisprudencia.stf.jus.br/pages/search/despacho111908/false">https://jurisprudencia.stf.jus.br/pages/search/despacho111908/false</a>. Acesso em: 22 set. 2026.</p>
+      <p>BRAZILIAN Supreme Court: Direct Action of Unconstitutionality No. 6363, 17 April 2020. <strong>International Labor Rights Case Law</strong>, Leiden, v. 7, n. 3, p. 276-277, 2021. DOI: 10.1163/24056901-07030005. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/intlrcl7&amp;amp;id=275">https://heinonline.org/HOL/Page?handle=hein.journals/intlrcl7&amp;id=275</a>. Acesso em: 3 jun. 2026.</p>
       <p>CLÈVE, Clèmerson Merlin. <strong>Temas de direito constitucional</strong>. 2. ed. rev., atual. e ampl. Belo Horizonte: Fórum, 2014.</p>
       <p>DA ROS, Luciano. Poder de decreto e accountability horizontal: dinâmica institucional dos três poderes e medidas provisórias no Brasil pós-1988. <strong>Revista de Sociologia e Política</strong>, Curitiba, v. 16, n. 31, p. 143-160, nov. 2008. Disponível em: <a href="https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/">https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/</a>. Acesso em: 26 maio 2026.</p>
       <p>DIAS, Mateus Nunes dos Santos Ferreira. <strong>O controle de constitucionalidade de decretos presidenciais</strong>: sistematização e parâmetros. 2024. 168 f. Dissertação (Mestrado em Direito Constitucional) – Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2024. Disponível em: <a href="https://repositorio.idp.edu.br/handle/123456789/5089">https://repositorio.idp.edu.br/handle/123456789/5089</a>. Acesso em: 1 out. 2026.</p>
+      <p>DORNELES, Leandro do Amaral D.; JAHN, Vitor Kaiser; SIMON, Pedro Fülber. Banalização das medidas provisórias como risco à democracia: análise constitucional das medidas provisórias editadas em matéria trabalhista no marco pós-reforma. <strong>Revista da Faculdade de Direito do Sul de Minas</strong>, Pouso Alegre, v. 37, n. 2, p. 107-127, jul./dez. 2021. Disponível em: <a href="https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413">https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413</a>. Acesso em: 26 maio 2026.</p>
       <p>EPSTEIN, Lee; KING, Gary. The rules of inference. <strong>The University of Chicago Law Review</strong>, Chicago, v. 69, n. 1, p. 1-133, 2002. Disponível em: <a href="https://doi.org/10.2307/1600349">https://doi.org/10.2307/1600349</a>. Acesso em: 22 set. 2026.</p>
       <p>EPSTEIN, Lee; MARTIN, Andrew D. <strong>An introduction to empirical legal research</strong>. Oxford: Oxford University Press, 2014.</p>
       <p>FALSARELLA, Christiane Mina. A deliberação no Supremo Tribunal Federal. <strong>Revista de Investigações Constitucionais</strong>, Curitiba, v. 11, n. 2, e265, maio/ago. 2024. DOI: 10.5380/rinc.v11i2.92817. Disponível em: <a href="https://revistas.ufpr.br/rinc/article/view/92817">https://revistas.ufpr.br/rinc/article/view/92817</a>. Acesso em: 14 maio 2026.</p>
       <p>FIRTH, David. Bias reduction of maximum likelihood estimates. <strong>Biometrika</strong>, Oxford, v. 80, n. 1, p. 27-38, 1993. Disponível em: <a href="https://doi.org/10.1093/biomet/80.1.27">https://doi.org/10.1093/biomet/80.1.27</a>. Acesso em: 22 set. 2026.</p>
+      <p>GASPARDO, Murilo; SANTOS, Letícia Rezende; MARCHIONI, Artur. Avaliação legislativa das reformas trabalhistas promovidas por meio de medidas provisórias no Governo Bolsonaro. <strong>Revista Direito GV</strong>, São Paulo, v. 19, e2323, 2023. DOI: 10.1590/2317-6172202323. Disponível em: <a href="https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/">https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/</a>. Acesso em: 26 maio 2026.</p>
+      <p>GONTIJO, Ludmila M. Carabeth. A medida provisória e o Estado Democrático de Direito: o controle de constitucionalidade dos requisitos de relevância e urgência. <strong>Revista do Centro Acadêmico Afonso Pena</strong>, Belo Horizonte, v. 11, p. 203-240, 2005. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/rvadctoao11&amp;amp;id=211">https://heinonline.org/HOL/Page?handle=hein.journals/rvadctoao11&amp;id=211</a>. Acesso em: 3 jun. 2026.</p>
       <p>GOUGH, David; THOMAS, James; OLIVER, Sandy. Clarifying differences between review designs and methods. <strong>Systematic Reviews</strong>, London, v. 1, art. 28, 2012. Disponível em: <a href="https://doi.org/10.1186/2046-4053-1-28">https://doi.org/10.1186/2046-4053-1-28</a>. Acesso em: 22 out. 2026.</p>
+      <p>LOUREIRO, Ythalo Frota. Comentário sobre medidas provisórias. <strong>Pensar: Revista de Ciências Jurídicas</strong>, Fortaleza, v. 5, n. 5, p. 23-36, fev. 2000. Disponível em: <a href="https://ojs.unifor.br/rpen/article/view/1106">https://ojs.unifor.br/rpen/article/view/1106</a>. Acesso em: 26 maio 2026.</p>
+      <p>NASCIMENTO, Roberta Simões; VAN DEN BOOMEN, Lucas Hendricus Andrade. Legislação, autoritarismo e processo legislativo democrático: análise das espécies normativas extintas no ordenamento jurídico brasileiro (1937-1988). <strong>Revista Jurídica da UFERSA</strong>, Mossoró, v. 9, n. 17, p. 107-136, jan./jun. 2025. Disponível em: <a href="https://doi.org/10.21708/issn2526-9488.v9.n17.p107-136.2025">https://doi.org/10.21708/issn2526-9488.v9.n17.p107-136.2025</a>. Acesso em: 11 out. 2026.</p>
+      <p>OLIVEIRA, Clarice G.; AMARAL JÚNIOR, José Levi Mello do. Medida provisória e controle de constitucionalidade: relevância, urgência e pertinência temática. <strong>Revista Brasileira de Políticas Públicas</strong>, Brasília, v. 7, n. 3, p. 748-763, 2017 Disponível em: <a href="https://publicacoesacademicas.uniceub.br/RBPP/article/view/5030">https://publicacoesacademicas.uniceub.br/RBPP/article/view/5030</a>. Acesso em: 26 maio 2026.</p>
       <p>PAGE, Matthew J. et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. <strong>BMJ</strong>, London, v. 372, n71, 2021. Disponível em: <a href="https://doi.org/10.1136/bmj.n71">https://doi.org/10.1136/bmj.n71</a>. Acesso em: 22 set. 2026.</p>
+      <p>PEREIRA, Gabrielle Tatith; LUNARDI, Fabrício Castagna; CORREIA, Pedro Miguel Alves Ribeiro. Bicameralismo e tramitação de medidas provisórias: o papel do Senado Federal como ator institucional com poder de veto. <strong>Revista Direito GV</strong>, São Paulo, v. 20, e2438, 2024. Disponível em: <a href="https://www.scielo.br/j/rdgv/a/WZFsz8ppXGzmsL9Y8mxtwgf/">https://www.scielo.br/j/rdgv/a/WZFsz8ppXGzmsL9Y8mxtwgf/</a>. Acesso em: 26 maio 2026.</p>
+      <p>PINHO, Clóvis Alberto Bertolini de. Medidas provisórias e políticas públicas: uma análise do papel do Congresso Nacional nas políticas de saúde no governo Dilma (2011-2016). <strong>Revista Brasileira de Políticas Públicas</strong>, Brasília, v. 8, n. 3, p. 54-74, 2018. Disponível em: <a href="https://publicacoesacademicas.uniceub.br/RBPP/article/view/4765">https://publicacoesacademicas.uniceub.br/RBPP/article/view/4765</a>. Acesso em: 26 maio 2026.</p>
       <p>PIRES, Ednilton Andrade. <strong>As medidas provisórias e o sobrestamento das demais deliberações legislativas</strong>. 2008. 143 f. Monografia (Especialização em Processo Legislativo) – Centro de Formação, Treinamento e Aperfeiçoamento, Câmara dos Deputados, Brasília, 2008. Disponível em: <a href="https://bd.camara.leg.br/bd/handle/bdcamara/2061">https://bd.camara.leg.br/bd/handle/bdcamara/2061</a>. Acesso em: 22 set. 2026.</p>
+      <p>PRUDENTE RIBEIRO, Ítalo. <strong>Entre o autoritarismo e a legalidade</strong>: uso das medidas provisórias na governabilidade do presidencialismo à Bolsonaro (2019-2022). 2023. 141 f. Dissertação (Mestrado em Direito) – Universidade Federal Rural do Semi-Árido, Mossoró, 2023. Disponível em: <a href="https://repositorio.ufersa.edu.br/items/dd4971ea-89f6-43b9-a810-535481241b24">https://repositorio.ufersa.edu.br/items/dd4971ea-89f6-43b9-a810-535481241b24</a>. Acesso em: 14 out. 2026.</p>
       <p>RECK, Janriê Rodrigues; MÜLLER, Caroline. A figura do “decreto” no direito brasileiro e seus principais problemas: uma breve análise a partir de casos concretos. <strong>Revista do Direito</strong>, Santa Cruz do Sul, n. 32, p. 92-112, jul./dez. 2009. Disponível em: <a href="https://seer.unisc.br/index.php/direito/article/view/1185">https://seer.unisc.br/index.php/direito/article/view/1185</a>. Acesso em: 26 maio 2026.</p>
       <p>REIS, Ulisses Levy Silvério dos; MEYER, Emilio Peluso Neder. “Ministrocracia” e decisões individuais contraditórias no Supremo Tribunal Federal. <strong>Revista Brasileira de Políticas Públicas</strong>, Brasília, v. 11, n. 3, p. 401-425, 2021. Disponível em: <a href="https://doi.org/10.5102/rbpp.v11i3.7418">https://doi.org/10.5102/rbpp.v11i3.7418</a>. Acesso em: 11 out. 2026.</p>
-      <p>SILVA, André Luiz Will da; OLIVEIRA, Cláudio Ladeira de. A graça constitucional e a revisão judicial de atos do Poder Executivo: uma análise do caso Daniel Silveira no Supremo Tribunal Federal. <strong>Revista de Investigações Constitucionais</strong>, Curitiba, v. 12, n. 2, e508, maio/ago. 2025. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/reinvco12&amp;id=339">https://heinonline.org/HOL/Page?handle=hein.journals/reinvco12&amp;id=339</a>. Acesso em: 3 jun. 2026.</p>
+      <p>RIBEIRO, Leandro Molhano; MUNIZ, Mariana Novotny. Imaginação, transgressão e formalização: ações do Congresso e do STF na definição de regras de tramitação de medidas provisórias. <strong>Revista Estudos Institucionais</strong>, Rio de Janeiro, v. 6, n. 1, p. 155-183, jan./abr. 2020a. Disponível em: <a href="https://www.estudosinstitucionais.com/REI/article/view/464">https://www.estudosinstitucionais.com/REI/article/view/464</a>. Acesso em: 26 maio 2026.</p>
+      <p>RIBEIRO, Leandro Molhano; MUNIZ, Mariana Novotny. Judicialização descentralizada e individualizada da política: mudanças nas regras de tramitação de medidas provisórias a partir da Emenda Constitucional 32. <strong>Revista Brasileira de Políticas Públicas</strong>, Brasília, v. 10, n. 1, p. 154-174, 2020b. Disponível em: <a href="https://publicacoesacademicas.uniceub.br/RBPP/article/view/6587">https://publicacoesacademicas.uniceub.br/RBPP/article/view/6587</a>. Acesso em: 26 maio 2026.</p>
+      <p>SANTOS, Diogo de Almeida Viana; SANTANA, Guilherme Saldanha. Medidas provisórias e estabilidade democrática: a ação legislativa do Executivo para produzir governança eficaz diante de um Legislativo hostil no Brasil. <strong>Revista Brasileira de Direito</strong>, Passo Fundo, v. 20, n. 1, e2334, 2024. Disponível em: <a href="https://seer.atitus.edu.br/index.php/revistadedireito/article/view/2334">https://seer.atitus.edu.br/index.php/revistadedireito/article/view/2334</a>. Acesso em: 26 maio 2026. Publicado em inglês sob o título “Provisional Measures and democratic stability: the usage of executive orders to produce governance with a hostile legislative in Brazil”; dados coletados até agosto de 2009.</p>
+      <p>SILVA, André Luiz Will da; OLIVEIRA, Cláudio Ladeira de. A graça constitucional e a revisão judicial de atos do Poder Executivo: uma análise do caso Daniel Silveira no Supremo Tribunal Federal. <strong>Revista de Investigações Constitucionais</strong>, Curitiba, v. 12, n. 2, e508, maio/ago. 2025. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/reinvco12&amp;amp;id=339">https://heinonline.org/HOL/Page?handle=hein.journals/reinvco12&amp;id=339</a>. Acesso em: 3 jun. 2026.</p>
       <p>SILVA, Virgílio Afonso da. Deciding without deliberating. <strong>International Journal of Constitutional Law</strong>, Oxford, v. 11, n. 3, p. 557-584, 2013. DOI: 10.1093/icon/mot019. Disponível em: <a href="https://academic.oup.com/icon/article/11/3/557/789359">https://academic.oup.com/icon/article/11/3/557/789359</a>. Acesso em: 13 maio 2026.</p>
       <p>SILVEIRA, Daniel Barile da. O Supremo Tribunal Federal e seu poder contramajoritário sobre as medidas provisórias. <strong>Revista Direito e Práxis</strong>, Rio de Janeiro, v. 7, n. 14, p. 68-109, 2016. Disponível em: <a href="https://www.e-publicacoes.uerj.br/index.php/revistaceaju/article/view/17018">https://www.e-publicacoes.uerj.br/index.php/revistaceaju/article/view/17018</a>. Acesso em: 26 maio 2026. O periódico grafa a autoria como “Daniel Barile da Silveira Correio”.</p>
+      <p>SQUEFF, Tatiana Cardoso; D&#x27;AQUINO, Lúcia Souza; TARGA, Maria Luiza Baillo. O império das medidas provisórias e a proteção do mercado no Brasil em tempos de pandemia. <strong>Revista Chilena de Derecho y Ciencia Política</strong>, Temuco, v. 11, n. 2, p. 9-43, dez. 2020. Disponível em: <a href="https://derechoycienciapolitica.uct.cl/index.php/RDCP/es/article/view/1184">https://derechoycienciapolitica.uct.cl/index.php/RDCP/es/article/view/1184</a>. Acesso em: 26 maio 2026.</p>
+      <p>TAYLOR, Matthew M.; DA ROS, Luciano. Os partidos dentro e fora do poder: a judicialização como resultado contingente da estratégia política. <strong>Dados – Revista de Ciências Sociais</strong>, Rio de Janeiro, v. 51, n. 4, p. 825-864, 2008. Disponível em: <a href="https://doi.org/10.1590/S0011-52582008000400002">https://doi.org/10.1590/S0011-52582008000400002</a>. Acesso em: 22 set. 2026.</p>
+      <p>VASCONCELLOS, Fábio; SGANZERLA, Rogerio; CUNHA, Brenda; AMARAL, Thiago Bottino do. Medidas provisórias após a EC 32/2001: um diagnóstico jurídico da regulação social no Brasil. <strong>Revista Opinião Jurídica</strong>, Fortaleza, ano 18, n. 27, p. 71-90, jan./abr. 2020. DOI: 10.12662/2447-6641oj.v18i27.p71-90.2020. Disponível em: <a href="https://periodicos.unichristus.edu.br/opiniaojuridica/article/view/2194">https://periodicos.unichristus.edu.br/opiniaojuridica/article/view/2194</a>. Acesso em: 26 maio 2026.</p>
+      <p>WIELEWICKI, Luís A. G. A medida provisória segundo a mais recente doutrina e jurisprudência do STF: uma análise de seus pressupostos. <strong>A&amp;C – Revista de Direito Administrativo &amp; Constitucional</strong>, Curitiba, ano 2, n. 5, p. 67-87, 2000. Disponível em: <a href="https://revistaaec.com/index.php/revistaaec/article/view/776">https://revistaaec.com/index.php/revistaaec/article/view/776</a>. Acesso em: 26 maio 2026. O registro eletrônico do periódico atribui ao texto o ano de 2007, data do seu carregamento no sistema; adota-se aqui o ano do fascículo impresso, tal como indexado no LexML.</p>
     </div>
   </div>
   <p class="fonte">Obras citadas nesta página, conforme a lista de referências da dissertação.</p>
@@ -887,7 +866,7 @@
 </div>
 
 <script src="dados/acoes.js"></script>
-<script src="assets/js/metodologia.js"></script>
+<script src="assets/js/telas.js"></script>
 <script src="assets/js/painel.js"></script>
 </body>
 </html>
