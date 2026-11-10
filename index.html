@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=63c19847">
+<link rel="stylesheet" href="assets/css/painel.css?v=db893b26">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -232,76 +232,42 @@
         </div>
       </article>
       <article class="met mt mt-2" data-m="1">
-        <div class="mt-linha">
-          <div class="mt-card mt-num"><b>242</b><p>O universo final reúne 242 ações contra decretos presidenciais publicados entre 1988 e 2025.</p></div>
-          <div class="mt-card mt-faixa">
-            <p class="mt-lead">Esse levantamento cruzou os painéis de dados abertos do STF com o acervo de decretos da Presidência da República e conferiu processo a processo, com leitura dos autos nos casos em que o inteiro teor está disponível.</p>
-            <p class="mt-lead2">A unidade de análise é a ação, e a inclusão de cada uma depende do pedido da petição inicial, segundo regras escritas.</p>
+        <div class="mt-dupla">
+          <div class="mt-card mt-texto">
+            <p class="mt-lead">O universo foi montado pelo cruzamento entre os painéis de dados abertos do Supremo e o acervo de decretos da Presidência da República, com conferência manual de cada ação, que é a unidade de análise.<sup class="nr"><a href="#nota-16">16</a></sup></p>
+            <p class="mt-cond-cab">regras de inclusão</p><ol class="mt-cond"><li><span>1</span>o ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025</li><li><span>2</span>a ação deve ser ADI, Ação Direta de Inconstitucionalidade por Omissão (ADO), ADC ou ADPF ajuizada até 31 de dezembro de 2025</li><li><span>3</span>o decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte</li><li><span>4</span>o Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor</li></ol>
+            <p class="mt-p">Os autos foram obtidos à mão, um a um, no portal do STF, peça por peça nas ações eletrônicas ou em pacote único na área de peticionamento, sem o uso de coletor automático.</p>
           </div>
-          <div class="mt-card mt-cod">
-            <p>A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p>
-            <p class="mt-conf">A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>).</p>
+          <div class="mt-card mt-fluxo mt-fluxo-col">
+            <ol class="mt-funil"><li class="mt-etapa"><span class="mt-rot">Painéis</span><b>7.991</b><span class="mt-barra"><i style="--w: 100.0%"></i></span><span class="mt-desc">três painéis do Corte Aberta, baixados em 9 de junho de 2026</span></li><li class="mt-etapa"><span class="mt-rot">Executivo no polo passivo</span><b>2.234</b><span class="mt-barra"><i style="--w: 28.0%"></i></span><span class="mt-desc">e só essas seguiram</span></li><li class="mt-etapa"><span class="mt-rot">Base inicial</span><b>232</b><span class="mt-barra"><i style="--w: 2.9%"></i></span><span class="mt-desc">a conferência das ações uma a uma</span></li><li class="mt-etapa mt-fim"><span class="mt-rot">Universo final</span><b>242</b><span class="mt-barra"><i style="--w: 3.0%"></i></span><span class="mt-desc">Restaram 227 ações da base inicial e 15 adicionais.</span></li></ol>
+            <p class="mt-p mt-cod2">A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p>
           </div>
         </div>
         <div class="mt-rodape">
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Introdução e Seções 3 e 3.1</span>
+          <span class="met-ref-notas">Seções 3 e 3.1 e nota 16</span>
           <span class="met-ir"><a href="#resultados" data-tela="3">Resultados preliminares <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
       <article class="met mt mt-3" data-m="2">
-        <div class="mt-tecs">
-          <div class="mt-tec">
-            <p class="mt-tec-g">O plano descritivo</p>
-            <h3>teste qui-quadrado e V de Cramér</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Ver se o desfecho muda conforme o governo, o autor da ação ou a matéria.</p>
-            <p class="mt-tec-como"><b>Como</b> Compara os grupos. O qui-quadrado diz se a diferença pode ser obra do acaso, e o V de Cramér, se ela é fraca ou forte.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">No plano multivariado</p>
-            <h3>regressão logística penalizada (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Medir o peso de cada característica quando todas são consideradas juntas.</p>
-            <p class="mt-tec-como"><b>Como</b> Estima a chance de a ação passar pelo relator e de ter o mérito examinado pelo colegiado, com uma correção feita para poucos casos.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">No plano multivariado</p>
-            <h3>teste de razão de verossimilhanças e intervalos de confiança por verossimilhança perfilada</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Saber se cada grupo de características ajuda a explicar o desfecho e qual a margem de erro.</p>
-            <p class="mt-tec-como"><b>Como</b> Compara o modelo com e sem cada grupo e calcula a faixa provável de cada resultado.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">No plano multivariado</p>
-            <h3>reamostragem e validação cruzada</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Testar se o modelo se sustenta.</p>
-            <p class="mt-tec-como"><b>Como</b> Refaz as contas com sorteios das próprias ações e mede quanto o modelo acerta em ações que ficaram de fora da estimação.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">No plano multivariado</p>
-            <h3>probabilidades preditas</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Traduzir a regressão em chances fáceis de ler.</p>
-            <p class="mt-tec-como"><b>Como</b> Calcula a probabilidade de o mérito ser julgado para perfis típicos de ação.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">As outras três técnicas</p>
-            <h3>análise de riscos competitivos</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Saber se a perda de objeto costuma chegar antes do julgamento do mérito.</p>
-            <p class="mt-tec-como"><b>Como</b> Acompanha cada ação no tempo, como uma corrida entre desfechos, e conta também as que ainda aguardam decisão.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">As outras três técnicas</p>
-            <h3>busca do ponto de mudança</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Descobrir se o Supremo mudou o tratamento dessas ações e quando.</p>
-            <p class="mt-tec-como"><b>Como</b> Procura nos próprios dados o momento em que o padrão muda, sem fixar antes uma data como a troca de governo em 2019.</p>
-          </div>
-          <div class="mt-tec">
-            <p class="mt-tec-g">As outras três técnicas</p>
-            <h3>tipologia dos fundamentos das petições iniciais</h3>
-            <p class="mt-tec-para"><b>Para quê</b> Ver se o modo como o autor apresenta o decreto já anuncia a ofensa reflexa.</p>
-            <p class="mt-tec-como"><b>Como</b> Separa as petições que alegam ofensa direta à Constituição das que dizem que o decreto foi além da lei e compara os desfechos.</p>
-          </div>
-          <div class="mt-tec mt-tec-lim"><p>As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p></div>
+        <div class="mt-card mt-tabela-card">
+          <table class="mt-tabela">
+            <thead><tr><th scope="col">Técnica</th><th scope="col">Para quê</th><th scope="col">Como</th></tr></thead>
+            <tbody>
+              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">O plano descritivo</span><span class="mt-nome">teste qui-quadrado e V de Cramér</span></th><td>Ver se o desfecho muda conforme o governo, o autor da ação ou a matéria.</td><td>Compara os grupos. O qui-quadrado diz se a diferença pode ser obra do acaso, e o V de Cramér, se ela é fraca ou forte.</td></tr>
+              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">No plano multivariado</span><span class="mt-nome">regressão logística penalizada</span><span class="mt-quem"><span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth (1993</span>)</span></th><td>Medir o peso de cada característica quando todas são consideradas juntas.</td><td>Estima a chance de a ação passar pelo relator e de ter o mérito examinado pelo colegiado, com uma correção feita para poucos casos.</td></tr>
+              <tr><th scope="row"><span class="mt-nome">teste de razão de verossimilhanças e intervalos de confiança por verossimilhança perfilada</span></th><td>Saber se cada grupo de características ajuda a explicar o desfecho e qual a margem de erro.</td><td>Compara o modelo com e sem cada grupo e calcula a faixa provável de cada resultado.</td></tr>
+              <tr><th scope="row"><span class="mt-nome">reamostragem e validação cruzada</span></th><td>Testar se o modelo se sustenta.</td><td>Refaz as contas com sorteios das próprias ações e mede quanto o modelo acerta em ações que ficaram de fora da estimação.</td></tr>
+              <tr><th scope="row"><span class="mt-nome">probabilidades preditas</span></th><td>Traduzir a regressão em chances fáceis de ler.</td><td>Calcula a probabilidade de o mérito ser julgado para perfis típicos de ação.</td></tr>
+              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">As outras três técnicas</span><span class="mt-nome">análise de riscos competitivos</span></th><td>Saber se a perda de objeto costuma chegar antes do julgamento do mérito.</td><td>Acompanha cada ação no tempo, como uma corrida entre desfechos, e conta também as que ainda aguardam decisão.</td></tr>
+              <tr><th scope="row"><span class="mt-nome">busca do ponto de mudança</span></th><td>Descobrir se o Supremo mudou o tratamento dessas ações e quando.</td><td>Procura nos próprios dados o momento em que o padrão muda, sem fixar antes uma data como a troca de governo em 2019.</td></tr>
+              <tr><th scope="row"><span class="mt-nome">tipologia dos fundamentos das petições iniciais</span></th><td>Ver se o modo como o autor apresenta o decreto já anuncia a ofensa reflexa.</td><td>Separa as petições que alegam ofensa direta à Constituição das que dizem que o decreto foi além da lei e compara os desfechos.</td></tr>
+              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">A codificação</span><span class="mt-nome">releitura de uma amostra sorteada</span><span class="mt-quem"><span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>)</span></th><td>Medir a confiabilidade da codificação.</td><td>Relê uma amostra de ações escolhida por sorteio e confere se a codificação se repete.</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-limites2">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
         </div>
         <div class="mt-rodape">
         <footer class="met-refs">
@@ -603,6 +569,7 @@
     <ol class="notas">
       <li id="nota-2" value="2">Disponível em: <a href="https://www4.planalto.gov.br/legislacao/portal-legis/legislacao-1/decretos1">https://www4.planalto.gov.br/legislacao/portal-legis/legislacao-1/decretos1</a>. Acesso em: 30 mar. 2026.</li>
       <li id="nota-6" value="6">Uma busca restrita em excesso também devolve poucos resultados, e por isso Bramer et al. (2018) recomendam conferir se a estratégia recupera estudos relevantes já conhecidos. A recomendação vem da área da saúde, como o próprio PRISMA 2020, e é aplicada aqui por tratar da lógica da busca, e não do objeto pesquisado.</li>
+      <li id="nota-16" value="16">A base foi montada em etapas, cada uma em arquivo próprio. Os painéis do Corte Aberta foram extraídos em 9 de junho de 2026, e os decretos da Presidência da República, em 14 de junho. A união dos painéis é de 18 de julho, e o cruzamento com o acervo de decretos, que marcou o polo passivo de cada ação sem retirar nenhuma, é de 19 de julho. A codificação das variáveis começou em 24 de julho, e a segunda triagem com a conferência manual terminou em 16 de setembro, com as 232 ações. O painel de legitimados tinha 8.616 processos, e 625 deles ficaram fora da planilha, porque a união partiu só dos painéis de decisões e de acervo. Desses 625, 232 têm ente do Executivo federal no polo passivo. A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.</li>
       <li id="nota-19" value="19">Disponível em: <a href="https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html">https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html</a>. Acesso em: 25 out. 2026.</li>
       <li id="nota-20" value="20">Disponível em: <a href="https://osf.io/8krpv/">https://osf.io/8krpv/</a>. Acesso em: 29 out. 2026.</li>
       <li id="nota-21" value="21">Disponível em: <a href="https://osf.io/anhvf/">https://osf.io/anhvf/</a>. Acesso em: 29 out. 2026.</li>
