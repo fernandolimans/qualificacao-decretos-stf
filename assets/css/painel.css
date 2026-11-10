@@ -1185,3 +1185,74 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .pv-topo { margin-top: 20px; }
 .pv-pergunta { margin-top: 32px; padding-top: 28px; }
 .pv-pergunta h2, .pv-71 { text-wrap: balance; }
+
+/* Metodologia em duas telas */
+#metodologia { --teal-50: #f0fdfa; --teal-700: #0f766e; }
+.mt-topo { margin-bottom: 14px; }
+.mt-desenho { margin-top: 8px; max-width: 1100px; font-size: 19px; line-height: 1.55; font-weight: 500; color: var(--s900); text-wrap: pretty; }
+.mt-lista { max-width: 760px; }
+.mt-lista .met-n { background: var(--s100); color: var(--s700); }
+.mt-lista button[aria-selected="true"] .met-n { background: rgb(255 255 255 / .16); color: #fff; }
+.mt-lista button:nth-child(1) b { }
+.met.mt { grid-template-columns: none; grid-template-areas: none; border: 0; background: transparent; box-shadow: none; padding: 0; }
+.js .met.mt.ativa { display: flex; flex-direction: column; gap: 14px; }
+.mt-card { border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 24px 28px; box-shadow: var(--sombra-sm); }
+.mt-dupla { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; }
+.mt-lead { font-size: 19px; line-height: 1.6; font-weight: 500; color: var(--s900); }
+.mt-p { margin-top: 16px; font-size: 16.5px; line-height: 1.7; color: var(--s600); }
+.mt-fluxo { display: flex; align-items: center; }
+.mt-funil { width: 100%; margin: 0; padding: 0; list-style: none; }
+.mt-etapa { display: grid; grid-template-columns: 120px 64px minmax(0, 1fr); gap: 14px; align-items: center; padding: 11px 0; }
+.mt-etapa + .mt-etapa { border-top: 1px solid var(--s100); }
+.mt-rot { font-size: 14px; font-weight: 600; letter-spacing: .02em; color: var(--s500); }
+.mt-etapa b { font-size: 30px; font-weight: 700; letter-spacing: -0.03em; text-align: right; color: var(--s950); font-variant-numeric: tabular-nums; }
+.mt-barra { display: block; height: 12px; border-radius: 6px; background: var(--s100); overflow: hidden; }
+.mt-barra i { display: block; width: var(--w); min-width: 5px; height: 100%; border-radius: 6px; background: var(--s400); }
+.mt-fim b { color: var(--ambar-600); }
+.mt-fim .mt-barra i { background: var(--ambar-600); }
+.mt-fim .mt-rot { color: var(--ambar-700); }
+.mt-faixa { padding: 20px 28px; }
+.mt-lead2 { margin-top: 8px; color: var(--s700); font-size: 17px; }
+.mt-tres { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, .8fr) minmax(0, 1.4fr); gap: 14px; }
+.mt-num { padding: 18px 22px; }
+.mt-num b { display: block; font-size: 38px; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; color: var(--s950); }
+.mt-num p { margin-top: 8px; font-size: 14.5px; line-height: 1.55; color: var(--s600); }
+.mt-cod { display: flex; align-items: center; padding: 18px 24px; }
+.mt-cod p { font-size: 15.5px; line-height: 1.65; color: var(--s700); }
+.mt-analise { border-radius: 20px; background: var(--s950); padding: 20px 28px 22px; }
+.mt-analise .olho { color: var(--s400); }
+.mt-planos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 32px; margin-top: 10px; }
+.mt-planos p { font-size: 15.5px; line-height: 1.65; color: var(--s200); }
+.mt-planos .rl { background: none; padding: 0; font-weight: 700; }
+.mt-planos .rl.obs { color: var(--ambar-200); }
+.mt-planos .rl.mer { color: #6ee7b7; }
+.mt-planos .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+.mt-rodape .met-refs { padding-top: 0; }
+.mt-desenho .rl { padding: 0 4px; }
+@media (prefers-reduced-motion: no-preference) {
+  .met.mt.entrou > * { animation: subir .5s ease both; }
+  .met.mt.entrou > *:nth-child(2) { animation-delay: .1s; }
+  .met.mt.entrou > *:nth-child(3) { animation-delay: .2s; }
+  .met.mt.entrou .mt-barra i { animation: pb-cresce .9s cubic-bezier(.2, .7, .2, 1) both; }
+  .met.mt.entrou .mt-etapa:nth-child(2) .mt-barra i { animation-delay: .15s; }
+  .met.mt.entrou .mt-etapa:nth-child(3) .mt-barra i { animation-delay: .3s; }
+  .met.mt.entrou .mt-etapa:nth-child(4) .mt-barra i { animation-delay: .45s; }
+}
+@media (max-width: 1000px) { .mt-dupla, .mt-tres, .mt-planos { grid-template-columns: 1fr; } .mt-planos { gap: 12px; } }
+@media (max-width: 600px) { .mt-card { padding: 20px; } .mt-desenho { font-size: 17px; } .mt-lead { font-size: 17px; } .mt-etapa { grid-template-columns: 96px 52px minmax(0, 1fr); gap: 10px; } .mt-etapa b { font-size: 24px; } }
+@media print { .js .met.mt { display: flex !important; flex-direction: column; gap: 12px; break-inside: avoid; } .met.mt > *, .mt-barra i { animation: none !important; opacity: 1 !important; } .mt-analise { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.mt-topo { margin-bottom: 12px; }
+.mt-desenho { margin-top: 6px; max-width: none; font-size: 17px; line-height: 1.55; }
+.mt-2.ativa { gap: 12px !important; }
+.mt-faixa { padding: 16px 26px; }
+.mt-faixa .mt-lead { font-size: 17.5px; line-height: 1.55; }
+.mt-faixa .mt-lead2 { margin-top: 6px; font-size: 16px; }
+.mt-num { padding: 16px 22px; }
+.mt-num b { font-size: 34px; }
+.mt-num p { margin-top: 6px; font-size: 14px; line-height: 1.5; }
+.mt-cod { padding: 16px 22px; }
+.mt-cod p { font-size: 15px; line-height: 1.6; }
+.mt-analise { padding: 16px 28px 18px; }
+.mt-planos { margin-top: 8px; }
+.mt-planos p { font-size: 15px; line-height: 1.6; }
+.mt-desenho { font-size: 16.5px; letter-spacing: -0.005em; }
