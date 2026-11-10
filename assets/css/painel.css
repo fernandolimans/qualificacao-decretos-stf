@@ -367,7 +367,8 @@ kbd { display: inline-block; min-width: 22px; border: 1px solid var(--s300); bor
   .capa-fotos figure:nth-child(-n+3) { grid-column: span 2; }
   .capa-fotos figure:nth-child(n+4) { grid-column: span 3; }
   .capa-fotos .frente { aspect-ratio: 4 / 3; -webkit-mask-image: none; mask-image: none; }
-  .capa-veu { bottom: auto; height: 240px; background: linear-gradient(0deg, rgba(2, 6, 23, 1) 0%, rgba(2, 6, 23, .2) 45%, rgba(2, 6, 23, .05) 100%); }
+  .capa-veu { display: none; }
+  .capa-fotos::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(2, 6, 23, 1) 0%, rgba(2, 6, 23, .25) 30%, rgba(2, 6, 23, .05) 100%); }
   .capa-conteudo { margin-top: -40px; padding: 0 20px 72px; }
   .capa .topo-pessoas { grid-template-columns: 1fr; }
   .capa .topo-acoes { flex-wrap: wrap; }
