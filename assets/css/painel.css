@@ -1323,3 +1323,55 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .mt-texto .mt-p { margin-top: 12px; border-top: 1px solid var(--s100); padding-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--s600); }
 .mt-fluxo { display: flex; align-items: center; }
 .mt-etapa { padding: 9px 0; }
+
+/* Metodologia em três telas: a 2 fica com o levantamento, a 3 com as técnicas */
+.mt-lista { max-width: 1000px; }
+.mt-2 .mt-linha { grid-template-columns: 260px minmax(0, 1fr); grid-template-areas: "faixa faixa" "num cod"; gap: 14px; }
+.mt-2 .mt-faixa { grid-area: faixa; padding: 22px 28px; }
+.mt-2 .mt-num { grid-area: num; padding: 22px 26px; }
+.mt-2 .mt-cod { grid-area: cod; padding: 22px 28px; }
+.mt-2 .mt-linha .mt-faixa .mt-lead { font-size: 19px; line-height: 1.55; }
+.mt-2 .mt-linha .mt-faixa .mt-lead2 { margin-top: 10px; font-size: 17px; }
+.mt-2 .mt-linha .mt-num b { font-size: 56px; }
+.mt-2 .mt-linha .mt-num p { margin-top: 8px; font-size: 15px; line-height: 1.55; }
+.mt-2 .mt-linha .mt-cod p { font-size: 16.5px; line-height: 1.65; }
+.mt-2 .mt-conf { margin-top: 12px; padding-top: 12px; }
+.mt-tabela-card { padding: 8px 24px 14px; }
+.mt-tabela { width: 100%; border-collapse: collapse; }
+.mt-tabela thead th { padding: 10px 12px 8px 0; border-bottom: 2px solid var(--s200); text-align: left; font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--s500); }
+.mt-tabela th[scope="row"] { width: 25%; padding: 8px 18px 8px 0; text-align: left; vertical-align: top; font-size: 15px; line-height: 1.4; font-weight: 600; color: var(--s950); }
+.mt-tabela th[scope="row"]::first-letter { text-transform: uppercase; }
+.mt-tabela td { padding: 8px 18px 8px 0; vertical-align: top; font-size: 14.5px; line-height: 1.5; color: var(--s700); }
+.mt-tabela td:nth-child(2) { width: 30%; color: var(--s900); font-weight: 500; }
+.mt-tabela tbody tr + tr td, .mt-tabela tbody tr + tr th[scope="row"] { border-top: 1px solid var(--s100); }
+.mt-grupo-tr th { padding: 12px 0 2px; text-align: left; font-size: 12.5px; font-weight: 700; letter-spacing: .04em; color: var(--ambar-700); }
+.mt-grupo-tr + tr th[scope="row"], .mt-grupo-tr + tr td { border-top: 0 !important; }
+.mt-limites2 { margin-top: 8px; border-top: 1px solid var(--s100); padding-top: 10px; font-size: 14px; line-height: 1.55; color: var(--s600); }
+@media (max-width: 800px) {
+  .mt-2 .mt-linha { grid-template-columns: 1fr; grid-template-areas: "faixa" "num" "cod"; }
+  .mt-tabela thead { display: none; }
+  .mt-tabela tr { display: block; padding: 8px 0; }
+  .mt-tabela th[scope="row"], .mt-tabela td { display: block; width: auto !important; padding: 2px 0; border: 0 !important; }
+}
+.mt-tecs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.mt-tec { border: 1px solid var(--s200); border-radius: 16px; background: #fff; padding: 12px 16px 13px; box-shadow: var(--sombra-sm); }
+.mt-tec-g { font-size: 11.5px; font-weight: 700; letter-spacing: .05em; color: var(--ambar-700); }
+.mt-tec h3 { margin-top: 3px; font-size: 15px; line-height: 1.35; font-weight: 700; color: var(--s950); }
+.mt-tec h3::first-letter { text-transform: uppercase; }
+.mt-tec-para { margin-top: 6px; font-size: 14px; line-height: 1.45; font-weight: 500; color: var(--s900); }
+.mt-tec-como { margin-top: 4px; font-size: 13.5px; line-height: 1.45; color: var(--s600); }
+.mt-tec b { margin-right: 4px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--s400); }
+.mt-tec-lim { display: flex; align-items: center; background: var(--s950); border-color: var(--s950); }
+.mt-tec-lim p { font-size: 14.5px; line-height: 1.55; color: var(--s200); }
+.mt-tec-lim .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+.mt-3.ativa { gap: 10px !important; }
+@media (max-width: 1000px) { .mt-tecs { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .mt-tecs { grid-template-columns: 1fr; } }
+#metodologia:has(.mt-3.ativa) .mt-desenho { display: none; }
+.mt-tecs { gap: 10px; }
+.mt-tec { padding: 11px 16px 12px; }
+.mt-tec-para { margin-top: 5px; }
+.mt-3.ativa { gap: 8px !important; }
+.mt-tecs { gap: 8px; }
+.mt-tec { padding: 10px 15px 11px; }
+.mt-tec-para, .mt-tec-como { line-height: 1.4; }
