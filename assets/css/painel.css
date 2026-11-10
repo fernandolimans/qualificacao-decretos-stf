@@ -1502,3 +1502,75 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .an-txt { font-size: 14px; line-height: 1.45; }
 .an-leitura { padding: 14px 26px; }
 .an-leitura p:first-child { font-size: 15px; }
+
+/* Resultados preliminares: uma tela, duas tabelas no formato da Metodologia */
+#resultados > .olho { margin-bottom: 12px; }
+.rs-grade { display: grid; grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1.15fr); gap: 12px; align-items: stretch; }
+.rs-card { display: flex; flex-direction: column; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 18px 24px 16px; box-shadow: var(--sombra-sm); }
+.rs-tab { width: 100%; margin-top: 6px; border-collapse: collapse; }
+.rs-tab th, .rs-tab td { padding: 10px 0; vertical-align: top; text-align: left; }
+.rs-tab tr + tr th, .rs-tab tr + tr td { border-top: 1px solid var(--s100); }
+.rs-tab th { width: 92px; padding-right: 14px; }
+.rs-num { display: block; font-size: 32px; line-height: 1; font-weight: 700; letter-spacing: -0.03em; color: var(--s950); font-variant-numeric: tabular-nums; }
+.rs-tab td p { font-size: 14.5px; line-height: 1.5; color: var(--s700); }
+.rs-tab td p b.num { color: var(--s950); }
+.rs-forte { font-size: 15.5px !important; line-height: 1.55 !important; font-weight: 500; color: var(--s900) !important; }
+.rs-barra { display: flex; gap: 2px; height: 10px; margin-top: 8px; border-radius: 5px; overflow: hidden; background: var(--s100); }
+.rs-barra i { display: block; width: var(--w); min-width: 4px; height: 100%; }
+.rs-mp, .rs-cinza, .rs-adi { background: var(--s400); }
+.rs-dec, .rs-ambar { background: var(--ambar-600); }
+.rs-adpf { background: var(--s700); }
+.rs-adc { background: var(--ambar-600); }
+.rs-vazio { background: transparent; }
+.rs-leg { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 5px; font-size: 12px; color: var(--s500); background: none !important; }
+.rs-leg span { display: inline-flex; align-items: center; gap: 4px; background: none !important; }
+.rs-leg span::before { content: ""; width: 8px; height: 8px; border-radius: 2px; }
+.rs-leg .rs-mp::before, .rs-leg .rs-adi::before { background: var(--s400); }
+.rs-leg .rs-dec::before, .rs-leg .rs-adc::before { background: var(--ambar-600); }
+.rs-leg .rs-adpf::before { background: var(--s700); }
+.rs-leg b { color: var(--s800); }
+.rs-ponte { margin-top: auto; border-top: 2px solid var(--ambar-600); padding-top: 12px; font-size: 16px; line-height: 1.5; font-weight: 600; letter-spacing: -0.01em; color: var(--s950); }
+.rs-climax { margin-top: 14px; border-radius: 20px; background: var(--s950); padding: 18px 28px; }
+.rs-curva { font-size: 17px; line-height: 1.5; font-weight: 600; color: #fff; }
+.rs-virada { margin-top: 6px; font-size: 15px; line-height: 1.5; color: var(--ambar-200); }
+.rs-climax .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+#resultados .mt-rodape { margin-top: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  #resultados.ativo .rs-grade > *, #resultados.ativo .rs-climax { animation: subir .55s ease both; }
+  #resultados.ativo .rs-grade > :nth-child(3) { animation-delay: .15s; }
+  #resultados.ativo .rs-climax { animation-delay: .35s; }
+  #resultados.ativo .rs-barra i { animation: pb-cresce 1s cubic-bezier(.2, .7, .2, 1) both; animation-delay: .3s; }
+}
+@media (max-width: 1000px) { .rs-grade { grid-template-columns: 1fr; } .rs-grade .an-seta { transform: rotate(90deg); } }
+@media (max-width: 600px) { .rs-card { padding: 16px 18px; } .rs-tab th { width: 70px; } .rs-num { font-size: 26px; } }
+@media print { #resultados .rs-grade > *, #resultados .rs-climax, #resultados .rs-barra i { animation: none !important; opacity: 1 !important; } .rs-climax, .rs-barra i { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+#resultados > .olho { display: none; }
+.rs-tab th, .rs-tab td { padding: 8px 0; }
+.rs-tab th { padding-right: 14px; }
+.rs-card { padding: 16px 24px 14px; }
+.rs-num { font-size: 30px; }
+.rs-climax { margin-top: 12px; padding: 16px 28px; }
+/* Resultados: o clímax abre a faixa escura */
+.rs-clim { font-size: 19px; line-height: 1.45; font-weight: 600; letter-spacing: -0.01em; color: #fff; text-wrap: pretty; }
+.rs-climax .rs-curva { margin-top: 10px; border-top: 1px solid rgb(255 255 255 / .12); padding-top: 10px; font-size: 14.5px; font-weight: 500; color: var(--s200); }
+.rs-climax .rs-virada { margin-top: 4px; font-size: 14px; }
+.rs-tab th, .rs-tab td { padding: 8px 0; }
+.rs-tab td p { font-size: 14px; line-height: 1.45; }
+@media (min-width: 1001px) { .rs-grade { grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1.2fr); } }
+.rs-leg { flex-wrap: wrap; }
+.rs-card .rs-ponte { font-size: 17px; line-height: 1.5; }
+.rs-climax { padding: 14px 28px; } .rs-tab th, .rs-tab td { padding: 7px 0; }
+
+.rs-forte { margin: 2px 0; border-left: 3px solid var(--ambar-600); padding-left: 12px; font-size: 16px !important; font-weight: 600 !important; color: var(--s950) !important; }
+.rs-lead { display: block; margin-bottom: 3px; font-size: 15px; font-weight: 600; color: var(--s950); }
+@media print { .met.mt-3 .dica-fonte[hidden] { display: none !important; } }
+.rs-tab th { width: 104px; padding-right: 12px; }
+.rs-num { font-size: 28px; }
+.rs-tab th, .rs-tab td { padding: 6px 0; }
+.rs-tab td p { font-size: 13.5px; }
+.rs-card { padding-top: 14px; padding-bottom: 12px; }
+.rs-climax { margin-top: 10px; padding: 13px 28px; }
+.rs-clim { font-size: 18px; }
+.rs-grade + .rs-climax, .rs-climax { margin-top: 8px; } .rs-card .rs-ponte { font-size: 16px; padding-top: 10px; }
+.rs-tab th, .rs-tab td { padding: 5px 0; } .rs-barra { margin-top: 5px; }
+@media print { #referencias .refs p { font-size: 12px; margin-bottom: 7px; line-height: 1.42; } }
