@@ -1173,3 +1173,15 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 @media (max-width: 1000px) { .pv { padding: 28px; } .pv-topo { grid-template-columns: 1fr; gap: 28px; } .pv-pergunta h2 { font-size: 28px; } }
 @media (max-width: 600px) { .pv { padding: 22px; border-radius: 20px; } .pv-num b { font-size: 48px; } .pv-71 { font-size: 22px; } .pv-temas { font-size: 17px; } .pv-pergunta h2 { font-size: 22px; } .pv-pergunta p { font-size: 18px; } }
 @media print { #problema .pv *, #problema .pv-barra i { animation: none !important; opacity: 1 !important; } .pv, .pv-barra { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.pv { padding: 30px 44px 30px; }
+.pv-topo { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 44px; margin-top: 14px; }
+.pv-num b { font-size: 64px; }
+.pv-71 { font-size: 27px; line-height: 1.32; }
+.pv-temas { margin-top: 16px; font-size: 19px; line-height: 1.6; }
+.pv-pergunta { margin-top: 24px; padding-top: 20px; }
+.pv-pergunta h2 { font-size: 34px; }
+.pv-pergunta p { margin-top: 8px; font-size: 22px; }
+.pv { padding: 38px 48px 40px; }
+.pv-topo { margin-top: 20px; }
+.pv-pergunta { margin-top: 32px; padding-top: 28px; }
+.pv-pergunta h2, .pv-71 { text-wrap: balance; }
