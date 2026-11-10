@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=17606f43">
+<link rel="stylesheet" href="assets/css/painel.css?v=a095aa23">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -230,21 +230,54 @@
         </div>
       </article>
       <article class="met mt mt-2" data-m="1">
-        <div class="mt-card mt-faixa">
-          <p class="mt-lead">Esse levantamento cruzou os painéis de dados abertos do STF com o acervo de decretos da Presidência da República e conferiu processo a processo, com leitura dos autos nos casos em que o inteiro teor está disponível.</p>
-          <p class="mt-lead mt-lead2">A unidade de análise é a ação, e a inclusão de cada uma depende do pedido da petição inicial, segundo regras escritas.</p>
-        </div>
-        <div class="mt-tres">
+        <div class="mt-linha">
           <div class="mt-card mt-num"><b>242</b><p>O universo final reúne 242 ações contra decretos presidenciais publicados entre 1988 e 2025.</p></div>
-          <div class="mt-card mt-num"><b>156.654</b><p>O acervo soma 4.966 arquivos e 156.654 páginas.</p></div>
-          <div class="mt-card mt-cod"><p>A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p></div>
+          <div class="mt-card mt-faixa">
+            <p class="mt-lead">Esse levantamento cruzou os painéis de dados abertos do STF com o acervo de decretos da Presidência da República e conferiu processo a processo, com leitura dos autos nos casos em que o inteiro teor está disponível.</p>
+            <p class="mt-lead2">A unidade de análise é a ação, e a inclusão de cada uma depende do pedido da petição inicial, segundo regras escritas.</p>
+          </div>
+          <div class="mt-card mt-cod">
+            <p>A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p>
+            <p class="mt-conf">A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>).</p>
+          </div>
         </div>
         <div class="mt-analise">
           <p class="olho">A estratégia de análise</p>
-          <div class="mt-planos">
-            <p>O plano descritivo apresentará a distribuição dos desfechos e as medidas de associação entre cada atributo e a resolução de mérito, para mostrar em que ponto o exame da constitucionalidade é interrompido.</p>
-            <p>No plano multivariado, de caráter exploratório, a regressão logística penalizada (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>), escolhida pelo número pequeno de casos e pela separação entre os desfechos, estimará esses atributos em conjunto em dois estágios, <span class="rl obs">a sobrevivência ao exame do relator</span> e <span class="rl mer">o exame do mérito pelo colegiado</span>.</p>
+          <div class="mt-tecnicas">
+            <div>
+              <p class="mt-grupo">O plano descritivo</p>
+              <ul>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-qui">teste qui-quadrado</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-qui">V de Cramér</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="mt-grupo">No plano multivariado</p>
+              <ul class="mt-sub">
+                <li class="mt-largo"><span class="pista" role="button" tabindex="0" data-dica="tq-firth">regressão logística penalizada</span> (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)<span class="mt-estagios">em dois estágios, <span class="rl obs">a sobrevivência ao exame do relator</span> e <span class="rl mer">o exame do mérito pelo colegiado</span></span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-ver">teste de razão de verossimilhanças</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-ver">intervalos de confiança por verossimilhança perfilada</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-ver">reamostragem</span> e <span class="pista" role="button" tabindex="0" data-dica="tq-ver">validação cruzada</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-prob">probabilidades preditas</span></li>
+              </ul>
+            </div>
+            <div>
+              <p class="mt-grupo">As outras três técnicas</p>
+              <ul>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-riscos">análise de riscos competitivos</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-ponto">busca do ponto de mudança</span></li>
+                <li><span class="pista" role="button" tabindex="0" data-dica="tq-tipo">tipologia dos fundamentos das petições iniciais</span></li>
+              </ul>
+            </div>
           </div>
+          <p class="mt-limites">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
+          <div class="dica-fonte" id="tq-qui" hidden>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</div>
+          <div class="dica-fonte" id="tq-firth" hidden>No plano multivariado, de caráter exploratório, a regressão logística penalizada (Firth, 1993), escolhida pelo número pequeno de casos e pela separação entre os desfechos, estimará esses atributos em conjunto em dois estágios, a sobrevivência ao exame do relator e o exame do mérito pelo colegiado.</div>
+          <div class="dica-fonte" id="tq-ver" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div>
+          <div class="dica-fonte" id="tq-prob" hidden>As probabilidades preditas traduzirão os coeficientes da regressão em perfis típicos de ação.</div>
+          <div class="dica-fonte" id="tq-riscos" hidden>A análise de riscos competitivos usará as datas de ajuizamento e de decisão para acompanhar cada ação ao longo do tempo e mostrará se a perda de objeto costuma chegar antes do julgamento do mérito.</div>
+          <div class="dica-fonte" id="tq-ponto" hidden>A busca do ponto de mudança dirá, a partir dos próprios dados, se o tratamento das ações mudou e em que momento, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</div>
+          <div class="dica-fonte" id="tq-tipo" hidden>A tipologia dos fundamentos das petições iniciais permitirá verificar se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa, outra das construções processuais que a hipótese aponta.</div>
         </div>
         <div class="mt-rodape">
         <footer class="met-refs">
@@ -517,6 +550,8 @@
       <p>DA ROS, Luciano. Poder de decreto e accountability horizontal: dinâmica institucional dos três poderes e medidas provisórias no Brasil pós-1988. <strong>Revista de Sociologia e Política</strong>, Curitiba, v. 16, n. 31, p. 143-160, nov. 2008. Disponível em: <a href="https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/">https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/</a>. Acesso em: 26 maio 2026.</p>
       <p>DIAS, Mateus Nunes dos Santos Ferreira. <strong>O controle de constitucionalidade de decretos presidenciais</strong>: sistematização e parâmetros. 2024. 168 f. Dissertação (Mestrado em Direito Constitucional) – Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2024. Disponível em: <a href="https://repositorio.idp.edu.br/handle/123456789/5089">https://repositorio.idp.edu.br/handle/123456789/5089</a>. Acesso em: 1 out. 2026.</p>
       <p>DORNELES, Leandro do Amaral D.; JAHN, Vitor Kaiser; SIMON, Pedro Fülber. Banalização das medidas provisórias como risco à democracia: análise constitucional das medidas provisórias editadas em matéria trabalhista no marco pós-reforma. <strong>Revista da Faculdade de Direito do Sul de Minas</strong>, Pouso Alegre, v. 37, n. 2, p. 107-127, jul./dez. 2021. Disponível em: <a href="https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413">https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413</a>. Acesso em: 26 maio 2026.</p>
+      <p>EPSTEIN, Lee; KING, Gary. The rules of inference. <strong>The University of Chicago Law Review</strong>, Chicago, v. 69, n. 1, p. 1-133, 2002. Disponível em: <a href="https://doi.org/10.2307/1600349">https://doi.org/10.2307/1600349</a>. Acesso em: 22 set. 2026.</p>
+      <p>EPSTEIN, Lee; MARTIN, Andrew D. <strong>An introduction to empirical legal research</strong>. Oxford: Oxford University Press, 2014.</p>
       <p>FIRTH, David. Bias reduction of maximum likelihood estimates. <strong>Biometrika</strong>, Oxford, v. 80, n. 1, p. 27-38, 1993. Disponível em: <a href="https://doi.org/10.1093/biomet/80.1.27">https://doi.org/10.1093/biomet/80.1.27</a>. Acesso em: 22 set. 2026.</p>
       <p>GASPARDO, Murilo; SANTOS, Letícia Rezende; MARCHIONI, Artur. Avaliação legislativa das reformas trabalhistas promovidas por meio de medidas provisórias no Governo Bolsonaro. <strong>Revista Direito GV</strong>, São Paulo, v. 19, e2323, 2023. DOI: 10.1590/2317-6172202323. Disponível em: <a href="https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/">https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/</a>. Acesso em: 26 maio 2026.</p>
       <p>GONTIJO, Ludmila M. Carabeth. A medida provisória e o Estado Democrático de Direito: o controle de constitucionalidade dos requisitos de relevância e urgência. <strong>Revista do Centro Acadêmico Afonso Pena</strong>, Belo Horizonte, v. 11, p. 203-240, 2005. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/rvadctoao11&amp;amp;id=211">https://heinonline.org/HOL/Page?handle=hein.journals/rvadctoao11&amp;id=211</a>. Acesso em: 3 jun. 2026.</p>
