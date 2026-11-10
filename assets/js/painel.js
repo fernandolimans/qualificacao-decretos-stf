@@ -53,7 +53,7 @@
     tEst.push(setTimeout(function () { est.forEach(function (o) { o.classList.remove("ativo"); }); }, 500 + est.length * 750 + 400));
   }
 
-  function mostrar(i, rolar) {
+  function mostrar(i, rolar, direcao) {
     i = Math.max(0, Math.min(total - 1, i));
     if (i === atual) return;
     atual = i;
@@ -69,6 +69,8 @@
     p.querySelectorAll("[data-count]").forEach(contar);
     if (p.id === "plano") percorrerEstagios();
     if (p.id === "retrato") animarGrafico();
+    var ctl = window.etapasPainel && window.etapasPainel[p.id];
+    if (ctl) ctl.entrar(direcao || 0);
     contador.textContent = pad(i + 1) + " / " + pad(total);
     btnProx.disabled = i === total - 1;
     var aba = abas[i];
@@ -87,11 +89,21 @@
     if (Math.abs(window.scrollY - y) < 2) return;
     window.scrollTo({ top: y, behavior: suave && !reduzir ? "smooth" : "instant" });
   }
-  function avancar() { if (naCapa()) irPara(topoAbas(), true); else mostrar(atual + 1, true); }
+  function etapas() { return window.etapasPainel && window.etapasPainel[paineis[atual].id]; }
+  function avancar() {
+    if (naCapa()) { irPara(topoAbas(), true); return; }
+    var ctl = etapas();
+    if (ctl && ctl.avancar()) { irPara(topoAbas(), false); return; }
+    mostrar(atual + 1, true, 1);
+  }
   function voltar() {
     if (naCapa()) return;
     if (atual === 0) { irPara(0, true); if (history.replaceState) history.replaceState(null, "", location.pathname + location.search); }
-    else mostrar(atual - 1, true);
+    else {
+      var ctl = etapas();
+      if (ctl && ctl.voltar()) { irPara(topoAbas(), false); return; }
+      mostrar(atual - 1, true, -1);
+    }
   }
   btnAnt.addEventListener("click", voltar);
   btnProx.addEventListener("click", avancar);

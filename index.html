@@ -165,122 +165,222 @@
 
 <!-- Metodologia -->
 <section class="painel" id="metodologia" data-rotulo="Metodologia" data-icone="flask-conical" role="tabpanel">
-  <div class="painel-topo">
-    <p class="olho">Metodologia</p>
-    <h2>A unidade de análise é a ação</h2>
-    <p class="lead">O universo foi montado pelo cruzamento entre os painéis de dados abertos do Supremo e o acervo de decretos da Presidência da República, com conferência manual de cada ação, que é a unidade de análise.<sup class="nr"><a href="#nota-16">16</a></sup></p>
-  </div>
-
-  <div class="grade g3">
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-library-big"/></svg></span><div><p class="olho">Seção 2</p><h3>Revisão sistemática da literatura</h3><p>Conduzida segundo o protocolo PRISMA 2020 (Page et al., 2021), com buscas em cinco bases principais e duas bases suplementares. Revisão configurativa (Gough; Thomas; Oliver, 2012).</p></div></div>
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-database"/></svg></span><div><p class="olho">Seção 3.1</p><h3>A construção do banco de dados</h3><p>Cruzamento dos painéis do Corte Aberta com o acervo de decretos da Presidência da República e conferência manual de cada ação, com leitura dos autos.</p></div></div>
-    <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-sigma"/></svg></span><div><p class="olho">Seção 3.2</p><h3>A estratégia de análise</h3><p>Plano descritivo, com medidas de associação, e plano multivariado, de caráter exploratório, em dois estágios, a sobrevivência ao exame do relator e o exame do mérito pelo colegiado.</p></div></div>
-  </div>
-
-  <div class="card">
-    <h3 class="card-t">O universo final reúne 242 ações contra decretos presidenciais publicados entre 1988 e 2025</h3>
-    <div class="conta" aria-label="232 da base inicial, mais 16 identificadas depois, menos 6 excluídas, igual a 242">
-      <span class="parcela"><b>232</b>da base inicial</span><span class="op">+</span>
-      <span class="parcela"><b>16</b>identificadas durante a análise processual e da literatura</span><span class="op">−</span>
-      <span class="parcela"><b>6</b>excluídas, cinco da base inicial e uma das identificadas depois</span><span class="op">=</span>
-      <span class="parcela total"><b>242</b>227 ações da base inicial e 15 adicionais</span>
+  <div class="painel-topo topo-com-sub">
+    <div>
+      <p class="olho">Metodologia</p>
+      <h2>A unidade de análise é a ação</h2>
     </div>
-    <p class="card-sub" style="margin-top:14px">A última extração de planilhas dos painéis do Corte Aberta aconteceu em 25 de outubro de 2026, com a situação processual reconstituída até 30 de junho de 2026.<sup class="nr"><a href="#nota-15">15</a></sup></p>
+    <div class="sub-abas" role="tablist" aria-label="Partes da metodologia">
+      <button type="button" role="tab" data-sub="0"><svg class="ic"><use href="#i-layers"/></svg>Visão geral</button>
+      <button type="button" role="tab" data-sub="1"><svg class="ic"><use href="#i-milestone"/></svg>Passo a passo</button>
+      <button type="button" role="tab" data-sub="2"><svg class="ic"><use href="#i-list-filter"/></svg>Regras e falhas</button>
+      <button type="button" role="tab" data-sub="3"><svg class="ic"><use href="#i-sigma"/></svg>Técnicas</button>
+    </div>
   </div>
 
-  <h3 class="sub-secao"><span>3.1</span> A construção do banco de dados</h3>
-  <div class="card">
-    <p class="olho" style="margin-bottom:16px">Passo a passo</p>
-    <ol class="pap">
-      <li><span class="pap-data">9 jun. 2026</span><h4>Três painéis do <a href="https://transparencia.stf.jus.br/extensions/corte_aberta/corte_aberta.html">Corte Aberta</a></h4><p>O painel de decisões tinha 7.612 ações de controle concentrado, o de acervo tinha 3.028 e trazia o campo de legislação, e o de legitimados trazia as partes de cada processo.</p></li>
-      <li><span class="pap-data">14 jun.</span><h4>Decretos da Presidência da República</h4><p>17.338 decretos de 1988 a 2026 baixados do <a href="https://www.planalto.gov.br/ccivil_03/">sítio da Presidência da República</a>.</p></li>
-      <li><span class="pap-data">18 jul.</span><h4>União dos painéis</h4><p>Uma rotina em linguagem de programação R juntou os dois primeiros numa planilha de 7.991 ações e pôs nela as partes de cada uma. Dessas, 4.963 estavam só no painel de decisões e por isso vieram sem o campo de legislação.</p></li>
-      <li><span class="pap-data">19 jul.</span><h4>Cruzamento com o acervo de decretos</h4><p>Outra rotina tirou do campo de legislação, e do campo de assunto quando ele faltava, o número de cada decreto citado e o procurou entre os decretos baixados. A rotina escreveu os números do mesmo jeito nas duas listas, para que dois decretos diferentes não passassem por um só. Ela também marcou as 2.234 ações que tinham no polo passivo o Presidente ou a Presidência da República, a União, a Advocacia-Geral ou a Controladoria-Geral da União, um ministério ou um ministro de Estado, e só essas seguiram. As ADCs propostas pelo Presidente da República foram conferidas à parte, porque nelas ele é o autor, e três delas, as ADC nº 84, 85 e 96, têm decreto por objeto.</p></li>
-      <li><span class="pap-data">24 jul.</span><h4>Começa a codificação das variáveis</h4></li>
-      <li><span class="pap-data">16 set.</span><h4>Segunda triagem e conferência manual</h4><p>A conferência das ações uma a uma confirmou 223. Em 152, a rotina tinha achado o decreto, e nas outras 71 ele só apareceu na leitura. A leitura dos autos acrescentou as ADPF nº 964 a 967, contra um decreto sem número que a rotina tinha classificado como outro tipo de ato. A rotina foi então corrigida e achou mais cinco ações, também conferidas nos autos, o que levou a base inicial a 232.<sup class="nr"><a href="#nota-17">17</a></sup></p></li>
-      <li><span class="pap-data">Depois</span><h4>Dezesseis ações não constavam da base inicial</h4><p>Oito vieram da comparação com o estudo de Dias (2024), duas de notas do Portal da Legislação que associam ações a decretos, cinco de referências a ações correlatas nos autos já reunidos e duas do campo “Legislação” do Corte Aberta. A ADPF 640 apareceu na comparação com Dias (2024) e numa dessas notas, por isso os caminhos somam 17 para 16 ações. Todas foram conferidas nos registros e documentos oficiais do STF, e 15 cumpriram as regras de inclusão.</p></li>
-      <li><span class="pap-data">25 out. 2026</span><h4>Bases inteiras do Corte Aberta</h4><p>A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.<sup class="nr"><a href="#nota-16">16</a></sup></p></li>
-      <li><span class="pap-data">Autos</span><h4>Obtidos à mão, um a um, no portal do STF</h4><p>Peça por peça nas ações eletrônicas ou em pacote único na área de peticionamento, sem o uso de coletor automático. Cada arquivo foi registrado em inventário, com o número de páginas e a indicação de haver ou não texto pesquisável, e as páginas que eram apenas imagem passaram por reconhecimento óptico de caracteres configurado para o português, com o original preservado ao lado da versão pesquisável. O acervo soma 4.966 arquivos e 156.654 páginas.<sup class="nr"><a href="#nota-20">20</a></sup></p></li>
-      <li><span class="pap-data">Codificação</span><h4>A partir da fonte mais completa disponível</h4><p>Que pode ser o inteiro teor dos autos, as peças avulsas ou os dados do painel com a decisão publicada. A base separa as informações em quatro estratos, e em todos três colunas de controle indicam a origem do dado, o estado da coleta e o nível de evidência. A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam Epstein e Martin (2014).<sup class="nr"><a href="#nota-21">21</a></sup></p></li>
-    </ol>
-  </div>
+  <div class="sub-telas">
 
-  <div class="grade g2">
-    <div class="card">
-      <h3 class="card-t">A inclusão segue as regras a seguir, escritas e registradas</h3>
-      <ol class="regras">
-        <li><span>O ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025.</span></li>
-        <li><span>A ação deve ser ADI, Ação Direta de Inconstitucionalidade por Omissão (ADO), ADC ou ADPF ajuizada até 31 de dezembro de 2025, com a situação processual apurada em 30 de junho de 2026, conforme os metadados das planilhas extraídas em 25 de outubro de 2026.</span></li>
-        <li><span>O decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte. Não basta o decreto citado como parâmetro ou apenas mencionado.</span></li>
-        <li><span>O Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor.</span></li>
+    <!-- 1. Visão geral -->
+    <div class="sub-tela" data-titulo="Visão geral">
+      <p class="lead">O universo foi montado pelo cruzamento entre os painéis de dados abertos do Supremo e o acervo de decretos da Presidência da República, com conferência manual de cada ação, que é a unidade de análise.<sup class="nr"><a href="#nota-16">16</a></sup></p>
+      <div class="grade g3" style="margin-top:14px">
+        <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-library-big"/></svg></span><div><p class="olho">Seção 2</p><h3>Revisão sistemática da literatura</h3><p>Conduzida segundo o protocolo PRISMA 2020 (Page et al., 2021), com buscas em cinco bases principais e duas bases suplementares. Revisão configurativa (Gough; Thomas; Oliver, 2012).</p></div></div>
+        <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-database"/></svg></span><div><p class="olho">Seção 3.1</p><h3>A construção do banco de dados</h3><p>Cruzamento dos painéis do Corte Aberta com o acervo de decretos da Presidência da República e conferência manual de cada ação, com leitura dos autos.</p></div></div>
+        <div class="card destaque"><span class="chip-ic escuro"><svg class="ic-5"><use href="#i-sigma"/></svg></span><div><p class="olho">Seção 3.2</p><h3>A estratégia de análise</h3><p>Plano descritivo, com medidas de associação, e plano multivariado, de caráter exploratório, em dois estágios, a sobrevivência ao exame do relator e o exame do mérito pelo colegiado.</p></div></div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h3 class="card-t">O universo final reúne 242 ações contra decretos presidenciais publicados entre 1988 e 2025</h3>
+        <div class="conta" aria-label="232 da base inicial, mais 16 identificadas depois, menos 6 excluídas, igual a 242">
+          <span class="parcela"><b data-count="232">232</b>da base inicial</span><span class="op">+</span>
+          <span class="parcela"><b data-count="16">16</b>identificadas durante a análise processual e da literatura</span><span class="op">−</span>
+          <span class="parcela"><b data-count="6">6</b>excluídas, cinco da base inicial e uma das identificadas depois</span><span class="op">=</span>
+          <span class="parcela total"><b data-count="242">242</b>227 ações da base inicial e 15 adicionais</span>
+        </div>
+        <p class="card-sub" style="margin-top:12px">A última extração de planilhas dos painéis do Corte Aberta aconteceu em 25 de outubro de 2026, com a situação processual reconstituída até 30 de junho de 2026.<sup class="nr"><a href="#nota-15">15</a></sup></p>
+      </div>
+    </div>
+
+    <!-- 2. Passo a passo -->
+    <div class="sub-tela" data-titulo="Passo a passo">
+      <ol class="linha-passos" aria-label="Passos da construção do banco de dados">
+        <li><button type="button" data-k="0"><span class="lp-n">1</span><span class="lp-d">9 jun.</span></button></li>
+        <li><button type="button" data-k="1"><span class="lp-n">2</span><span class="lp-d">14 jun.</span></button></li>
+        <li><button type="button" data-k="2"><span class="lp-n">3</span><span class="lp-d">18 jul.</span></button></li>
+        <li><button type="button" data-k="3"><span class="lp-n">4</span><span class="lp-d">19 jul.</span></button></li>
+        <li><button type="button" data-k="4"><span class="lp-n">5</span><span class="lp-d">24 jul.</span></button></li>
+        <li><button type="button" data-k="5"><span class="lp-n">6</span><span class="lp-d">16 set.</span></button></li>
+        <li><button type="button" data-k="6"><span class="lp-n">7</span><span class="lp-d">Depois</span></button></li>
+        <li><button type="button" data-k="7"><span class="lp-n">8</span><span class="lp-d">25 out.</span></button></li>
+        <li><button type="button" data-k="8"><span class="lp-n">9</span><span class="lp-d">Autos</span></button></li>
+        <li><button type="button" data-k="9"><span class="lp-n">10</span><span class="lp-d">Universo</span></button></li>
       </ol>
-      <p class="nota" style="margin-top:14px">Entram no universo final todas as ações confirmadas pelas regras de inclusão, tenham ou não o inteiro teor disponível.</p>
+      <div class="passos-det">
+        <article class="pd" data-k="0">
+          <div class="pd-num"><b data-alvo="7612">7.612</b><span>ações de controle concentrado no painel de decisões</span><small>3.028 no painel de acervo, que trazia o campo de legislação</small></div>
+          <div class="pd-txt"><p class="olho">9 de junho de 2026 · passo 1 de 10</p><h4>Três painéis do <a href="https://transparencia.stf.jus.br/extensions/corte_aberta/corte_aberta.html">Corte Aberta</a></h4><p>O painel de decisões tinha 7.612 ações de controle concentrado, o de acervo tinha 3.028 e trazia o campo de legislação, e o de legitimados trazia as partes de cada processo.</p></div>
+        </article>
+        <article class="pd" data-k="1">
+          <div class="pd-num"><b data-alvo="17338">17.338</b><span>decretos de 1988 a 2026</span></div>
+          <div class="pd-txt"><p class="olho">14 de junho · passo 2 de 10</p><h4>Decretos da Presidência da República</h4><p>Os 17.338 decretos de 1988 a 2026 foram baixados do <a href="https://www.planalto.gov.br/ccivil_03/">sítio da Presidência da República</a>.</p></div>
+        </article>
+        <article class="pd" data-k="2">
+          <div class="pd-num"><b data-alvo="7991">7.991</b><span>ações numa só planilha</span><small>4.963 só no painel de decisões, sem o campo de legislação</small></div>
+          <div class="pd-txt"><p class="olho">18 de julho · passo 3 de 10</p><h4>União dos painéis</h4><p>Uma rotina em linguagem de programação R juntou os dois primeiros numa planilha de 7.991 ações e pôs nela as partes de cada uma. Dessas, 4.963 estavam só no painel de decisões e por isso vieram sem o campo de legislação.</p></div>
+        </article>
+        <article class="pd" data-k="3">
+          <div class="pd-num"><b data-alvo="2234">2.234</b><span>ações com o Executivo federal no polo passivo</span><small>ADC nº 84, 85 e 96 conferidas à parte</small></div>
+          <div class="pd-txt"><p class="olho">19 de julho · passo 4 de 10</p><h4>Cruzamento com o acervo de decretos</h4><p>Outra rotina tirou do campo de legislação, e do campo de assunto quando ele faltava, o número de cada decreto citado e o procurou entre os decretos baixados, escrito do mesmo jeito nas duas listas, para que dois decretos diferentes não passassem por um só. Ela também marcou as 2.234 ações que tinham no polo passivo o Presidente ou a Presidência da República, a União, a Advocacia-Geral ou a Controladoria-Geral da União, um ministério ou um ministro de Estado, e só essas seguiram. As ADCs propostas pelo Presidente da República foram conferidas à parte, porque nelas ele é o autor.</p></div>
+        </article>
+        <article class="pd" data-k="4">
+          <div class="pd-num"><b data-alvo="28">28</b><span>colunas, uma linha por ação, no estrato das variáveis codificadas</span></div>
+          <div class="pd-txt"><p class="olho">24 de julho · passo 5 de 10</p><h4>Começa a codificação das variáveis</h4><p>A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p></div>
+        </article>
+        <article class="pd" data-k="5">
+          <div class="pd-num"><b data-alvo="232">232</b><span>ações na base inicial</span><small>223 confirmadas uma a uma, 152 achadas pela rotina e 71 só na leitura</small></div>
+          <div class="pd-txt"><p class="olho">16 de setembro · passo 6 de 10</p><h4>Segunda triagem e conferência manual</h4><p>A leitura dos autos acrescentou as ADPF nº 964 a 967, contra um decreto sem número que a rotina tinha classificado como outro tipo de ato. A rotina foi então corrigida e achou mais cinco ações, também conferidas nos autos, o que levou a base inicial a 232.<sup class="nr"><a href="#nota-17">17</a></sup></p></div>
+        </article>
+        <article class="pd" data-k="6">
+          <div class="pd-num"><b data-alvo="16">16</b><span>ações que não constavam da base inicial</span><small>15 cumpriram as regras de inclusão</small></div>
+          <div class="pd-txt"><p class="olho">Depois da base inicial · passo 7 de 10</p><h4>Dezesseis ações identificadas depois</h4><p>Oito vieram da comparação com o estudo de Dias (2024), duas de notas do Portal da Legislação que associam ações a decretos, cinco de referências a ações correlatas nos autos já reunidos e duas do campo “Legislação” do Corte Aberta. A ADPF 640 apareceu em dois desses caminhos. Todas foram conferidas nos registros e documentos oficiais do STF.</p>
+            <details class="dobra"><summary>Por que Dias (2024) não entrou na revisão sistemática</summary><p>O seu registro no Catálogo de Teses e Dissertações da CAPES fica fora dos filtros por tipo, ano e área que a busca aplicou<sup class="nr"><a href="#nota-18">18</a></sup>, e o arquivo depositado traz só os elementos pré-textuais, a introdução e as referências. O estudo mede, ainda, objeto distinto, pois toma por unidade o acórdão do Plenário.</p></details>
+          </div>
+        </article>
+        <article class="pd" data-k="7">
+          <div class="pd-num"><b data-alvo="8712">8.712</b><span>processos nas bases inteiras do Corte Aberta</span></div>
+          <div class="pd-txt"><p class="olho">25 de outubro de 2026 · passo 8 de 10</p><h4>Bases inteiras do Corte Aberta</h4><p>A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.<sup class="nr"><a href="#nota-16">16</a></sup> A situação processual foi reconstituída até 30 de junho de 2026.<sup class="nr"><a href="#nota-15">15</a></sup></p></div>
+        </article>
+        <article class="pd" data-k="8">
+          <div class="pd-num"><b data-alvo="4966">4.966</b><span>arquivos</span><small>156.654 páginas</small></div>
+          <div class="pd-txt"><p class="olho">Autos · passo 9 de 10</p><h4>Obtidos à mão, um a um, no portal do STF</h4><p>Peça por peça nas ações eletrônicas ou em pacote único na área de peticionamento, sem o uso de coletor automático. Cada arquivo foi registrado em inventário, e as páginas que eram apenas imagem passaram por reconhecimento óptico de caracteres configurado para o português, com o original preservado ao lado da versão pesquisável.<sup class="nr"><a href="#nota-20">20</a></sup></p></div>
+        </article>
+        <article class="pd" data-k="9">
+          <div class="pd-num final"><b data-alvo="242">242</b><span>ações no universo final</span><small>227 da base inicial e 15 adicionais</small></div>
+          <div class="pd-txt"><p class="olho">Universo final · passo 10 de 10</p><h4>Codificadas a partir da fonte mais completa disponível</h4><p>Que pode ser o inteiro teor dos autos, as peças avulsas ou os dados do painel com a decisão publicada. A planilha de seleção confirma as 242 ações,<sup class="nr"><a href="#nota-21">21</a></sup> mas a codificação ainda não está concluída em todas. A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam Epstein e Martin (2014).</p></div>
+        </article>
+      </div>
+      <p class="dica-teclado"><kbd>→</kbd> avança um passo</p>
     </div>
-    <div class="card">
-      <h3 class="card-t">O painel Corte Aberta serviu para encontrar ações, e a decisão de incluir vem dos autos</h3>
-      <ul class="falhas">
-        <li><b>O recorte temporal</b><span>As bases tendem a priorizar os processos “finalizados a partir do ano 2000”, aviso que está no dicionário de dados do STF<sup class="nr"><a href="#nota-19">19</a></sup> e na ajuda do painel, mas não nas planilhas. Até a última ação de cada classe ajuizada em 2025, faltam 894 números, 806 deles de ações que, pela numeração, devem ter terminado antes de 2000, e 88 sem motivo declarado.</span></li>
-        <li><b>O campo vazio</b><span>O campo de legislação lista as “normas relacionadas ao processo”, sem separar objeto, parâmetro e norma citada, e na exportação de junho de 2026 vinha preenchido em só 697 dos 3.028 processos do acervo.</span></li>
-        <li><b>O rótulo errado</b><span>Na ADI nº 5.915, o rótulo da espécie normativa apresenta o Decreto nº 9.288/2018 como “Decreto-Lei nº 9288 de 2018”, e por isso a ação ficou fora da triagem original.</span></li>
-        <li><b>O polo</b><span>O filtro de polo deixou de fora, até outubro, a ADPF nº 647, que impugna o Decreto nº 3.048/1999 e tem no polo o Conselho Administrativo de Recursos Fiscais (CARF) e a Receita Federal.</span></li>
-        <li><b>A decisão</b><span>O subgrupo “Decisão Final” inclui decisões que não encerram o processo, como nas ADI nº 4.447 e 6.341, ainda em tramitação em 30 de junho de 2026. A situação processual é apurada nos atos processuais, pelo trânsito em julgado ou pela baixa dos autos.</span></li>
-      </ul>
-      <p class="nota" style="margin-top:14px">Sob as regras, nenhuma dessas falhas basta para fazer entrar uma ação, porque a inclusão depende do pedido e das partes na petição inicial. O banco tampouco se limita à extração oficial do STF, de onde constam 238 das 242 ações. As ADI nº 309, 996, 1.253 e 1.544, ausentes dessa extração e decididas nos anos 1990, foram identificadas em referências processuais e confirmadas nos registros e peças oficiais do STF.</p>
-    </div>
-  </div>
-  <p class="nota">Esse trabalho de Dias (2024) escapou à revisão sistemática porque o seu registro no Catálogo de Teses e Dissertações da CAPES fica fora dos filtros por tipo, ano e área que a busca aplicou<sup class="nr"><a href="#nota-18">18</a></sup> e porque o arquivo depositado traz só os elementos pré-textuais, a introdução e as referências, o que impediria a avaliação em texto integral exigida pelo protocolo. O estudo mede, ainda, objeto distinto, pois toma por unidade o acórdão do Plenário e exclui as ações extintas por inépcia ou por ilegitimidade ativa.</p>
 
-  <h3 class="sub-secao"><span>3.2</span> A estratégia de análise</h3>
-  <div class="card tabela-card">
-    <p class="olho" style="margin-bottom:12px">Cada técnica incide sobre um recorte próprio da base</p>
-    <div class="tabela-rolagem">
-      <table class="tecnicas">
-        <thead><tr><th>Técnica</th><th>O que responde</th><th>Recorte da base</th></tr></thead>
-        <tbody>
-          <tr><td><b>Teste qui-quadrado e V de Cramér</b><small>Plano descritivo</small></td><td>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</td><td>As ações decididas até 30 de junho de 2026, com frequências recalculadas sobre o universo final.</td></tr>
-          <tr><td><b>Regressão logística penalizada (Firth, 1993)</b><small>Primeiro estágio</small></td><td>A sobrevivência ao exame do relator.</td><td>Exclui as ADC, por terem poucos casos, e as ações em que o tipo de ofensa não se aplica.</td></tr>
-          <tr><td><b>Regressão logística penalizada (Firth, 1993)</b><small>Segundo estágio</small></td><td>O exame do mérito pelo colegiado.</td><td>Restrita às ações decididas pelo colegiado.</td></tr>
-          <tr><td><b>Riscos competitivos</b></td><td>Se a perda de objeto costuma chegar antes do julgamento do mérito. Isso testa a ideia de que o decreto precisa continuar em vigor até ser julgado.</td><td rowspan="2">As datas de ajuizamento e de decisão de todas as ações em que elas são conhecidas, inclusive das que seguem em tramitação, tratadas como ainda sem desfecho na data de corte.</td></tr>
-          <tr><td><b>Ponto de mudança</b></td><td>Se o tratamento das ações mudou e em que momento, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</td></tr>
-          <tr><td><b>Tipologia dos fundamentos</b></td><td>Se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa.</td><td>As petições iniciais.</td></tr>
-        </tbody>
-      </table>
+    <!-- 3. Regras e falhas -->
+    <div class="sub-tela" data-titulo="Regras e falhas">
+      <div class="grade g2 rf-grade">
+        <div class="card">
+          <h3 class="card-t">A inclusão segue as regras a seguir, escritas e registradas</h3>
+          <ol class="regras">
+            <li><span>O ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025.</span></li>
+            <li><span>A ação deve ser ADI, Ação Direta de Inconstitucionalidade por Omissão (ADO), ADC ou ADPF ajuizada até 31 de dezembro de 2025, com a situação processual apurada em 30 de junho de 2026.</span></li>
+            <li><span>O decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte. Não basta o decreto citado como parâmetro ou apenas mencionado.</span></li>
+            <li><span>O Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor.</span></li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3 class="card-t">O Corte Aberta serviu para encontrar ações, e a decisão de incluir vem dos autos</h3>
+          <div class="fichas" role="tablist" aria-label="Falhas dos campos exportados">
+            <button type="button" data-f="0">O recorte temporal</button>
+            <button type="button" data-f="1">O campo vazio</button>
+            <button type="button" data-f="2">O rótulo errado</button>
+            <button type="button" data-f="3">O polo</button>
+            <button type="button" data-f="4">A decisão</button>
+          </div>
+          <div class="fichas-det">
+            <div class="fd" data-f="0"><b>O recorte temporal</b><p>As bases tendem a priorizar os processos “finalizados a partir do ano 2000”, aviso que está no dicionário de dados do STF<sup class="nr"><a href="#nota-19">19</a></sup> e na ajuda do painel, mas não nas planilhas. Até a última ação de cada classe ajuizada em 2025, faltam 894 números, 806 deles de ações que, pela numeração, devem ter terminado antes de 2000, e 88 sem motivo declarado.</p></div>
+            <div class="fd" data-f="1"><b>O campo vazio</b><p>O campo de legislação lista as “normas relacionadas ao processo”, sem separar objeto, parâmetro e norma citada, e na exportação de junho de 2026 vinha preenchido em só 697 dos 3.028 processos do acervo. Como procurar número em um processo que impugna um decreto não numerado?</p></div>
+            <div class="fd" data-f="2"><b>O rótulo errado</b><p>Na ADI nº 5.915, o rótulo da espécie normativa apresenta o Decreto nº 9.288/2018 como “Decreto-Lei nº 9288 de 2018”, e por isso a ação ficou fora da triagem original.</p></div>
+            <div class="fd" data-f="3"><b>O polo</b><p>O polo passivo registra quem o autor indicou, que nem sempre é quem editou o ato. O filtro de polo deixou de fora, até outubro, a ADPF nº 647, que impugna o Decreto nº 3.048/1999 e tem no polo o Conselho Administrativo de Recursos Fiscais (CARF) e a Receita Federal.</p></div>
+            <div class="fd" data-f="4"><b>A decisão</b><p>O subgrupo “Decisão Final” inclui decisões que não encerram o processo, como nas ADI nº 4.447 e 6.341, ainda em tramitação em 30 de junho de 2026. Por isso a situação processual é apurada nos atos processuais, pelo trânsito em julgado ou pela baixa dos autos.</p></div>
+          </div>
+        </div>
+      </div>
+      <p class="nota" style="margin-top:16px">Sob as regras, nenhuma dessas falhas basta para fazer entrar uma ação, porque a inclusão depende do pedido e das partes na petição inicial. O banco tampouco se limita à extração oficial do STF, de onde constam 238 das 242 ações. As ADI nº 309, 996, 1.253 e 1.544, ausentes dessa extração, foram identificadas em referências processuais.</p>
     </div>
-  </div>
-  <div class="grade g2">
-    <div class="card">
-      <h3 class="card-t">Na regressão</h3>
-      <ul class="lista-suave">
-        <li><svg class="ic"><use href="#i-check"/></svg><span>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>Os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>A reamostragem verificará se os resultados se mantêm quando a amostra varia.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>A validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span>As probabilidades preditas traduzirão os coeficientes da regressão em perfis típicos de ação.</span></li>
-      </ul>
+
+    <!-- 4. Técnicas -->
+    <div class="sub-tela" data-titulo="Técnicas">
+      <div class="tec-grade">
+        <div class="tec-lista" role="tablist" aria-label="Técnicas de análise">
+          <button type="button" data-t="0"><b>Qui-quadrado e V de Cramér</b><span>Plano descritivo</span></button>
+          <button type="button" data-t="1"><b>Regressão logística penalizada</b><span>Primeiro estágio</span></button>
+          <button type="button" data-t="2"><b>Regressão logística penalizada</b><span>Segundo estágio</span></button>
+          <button type="button" data-t="3"><b>Riscos competitivos</b><span>Ao longo do tempo</span></button>
+          <button type="button" data-t="4"><b>Ponto de mudança</b><span>Quando o tratamento mudou</span></button>
+          <button type="button" data-t="5"><b>Tipologia dos fundamentos</b><span>Petições iniciais</span></button>
+          <button type="button" data-t="6"><b>Verificações da regressão</b><span>Incerteza e acerto</span></button>
+          <button type="button" data-t="7"><b>Ferramentas e limites</b><span>Python, R e alcance</span></button>
+        </div>
+        <div class="card tec-det">
+          <div class="td" data-t="0" data-estagio="">
+            <h3 class="card-t">Teste qui-quadrado e V de Cramér</h3>
+            <dl><dt>O que responde</dt><dd>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação, para mostrar em que ponto o exame da constitucionalidade é interrompido.</dd>
+            <dt>Recorte da base</dt><dd>As ações decididas até 30 de junho de 2026, com frequências recalculadas sobre o universo final.</dd></dl>
+          </div>
+          <div class="td" data-t="1" data-estagio="1">
+            <h3 class="card-t">Regressão logística penalizada · primeiro estágio</h3>
+            <dl><dt>O que responde</dt><dd>A sobrevivência ao exame do relator. A técnica foi escolhida pelo número pequeno de casos e pela separação entre os desfechos.</dd>
+            <dt>Recorte da base</dt><dd>Exclui as ADC, por terem poucos casos, e as ações em que o tipo de ofensa não se aplica.</dd>
+            <dt>Referência</dt><dd>Firth (1993)</dd></dl>
+          </div>
+          <div class="td" data-t="2" data-estagio="2">
+            <h3 class="card-t">Regressão logística penalizada · segundo estágio</h3>
+            <dl><dt>O que responde</dt><dd>O exame do mérito pelo colegiado, e se a ofensa reflexa e a prejudicialidade pesam mais do que a matéria do decreto ou o governo que o editou, como sustenta a hipótese.</dd>
+            <dt>Recorte da base</dt><dd>Restrita às ações decididas pelo colegiado.</dd>
+            <dt>Referência</dt><dd>Firth (1993)</dd></dl>
+          </div>
+          <div class="td" data-t="3" data-estagio="">
+            <h3 class="card-t">Análise de riscos competitivos</h3>
+            <dl><dt>O que responde</dt><dd>Se a perda de objeto costuma chegar antes do julgamento do mérito. Isso testa a ideia de que o decreto precisa continuar em vigor até ser julgado, e a simples contagem dos desfechos não basta para esse teste, porque ignora o tempo e as ações ainda pendentes.</dd>
+            <dt>Recorte da base</dt><dd>As datas de ajuizamento e de decisão de todas as ações em que elas são conhecidas, inclusive das que seguem em tramitação, tratadas como ainda sem desfecho na data de corte.</dd></dl>
+          </div>
+          <div class="td" data-t="4" data-estagio="">
+            <h3 class="card-t">Busca do ponto de mudança</h3>
+            <dl><dt>O que responde</dt><dd>Se o tratamento das ações mudou e em que momento, a partir dos próprios dados, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</dd>
+            <dt>Recorte da base</dt><dd>As mesmas datas de ajuizamento e de decisão, inclusive das ações que seguem em tramitação.</dd></dl>
+          </div>
+          <div class="td" data-t="5" data-estagio="">
+            <h3 class="card-t">Tipologia dos fundamentos das petições iniciais</h3>
+            <dl><dt>O que responde</dt><dd>Se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa.</dd>
+            <dt>Recorte da base</dt><dd>As petições iniciais.</dd></dl>
+          </div>
+          <div class="td" data-t="6" data-estagio="12">
+            <h3 class="card-t">Verificações da regressão</h3>
+            <ul class="lista-suave">
+              <li><svg class="ic"><use href="#i-check"/></svg><span>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo.</span></li>
+              <li><svg class="ic"><use href="#i-check"/></svg><span>Os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa.</span></li>
+              <li><svg class="ic"><use href="#i-check"/></svg><span>A reamostragem verificará se os resultados se mantêm quando a amostra varia.</span></li>
+              <li><svg class="ic"><use href="#i-check"/></svg><span>A validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</span></li>
+              <li><svg class="ic"><use href="#i-check"/></svg><span>As probabilidades preditas traduzirão os coeficientes da regressão em perfis típicos de ação.</span></li>
+            </ul>
+          </div>
+          <div class="td" data-t="7" data-estagio="">
+            <h3 class="card-t">Ferramentas e limites</h3>
+            <ul class="lista-suave">
+              <li><svg class="ic"><use href="#i-layers"/></svg><span>Os cálculos serão feitos em Python, e a estimação penalizada será conferida com o pacote logistf, do R.</span></li>
+              <li><svg class="ic"><use href="#i-clock-3"/></svg><span>Como os autos completos se concentram nas ações mais recentes, a leitura integral não será usada para reforçar conclusões que dependam do tempo, mas para conferir o que as decisões citadas efetivamente dizem.</span></li>
+              <li><svg class="ic"><use href="#i-shield-alert"/></svg><span>As estimativas serão associativas e exploratórias, com os limites declarados conforme Epstein e King (2002).</span></li>
+            </ul>
+          </div>
+          <div class="faixa-estagios" aria-hidden="true">
+        <span class="fe" data-e="0">242 ações</span><svg class="ic"><use href="#i-arrow-right"/></svg>
+        <span class="fe" data-e="1">Estágio 1 · exame do relator</span><svg class="ic"><use href="#i-arrow-right"/></svg>
+        <span class="fe" data-e="2">Estágio 2 · exame do mérito pelo colegiado</span><svg class="ic"><use href="#i-arrow-right"/></svg>
+        <span class="fe fim" data-e="3">Resolução de mérito</span>
+      </div>
+        </div>
+      </div>
+
     </div>
-    <div class="card">
-      <h3 class="card-t">Ferramentas e limites</h3>
-      <ul class="lista-suave">
-        <li><svg class="ic"><use href="#i-layers"/></svg><span>Os cálculos serão feitos em Python, e a estimação penalizada será conferida com o pacote logistf, do R.</span></li>
-        <li><svg class="ic"><use href="#i-clock-3"/></svg><span>Como os autos completos se concentram nas ações mais recentes, a leitura integral não será usada para reforçar conclusões que dependam do tempo nem como amostra para validar a classificação das demais, mas para conferir o que as decisões citadas efetivamente dizem.</span></li>
-        <li><svg class="ic"><use href="#i-shield-alert"/></svg><span>As estimativas serão associativas e exploratórias, com os limites declarados conforme Epstein e King (2002).</span></li>
-      </ul>
-    </div>
+
   </div>
 
-  <div class="card notas-card">
-    <p class="olho" style="margin-bottom:10px">Notas da Seção 3</p>
-    <ol class="notas">
-      <li id="nota-15" value="15">Disponível em: <a href="https://osf.io/unjf8/">https://osf.io/unjf8/</a>. Acesso em: 29 out. 2026.</li>
-      <li id="nota-16" value="16">A base foi montada em etapas, cada uma em arquivo próprio. Os painéis do Corte Aberta foram extraídos em 9 de junho de 2026, e os decretos da Presidência da República, em 14 de junho. A união dos painéis é de 18 de julho, e o cruzamento com o acervo de decretos, que marcou o polo passivo de cada ação sem retirar nenhuma, é de 19 de julho. A codificação das variáveis começou em 24 de julho, e a segunda triagem com a conferência manual terminou em 16 de setembro, com as 232 ações. O painel de legitimados tinha 8.616 processos, e 625 deles ficaram fora da planilha, porque a união partiu só dos painéis de decisões e de acervo. Desses 625, 232 têm ente do Executivo federal no polo passivo. A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.</li>
-      <li id="nota-17" value="17">Disponível em: <a href="https://osf.io/anwdy/">https://osf.io/anwdy/</a>. Acesso em: 29 out. 2026.</li>
-      <li id="nota-18" value="18">Disponível em: <a href="https://osf.io/p8e7s/">https://osf.io/p8e7s/</a>. Acesso em: 29 out. 2026.</li>
-      <li id="nota-19" value="19">Disponível em: <a href="https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html">https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html</a>. Acesso em: 25 out. 2026.</li>
-      <li id="nota-20" value="20">Disponível em: <a href="https://osf.io/8krpv/">https://osf.io/8krpv/</a>. Acesso em: 29 out. 2026.</li>
-      <li id="nota-21" value="21">Disponível em: <a href="https://osf.io/anhvf/">https://osf.io/anhvf/</a>. Acesso em: 29 out. 2026.</li>
-    </ol>
-  </div>
-  <p class="fonte">Seção 3 e notas 15 a 21.</p>
+  <ol class="notas notas-fonte">
+    <li id="nota-15" value="15">Disponível em: <a href="https://osf.io/unjf8/">https://osf.io/unjf8/</a>. Acesso em: 29 out. 2026.</li>
+    <li id="nota-16" value="16">A base foi montada em etapas, cada uma em arquivo próprio. Os painéis do Corte Aberta foram extraídos em 9 de junho de 2026, e os decretos da Presidência da República, em 14 de junho. A união dos painéis é de 18 de julho, e o cruzamento com o acervo de decretos, que marcou o polo passivo de cada ação sem retirar nenhuma, é de 19 de julho. A codificação das variáveis começou em 24 de julho, e a segunda triagem com a conferência manual terminou em 16 de setembro, com as 232 ações. O painel de legitimados tinha 8.616 processos, e 625 deles ficaram fora da planilha, porque a união partiu só dos painéis de decisões e de acervo. Desses 625, 232 têm ente do Executivo federal no polo passivo. A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.</li>
+    <li id="nota-17" value="17">Disponível em: <a href="https://osf.io/anwdy/">https://osf.io/anwdy/</a>. Acesso em: 29 out. 2026.</li>
+    <li id="nota-18" value="18">Disponível em: <a href="https://osf.io/p8e7s/">https://osf.io/p8e7s/</a>. Acesso em: 29 out. 2026.</li>
+    <li id="nota-19" value="19">Disponível em: <a href="https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html">https://transparencia.stf.jus.br/extensions/dados_abertos/dados_abertos.html</a>. Acesso em: 25 out. 2026.</li>
+    <li id="nota-20" value="20">Disponível em: <a href="https://osf.io/8krpv/">https://osf.io/8krpv/</a>. Acesso em: 29 out. 2026.</li>
+    <li id="nota-21" value="21">Disponível em: <a href="https://osf.io/anhvf/">https://osf.io/anhvf/</a>. Acesso em: 29 out. 2026.</li>
+  </ol>
+  <p class="fonte">Seção 3 e notas 15 a 21. Passe o cursor sobre o número de uma nota para ler a nota.</p>
 </section>
 
 <!-- Lacuna da literatura -->
@@ -589,6 +689,7 @@
 </div>
 
 <script src="dados/acoes.js"></script>
+<script src="assets/js/metodologia.js"></script>
 <script src="assets/js/painel.js"></script>
 </body>
 </html>
