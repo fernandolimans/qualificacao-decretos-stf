@@ -1024,3 +1024,34 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .pq-faixa svg.marcas { min-width: 0; width: 100%; }
 .pq-faixa { grid-template-columns: minmax(0, 1.7fr) minmax(0, .8fr) minmax(0, 1.2fr); }
 @media (max-width: 1000px) { .pq-peso { grid-template-columns: 1fr; } .balanca { max-width: 220px; } }
+/* Hipótese na mesma tela da pergunta */
+.pq-1 { gap: 12px !important; }
+.pq-1 .pq-q { padding: 18px 28px; }
+.pq-1 .pq-q h2 { font-size: 24px; margin-top: 6px; }
+.pq-1 .pq-bloco { padding: 18px 22px; }
+.pq-1 .pq-lead { font-size: 17px; line-height: 1.85; }
+.pq-1 .pq-txt { margin-top: 8px; font-size: 15px; line-height: 1.7; }
+.pq-1 .pq-faixa { margin-top: 12px; }
+.pq-1 .pq-faixa > span { padding: 8px 12px; }
+.pq-1 .pq-fim-g { margin-top: 8px; }
+.pq-hipo { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; align-items: center; border-radius: 18px; background: var(--s950); padding: 18px 28px; }
+.pq-hipo .olho { color: var(--ambar-200); line-height: 1.5; }
+.pq-hipo .pq-h { margin-top: 0; font-size: 17px; line-height: 1.6; font-weight: 500; color: #fff; }
+.pq-hipo .rl.sem { background: rgb(255 255 255 / .1); color: var(--s200); }
+.pq-hipo .rl.obs { background: rgb(217 119 6 / .22); color: var(--ambar-200); }
+.pq-lista { max-width: 560px; }
+.pq-2 { gap: 16px !important; }
+.pq-2 .pq-caminho { padding: 22px 24px 24px; }
+.pq-2 .pq-entre { font-size: 17px; }
+.pq-2 .pq-portoes { margin-top: 14px; }
+.pq-2 .pq-portao { padding: 16px 18px 12px; }
+.pq-2 .pq-portao p { margin-top: 8px; font-size: 15.5px; line-height: 1.6; }
+.pq-2 .pq-peso { grid-template-columns: 240px minmax(0, 1fr); padding: 20px 28px; }
+.pq-2 .pq-peso .pq-txt { font-size: 19px; }
+@media (max-width: 700px) { .pq-hipo { grid-template-columns: 1fr; gap: 6px; padding: 18px 20px; } }
+@media print { .pq-hipo { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.pq-1 { gap: 10px !important; }
+.pq-1 .pq-q { padding: 16px 28px; }
+.pq-hipo { padding: 15px 28px; }
+.pq-1 .pq-miudo { font-size: 13px; line-height: 1.5; }
+.pq-1 .pq-bloco { padding: 16px 22px; }
