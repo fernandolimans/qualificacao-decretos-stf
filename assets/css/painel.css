@@ -1055,3 +1055,30 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .pq-hipo { padding: 15px 28px; }
 .pq-1 .pq-miudo { font-size: 13px; line-height: 1.5; }
 .pq-1 .pq-bloco { padding: 16px 22px; }
+
+/* Pergunta e hipótese numa tela só */
+.ph-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.ph-bloco { position: relative; border-radius: 20px; padding: 24px 28px 26px; }
+.ph-bloco .olho { padding-right: 48px; }
+.ph-ic { position: absolute; top: 18px; right: 20px; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; }
+.ph-ic .ic { width: 20px; height: 20px; }
+.ph-pergunta { background: var(--s950); }
+.ph-pergunta .olho { color: var(--s400); }
+.ph-pergunta .ph-ic { background: rgb(255 255 255 / .1); color: #fff; }
+.ph-pergunta h2 { margin-top: 10px; max-width: none; font-size: 23px; line-height: 1.42; font-weight: 600; letter-spacing: -0.015em; color: #fff; }
+.ph-hipotese { border: 1px solid var(--s200); border-left: 5px solid var(--ambar-600); background: #fff; box-shadow: var(--sombra-sm); }
+.ph-hipotese .olho { color: var(--ambar-700); }
+.ph-hipotese .ph-ic { background: var(--ambar-50); color: var(--ambar-700); }
+.ph-hipotese .pq-h { margin-top: 10px; font-size: 18px; line-height: 1.6; font-weight: 500; color: var(--s900); }
+.ph-desdobra { position: relative; margin-top: 16px; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 18px 24px; box-shadow: var(--sombra-sm); }
+.ph-desdobra::before { content: ""; position: absolute; top: -17px; left: 75%; height: 16px; border-left: 2px dashed var(--ambar-600); }
+.ph-desdobra .pq-caminho, .ph-desdobra .pq-peso { border: 0; border-radius: 0; background: none; box-shadow: none; padding: 0; }
+.ph-desdobra .pq-entre { font-size: 15.5px; }
+.ph-desdobra .pq-portoes { align-items: stretch; margin-top: 10px; }
+.ph-desdobra .pq-portao { padding: 12px 15px 8px; }
+.ph-desdobra .pq-portao p { font-size: 14.5px; line-height: 1.55; }
+.ph-desdobra .pq-peso { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 28px; align-items: center; margin-top: 14px; border-top: 1px solid var(--s100); padding-top: 12px; }
+.ph-desdobra .pq-peso .pq-txt { margin-top: 0; font-size: 17.5px; line-height: 1.75; color: var(--s800); }
+@media (max-width: 1000px) { .ph-topo { grid-template-columns: 1fr; } .ph-desdobra::before { display: none; } .ph-desdobra .pq-peso { grid-template-columns: 1fr; } .ph-desdobra .pq-portoes { flex-direction: column; } }
+@media (max-width: 600px) { .ph-bloco { padding: 20px; } .ph-pergunta h2 { font-size: 19px; } .ph-hipotese .pq-h { font-size: 16px; } }
+@media print { .ph-pergunta { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
