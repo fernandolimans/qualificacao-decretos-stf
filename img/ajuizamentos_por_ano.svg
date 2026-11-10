@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Ações de controle concentrado contra decretos presidenciais, por ano de autuação</title>
+<desc id="d">Barras por ano de 1988 a 2025. A partir de 2019 as barras estão destacadas.</desc>
+<line x1="36" x2="750" y1="334.0" y2="334.0" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="338.0" text-anchor="end" font-size="14" fill="#5b6670">0</text>
+<line x1="36" x2="750" y1="283.3" y2="283.3" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="287.3" text-anchor="end" font-size="14" fill="#5b6670">5</text>
+<line x1="36" x2="750" y1="232.7" y2="232.7" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="236.7" text-anchor="end" font-size="14" fill="#5b6670">10</text>
+<line x1="36" x2="750" y1="182.0" y2="182.0" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="186.0" text-anchor="end" font-size="14" fill="#5b6670">15</text>
+<line x1="36" x2="750" y1="131.3" y2="131.3" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="135.3" text-anchor="end" font-size="14" fill="#5b6670">20</text>
+<line x1="36" x2="750" y1="80.7" y2="80.7" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="84.7" text-anchor="end" font-size="14" fill="#5b6670">25</text>
+<line x1="36" x2="750" y1="30.0" y2="30.0" stroke="#e4e1da" stroke-width="1"/>
+<text x="28" y="34.0" text-anchor="end" font-size="14" fill="#5b6670">30</text>
+<path d="M57.2,334.0 V327.9 Q57.2,323.9 61.2,323.9 H67.2 Q71.2,323.9 71.2,327.9 V334.0 Z" fill="#00897b"><title>1989: 1 ação</title></path>
+<path d="M76.0,334.0 V307.6 Q76.0,303.6 80.0,303.6 H86.0 Q90.0,303.6 90.0,307.6 V334.0 Z" fill="#00897b"><title>1990: 3 açãoões</title></path>
+<text x="83.0" y="354" text-anchor="middle" font-size="14" fill="#5b6670">1990</text>
+<path d="M94.8,334.0 V287.3 Q94.8,283.3 98.8,283.3 H104.8 Q108.8,283.3 108.8,287.3 V334.0 Z" fill="#00897b"><title>1991: 5 açãoões</title></path>
+<path d="M113.6,334.0 V327.9 Q113.6,323.9 117.6,323.9 H123.6 Q127.6,323.9 127.6,327.9 V334.0 Z" fill="#00897b"><title>1992: 1 ação</title></path>
+<path d="M151.1,334.0 V307.6 Q151.1,303.6 155.1,303.6 H161.1 Q165.1,303.6 165.1,307.6 V334.0 Z" fill="#00897b"><title>1994: 3 açãoões</title></path>
+<path d="M169.9,334.0 V327.9 Q169.9,323.9 173.9,323.9 H179.9 Q183.9,323.9 183.9,327.9 V334.0 Z" fill="#00897b"><title>1995: 1 ação</title></path>
+<text x="176.9" y="354" text-anchor="middle" font-size="14" fill="#5b6670">1995</text>
+<path d="M188.7,334.0 V307.6 Q188.7,303.6 192.7,303.6 H198.7 Q202.7,303.6 202.7,307.6 V334.0 Z" fill="#00897b"><title>1996: 3 açãoões</title></path>
+<path d="M207.5,334.0 V287.3 Q207.5,283.3 211.5,283.3 H217.5 Q221.5,283.3 221.5,287.3 V334.0 Z" fill="#00897b"><title>1997: 5 açãoões</title></path>
+<path d="M226.3,334.0 V327.9 Q226.3,323.9 230.3,323.9 H236.3 Q240.3,323.9 240.3,327.9 V334.0 Z" fill="#00897b"><title>1998: 1 ação</title></path>
+<path d="M263.9,334.0 V256.9 Q263.9,252.9 267.9,252.9 H273.9 Q277.9,252.9 277.9,256.9 V334.0 Z" fill="#00897b"><title>2000: 8 açãoões</title></path>
+<text x="270.9" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2000</text>
+<path d="M282.7,334.0 V246.8 Q282.7,242.8 286.7,242.8 H292.7 Q296.7,242.8 296.7,246.8 V334.0 Z" fill="#00897b"><title>2001: 9 açãoões</title></path>
+<path d="M301.4,334.0 V317.7 Q301.4,313.7 305.4,313.7 H311.4 Q315.4,313.7 315.4,317.7 V334.0 Z" fill="#00897b"><title>2002: 2 açãoões</title></path>
+<path d="M320.2,334.0 V297.5 Q320.2,293.5 324.2,293.5 H330.2 Q334.2,293.5 334.2,297.5 V334.0 Z" fill="#00897b"><title>2003: 4 açãoões</title></path>
+<path d="M339.0,334.0 V307.6 Q339.0,303.6 343.0,303.6 H349.0 Q353.0,303.6 353.0,307.6 V334.0 Z" fill="#00897b"><title>2004: 3 açãoões</title></path>
+<path d="M357.8,334.0 V297.5 Q357.8,293.5 361.8,293.5 H367.8 Q371.8,293.5 371.8,297.5 V334.0 Z" fill="#00897b"><title>2005: 4 açãoões</title></path>
+<text x="364.8" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2005</text>
+<path d="M376.6,334.0 V327.9 Q376.6,323.9 380.6,323.9 H386.6 Q390.6,323.9 390.6,327.9 V334.0 Z" fill="#00897b"><title>2006: 1 ação</title></path>
+<path d="M395.4,334.0 V246.8 Q395.4,242.8 399.4,242.8 H405.4 Q409.4,242.8 409.4,246.8 V334.0 Z" fill="#00897b"><title>2007: 9 açãoões</title></path>
+<path d="M414.2,334.0 V236.7 Q414.2,232.7 418.2,232.7 H424.2 Q428.2,232.7 428.2,236.7 V334.0 Z" fill="#00897b"><title>2008: 10 açãoões</title></path>
+<path d="M433.0,334.0 V307.6 Q433.0,303.6 437.0,303.6 H443.0 Q447.0,303.6 447.0,307.6 V334.0 Z" fill="#00897b"><title>2009: 3 açãoões</title></path>
+<path d="M451.8,334.0 V297.5 Q451.8,293.5 455.8,293.5 H461.8 Q465.8,293.5 465.8,297.5 V334.0 Z" fill="#00897b"><title>2010: 4 açãoões</title></path>
+<text x="458.8" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2010</text>
+<path d="M470.6,334.0 V297.5 Q470.6,293.5 474.6,293.5 H480.6 Q484.6,293.5 484.6,297.5 V334.0 Z" fill="#00897b"><title>2011: 4 açãoões</title></path>
+<path d="M489.3,334.0 V267.1 Q489.3,263.1 493.3,263.1 H499.3 Q503.3,263.1 503.3,267.1 V334.0 Z" fill="#00897b"><title>2012: 7 açãoões</title></path>
+<path d="M526.9,334.0 V307.6 Q526.9,303.6 530.9,303.6 H536.9 Q540.9,303.6 540.9,307.6 V334.0 Z" fill="#00897b"><title>2014: 3 açãoões</title></path>
+<path d="M545.7,334.0 V307.6 Q545.7,303.6 549.7,303.6 H555.7 Q559.7,303.6 559.7,307.6 V334.0 Z" fill="#00897b"><title>2015: 3 açãoões</title></path>
+<text x="552.7" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2015</text>
+<path d="M564.5,334.0 V287.3 Q564.5,283.3 568.5,283.3 H574.5 Q578.5,283.3 578.5,287.3 V334.0 Z" fill="#00897b"><title>2016: 5 açãoões</title></path>
+<path d="M583.3,334.0 V267.1 Q583.3,263.1 587.3,263.1 H593.3 Q597.3,263.1 597.3,267.1 V334.0 Z" fill="#00897b"><title>2017: 7 açãoões</title></path>
+<path d="M602.1,334.0 V236.7 Q602.1,232.7 606.1,232.7 H612.1 Q616.1,232.7 616.1,236.7 V334.0 Z" fill="#00897b"><title>2018: 10 açãoões</title></path>
+<path d="M620.9,334.0 V115.1 Q620.9,111.1 624.9,111.1 H630.9 Q634.9,111.1 634.9,115.1 V334.0 Z" fill="#c8711a"><title>2019: 22 açãoões</title></path>
+<path d="M639.7,334.0 V125.2 Q639.7,121.2 643.7,121.2 H649.7 Q653.7,121.2 653.7,125.2 V334.0 Z" fill="#c8711a"><title>2020: 21 açãoões</title></path>
+<text x="646.7" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2020</text>
+<path d="M658.4,334.0 V155.6 Q658.4,151.6 662.4,151.6 H668.4 Q672.4,151.6 672.4,155.6 V334.0 Z" fill="#c8711a"><title>2021: 18 açãoões</title></path>
+<path d="M677.2,334.0 V44.1 Q677.2,40.1 681.2,40.1 H687.2 Q691.2,40.1 691.2,44.1 V334.0 Z" fill="#c8711a"><title>2022: 29 açãoões</title></path>
+<path d="M696.0,334.0 V216.4 Q696.0,212.4 700.0,212.4 H706.0 Q710.0,212.4 710.0,216.4 V334.0 Z" fill="#c8711a"><title>2023: 12 açãoões</title></path>
+<path d="M714.8,334.0 V267.1 Q714.8,263.1 718.8,263.1 H724.8 Q728.8,263.1 728.8,267.1 V334.0 Z" fill="#c8711a"><title>2024: 7 açãoões</title></path>
+<path d="M733.6,334.0 V236.7 Q733.6,232.7 737.6,232.7 H743.6 Q747.6,232.7 747.6,236.7 V334.0 Z" fill="#c8711a"><title>2025: 10 açãoões</title></path>
+<text x="740.6" y="354" text-anchor="middle" font-size="14" fill="#5b6670">2025</text>
+<line x1="36" x2="750" y1="334.0" y2="334.0" stroke="#5b6670" stroke-width="1"/>
+<text x="684.2" y="32.1" text-anchor="middle" font-size="14" font-weight="600" fill="#1d2a36">29</text>
+<line x1="616.5" x2="616.5" y1="24" y2="334.0" stroke="#5b6670" stroke-width="1"/>
+<text x="608.5" y="34" text-anchor="end" font-size="14" font-weight="600" fill="#1d2a36">119 ações desde 2019 →</text>
+<text x="36" y="374" font-size="12.5" fill="#5b6670">4 ações sem data de autuação no painel (ADI 309, 996, 1.253 e 1.544) não aparecem no gráfico.</text>
+</svg>

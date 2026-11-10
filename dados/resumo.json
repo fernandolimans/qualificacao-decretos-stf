@@ -1,0 +1,72 @@
+{
+ "total": 242,
+ "por_classe": {
+  "ADI": 159,
+  "ADC": 8,
+  "ADPF": 75
+ },
+ "por_origem": {
+  "Base inicial": 227,
+  "Lote adicional (outubro/2026)": 15
+ },
+ "desde_2019": 119,
+ "decididas_ate_30_06_2026": 210,
+ "em_tramitacao_25_10_2026": {
+  "Não": 207,
+  "Sim": 31,
+  "—": 4
+ },
+ "por_ano": {
+  "1989": 1,
+  "1990": 3,
+  "1991": 5,
+  "1992": 1,
+  "1994": 3,
+  "1995": 1,
+  "1996": 3,
+  "1997": 5,
+  "1998": 1,
+  "2000": 8,
+  "2001": 9,
+  "2002": 2,
+  "2003": 4,
+  "2004": 3,
+  "2005": 4,
+  "2006": 1,
+  "2007": 9,
+  "2008": 10,
+  "2009": 3,
+  "2010": 4,
+  "2011": 4,
+  "2012": 7,
+  "2014": 3,
+  "2015": 3,
+  "2016": 5,
+  "2017": 7,
+  "2018": 10,
+  "2019": 22,
+  "2020": 21,
+  "2021": 18,
+  "2022": 29,
+  "2023": 12,
+  "2024": 7,
+  "2025": 10
+ },
+ "sem_data_autuacao": 4,
+ "prisma": {
+  "identificados": 400,
+  "duplicados": 32,
+  "nao_extraidos_redalyc": 40,
+  "triados": 328,
+  "excluidos_triagem": 294,
+  "texto_completo": 34,
+  "excluidos_elegibilidade": 17,
+  "incluidos_bases": 17,
+  "suplementares_identificados": 244,
+  "incluidos_heinonline": 3,
+  "incluidos_teses": 1,
+  "incluidos_total": 21,
+  "sobre_mp": 19,
+  "sobre_decreto": 2
+ }
+}

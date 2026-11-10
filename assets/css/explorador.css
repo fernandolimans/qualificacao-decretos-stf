@@ -1,0 +1,53 @@
+/* Explorador: mesmos componentes do painel, com a tabela das 242 ações */
+.h1-menor { font-size: 34px !important; line-height: 1.15 !important; }
+.filtros-card { margin-top: 24px; padding: 16px; }
+.filtros { display: grid; grid-template-columns: minmax(240px, 1.6fr) repeat(4, minmax(150px, 1fr)) auto; gap: 12px; align-items: end; }
+.filtros label { display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; font-weight: 500; color: var(--s700); min-width: 0; }
+.filtros input, .filtros select { width: 100%; min-width: 0; border: 1px solid var(--s200); border-radius: 12px; background: #fff; color: var(--s900); padding: 8px 12px; font-size: 14px; min-height: 40px; outline: none; }
+.filtros input:focus, .filtros select:focus { border-color: var(--s500); }
+.campo-busca { position: relative; display: block; }
+.campo-busca .ic { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--s400); }
+.campo-busca input { padding-left: 36px; }
+.btn-limpar { border: 0; border-radius: 12px; background: var(--s100); color: var(--s700); padding: 0 16px; min-height: 40px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.btn-limpar:hover { background: var(--s200); }
+
+.contagem { margin: 18px 2px 10px; font-size: 14px; color: var(--s600); }
+.contagem b { color: var(--s950); }
+
+.tabela-wrap { overflow: auto; max-height: 72vh; border: 1px solid var(--s200); border-radius: 16px; background: #fff; box-shadow: var(--sombra-sm); }
+table { width: 100%; min-width: 1000px; border-collapse: collapse; text-align: left; font-size: 14px; }
+thead th { position: sticky; top: 0; z-index: 2; background: var(--s950); color: #fff; padding: 12px 16px; font-weight: 500; white-space: nowrap; cursor: pointer; user-select: none; }
+thead th.sem-ord { cursor: default; }
+thead th[aria-sort="ascending"]::after { content: " ↑"; color: var(--s400); }
+thead th[aria-sort="descending"]::after { content: " ↓"; color: var(--s400); }
+tbody td { border-top: 1px solid var(--s100); padding: 12px 16px; vertical-align: top; color: var(--s700); }
+tbody tr.linha:nth-of-type(even) { background: var(--s50); }
+tbody tr.linha { cursor: pointer; }
+tbody tr.linha:hover { background: var(--s100); }
+tbody tr.linha.aberta { background: #e2e8f0; }
+tbody tr.linha:focus-visible { outline: 2px solid var(--s500); outline-offset: -2px; }
+td.acao { font-weight: 600; color: var(--s950); white-space: nowrap; }
+td.data { white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.ato { max-width: 340px; }
+td.prop { max-width: 260px; }
+td a { color: var(--s900); font-weight: 500; text-decoration: underline; text-decoration-color: var(--s300); text-underline-offset: 4px; }
+.tag { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12.5px; font-weight: 600; }
+.tag.sim { background: var(--verde-50); color: var(--verde-700); }
+.tag.nao { background: var(--ambar-50); color: var(--ambar-700); }
+.detalhe td { background: var(--s50); padding: 14px 16px 18px; }
+.detalhe dl { display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 8px 18px; margin: 0; font-size: 14px; }
+.detalhe dt { color: var(--s500); font-weight: 600; }
+.detalhe dd { margin: 0; color: var(--s700); }
+.detalhe td > dl { position: sticky; left: 16px; max-width: min(1180px, calc(100vw - 80px)); }
+.vazio { padding: 28px; text-align: center; color: var(--s500); }
+
+@media (max-width: 1100px) {
+  .filtros { grid-template-columns: 1fr 1fr; }
+  .filtros .busca { grid-column: 1 / -1; }
+}
+@media (max-width: 640px) {
+  .h1-menor { font-size: 24px !important; }
+  .filtros { grid-template-columns: 1fr; }
+  .detalhe dl { grid-template-columns: 1fr; gap: 2px; }
+  .detalhe dt { margin-top: 8px; }
+}
