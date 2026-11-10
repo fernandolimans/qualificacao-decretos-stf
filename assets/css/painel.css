@@ -1091,3 +1091,16 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ph-peso .rl { background: none; padding: 0; font-weight: 700; }
 .ph-peso .rl.leve { color: var(--s500); }
 .ph-peso .rl.obs { color: var(--ambar-700); }
+/* A hipótese e o seu desdobramento ficam no mesmo bloco, abaixo da pergunta */
+.ph-bloco h2 { font-size: 22px; line-height: 1.45; }
+.ph-pergunta { padding: 20px 28px 22px; }
+.ph-grupo { margin-top: 14px; overflow: hidden; border: 1px solid var(--s200); border-radius: 20px; background: #fff; box-shadow: var(--sombra-sm); }
+.ph-grupo .ph-hipotese { border-radius: 0; padding: 20px 28px 22px; }
+.ph-corpo { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+.ph-construcoes { padding: 18px 28px 16px; }
+.ph-corpo .ph-peso { border-left: 1px solid var(--s100); padding: 18px 28px; }
+.ph-corpo .ph-lista li { padding: 10px 0; }
+.ph-corpo .ph-lista p { font-size: 15.5px; }
+.ph-corpo .ph-peso .balanca { width: 230px; }
+.ph-corpo .ph-peso p { margin-top: 10px; font-size: 17px; line-height: 1.65; }
+@media (max-width: 1000px) { .ph-corpo { grid-template-columns: 1fr; } .ph-corpo .ph-peso { border-left: 0; border-top: 1px solid var(--s100); } }
