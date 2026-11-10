@@ -1574,3 +1574,90 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .rs-grade + .rs-climax, .rs-climax { margin-top: 8px; } .rs-card .rs-ponte { font-size: 16px; padding-top: 10px; }
 .rs-tab th, .rs-tab td { padding: 5px 0; } .rs-barra { margin-top: 5px; }
 @media print { #referencias .refs p { font-size: 12px; margin-bottom: 7px; line-height: 1.42; } }
+
+/* Resultados: tabela única, cada dado com a sua justificativa e referência */
+.rs-unica { display: block; padding: 2px 24px 10px; }
+.rs-tabela { width: 100%; border-collapse: collapse; }
+.rs-tabela thead th { padding: 9px 16px 6px 0; border-bottom: 2px solid var(--s200); text-align: left; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--s500); }
+.rs-tabela th[scope="row"] { width: 112px; padding: 7px 16px 7px 0; vertical-align: top; text-align: left; }
+.rs-tabela td { padding: 7px 18px 7px 0; vertical-align: top; font-size: 13.5px; line-height: 1.45; }
+.rs-dado { width: 44%; color: var(--s900); font-weight: 500; }
+.rs-just { color: var(--s600); }
+.rs-tabela tbody tr + tr > * { border-top: 1px solid var(--s100); }
+.rs-tabela .rs-num { display: block; font-size: 26px; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; color: var(--s950); }
+.rs-tri { display: block; font-size: 12px; font-weight: 600; line-height: 1.35; color: var(--s500); }
+.rs-tri b { display: inline-block; min-width: 30px; font-size: 16px; font-weight: 700; color: var(--s950); }
+.rs-mini { display: flex; gap: 2px; width: 88px; height: 6px; margin-top: 6px; border-radius: 3px; background: var(--s100); overflow: hidden; }
+.rs-mini i { display: block; width: var(--w); height: 100%; }
+.rs-mini .rs-mp { background: var(--s400); } .rs-mini .rs-dec { background: var(--ambar-600); }
+.rs-mini .rs-ambar { background: var(--ambar-600); } .rs-mini .rs-vazio { background: transparent; }
+.rs-g th { padding: 9px 0 3px !important; border-top: 0 !important; text-align: left; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ambar-700); }
+.rs-g + tr > * { border-top: 0 !important; }
+.rs-ponte-tr td { padding: 8px 0 6px !important; }
+.rs-tabela .rs-ponte { margin: 0; border-top: 0; border-left: 3px solid var(--ambar-600); padding: 2px 0 2px 12px; font-size: 15px; line-height: 1.45; font-weight: 600; color: var(--s950); }
+.rs-climax { margin-top: 10px; padding: 13px 28px; }
+.rs-clim { font-size: 17px; }
+.rs-climax .rs-curva { margin-top: 8px; padding-top: 8px; font-size: 13.5px; }
+@media (max-width: 800px) {
+  .rs-tabela thead { display: none; }
+  .rs-tabela tr { display: block; padding: 8px 0; }
+  .rs-tabela th[scope="row"], .rs-tabela td { display: block; width: auto !important; padding: 2px 0; border: 0 !important; }
+}
+
+/* Resultados preliminares: uma tabela com achado, justificativa e referência */
+.rf-card { border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 2px 22px 8px; box-shadow: var(--sombra-sm); }
+.rf-tab { width: 100%; border-collapse: collapse; }
+.rf-tab thead th { padding: 9px 14px 6px 0; border-bottom: 2px solid var(--s200); text-align: left; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--s500); }
+.rf-tab th[scope="row"] { width: 86px; padding: 7px 12px 7px 0; vertical-align: top; text-align: left; }
+.rf-tab td { padding: 7px 16px 7px 0; vertical-align: top; font-size: 13px; line-height: 1.42; }
+.rf-tab tbody tr + tr > * { border-top: 1px solid var(--s100); }
+.rf-num { display: block; font-size: 26px; line-height: 1.05; font-weight: 700; letter-spacing: -0.03em; color: var(--s950); font-variant-numeric: tabular-nums; }
+.rf-ach { width: 37%; color: var(--s900); }
+.rf-just { width: 37%; color: var(--s600); }
+.rf-ref { width: auto; padding-right: 0 !important; }
+.rf-refs { display: flex; flex-wrap: wrap; gap: 4px; }
+.rf-refs .ref { font-size: 11.5px; padding: 1px 8px; }
+.rf-local { display: block; margin-top: 3px; font-size: 11.5px; line-height: 1.35; color: var(--s500); }
+.rf-lead { display: block; font-weight: 700; color: var(--s950); }
+.rf-g th { padding: 9px 0 3px !important; text-align: left; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.rf-g + tr > * { border-top: 0 !important; }
+.rf-ponte td { background: var(--ambar-50); }
+.rf-ponte .rf-just b { font-weight: 600; color: var(--s950); }
+.rf-ponte th { background: var(--ambar-50); border-left: 3px solid var(--ambar-600); }
+.rf-curva th { border-left: 3px solid var(--s950); }
+.rf-curva .rf-ach { font-weight: 600; }
+.rf-climax { display: flex; align-items: baseline; gap: 18px; margin-top: 10px; border-radius: 18px; background: var(--s950); padding: 14px 26px; }
+.rf-climax p { flex: 1; font-size: 17.5px; line-height: 1.45; font-weight: 600; letter-spacing: -0.01em; color: #fff; }
+.rf-climax span { flex: none; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--s400); }
+@media (prefers-reduced-motion: no-preference) { #resultados.ativo .rf-card, #resultados.ativo .rf-climax { animation: subir .55s ease both; } #resultados.ativo .rf-climax { animation-delay: .25s; } }
+@media (max-width: 800px) {
+  .rf-tab thead { display: none; }
+  .rf-tab tr { display: block; padding: 8px 0; }
+  .rf-tab th[scope="row"], .rf-tab td { display: block; width: auto !important; padding: 2px 0; border: 0 !important; }
+  .rf-climax { flex-direction: column; gap: 6px; }
+}
+@media print { #resultados .rf-card, #resultados .rf-climax { animation: none !important; opacity: 1 !important; } .rf-climax, .rf-ponte td, .rf-ponte th { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+/* Resultados em duas telas */
+#resultados .mt-lista { max-width: 760px; }
+.js .met.rf-tela.ativa { gap: 12px; }
+.rf-tela .rf-climax { margin-top: 0; }
+.rf-1 .rf-tab td { padding: 16px 20px 16px 0; font-size: 16px; line-height: 1.55; }
+.rf-1 .rf-tab th[scope="row"] { width: 120px; padding: 16px 14px 16px 0; }
+.rf-1 .rf-num { font-size: 40px; }
+.rf-1 .rf-lead { font-size: 17px; margin-bottom: 4px; }
+.rf-1 .rs-barra { height: 10px; margin-top: 10px; }
+.rf-1 .rf-local { font-size: 12.5px; }
+.rf-2 .rf-tab td { padding: 9px 16px 9px 0; font-size: 14px; line-height: 1.45; }
+.rf-2 .rf-tab th[scope="row"] { width: 92px; padding: 9px 12px 9px 0; }
+.rf-2 .rf-num { font-size: 30px; }
+.rf-ponte-band { align-items: flex-end; }
+.rf-ponte-band .rf-pre { font-size: 14.5px; font-weight: 400; line-height: 1.55; color: var(--s300); }
+.rf-ponte-band .rf-pre + p { margin-top: 8px; font-size: 19px; }
+.rf-card { padding-bottom: 6px; }
+.rf-2 .rf-tab td { padding: 7px 16px 7px 0; font-size: 13.5px; line-height: 1.42; }
+.rf-2 .rf-tab th[scope="row"] { padding: 7px 12px 7px 0; }
+.rf-2 .rf-ach { width: 39%; }
+.rf-2 .rf-just { width: 36%; }
+.rf-2 .rf-climax { padding: 12px 26px; }
+.rf-2 .rf-climax p { font-size: 17px; }
+.rf-1 .rf-tab th[scope="row"] { width: 136px; } .rf-1 .rf-num { font-size: 38px; }
