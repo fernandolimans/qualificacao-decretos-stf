@@ -1419,3 +1419,86 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .mt-tabela td:nth-of-type(1) { width: 28%; }
 .mt-tabela-card { padding-bottom: 8px; }
 .mt-limites2 { margin-top: 4px; padding-top: 6px; }
+
+/* Metodologia, tela 3: só o texto da dissertação, na ordem das Seções 3.2 e 4 */
+.mt-3 .mt-nome::first-letter { text-transform: none; }
+.mt-3 .mt-tabela th[scope="row"] { width: 22%; padding-right: 16px; }
+.mt-3 .mt-tabela td { width: 39%; }
+.mt-3 .mt-tabela td[colspan] { width: auto; }
+.mt-g-tr th { padding: 9px 0 5px !important; border-top: 1px solid var(--s200); text-align: left; font-size: 13px; line-height: 1.4; font-weight: 600; color: var(--ambar-700); }
+.mt-g-tr:first-child th { border-top: 0; }
+.mt-g-tr + tr th[scope="row"], .mt-g-tr + tr td { border-top: 0 !important; }
+.mt-porque { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; line-height: 1.35; color: var(--s500); }
+.mt-3 .rl { background: none; padding: 0; font-weight: 600; }
+.mt-3 .rl.obs { color: var(--ambar-700); }
+.mt-3 .rl.mer { color: var(--verde-700); }
+.mt-dep-tr th, .mt-dep-tr td { border-top: 0 !important; padding-top: 0 !important; }
+.mt-liga { display: block; height: 100%; min-height: 54px; margin-left: 10px; border-left: 2px solid var(--s300); border-bottom: 2px solid var(--s300); border-bottom-left-radius: 10px; width: 70%; transform: translateY(-36%); }
+.mt-dep { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.mt-dep > div { border: 1px solid var(--s200); border-radius: 10px; background: var(--s50); padding: 7px 10px; }
+.mt-dep b { display: block; font-size: 12.5px; line-height: 1.3; font-weight: 700; color: var(--s900); }
+.mt-dep span { display: block; margin-top: 3px; font-size: 12px; line-height: 1.35; color: var(--s600); }
+.mt-leitura { margin-top: 6px; border-top: 1px solid var(--s200); padding-top: 9px; }
+.mt-leitura p:first-child { font-size: 14px; line-height: 1.5; font-weight: 500; color: var(--s900); }
+.mt-leitura p + p { margin-top: 4px; font-size: 13px; line-height: 1.5; color: var(--s600); }
+.mt-conf2 { margin-top: 6px !important; }
+@media (max-width: 1000px) { .mt-dep { grid-template-columns: 1fr 1fr; } .mt-liga { display: none; } }
+.mt-3 .mt-tabela th[scope="row"] { width: 19%; }
+.mt-3 .mt-tabela td { width: 43%; }
+.mt-3 .mt-tabela td:last-child { width: 38%; }
+.mt-3 .mt-tabela th[scope="row"], .mt-3 .mt-tabela td { padding-top: 5px; padding-bottom: 5px; font-size: 13.5px; line-height: 1.4; }
+.mt-3 .mt-tabela th[scope="row"] { font-size: 14px; }
+.mt-dep { display: block; border-left: 2px solid var(--s300); padding: 2px 0 4px 12px; font-size: 13px; line-height: 1.5; color: var(--s600); }
+.mt-dep b { display: inline; font-size: inherit; font-weight: 600; color: var(--s900); }
+.mt-liga { min-height: 30px; transform: translateY(-50%); }
+.mt-porque { font-size: 11.5px; }
+.mt-g-tr th { padding: 7px 0 3px !important; font-size: 12.5px; }
+.mt-tabela-card { padding-top: 0; }
+.mt-leitura { margin-top: 4px; padding-top: 7px; }
+.mt-leitura p:first-child { font-size: 13.5px; }
+#metodologia:has(.mt-3.ativa) .mt-topo { display: none; }
+.mt-dep-tr td { width: auto !important; padding: 0 0 6px 19% !important; }
+.mt-dep { border-left: 2px solid var(--s300); padding: 1px 0 1px 12px; font-size: 13px; line-height: 1.48; }
+.mt-3 .mt-tabela th[scope="row"], .mt-3 .mt-tabela td { font-size: 13px; }
+.mt-g-tr th { font-size: 12px; }
+.mt-3 .mt-tabela thead th { padding: 7px 14px 5px 0; }
+.mt-3 .mt-tabela th[scope="row"], .mt-3 .mt-tabela td { padding-top: 4px; padding-bottom: 4px; }
+.mt-g-tr th { padding: 6px 0 2px !important; }
+.mt-leitura { padding-top: 6px; }
+.mt-3.ativa { gap: 8px !important; }
+.mt-2 .mt-card { padding: 20px 24px; }
+.mt-2 .mt-etapa { padding: 8px 0; }
+
+/* Metodologia, tela 3: fluxo em três passos, só com trechos da dissertação */
+.an-fluxo { display: grid; grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1.2fr) minmax(0, 1.1fr); gap: 12px; align-items: stretch; }
+.an-seta { display: grid; place-items: center; color: var(--s400); }
+.an-seta .ic { width: 24px; height: 24px; }
+.an-card { display: flex; flex-direction: column; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 20px 22px; box-shadow: var(--sombra-sm); }
+.an-paralelo { margin-left: 12px; border-style: dashed; border-color: var(--s300); background: var(--s50); box-shadow: none; }
+.an-plano { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.an-para { margin-top: 8px; font-size: 18px; line-height: 1.4; font-weight: 600; letter-spacing: -0.01em; color: var(--s950); }
+.an-lista { margin: 14px 0 0; padding: 0; list-style: none; }
+.an-lista li { padding: 10px 0; border-top: 1px solid var(--s100); }
+.an-nome { display: block; font-size: 15px; font-weight: 600; color: var(--s950); }
+.an-nome .pista { font-weight: 600; }
+.an-txt { display: block; margin-top: 3px; font-size: 14.5px; line-height: 1.5; color: var(--s600); }
+.an-estagios { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.an-estagios span { position: relative; border-radius: 12px; padding: 9px 12px; font-size: 14px; line-height: 1.4; font-weight: 600; }
+.an-e1 { background: var(--ambar-50); color: var(--ambar-700); box-shadow: inset 0 0 0 1px var(--ambar-200); }
+.an-e2 { background: var(--verde-50); color: var(--verde-700); box-shadow: inset 0 0 0 1px #6ee7b7; }
+.an-e1::after { content: ""; position: absolute; right: -8px; top: 50%; width: 8px; border-top: 2px solid var(--s300); }
+.an-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 10px; }
+.an-chips .pista { display: inline-block; border: 1px solid var(--s200); border-radius: 999px; background: var(--s50); padding: 3px 10px; font-size: 12.5px; font-weight: 500; line-height: 1.4; color: var(--s700); }
+.an-chips .pista:hover, .an-chips .pista:focus-visible { background: var(--s100); border-color: var(--s400); }
+.an-leitura { border-radius: 18px; background: var(--s950); padding: 16px 26px; }
+.an-leitura p:first-child { font-size: 16px; line-height: 1.55; font-weight: 500; color: #fff; }
+.an-lim { margin-top: 6px; font-size: 13.5px; line-height: 1.5; color: var(--s400); }
+.an-leitura .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+@media (max-width: 1000px) { .an-fluxo { grid-template-columns: 1fr; } .an-seta { transform: rotate(90deg); } .an-paralelo { margin-left: 0; } }
+.an-card { padding: 18px 22px; }
+.an-para { font-size: 17px; }
+.an-lista { margin-top: 10px; }
+.an-lista li { padding: 8px 0; }
+.an-txt { font-size: 14px; line-height: 1.45; }
+.an-leitura { padding: 14px 26px; }
+.an-leitura p:first-child { font-size: 15px; }

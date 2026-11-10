@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=db893b26">
+<link rel="stylesheet" href="assets/css/painel.css?v=83ba74a4">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -239,8 +239,9 @@
             <p class="mt-p">Os autos foram obtidos à mão, um a um, no portal do STF, peça por peça nas ações eletrônicas ou em pacote único na área de peticionamento, sem o uso de coletor automático.</p>
           </div>
           <div class="mt-card mt-fluxo mt-fluxo-col">
-            <ol class="mt-funil"><li class="mt-etapa"><span class="mt-rot">Painéis</span><b>7.991</b><span class="mt-barra"><i style="--w: 100.0%"></i></span><span class="mt-desc">três painéis do Corte Aberta, baixados em 9 de junho de 2026</span></li><li class="mt-etapa"><span class="mt-rot">Executivo no polo passivo</span><b>2.234</b><span class="mt-barra"><i style="--w: 28.0%"></i></span><span class="mt-desc">e só essas seguiram</span></li><li class="mt-etapa"><span class="mt-rot">Base inicial</span><b>232</b><span class="mt-barra"><i style="--w: 2.9%"></i></span><span class="mt-desc">a conferência das ações uma a uma</span></li><li class="mt-etapa mt-fim"><span class="mt-rot">Universo final</span><b>242</b><span class="mt-barra"><i style="--w: 3.0%"></i></span><span class="mt-desc">Restaram 227 ações da base inicial e 15 adicionais.</span></li></ol>
+            <ol class="mt-funil"><li class="mt-etapa"><span class="mt-rot">Painéis</span><b>7.991</b><span class="mt-barra"><i style="--w: 100.0%"></i></span><span class="mt-desc">três painéis do Corte Aberta, baixados em 9 de junho de 2026</span></li><li class="mt-etapa"><span class="mt-rot">Polo passivo</span><b>2.234</b><span class="mt-barra"><i style="--w: 28.0%"></i></span><span class="mt-desc">e só essas seguiram</span></li><li class="mt-etapa"><span class="mt-rot">Base inicial</span><b>232</b><span class="mt-barra"><i style="--w: 2.9%"></i></span><span class="mt-desc">a conferência das ações uma a uma</span></li><li class="mt-etapa mt-fim"><span class="mt-rot">Universo final</span><b>242</b><span class="mt-barra"><i style="--w: 3.0%"></i></span><span class="mt-desc">Restaram 227 ações da base inicial e 15 adicionais.</span></li></ol>
             <p class="mt-p mt-cod2">A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p>
+            <p class="mt-p mt-cod2 mt-conf2">A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>).</p>
           </div>
         </div>
         <div class="mt-rodape">
@@ -252,27 +253,41 @@
         </div>
       </article>
       <article class="met mt mt-3" data-m="2">
-        <div class="mt-card mt-tabela-card">
-          <table class="mt-tabela">
-            <thead><tr><th scope="col">Técnica</th><th scope="col">Para quê</th><th scope="col">Como</th></tr></thead>
-            <tbody>
-              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">O plano descritivo</span><span class="mt-nome">teste qui-quadrado e V de Cramér</span></th><td>Ver se o desfecho muda conforme o governo, o autor da ação ou a matéria.</td><td>Compara os grupos. O qui-quadrado diz se a diferença pode ser obra do acaso, e o V de Cramér, se ela é fraca ou forte.</td></tr>
-              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">No plano multivariado</span><span class="mt-nome">regressão logística penalizada</span><span class="mt-quem"><span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth (1993</span>)</span></th><td>Medir o peso de cada característica quando todas são consideradas juntas.</td><td>Estima a chance de a ação passar pelo relator e de ter o mérito examinado pelo colegiado, com uma correção feita para poucos casos.</td></tr>
-              <tr><th scope="row"><span class="mt-nome">teste de razão de verossimilhanças e intervalos de confiança por verossimilhança perfilada</span></th><td>Saber se cada grupo de características ajuda a explicar o desfecho e qual a margem de erro.</td><td>Compara o modelo com e sem cada grupo e calcula a faixa provável de cada resultado.</td></tr>
-              <tr><th scope="row"><span class="mt-nome">reamostragem e validação cruzada</span></th><td>Testar se o modelo se sustenta.</td><td>Refaz as contas com sorteios das próprias ações e mede quanto o modelo acerta em ações que ficaram de fora da estimação.</td></tr>
-              <tr><th scope="row"><span class="mt-nome">probabilidades preditas</span></th><td>Traduzir a regressão em chances fáceis de ler.</td><td>Calcula a probabilidade de o mérito ser julgado para perfis típicos de ação.</td></tr>
-              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">As outras três técnicas</span><span class="mt-nome">análise de riscos competitivos</span></th><td>Saber se a perda de objeto costuma chegar antes do julgamento do mérito.</td><td>Acompanha cada ação no tempo, como uma corrida entre desfechos, e conta também as que ainda aguardam decisão.</td></tr>
-              <tr><th scope="row"><span class="mt-nome">busca do ponto de mudança</span></th><td>Descobrir se o Supremo mudou o tratamento dessas ações e quando.</td><td>Procura nos próprios dados o momento em que o padrão muda, sem fixar antes uma data como a troca de governo em 2019.</td></tr>
-              <tr><th scope="row"><span class="mt-nome">tipologia dos fundamentos das petições iniciais</span></th><td>Ver se o modo como o autor apresenta o decreto já anuncia a ofensa reflexa.</td><td>Separa as petições que alegam ofensa direta à Constituição das que dizem que o decreto foi além da lei e compara os desfechos.</td></tr>
-              <tr class="mt-novo-g"><th scope="row"><span class="mt-g">A codificação</span><span class="mt-nome">releitura de uma amostra sorteada</span><span class="mt-quem"><span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>)</span></th><td>Medir a confiabilidade da codificação.</td><td>Relê uma amostra de ações escolhida por sorteio e confere se a codificação se repete.</td></tr>
-            </tbody>
-          </table>
-          <p class="mt-limites2">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
+        <div class="dica-fonte" id="an-qui" hidden>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</div><div class="dica-fonte" id="an-cramer" hidden>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</div><div class="dica-fonte" id="an-firth" hidden>No plano multivariado, de caráter exploratório, a regressão logística penalizada (Firth, 1993), escolhida pelo número pequeno de casos e pela separação entre os desfechos, estimará esses atributos em conjunto em dois estágios, a sobrevivência ao exame do relator e o exame do mérito pelo colegiado.</div><div class="dica-fonte" id="an-ver" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-ic" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-boot" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-cv" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-prob" hidden>As probabilidades preditas traduzirão os coeficientes da regressão em perfis típicos de ação.</div><div class="dica-fonte" id="an-riscos" hidden>A análise de riscos competitivos usará as datas de ajuizamento e de decisão para acompanhar cada ação ao longo do tempo e mostrará se a perda de objeto costuma chegar antes do julgamento do mérito.</div><div class="dica-fonte" id="an-ponto" hidden>A busca do ponto de mudança dirá, a partir dos próprios dados, se o tratamento das ações mudou e em que momento, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</div><div class="dica-fonte" id="an-tipo" hidden>A tipologia dos fundamentos das petições iniciais permitirá verificar se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa, outra das construções processuais que a hipótese aponta.</div><div class="an-fluxo"><div class="an-card">
+          <p class="an-plano">O plano descritivo</p>
+          <p class="an-para">para mostrar em que ponto o exame da constitucionalidade é interrompido</p>
+          <ul class="an-lista">
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-qui">teste qui-quadrado</span></span><span class="an-txt">indicará se a diferença entre os grupos vai além do acaso</span></li>
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-cramer">V de Cramér</span></span><span class="an-txt">medirá a intensidade dessa associação</span></li>
+          </ul>
+        </div><span class="an-seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span><div class="an-card an-meio">
+          <p class="an-plano">No plano multivariado</p>
+          <p class="an-para">verificará quais desses atributos permanecem associados à resolução de mérito quando considerados em conjunto</p>
+          <div class="an-estagios">
+            <span class="an-e1">primeiro na chegada da ação ao colegiado</span>
+            <span class="an-e2">depois, entre as que chegam, no exame do mérito</span>
+          </div>
+          <ul class="an-lista">
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-firth">regressão logística penalizada</span></span><span class="an-txt">(<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</span></li>
+          </ul>
+          <div class="an-chips"><span class="pista" role="button" tabindex="0" data-dica="an-ver">teste de razão de verossimilhanças</span> <span class="pista" role="button" tabindex="0" data-dica="an-ic">intervalos de confiança por verossimilhança perfilada</span> <span class="pista" role="button" tabindex="0" data-dica="an-boot">reamostragem</span> <span class="pista" role="button" tabindex="0" data-dica="an-cv">validação cruzada</span> <span class="pista" role="button" tabindex="0" data-dica="an-prob">probabilidades preditas</span></div>
+        </div><div class="an-card an-paralelo">
+          <p class="an-plano">As outras três técnicas</p>
+          <p class="an-para">também respondem a partes da hipótese</p>
+          <ul class="an-lista">
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-riscos">análise de riscos competitivos</span></span><span class="an-txt">mostrará se a perda de objeto costuma chegar antes do julgamento do mérito</span></li>
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-ponto">busca do ponto de mudança</span></span><span class="an-txt">se o tratamento das ações mudou e em que momento</span></li>
+            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-tipo">tipologia dos fundamentos das petições iniciais</span></span><span class="an-txt">se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa</span></li>
+          </ul>
+        </div></div>
+        <div class="an-leitura">
+          <p>Essas técnicas medem, em cada estágio, a associação entre os atributos e a resolução de mérito, o que responde à pergunta de pesquisa e permite verificar se a ofensa reflexa e a prejudicialidade pesam mais do que a matéria do decreto ou o governo que o editou, como sustenta a hipótese.</p>
+          <p class="an-lim">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
         </div>
         <div class="mt-rodape">
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Seção 3.2</span>
+          <span class="met-ref-notas">Seções 3.2 e 4</span>
           <span class="met-ir"><a href="#resultados" data-tela="3">Resultados preliminares <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
