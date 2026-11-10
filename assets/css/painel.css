@@ -1140,3 +1140,36 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 @media (max-width: 1000px) { .pb { grid-template-columns: 1fr; grid-template-areas: "dados" "alcance" "climax"; } .pb-climax { grid-template-columns: 1fr; gap: 18px; } }
 @media (max-width: 600px) { .pb-dados, .pb-alcance { padding: 20px; } .pb-climax { padding: 22px; } .pb-perguntas h2 { font-size: 22px; } .pb-temas { font-size: 18px; } .pb-num b { font-size: 32px; } }
 @media print { #problema .pb > *, #problema .pb-barra i { animation: none !important; opacity: 1 !important; } .pb-climax, .pb-barra { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* Problema como primeiro slide: tela escura, poucas frases, letra grande */
+.pv { position: relative; overflow: hidden; border-radius: 24px; background: radial-gradient(120% 140% at 0% 0%, #1e293b 0%, var(--s950) 55%); padding: 34px 44px 36px; color: #fff; box-shadow: var(--sombra-lg); }
+.pv-olho { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ambar-200); }
+.pv-topo { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 48px; align-items: center; margin-top: 18px; }
+.pv-periodo { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--s400); }
+.pv-linha { margin-top: 14px; }
+.pv-linha + .pv-linha { margin-top: 22px; }
+.pv-num { font-size: 20px; color: var(--s300); }
+.pv-num b { margin-right: 8px; font-size: 68px; line-height: 1; font-weight: 700; letter-spacing: -0.04em; color: #fff; }
+.pv-num sup.nr a { color: var(--ambar-200); }
+.pv-acoes .pv-num b { color: #f59e0b; }
+.pv-barra { display: block; height: 14px; margin-top: 12px; border-radius: 7px; background: rgb(255 255 255 / .08); overflow: hidden; }
+.pv-barra i { display: block; width: var(--w); min-width: 6px; height: 100%; border-radius: 7px; background: var(--s400); }
+.pv-acoes .pv-barra i { background: #f59e0b; }
+.pv-71 { font-size: 30px; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; color: #fff; }
+.pv-71 b.num { font-size: inherit; color: #f59e0b; }
+.pv-temas { margin-top: 22px; font-size: 21px; line-height: 1.55; color: var(--s300); }
+.pv-temas .tema { all: unset; font-weight: 600; color: #fff; }
+.pv-pergunta { margin-top: 30px; border-top: 1px solid rgb(255 255 255 / .12); padding-top: 26px; }
+.pv-pergunta h2 { max-width: none; font-size: 36px; line-height: 1.2; font-weight: 700; letter-spacing: -0.025em; color: #fff; }
+.pv-pergunta p { margin-top: 10px; font-size: 24px; font-weight: 600; color: #f59e0b; }
+#problema .prob-rodape { margin-top: 14px; }
+@media (prefers-reduced-motion: no-preference) {
+  #problema.ativo .pv-topo > *, #problema.ativo .pv-pergunta { animation: subir .7s ease both; }
+  #problema.ativo .pv-frases { animation-delay: .9s; }
+  #problema.ativo .pv-pergunta { animation-delay: 1.6s; }
+  #problema.ativo .pv-barra i { animation: pb-cresce 1s cubic-bezier(.2, .7, .2, 1) both; animation-delay: .25s; }
+  #problema.ativo .pv-acoes .pv-barra i { animation-delay: .9s; }
+}
+@media (max-width: 1000px) { .pv { padding: 28px; } .pv-topo { grid-template-columns: 1fr; gap: 28px; } .pv-pergunta h2 { font-size: 28px; } }
+@media (max-width: 600px) { .pv { padding: 22px; border-radius: 20px; } .pv-num b { font-size: 48px; } .pv-71 { font-size: 22px; } .pv-temas { font-size: 17px; } .pv-pergunta h2 { font-size: 22px; } .pv-pergunta p { font-size: 18px; } }
+@media print { #problema .pv *, #problema .pv-barra i { animation: none !important; opacity: 1 !important; } .pv, .pv-barra { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
