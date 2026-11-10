@@ -1104,3 +1104,39 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ph-corpo .ph-peso .balanca { width: 230px; }
 .ph-corpo .ph-peso p { margin-top: 10px; font-size: 17px; line-height: 1.65; }
 @media (max-width: 1000px) { .ph-corpo { grid-template-columns: 1fr; } .ph-corpo .ph-peso { border-left: 0; border-top: 1px solid var(--s100); } }
+
+/* Problema: os números, o alcance e a dúvida, sem figuras */
+.pb { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-areas: "dados alcance" "climax climax"; gap: 16px; }
+.pb-dados, .pb-alcance { border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 24px 30px; box-shadow: var(--sombra-sm); }
+.pb-dados { grid-area: dados; }
+.pb-alcance { grid-area: alcance; display: flex; flex-direction: column; justify-content: center; }
+.pb-periodo { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--s500); }
+.pb-linha { margin-top: 14px; }
+.pb-num { font-size: 15px; color: var(--s600); }
+.pb-num b { margin-right: 6px; font-size: 40px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; color: var(--s950); }
+.pb-acoes .pb-num b { color: var(--ambar-600); }
+.pb-barra { display: block; height: 16px; margin-top: 8px; border-radius: 8px; background: var(--s100); overflow: hidden; }
+.pb-barra i { display: block; width: var(--w); min-width: 5px; height: 100%; border-radius: 8px; background: var(--s400); }
+.pb-acoes .pb-barra i { background: var(--ambar-600); }
+.pb-legenda { margin-top: 16px; font-size: 16px; line-height: 1.6; color: var(--s700); }
+.pb-legenda b.num { font-size: 18px; color: var(--s950); }
+.pb-miudo { font-size: 15px; line-height: 1.65; color: var(--s500); }
+.pb-temas { margin-top: 14px; font-size: 20px; line-height: 1.6; font-weight: 500; letter-spacing: -0.01em; color: var(--s900); }
+.pb-temas .tema { all: unset; font-weight: 700; color: var(--ambar-700); }
+.pb-climax { grid-area: climax; display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 40px; align-items: center; border-radius: 20px; background: var(--s950); padding: 26px 34px; }
+.pb-duvida { border-left: 3px solid var(--ambar-600); padding-left: 18px; font-size: 15px; line-height: 1.65; color: var(--s300); }
+.pb-duvida sup.nr a { color: var(--ambar-200); }
+.pb-perguntas h2 { max-width: none; font-size: 28px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em; color: #fff; }
+.pb-p2 { margin-top: 10px; font-size: 20px; font-weight: 600; color: var(--ambar-200); }
+.pb-p3 { margin-top: 6px; font-size: 15px; line-height: 1.55; color: var(--s400); }
+@media (prefers-reduced-motion: no-preference) {
+  #problema.ativo .pb > * { animation: subir .6s ease both; }
+  #problema.ativo .pb-alcance { animation-delay: .15s; }
+  #problema.ativo .pb-climax { animation-delay: .35s; }
+  #problema.ativo .pb-barra i { animation: pb-cresce 1s cubic-bezier(.2, .7, .2, 1) both; animation-delay: .3s; }
+  #problema.ativo .pb-acoes .pb-barra i { animation-delay: 1.1s; }
+}
+@keyframes pb-cresce { from { width: 0; min-width: 0; } }
+@media (max-width: 1000px) { .pb { grid-template-columns: 1fr; grid-template-areas: "dados" "alcance" "climax"; } .pb-climax { grid-template-columns: 1fr; gap: 18px; } }
+@media (max-width: 600px) { .pb-dados, .pb-alcance { padding: 20px; } .pb-climax { padding: 22px; } .pb-perguntas h2 { font-size: 22px; } .pb-temas { font-size: 18px; } .pb-num b { font-size: 32px; } }
+@media print { #problema .pb > *, #problema .pb-barra i { animation: none !important; opacity: 1 !important; } .pb-climax, .pb-barra { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
