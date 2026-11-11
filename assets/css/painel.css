@@ -1919,3 +1919,40 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 @media (max-width: 1000px) {
   .ex-grade { grid-template-columns: minmax(0, 1fr); }
 }
+/* Exemplos: cartão da técnica mais objetivo */
+.ex-tec .an-para { font-size: 17px; line-height: 1.4; }
+.ex-chips { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+.ex-chips span { border-radius: 10px; padding: 7px 11px; font-size: 13.5px; line-height: 1.35; font-weight: 600; }
+.tp-c-a { background: var(--ambar-50); color: var(--ambar-700); box-shadow: inset 0 0 0 1px var(--ambar-200); }
+.tp-c-b { background: var(--azul-50); color: var(--azul-700); box-shadow: inset 0 0 0 1px #bfdbfe; }
+.ex-depois { margin-top: 10px !important; }
+.ex-linhas { margin: 14px 0 0; padding: 0; list-style: none; }
+.ex-linhas li { position: relative; padding: 8px 0 8px 14px; border-top: 1px solid var(--s100); font-size: 13.5px; line-height: 1.45; color: var(--s600); }
+.ex-linhas li::before { content: ""; position: absolute; left: 0; top: 15px; width: 5px; height: 5px; border-radius: 50%; background: var(--s400); }
+.ex-pre { display: block; margin-top: 2px; font-size: 11.5px; line-height: 1.35; color: var(--s500); }
+.ex-pre + .ex-pre { margin-top: 3px; }
+.ex-1 .ex-grade { grid-template-columns: minmax(0, 250px) minmax(0, 1fr); }
+.ex-tab thead th:first-child { width: 21%; }
+.ex-sub { display: block; margin-top: 2px; font-weight: 500; color: var(--s400); }
+.ex-dec { display: block; font-weight: 600; color: var(--s900); }
+.ex-nat { display: inline-block; margin-top: 4px; border-radius: 6px; background: var(--s100); padding: 1px 7px; font-size: 11.5px; font-weight: 600; color: var(--s700); }
+.ex-1 .ex-tab tbody th, .ex-1 .ex-tab tbody td { padding-top: 4px; padding-bottom: 4px; }
+.ex-1 .ex-porta td, .ex-1 .ex-porta th { padding-top: 7px !important; padding-bottom: 7px !important; }
+.ex-1 .ex-marca { width: 20px; height: 20px; margin-bottom: 2px; }
+@media (max-width: 1000px) { .ex-1 .ex-grade { grid-template-columns: minmax(0, 1fr); } }
+.ex-tab thead th:first-child { vertical-align: top; }
+.ex-tab thead th:first-child .met-rot { font-size: 11px; }
+.ex-tab thead th:first-child .ex-aviso { display: inline-block; margin: 6px 0 0; font-size: 10.5px; }
+.ex-tab thead th { vertical-align: bottom; }
+.ex-1 .ex-caso { padding-top: 12px; }
+.ex-1 .ex-tab { font-size: 12.5px; }
+.ex-1 .ex-tab tbody th { font-size: 12px; }
+.ex-1 .ex-porta .ex-marca { float: left; margin: 0 8px 4px 0; }
+.ex-1 .ex-porta .ex-onde { display: block; min-height: 20px; padding-top: 2px; }
+.ex-1 .ex-porta q { clear: left; }
+.ex-1 .ex-tec .an-para { font-size: 16px; }
+.ex-1 .ex-tab thead th:first-child { width: 22%; }
+.ex-1 .ex-p2 q { clear: none; }
+.ex-1 .ex-porta td, .ex-1 .ex-porta th { padding-top: 6px !important; padding-bottom: 6px !important; }
+.ex-1 .ex-porta q { line-height: 1.35; }
+.ex-1 .ex-tab thead th { padding-bottom: 2px; }
