@@ -1712,3 +1712,54 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .rv-fora > th[scope="row"] { box-shadow: inset 3px 0 0 var(--ambar-600); padding-left: 10px !important; }
 @media (max-width: 1000px) { .rv-aviso { display: inline-block; max-width: none; margin: 6px 0 0; } .rv-fora > th[scope="row"] { box-shadow: none; padding-left: 0 !important; } }
 @media print { .rv-aviso { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* Objetivos, nova composição: objetivo geral em destaque e três verbos */
+#objetivos .ob-geral { position: relative; display: block; overflow: hidden; border-radius: 24px; background: radial-gradient(120% 140% at 0% 0%, #1e293b 0%, var(--s950) 55%); padding: 34px 44px 36px; box-shadow: var(--sombra-xl); }
+#objetivos .ob-geral::after { content: ""; position: absolute; right: -60px; top: -60px; width: 260px; height: 260px; border-radius: 50%; border: 36px solid rgb(217 119 6 / .10); pointer-events: none; }
+.ob-olho { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ambar-200); }
+#objetivos .objetivo-txt { position: relative; margin-top: 12px; max-width: 1060px; font-size: 27px; line-height: 1.42; font-weight: 600; letter-spacing: -0.012em; }
+#objetivos .objetivo-txt em { font-style: normal; color: #fbbf24; }
+.ob-div { display: flex; align-items: center; gap: 16px; margin: 24px 0 14px; }
+.ob-div::before, .ob-div::after { content: ""; flex: 1; height: 1px; background: var(--s300); }
+.ob-div .ob-olho { color: var(--s500); }
+#objetivos .ob-esp { display: grid; grid-template-columns: 1.18fr 1fr 1fr; gap: 16px; }
+#objetivos .ob-card { position: relative; display: flex; flex-direction: column; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 22px 26px 20px; box-shadow: var(--sombra-sm); overflow: hidden; }
+#objetivos .ob-card::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--ambar-600); opacity: .85; }
+.ob-cab { display: flex; align-items: baseline; gap: 14px; }
+.ob-n { flex: none; font-size: 52px; line-height: .9; font-weight: 800; letter-spacing: -0.04em; color: transparent; -webkit-text-stroke: 1.6px var(--ambar-600); font-variant-numeric: tabular-nums; }
+.ob-verbo { font-size: 22px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; color: var(--s950); }
+#objetivos .ob-card .texto { margin: 16px 0 16px; font-size: 16px; line-height: 1.65; color: var(--s700); }
+#objetivos .ob-card .rl { background: none; padding: 0; border-radius: 0; font-weight: 700; }
+#objetivos .ob-card .rl.obs { color: var(--ambar-700); }
+#objetivos .ob-card .rl.mer { color: var(--verde-700); }
+#objetivos a.ob-ir { margin-top: auto; }
+.ob-rodape { margin-top: 14px; }
+@media (prefers-reduced-motion: no-preference) {
+  #objetivos.ativo .ob-geral { animation: subir .5s ease both; }
+  #objetivos.ativo .ob-card { animation: subir .5s ease both; }
+  #objetivos.ativo .ob-card:nth-child(2) { animation-delay: .12s; }
+  #objetivos.ativo .ob-card:nth-child(3) { animation-delay: .24s; }
+}
+@media (max-width: 900px) {
+  #objetivos .ob-geral { padding: 24px 22px; }
+  #objetivos .objetivo-txt { font-size: 20px; }
+  #objetivos .ob-esp { grid-template-columns: 1fr; }
+  .ob-n { font-size: 42px; }
+  .ob-verbo { font-size: 19px; }
+}
+@media print { #objetivos .ob-geral, #objetivos .ob-card { animation: none !important; opacity: 1 !important; } #objetivos .ob-geral, #objetivos .ob-card::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+#objetivos .ob-geral { padding: 28px 40px 30px; }
+#objetivos .objetivo-txt { margin-top: 10px; font-size: 25px; }
+.ob-div { margin: 18px 0 12px; }
+#objetivos .ob-esp { grid-template-columns: 1.32fr 1fr 1fr; }
+#objetivos .ob-card { padding: 20px 24px 18px; }
+#objetivos .ob-card .texto { margin: 14px 0 14px; font-size: 15.5px; line-height: 1.62; }
+.ob-rodape { margin-top: 10px; }
+#objetivos .ob-geral::after { display: none; }
+@media (max-width: 900px) {
+  #objetivos .ob-esp { grid-template-columns: 1fr; gap: 12px; }
+  #objetivos .ob-geral { padding: 22px 20px 24px; }
+  #objetivos .objetivo-txt { font-size: 19px; }
+  #objetivos .ob-card { padding: 18px 20px 16px; }
+  .ob-n { font-size: 40px; } .ob-verbo { font-size: 18px; }
+}
