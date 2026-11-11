@@ -2,6 +2,10 @@
   "use strict";
   var paineis = Array.prototype.slice.call(document.querySelectorAll(".painel"));
   var total = paineis.length;
+  /* Telas de reserva (data-reserva) ficam fora da sequência: sem aba visível, sem número,
+     abertas só pelo link nas Referências */
+  var reserva = function (p) { return p.hasAttribute("data-reserva"); };
+  var nPrinc = paineis.filter(function (p) { return !reserva(p); }).length;
   var atual = -1;
   var reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var pad = function (n) { return (n < 10 ? "0" : "") + n; };
@@ -15,6 +19,7 @@
   var abas = paineis.map(function (p, i) {
     var b = document.createElement("button");
     b.type = "button"; b.className = "aba"; b.id = "aba-" + p.id;
+    if (reserva(p)) { b.hidden = true; b.className += " aba-reserva"; }
     b.setAttribute("role", "tab"); b.setAttribute("aria-controls", p.id); b.setAttribute("aria-selected", "false");
     b.innerHTML = '<svg class="ic" aria-hidden="true"><use href="#i-' + p.dataset.icone + '"/></svg>' + p.dataset.rotulo;
     b.addEventListener("click", function () { mostrar(i, true); });
@@ -54,8 +59,8 @@
     p.querySelectorAll("[data-count]").forEach(contar);
     var ctl = window.etapasPainel && window.etapasPainel[p.id];
     if (ctl) ctl.entrar(direcao || 0);
-    contador.textContent = pad(i + 1) + " / " + pad(total);
-    btnProx.disabled = i === total - 1;
+    contador.textContent = reserva(p) ? "Reserva" : pad(i + 1) + " / " + pad(nPrinc);
+    btnProx.disabled = i >= nPrinc - 1 && !(window.etapasPainel && window.etapasPainel[p.id] && reserva(p));
     var aba = abas[i];
     trilho.scrollTo({ left: aba.offsetLeft - (trilho.clientWidth - aba.offsetWidth) / 2, behavior: reduzir ? "auto" : "smooth" });
     if (rolar) {
@@ -77,6 +82,7 @@
     if (naCapa()) { irPara(topoAbas(), true); return; }
     var ctl = etapas();
     if (ctl && ctl.avancar()) { irPara(topoAbas(), false); return; }
+    if (atual + 1 >= nPrinc) return;
     mostrar(atual + 1, true, 1);
   }
   function voltar() {
@@ -95,7 +101,9 @@
   trilho.addEventListener("keydown", function (e) {
     if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
       e.preventDefault(); e.stopPropagation();
-      mostrar(atual + (e.key === "ArrowRight" ? 1 : -1), true); abas[atual].focus();
+      var alvo = atual + (e.key === "ArrowRight" ? 1 : -1);
+      if (alvo >= nPrinc && !reserva(paineis[atual])) return;
+      mostrar(alvo, true); abas[atual].focus();
     }
   });
   document.addEventListener("keydown", function (e) {
