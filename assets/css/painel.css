@@ -1706,3 +1706,9 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 @media print { .rf-3 .rf-tab tbody tr > .rv-virada { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 #resultados .mt-lista { max-width: 1000px; }
 @media print { .rf-3 .dica-fonte[hidden], .rf-3 .dica-fonte { display: none !important; } }
+/* Linhas que vêm dos autos e ainda não estão na dissertação */
+.rf-3 .rf-tab th[scope="row"] { width: 100px; }
+.rv-aviso { display: block; margin-top: 8px; max-width: 92px; border: 1.5px dashed var(--ambar-600); border-radius: 8px; background: #fff; padding: 3px 6px; font-size: 11px; font-weight: 700; line-height: 1.3; color: var(--ambar-700); }
+.rv-fora > th[scope="row"] { box-shadow: inset 3px 0 0 var(--ambar-600); padding-left: 10px !important; }
+@media (max-width: 1000px) { .rv-aviso { display: inline-block; max-width: none; margin: 6px 0 0; } .rv-fora > th[scope="row"] { box-shadow: none; padding-left: 0 !important; } }
+@media print { .rv-aviso { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
