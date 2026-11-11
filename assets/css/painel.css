@@ -1661,3 +1661,10 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .rf-2 .rf-climax { padding: 12px 26px; }
 .rf-2 .rf-climax p { font-size: 17px; }
 .rf-1 .rf-tab th[scope="row"] { width: 136px; } .rf-1 .rf-num { font-size: 38px; }
+/* Resultados, tela 1: o critério do corpus efetivo, da Seção 2.1 */
+.rf-def { display: block; margin-top: 12px; border-left: 3px solid var(--s300); padding: 2px 0 2px 12px; font-size: 13.5px; line-height: 1.5; color: var(--s600); }
+.rf-1 .rf-tab td { padding-top: 13px; padding-bottom: 13px; font-size: 15.5px; }
+.rf-1 .rf-tab th[scope="row"] { padding-top: 13px; padding-bottom: 13px; }
+.rf-1 .rf-ach .pista { font-weight: 600; }
+.rf-just .rf-def { margin: 0 0 10px; }
+.rf-1 .rf-tab td, .rf-1 .rf-tab th[scope="row"] { padding-top: 11px; padding-bottom: 11px; }
