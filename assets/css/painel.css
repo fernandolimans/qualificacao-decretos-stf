@@ -2988,3 +2988,45 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ra-mp .ra-tese .ref-txt { font-weight: 500; font-size: 14px; color: var(--s300); }
 .ra-pts li { font-size: 13.5px; }
 .ra-ref { font-size: 13px; font-weight: 500; color: var(--s400); white-space: nowrap; } .ra-ref .ref-txt { font-size: inherit !important; color: inherit !important; }
+/* Metodologia: subabas agrupadas pelos planos da análise */
+#metodologia .met-lista.met-grupos { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr) minmax(0, 2fr) minmax(0, 2.85fr); gap: 0 14px; max-width: none; margin-bottom: 10px; align-items: end; }
+.mg { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.mg + .mg { border-left: 1px solid var(--s200); padding-left: 14px; }
+.mg-cab { font-size: 11px; line-height: 1.32; color: var(--s500); }
+.mg-cab b { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ambar-700); }
+.mg-bts { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 6px; }
+#metodologia .met-grupos button { min-height: 40px; padding: 4px 9px; }
+#metodologia .met-grupos button b { font-size: 12px; line-height: 1.25; }
+#metodologia .met-grupos .met-n { width: 20px; height: 20px; font-size: 11px; }
+@media (max-width: 1000px) {
+  #metodologia .met-lista.met-grupos { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .mg + .mg { border-left: 0; padding-left: 0; }
+  .mg-bts { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* faixa de leitura no alto da primeira técnica */
+#metodologia .an-abre { order: -1; padding: 9px 22px; }
+#metodologia .an-abre p:first-child { font-size: 13.5px; line-height: 1.45; }
+#metodologia .an-abre .an-lim { margin-top: 3px; font-size: 12px; }
+#metodologia .met-lista.met-grupos { grid-template-columns: minmax(0, .78fr) minmax(0, 1.5fr) minmax(0, 2.15fr) minmax(0, 2.6fr); margin-bottom: 8px; }
+#metodologia .met-grupos button { min-height: 36px; padding: 3px 9px; }
+.mg-cab { font-size: 10.5px; line-height: 1.3; }
+#metodologia .met-lista.met-grupos { grid-template-columns: 170px 240px minmax(0, 1fr) minmax(0, 1.5fr); gap: 0 12px; }
+.mg + .mg { padding-left: 12px; }
+.mg-cab b { display: inline; margin-right: 4px; }
+#metodologia .met-grupos button { min-height: 34px; padding: 3px 8px; gap: 6px; }
+#metodologia .met-grupos button b { font-size: 11.5px; line-height: 1.2; }
+@media (max-width: 1000px) { #metodologia .met-lista.met-grupos { grid-template-columns: minmax(0, 1fr); } .mg + .mg { padding-left: 0; } }
+#metodologia .met-lista.met-grupos { grid-template-columns: 150px 250px minmax(0, 1.15fr) minmax(0, 1.25fr); }
+.mg-cab { font-size: 10px; line-height: 1.28; }
+.mg-cab b { font-size: 10px; }
+#metodologia .met-grupos button { min-height: 32px; padding: 2px 8px; }
+#metodologia .met-grupos button b { font-size: 11px; line-height: 1.18; }
+#metodologia .met-grupos .met-n { width: 18px; height: 18px; font-size: 10px; }
+#metodologia .ex-ris .rk-linha { padding-top: 7px; padding-bottom: 7px; } #metodologia .ex-ris .rk-leg { margin-bottom: 2px; }
+#metodologia .ex-ris .rk-linha { padding-top: 5px; padding-bottom: 5px; } #metodologia .ex-tela .mt-rodape { margin-top: -2px; }
+@media (max-width: 1000px) {
+  #metodologia .met-lista.met-grupos { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  #metodologia .met-grupos .mg + .mg { border-left: 0; padding-left: 0; }
+  #metodologia .met-grupos .mg-bts { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #metodologia .met-grupos .mg-0 .mg-cab { display: none; }
+}

@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=0e6dcc85">
+<link rel="stylesheet" href="assets/css/painel.css?v=fb930d23">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -184,7 +184,7 @@
         <p>O segundo é mapear os desfechos dessas ações e descrever a sua associação com os atributos da ação e do decreto impugnado.</p>
       </article>
       <article class="po-card">
-        <header><span class="po-n">3</span><b class="po-verbo">estimar</b><a class="secao-chip po-ir" href="#metodologia" data-tela="1">Seção 4.3 <svg class="ic"><use href="#i-arrow-right"/></svg></a></header>
+        <header><span class="po-n">3</span><b class="po-verbo">estimar</b><a class="secao-chip po-ir" href="#metodologia" data-tela="2">Seção 4.3 <svg class="ic"><use href="#i-arrow-right"/></svg></a></header>
         <p>O terceiro é estimar, dentro do que permite o número reduzido de casos, as condições associadas à resolução de mérito em dois estágios, <span class="rl obs">a sobrevivência ao filtro monocrático</span> e <span class="rl mer">o exame do mérito pelo colegiado</span>.</p>
       </article>
     </div>
@@ -406,15 +406,22 @@
 <!-- Metodologia -->
 <section class="painel" id="metodologia" data-rotulo="Metodologia" data-icone="flask-conical" role="tabpanel">
   <div class="met-grade">
-    <nav class="met-lista mt-lista met-8" role="tablist" aria-label="Metodologia">
+    <nav class="met-lista mt-lista met-grupos" role="tablist" aria-label="Metodologia">
+      <div class="mg mg-0"><p class="mg-cab"></p><div class="mg-bts">
       <button type="button" role="tab" data-m="0"><span class="met-n">1</span><b>O levantamento do universo processual</b></button>
-      <button type="button" role="tab" data-m="1"><span class="met-n">2</span><b>A estratégia de análise</b></button>
-      <button type="button" role="tab" data-m="2"><span class="met-n">3</span><b>Teste qui-quadrado e V de Cramér</b></button>
-      <button type="button" role="tab" data-m="3"><span class="met-n">4</span><b>Regressão logística penalizada</b></button>
-      <button type="button" role="tab" data-m="4"><span class="met-n">5</span><b>O que a regressão devolve</b></button>
-      <button type="button" role="tab" data-m="5"><span class="met-n">6</span><b>Análise de riscos competitivos</b></button>
-      <button type="button" role="tab" data-m="6"><span class="met-n">7</span><b>Busca do ponto de mudança</b></button>
-      <button type="button" role="tab" data-m="7"><span class="met-n">8</span><b>Tipologia dos fundamentos das petições iniciais</b></button>
+      </div></div>
+      <div class="mg mg-1"><p class="mg-cab"><b>O plano descritivo</b> para mostrar em que ponto o exame da constitucionalidade é interrompido</p><div class="mg-bts">
+      <button type="button" role="tab" data-m="1"><span class="met-n">2</span><b>Teste qui-quadrado e V de Cramér</b></button>
+      </div></div>
+      <div class="mg mg-2"><p class="mg-cab"><b>No plano multivariado</b> verificará quais desses atributos permanecem associados à resolução de mérito quando considerados em conjunto</p><div class="mg-bts">
+      <button type="button" role="tab" data-m="2"><span class="met-n">3</span><b>Regressão logística penalizada</b></button>
+      <button type="button" role="tab" data-m="3"><span class="met-n">4</span><b>O que a regressão devolve</b></button>
+      </div></div>
+      <div class="mg mg-3"><p class="mg-cab"><b>As outras três técnicas</b> também respondem a partes da hipótese</p><div class="mg-bts">
+      <button type="button" role="tab" data-m="4"><span class="met-n">5</span><b>Análise de riscos competitivos</b></button>
+      <button type="button" role="tab" data-m="5"><span class="met-n">6</span><b>Busca do ponto de mudança</b></button>
+      <button type="button" role="tab" data-m="6"><span class="met-n">7</span><b>Tipologia dos fundamentos das petições iniciais</b></button>
+      </div></div>
     </nav>
     <div class="met-telas">
       <article class="met mt bo-tela" data-m="0">
@@ -438,51 +445,11 @@
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
           <button type="button" class="ref" data-ref="DIAS, Mateus">Dias (2024)</button>
           <span class="met-ref-notas">Seções 3 e 3.1</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="1">A estratégia de análise <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="1">Teste qui-quadrado e V de Cramér <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt mt-3" data-m="1">
-        <div class="dica-fonte" id="an-qui" hidden>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</div><div class="dica-fonte" id="an-cramer" hidden>O teste qui-quadrado indicará se a diferença entre os grupos vai além do acaso, e o V de Cramér medirá a intensidade dessa associação.</div><div class="dica-fonte" id="an-firth" hidden>No plano multivariado, de caráter exploratório, a regressão logística penalizada (Firth, 1993), escolhida pelo número pequeno de casos e pela separação entre os desfechos, estimará esses atributos em conjunto em dois estágios, a sobrevivência ao exame do relator e o exame do mérito pelo colegiado.</div><div class="dica-fonte" id="an-ver" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-ic" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-boot" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-cv" hidden>O teste de razão de verossimilhanças dirá se cada grupo de variáveis contribui para o modelo, os intervalos de confiança por verossimilhança perfilada darão a margem de incerteza de cada estimativa, a reamostragem verificará se os resultados se mantêm quando a amostra varia e a validação cruzada medirá quanto o modelo acerta em casos que não serviram para estimá-lo.</div><div class="dica-fonte" id="an-prob" hidden>As probabilidades preditas traduzirão os coeficientes da regressão em perfis típicos de ação.</div><div class="dica-fonte" id="an-riscos" hidden>A análise de riscos competitivos usará as datas de ajuizamento e de decisão para acompanhar cada ação ao longo do tempo e mostrará se a perda de objeto costuma chegar antes do julgamento do mérito.</div><div class="dica-fonte" id="an-ponto" hidden>A busca do ponto de mudança dirá, a partir dos próprios dados, se o tratamento das ações mudou e em que momento, sem que a pesquisa precise fixar de antemão um marco como a mudança de governo em 2019.</div><div class="dica-fonte" id="an-tipo" hidden>A tipologia dos fundamentos das petições iniciais permitirá verificar se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa, outra das construções processuais que a hipótese aponta.</div><div class="an-fluxo"><div class="an-card">
-          <p class="an-plano">O plano descritivo</p>
-          <p class="an-para">para mostrar em que ponto o exame da constitucionalidade é interrompido</p>
-          <ul class="an-lista">
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-qui">teste qui-quadrado</span></span><span class="an-txt">indicará se a diferença entre os grupos vai além do acaso</span></li>
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-cramer">V de Cramér</span></span><span class="an-txt">medirá a intensidade dessa associação</span></li>
-          </ul>
-        </div><span class="an-seta" aria-hidden="true"><svg class="ic"><use href="#i-arrow-right"/></svg></span><div class="an-card an-meio">
-          <p class="an-plano">No plano multivariado</p>
-          <p class="an-para">verificará quais desses atributos permanecem associados à resolução de mérito quando considerados em conjunto</p>
-          <div class="an-estagios">
-            <span class="an-e1">primeiro na chegada da ação ao colegiado</span>
-            <span class="an-e2">depois, entre as que chegam, no exame do mérito</span>
-          </div>
-          <ul class="an-lista">
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-firth">regressão logística penalizada</span></span><span class="an-txt">(<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</span></li>
-          </ul>
-          <div class="an-chips"><span class="pista" role="button" tabindex="0" data-dica="an-ver">teste de razão de verossimilhanças</span> <span class="pista" role="button" tabindex="0" data-dica="an-ic">intervalos de confiança por verossimilhança perfilada</span> <span class="pista" role="button" tabindex="0" data-dica="an-boot">reamostragem</span> <span class="pista" role="button" tabindex="0" data-dica="an-cv">validação cruzada</span> <span class="pista" role="button" tabindex="0" data-dica="an-prob">probabilidades preditas</span></div>
-        </div><div class="an-card an-paralelo">
-          <p class="an-plano">As outras três técnicas</p>
-          <p class="an-para">também respondem a partes da hipótese</p>
-          <ul class="an-lista">
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-riscos">análise de riscos competitivos</span></span><span class="an-txt">mostrará se a perda de objeto costuma chegar antes do julgamento do mérito</span></li>
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-ponto">busca do ponto de mudança</span></span><span class="an-txt">se o tratamento das ações mudou e em que momento</span></li>
-            <li><span class="an-nome"><span class="pista" role="button" tabindex="0" data-dica="an-tipo">tipologia dos fundamentos das petições iniciais</span></span><span class="an-txt">se a forma como o proponente apresenta o decreto, como ofensa direta à Constituição ou como excesso em relação à lei que ele regulamenta, antecipa o reconhecimento da ofensa reflexa</span></li>
-          </ul>
-        </div></div>
-        <div class="an-leitura">
-          <p>Essas técnicas medem, em cada estágio, a associação entre os atributos e a resolução de mérito, o que responde à pergunta de pesquisa e permite verificar se a ofensa reflexa e a prejudicialidade pesam mais do que a matéria do decreto ou o governo que o editou, como sustenta a hipótese.</p>
-          <p class="an-lim">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
-        </div>
-        <div class="mt-rodape">
-        <footer class="met-refs">
-          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Seções 3.2 e 4</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="2">Teste qui-quadrado e V de Cramér <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
-        </footer>
-        </div>
-      </article>
-      <article class="met mt ex-tela ex-qui" data-m="2">
+      <article class="met mt ex-tela ex-qui" data-m="1">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-tec3">
           <p class="an-plano">teste qui-quadrado e V de Cramér</p>
@@ -521,15 +488,19 @@
         </div>
         </div>
         </div>
+        <div class="an-leitura an-abre">
+          <p>Essas técnicas medem, em cada estágio, a associação entre os atributos e a resolução de mérito, o que responde à pergunta de pesquisa e permite verificar se a ofensa reflexa e a prejudicialidade pesam mais do que a matéria do decreto ou o governo que o editou, como sustenta a hipótese.</p>
+          <p class="an-lim">As estimativas serão associativas e exploratórias, com os limites declarados conforme <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; KING, Gary. The rules of i">Epstein e King (2002</span>).</p>
+        </div>
         <div class="mt-rodape">
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
           <span class="met-ref-notas">Seção 3.2 e leitura preliminar (232 ações, setembro de 2026)</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="3">Regressão logística penalizada <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="2">Regressão logística penalizada <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt ex-tela ex-reg" data-m="3">
+      <article class="met mt ex-tela ex-reg" data-m="2">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-tec3">
           <p class="an-plano">regressão logística penalizada (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</p>
@@ -545,11 +516,11 @@
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
           <span class="met-ref-notas">Seção 3.2, base canônica de 2.10.2026, autos das ações no STF e leitura preliminar (232 ações, setembro de 2026)</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="4">O que a regressão devolve <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="3">O que a regressão devolve <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt ex-tela ex-sai" data-m="4">
+      <article class="met mt ex-tela ex-sai" data-m="3">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-saidas">
           <p class="an-plano">regressão logística penalizada (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</p>
@@ -587,11 +558,11 @@
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
           <span class="met-ref-notas">Seção 3.2, autos das ações no STF e leitura preliminar (232 ações, setembro de 2026)</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="5">Análise de riscos competitivos <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="4">Análise de riscos competitivos <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt ex-tela ex-ris" data-m="5">
+      <article class="met mt ex-tela ex-ris" data-m="4">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-tec3">
           <p class="an-plano">análise de riscos competitivos</p>
@@ -627,11 +598,11 @@
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
           <span class="met-ref-notas">Introdução, Seção 3.2, planilha das 242 ações, autos e leitura preliminar (232 ações, setembro de 2026)</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="6">Busca do ponto de mudança <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="5">Busca do ponto de mudança <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt ex-tela ex-pon" data-m="6">
+      <article class="met mt ex-tela ex-pon" data-m="5">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-tec3">
           <p class="an-plano">busca do ponto de mudança</p>
@@ -658,11 +629,11 @@
         <footer class="met-refs">
           <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
           <span class="met-ref-notas">Seção 3.2, autos das ações no STF e leitura preliminar (232 ações, setembro de 2026)</span>
-          <span class="met-ir"><a href="#metodologia" data-tela="7">Tipologia dos fundamentos das petições iniciais <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
+          <span class="met-ir"><a href="#metodologia" data-tela="6">Tipologia dos fundamentos das petições iniciais <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
       </article>
-      <article class="met mt ex-tela ex-tip" data-m="7">
+      <article class="met mt ex-tela ex-tip" data-m="6">
         <div class="ex-grade">
         <div class="an-card ex-tec ex-tec3">
           <p class="an-plano">tipologia dos fundamentos das petições iniciais</p>
