@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=4cd3e885">
+<link rel="stylesheet" href="assets/css/painel.css?v=0681c4dc">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -417,23 +417,27 @@
       <button type="button" role="tab" data-m="7"><span class="met-n">8</span><b>Tipologia dos fundamentos das petições iniciais</b></button>
     </nav>
     <div class="met-telas">
-      <article class="met mt mt-2" data-m="0">
-        <div class="mt-dupla">
-          <div class="mt-card mt-texto">
-            <p class="mt-lead">O universo foi montado pelo cruzamento entre os painéis de dados abertos do Supremo e o acervo de decretos da Presidência da República, com conferência manual de cada ação, que é a unidade de análise.<sup class="nr"><a href="#nota-16">16</a></sup></p>
-            <p class="mt-cond-cab">regras de inclusão</p><ol class="mt-cond"><li><span>1</span>o ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025</li><li><span>2</span>a ação deve ser ADI, Ação Direta de Inconstitucionalidade por Omissão (ADO), ADC ou ADPF ajuizada até 31 de dezembro de 2025</li><li><span>3</span>o decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte</li><li><span>4</span>o Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor</li></ol>
-            <p class="mt-p">Os autos foram obtidos à mão, um a um, no portal do STF, peça por peça nas ações eletrônicas ou em pacote único na área de peticionamento, sem o uso de coletor automático.</p>
-          </div>
-          <div class="mt-card mt-fluxo mt-fluxo-col">
-            <ol class="mt-funil"><li class="mt-etapa"><span class="mt-rot">Painéis</span><b>7.991</b><span class="mt-barra"><i style="--w: 100.0%"></i></span><span class="mt-desc">três painéis do Corte Aberta, baixados em 9 de junho de 2026</span></li><li class="mt-etapa"><span class="mt-rot">Polo passivo</span><b>2.234</b><span class="mt-barra"><i style="--w: 28.0%"></i></span><span class="mt-desc">e só essas seguiram</span></li><li class="mt-etapa"><span class="mt-rot">Base inicial</span><b>232</b><span class="mt-barra"><i style="--w: 2.9%"></i></span><span class="mt-desc">a conferência das ações uma a uma</span></li><li class="mt-etapa mt-fim"><span class="mt-rot">Universo final</span><b>242</b><span class="mt-barra"><i style="--w: 3.0%"></i></span><span class="mt-desc">Restaram 227 ações da base inicial e 15 adicionais.</span></li></ol>
-            <p class="mt-p mt-cod2">A codificação registra o desfecho, o seu fundamento e o órgão que o proferiu, o governo que editou o decreto, o proponente, a matéria, o parâmetro constitucional invocado, a natureza do decreto e o tipo de ofensa alegada.</p>
-            <p class="mt-p mt-cod2 mt-conf2">A confiabilidade será aferida pela releitura de uma amostra sorteada, como recomendam <span class="ref ref-txt" role="button" tabindex="0" data-ref="EPSTEIN, Lee; MARTIN, Andrew D. An intro">Epstein e Martin (2014</span>).</p>
-          </div>
+      <article class="met mt bo-tela" data-m="0">
+      <div class="tk">
+        <p class="tk-olho">A construção do banco de dados</p>
+        <div class="tk-grade">
+          <div class="tk-st tk-ini"><p class="tk-rot">Corte Aberta</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">Três painéis</b><p class="tk-l">baixados em 9 de junho de 2026</p><div class="tk-como"><p><b>7.612</b> painel de decisões</p><p><b>3.028</b> acervo · trazia o campo de legislação</p><p><b><svg class="ic"><use href="#i-users"/></svg></b> legitimados · trazia as partes de cada processo</p></div></div><div class="tk-st "><p class="tk-rot">Rotina em linguagem de programação R</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">7.991</b><p class="tk-l">ações</p><div class="tk-como"><p>Juntou os dois primeiros numa planilha de 7.991 ações e pôs nela as partes de cada uma</p></div></div><div class="tk-st tk-e3"><p class="tk-rot">Outra rotina</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">2.234</b><p class="tk-l">ações que tinham no polo passivo o Presidente ou a Presidência da República, a União, a Advocacia-Geral ou a Controladoria-Geral da União, um ministério ou um ministro de Estado, e só essas seguiram</p></div><div class="tk-st "><p class="tk-rot">A conferência das ações uma a uma</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">232</b><p class="tk-l">base inicial</p><div class="tk-como"><p><b>223</b> confirmou</p><p><b>+</b> ADPF nº 964 a 967</p><p><b>+</b> mais cinco ações</p></div></div><div class="tk-st tk-aj"><p class="tk-rot"></p><div class="tk-tr"><span class="tk-mais">+15</span><span class="tk-menos">−5</span></div></div><div class="tk-st tk-fim"><p class="tk-rot">Universo final</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">242</b><p class="tk-l">ações contra decretos presidenciais publicados entre 1988 e 2025</p></div><div class="tk-st tk-term"><p class="tk-rot">Acervo</p><div class="tk-tr"><span class="tk-dot"></span></div><b class="tk-n">4.966</b><p class="tk-l">arquivos e 156.654 páginas</p></div>
+          <div class="tk-in tk-in3"><i aria-hidden="true"></i><p>Outra rotina tirou do campo de legislação, e do campo de assunto quando ele faltava, <b>o número de cada decreto citado</b> e o procurou entre os <b>17.338 decretos</b> de 1988 a 2026 baixados do sítio da Presidência da República.</p></div>
+          <div class="tk-in tk-in5"><i aria-hidden="true"></i><p>Dezesseis ações não constavam da base inicial. <b>15 cumpriram as regras de inclusão</b>. Restaram 227 ações da base inicial e 15 adicionais.</p></div>
         </div>
+      </div>
+      <div class="bo-par">
+        <div class="bo-cartao bo-falhas">
+          <p class="bo-ct"><svg class="ic"><use href="#i-circle-alert"/></svg>Os campos exportados falham de vários modos</p>
+          <ul class="bf"><li><span class="bf-ic"><svg class="ic"><use href="#i-calendar"/></svg></span><div><b>O recorte temporal</b><span>806 deles de ações que, pela numeração, devem ter terminado antes de 2000</span></div></li><li><span class="bf-ic"><svg class="ic"><use href="#i-scan-text"/></svg></span><div><b>O campo vazio</b><span>preenchido em só 697 dos 3.028 processos do acervo</span></div></li><li><span class="bf-ic"><svg class="ic"><use href="#i-file-text"/></svg></span><div><b>O rótulo errado</b><span>ADI nº 5.915, “Decreto-Lei nº 9288 de 2018”</span></div></li><li><span class="bf-ic"><svg class="ic"><use href="#i-users"/></svg></span><div><b>O polo</b><span>ADPF nº 647, Conselho Administrativo de Recursos Fiscais (CARF) e a Receita Federal</span></div></li></ul>
+        </div>
+        <div class="bo-cartao bo-regras"><p class="mt-cond-cab">regras de inclusão</p><ol class="mt-cond"><li><span>1</span>o ato impugnado deve ser um decreto presidencial, numerado ou sem número, publicado entre 5 de outubro de 1988 e 31 de dezembro de 2025</li><li><span>2</span>a ação deve ser ADI, Ação Direta de Inconstitucionalidade por Omissão (ADO), ADC ou ADPF ajuizada até 31 de dezembro de 2025</li><li><span>3</span>o decreto deve constar do pedido de mérito da petição inicial ou do aditamento, no todo ou em parte</li><li><span>4</span>o Executivo federal deve figurar no polo passivo ou, nas ADC, o Presidente da República deve ser o autor</li></ol></div>
+      </div>
         <div class="mt-rodape">
         <footer class="met-refs">
-          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Fonte</span>
-          <span class="met-ref-notas">Seções 3 e 3.1 e nota 16</span>
+          <span class="met-rot"><svg class="ic"><use href="#i-book-open"/></svg>Referências</span>
+          <button type="button" class="ref" data-ref="DIAS, Mateus">Dias (2024)</button>
+          <span class="met-ref-notas">Seções 3 e 3.1</span>
           <span class="met-ir"><a href="#metodologia" data-tela="1">A estratégia de análise <svg class="ic"><use href="#i-arrow-right"/></svg></a></span>
         </footer>
         </div>
@@ -791,9 +795,9 @@
       <p>BRAZILIAN Supreme Court: Direct Action of Unconstitutionality No. 6363, 17 April 2020. <strong>International Labor Rights Case Law</strong>, Leiden, v. 7, n. 3, p. 276-277, 2021. DOI: 10.1163/24056901-07030005. Disponível em: <a href="https://heinonline.org/HOL/Page?handle=hein.journals/intlrcl7&amp;amp;id=275">https://heinonline.org/HOL/Page?handle=hein.journals/intlrcl7&amp;id=275</a>. Acesso em: 3 jun. 2026.</p>
       <p>CLÈVE, Clèmerson Merlin. <strong>Temas de direito constitucional</strong>. 2. ed. rev., atual. e ampl. Belo Horizonte: Fórum, 2014.</p>
       <p>DA ROS, Luciano. Poder de decreto e accountability horizontal: dinâmica institucional dos três poderes e medidas provisórias no Brasil pós-1988. <strong>Revista de Sociologia e Política</strong>, Curitiba, v. 16, n. 31, p. 143-160, nov. 2008. Disponível em: <a href="https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/">https://www.scielo.br/j/rsocp/a/TdxYML4gvDyvPbw33GMLMXM/</a>. Acesso em: 26 maio 2026.</p>
+      <p>DIAS, Mateus Nunes dos Santos Ferreira. <strong>O controle de constitucionalidade de decretos presidenciais</strong>: sistematização e parâmetros. 2024. 168 f. Dissertação (Mestrado em Direito Constitucional) – Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2024. Disponível em: <a href="https://repositorio.idp.edu.br/handle/123456789/5089">https://repositorio.idp.edu.br/handle/123456789/5089</a>. Acesso em: 1 out. 2026.</p>
       <p>DORNELES, Leandro do Amaral D.; JAHN, Vitor Kaiser; SIMON, Pedro Fülber. Banalização das medidas provisórias como risco à democracia: análise constitucional das medidas provisórias editadas em matéria trabalhista no marco pós-reforma. <strong>Revista da Faculdade de Direito do Sul de Minas</strong>, Pouso Alegre, v. 37, n. 2, p. 107-127, jul./dez. 2021. Disponível em: <a href="https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413">https://revista.fdsm.edu.br/index.php/revistafdsm/article/view/413</a>. Acesso em: 26 maio 2026.</p>
       <p>EPSTEIN, Lee; KING, Gary. The rules of inference. <strong>The University of Chicago Law Review</strong>, Chicago, v. 69, n. 1, p. 1-133, 2002. Disponível em: <a href="https://doi.org/10.2307/1600349">https://doi.org/10.2307/1600349</a>. Acesso em: 22 set. 2026.</p>
-      <p>EPSTEIN, Lee; MARTIN, Andrew D. <strong>An introduction to empirical legal research</strong>. Oxford: Oxford University Press, 2014.</p>
       <p>FIGUEIREDO, Argelina Cheibub; LIMONGI, Fernando. <strong>Executivo e Legislativo na nova ordem constitucional</strong>. 2. ed. Rio de Janeiro: Editora FGV, 2001.</p>
       <p>FIRTH, David. Bias reduction of maximum likelihood estimates. <strong>Biometrika</strong>, Oxford, v. 80, n. 1, p. 27-38, 1993. Disponível em: <a href="https://doi.org/10.1093/biomet/80.1.27">https://doi.org/10.1093/biomet/80.1.27</a>. Acesso em: 22 set. 2026.</p>
       <p>GASPARDO, Murilo; SANTOS, Letícia Rezende; MARCHIONI, Artur. Avaliação legislativa das reformas trabalhistas promovidas por meio de medidas provisórias no Governo Bolsonaro. <strong>Revista Direito GV</strong>, São Paulo, v. 19, e2323, 2023. DOI: 10.1590/2317-6172202323. Disponível em: <a href="https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/">https://www.scielo.br/j/rdgv/a/6zPfkvcD8BsBrDXKPNqYBgM/</a>. Acesso em: 26 maio 2026.</p>
@@ -821,7 +825,7 @@
     <ol class="notas">
       <li id="nota-6" value="6">Uma busca restrita em excesso também devolve poucos resultados, e por isso Bramer et al. (2018) recomendam conferir se a estratégia recupera estudos relevantes já conhecidos. A recomendação vem da área da saúde, como o próprio PRISMA 2020, e é aplicada aqui por tratar da lógica da busca, e não do objeto pesquisado.</li>
       <li id="nota-14" value="14">O presidencialismo de coalizão, na formulação de Abranches (1988) e em sua releitura posterior (Abranches, 2018), é o modelo político brasileiro que combina o sistema presidencialista, o federalismo e a necessidade de o presidente articular uma coalizão multipartidária no Congresso para assegurar maioria parlamentar e condições de governabilidade.</li>
-      <li id="nota-16" value="16">A base foi montada em etapas, cada uma em arquivo próprio. Os painéis do Corte Aberta foram extraídos em 9 de junho de 2026, e os decretos da Presidência da República, em 14 de junho. A união dos painéis é de 18 de julho, e o cruzamento com o acervo de decretos, que marcou o polo passivo de cada ação sem retirar nenhuma, é de 19 de julho. A codificação das variáveis começou em 24 de julho, e a segunda triagem com a conferência manual terminou em 16 de setembro, com as 232 ações. O painel de legitimados tinha 8.616 processos, e 625 deles ficaram fora da planilha, porque a união partiu só dos painéis de decisões e de acervo. Desses 625, 232 têm ente do Executivo federal no polo passivo. A montagem atual parte das bases inteiras do Corte Aberta, exportadas em 25 de outubro de 2026 (8.712 processos), e da numeração sequencial das quatro classes.</li>
+      <li id="nota-17" value="17">Disponível em: <a href="https://osf.io/anwdy/">https://osf.io/anwdy/</a>. Acesso em: 29 out. 2026.</li>
       <li id="nota-20" value="20">Disponível em: <a href="https://osf.io/8krpv/">https://osf.io/8krpv/</a>. Acesso em: 29 out. 2026.</li>
     </ol>
   </div>
