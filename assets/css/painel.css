@@ -3559,3 +3559,59 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .pm-leg2 { margin-top: -2px; }
 .pm-leg2 li { font-size: 11px; font-weight: 500; color: var(--s600); }
 .pm-leg-rot { font-weight: 700 !important; color: var(--s500) !important; }
+
+/* ---------------------------------------------------------------- tipologia das iniciais (v2): perfil por desfecho e dois casos */
+.tp2 { display: flex; flex-direction: column; gap: 10px; }
+.tp-perfil { display: flex; flex-direction: column; gap: 6px; }
+.tp-tab { display: flex; flex-direction: column; gap: 3px; border-radius: 14px; background: var(--s50); padding: 8px 14px 10px; }
+.tp-lin { display: grid; grid-template-columns: 150px repeat(3, minmax(0, 1fr)) 50px; align-items: center; gap: 14px; }
+.tp-cab { padding-bottom: 3px; border-bottom: 1px solid var(--s200); margin-bottom: 2px; }
+.tp-cab span { font-size: 10.5px; font-weight: 700; line-height: 1.2; color: var(--s600); }
+.tp-cab small { display: block; font-size: 9.5px; font-weight: 600; color: var(--s400); }
+.tp-cab span:last-child, .tp-n { text-align: right; }
+.tp-des { font-size: 12px; font-weight: 600; color: var(--s700); }
+.tp-cel { display: flex; align-items: center; gap: 8px; }
+.tp-b { flex: 1; height: 10px; border-radius: 999px; background: rgb(15 23 42 / .07); overflow: hidden; }
+.tp-b i { display: block; height: 100%; border-radius: 999px; background: #b8c2cf; }
+.tp-cel b { min-width: 30px; font-size: 12.5px; font-weight: 800; color: var(--s700); text-align: right; font-variant-numeric: tabular-nums; }
+.tp-n { font-size: 11.5px; color: var(--s500); font-variant-numeric: tabular-nums; }
+.tp-r-m .tp-des, .tp-r-m .tp-cel b { color: var(--verde-700); } .tp-r-m .tp-b i { background: var(--verde-700); }
+.tp-r-r .tp-des, .tp-r-r .tp-cel b { color: var(--ambar-700); } .tp-r-r .tp-b i { background: var(--ambar-600); }
+.tp-r-m, .tp-r-r { font-weight: 700; }
+.tp-r-m .tp-des, .tp-r-r .tp-des { font-weight: 800; }
+.ex-tela.entrou .tp-b i { animation: rg-enche .8s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--k) * 60ms + .1s); }
+.tp-casos { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.tp-caso { display: flex; flex-direction: column; gap: 6px; border-radius: 14px; border: 1px solid var(--s200); padding: 10px 12px 12px; }
+.tp-forma2 { align-self: flex-start; border-radius: 999px; background: var(--s800); padding: 3px 11px; font-size: 12px; font-weight: 700; color: #fff; }
+.tp-passo { display: flex; flex-direction: column; gap: 3px; }
+.tp-passo .met-rot { display: flex; align-items: center; gap: 6px; margin: 0; font-size: 10.5px; }
+.tp-passo-d { position: relative; margin-top: 2px; border-top: 1px dashed var(--s200); padding-top: 7px; }
+.tp-desf { margin-left: auto; border-radius: 999px; padding: 1px 8px; font-size: 10.5px; letter-spacing: 0; text-transform: none; font-weight: 700; }
+.tp-c-m .tp-desf { background: var(--verde-700); color: #fff; }
+.tp-c-r .tp-desf { background: var(--ambar-600); color: #fff; }
+.tp-caso .tp-quem { font-size: 11.5px; font-weight: 600; color: var(--s600); }
+.tp-caso .tp-quem a { color: var(--azul-700); text-decoration: none; border-bottom: 1px solid #bfdbfe; font-weight: 700; }
+.tp-caso q { display: block; font-size: 12.5px; line-height: 1.4; color: var(--s900); quotes: none; }
+.tp-caso q::before { content: "“"; } .tp-caso q::after { content: "”"; }
+.tp-caso .tp-src { margin-top: -2px; font-size: 10.5px; }
+@media print { .tp-b, .tp-b i, .tp-tab, .tp-forma2, .tp-desf { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (max-width: 760px) {
+  .tp-casos { grid-template-columns: minmax(0, 1fr); }
+  .tp-tab { padding: 8px 10px; overflow-x: auto; }
+  .tp-lin { grid-template-columns: 96px repeat(3, minmax(70px, 1fr)) 34px; gap: 8px; }
+  .tp-des { font-size: 11px; }
+}
+.tp2 { gap: 8px; }
+.tp-tab { gap: 1px; padding: 6px 14px 8px; }
+.tp-lin { min-height: 20px; }
+.tp-caso { gap: 5px; padding: 9px 12px 10px; }
+.tp-caso q { font-size: 12px; line-height: 1.38; }
+.tp-passo-d { padding-top: 6px; }
+@media (max-width: 760px) {
+  .tp-tab { overflow: visible; padding: 8px 10px; }
+  .tp-lin { grid-template-columns: minmax(0, 1fr) 52px 70px 62px 34px; gap: 6px; }
+  .tp-b { display: none; }
+  .tp-cel { justify-content: flex-end; }
+  .tp-cab span { font-size: 9.5px; text-align: right; }
+  .tp-cab span:first-child { text-align: left; }
+}
