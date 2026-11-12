@@ -2713,3 +2713,26 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 /* no PDF, a faixa de elegibilidade se repete em cada página da Revisão */
 .rs-elegb-imp { display: none; }
 @media print { .met-grade > .rs-elegb { display: none; } .rs-elegb.rs-elegb-imp { display: grid; } }
+/* Metodologia com levantamento, estratégia e as seis técnicas */
+#metodologia .met-lista.met-8 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; max-width: none; }
+#metodologia .met-lista.met-8 button { padding: 5px 9px; }
+#metodologia .met-lista.met-8 button b { font-size: 12px; }
+@media (max-width: 1000px) { #metodologia .met-lista.met-8 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+#metodologia .met-lista.met-8 button { padding: 3px 9px; min-height: 0; } #metodologia .met-lista.met-8 { margin-bottom: 10px; }
+#metodologia .mt-3 .an-card { padding: 14px 20px; }
+#metodologia .mt-3 .an-leitura { padding: 11px 24px; }
+#metodologia .mt-3 .an-leitura p:first-child { font-size: 14.5px; line-height: 1.5; }
+#metodologia .mt-3 .an-fluxo { margin-bottom: 0; }
+#metodologia .mt-3 { gap: 8px; }
+#metodologia .ex-tela .ex-grade { gap: 12px; }
+#metodologia .met-lista.met-8 .met-n { width: 20px; height: 20px; font-size: 11px; }
+#metodologia .met-lista.met-8 button { padding: 2px 9px; }
+#metodologia .met-lista.met-8 { gap: 5px; margin-bottom: 8px; }
+#metodologia .ex-tela .ex-tec { padding-top: 13px; padding-bottom: 13px; }
+#metodologia .ex-tela .mt-rodape { margin-top: 0; }
+#metodologia .ex-tela.ativa { gap: 6px !important; }
+#metodologia .mt-3.ativa, #metodologia .mt-3 { gap: 6px !important; }
+#metodologia .mt-3 .an-card { padding: 12px 20px; }
+#metodologia .mt-3 .an-leitura { padding: 9px 24px; }
+@media (max-width: 600px) { .mt-etapa { grid-template-columns: 76px 64px minmax(0, 1fr); gap: 8px; } .mt-etapa b { font-size: 21px; } .mt-etapa .mt-desc { grid-column: 1 / -1; } .mt-fluxo { min-width: 0; } .mt-fluxo > * { min-width: 0; } }
+@media (max-width: 700px) { #metodologia .mt-dupla { grid-template-columns: minmax(0, 1fr); } #metodologia .mt-etapa { grid-template-columns: 84px 60px minmax(0, 1fr); gap: 8px; } }
