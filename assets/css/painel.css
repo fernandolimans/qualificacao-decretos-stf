@@ -1931,31 +1931,31 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ex-linhas li::before { content: ""; position: absolute; left: 0; top: 15px; width: 5px; height: 5px; border-radius: 50%; background: var(--s400); }
 .ex-pre { display: block; margin-top: 2px; font-size: 11.5px; line-height: 1.35; color: var(--s500); }
 .ex-pre + .ex-pre { margin-top: 3px; }
-.ex-1 .ex-grade { grid-template-columns: minmax(0, 250px) minmax(0, 1fr); }
+.ex-reg .ex-grade { grid-template-columns: minmax(0, 250px) minmax(0, 1fr); }
 .ex-tab thead th:first-child { width: 21%; }
 .ex-sub { display: block; margin-top: 2px; font-weight: 500; color: var(--s400); }
 .ex-dec { display: block; font-weight: 600; color: var(--s900); }
 .ex-nat { display: inline-block; margin-top: 4px; border-radius: 6px; background: var(--s100); padding: 1px 7px; font-size: 11.5px; font-weight: 600; color: var(--s700); }
-.ex-1 .ex-tab tbody th, .ex-1 .ex-tab tbody td { padding-top: 4px; padding-bottom: 4px; }
-.ex-1 .ex-porta td, .ex-1 .ex-porta th { padding-top: 7px !important; padding-bottom: 7px !important; }
-.ex-1 .ex-marca { width: 20px; height: 20px; margin-bottom: 2px; }
-@media (max-width: 1000px) { .ex-1 .ex-grade { grid-template-columns: minmax(0, 1fr); } }
+.ex-reg .ex-tab tbody th, .ex-reg .ex-tab tbody td { padding-top: 4px; padding-bottom: 4px; }
+.ex-reg .ex-porta td, .ex-reg .ex-porta th { padding-top: 7px !important; padding-bottom: 7px !important; }
+.ex-reg .ex-marca { width: 20px; height: 20px; margin-bottom: 2px; }
+@media (max-width: 1000px) { .ex-reg .ex-grade { grid-template-columns: minmax(0, 1fr); } }
 .ex-tab thead th:first-child { vertical-align: top; }
 .ex-tab thead th:first-child .met-rot { font-size: 11px; }
 .ex-tab thead th:first-child .ex-aviso { display: inline-block; margin: 6px 0 0; font-size: 10.5px; }
 .ex-tab thead th { vertical-align: bottom; }
-.ex-1 .ex-caso { padding-top: 12px; }
-.ex-1 .ex-tab { font-size: 12.5px; }
-.ex-1 .ex-tab tbody th { font-size: 12px; }
-.ex-1 .ex-porta .ex-marca { float: left; margin: 0 8px 4px 0; }
-.ex-1 .ex-porta .ex-onde { display: block; min-height: 20px; padding-top: 2px; }
-.ex-1 .ex-porta q { clear: left; }
-.ex-1 .ex-tec .an-para { font-size: 16px; }
-.ex-1 .ex-tab thead th:first-child { width: 22%; }
-.ex-1 .ex-p2 q { clear: none; }
-.ex-1 .ex-porta td, .ex-1 .ex-porta th { padding-top: 6px !important; padding-bottom: 6px !important; }
-.ex-1 .ex-porta q { line-height: 1.35; }
-.ex-1 .ex-tab thead th { padding-bottom: 2px; }
+.ex-reg .ex-caso { padding-top: 12px; }
+.ex-reg .ex-tab { font-size: 12.5px; }
+.ex-reg .ex-tab tbody th { font-size: 12px; }
+.ex-reg .ex-porta .ex-marca { float: left; margin: 0 8px 4px 0; }
+.ex-reg .ex-porta .ex-onde { display: block; min-height: 20px; padding-top: 2px; }
+.ex-reg .ex-porta q { clear: left; }
+.ex-reg .ex-tec .an-para { font-size: 16px; }
+.ex-reg .ex-tab thead th:first-child { width: 22%; }
+.ex-reg .ex-p2 q { clear: none; }
+.ex-reg .ex-porta td, .ex-reg .ex-porta th { padding-top: 6px !important; padding-bottom: 6px !important; }
+.ex-reg .ex-porta q { line-height: 1.35; }
+.ex-reg .ex-tab thead th { padding-bottom: 2px; }
 /* Exemplos 2: riscos competitivos, cada ação a partir do ajuizamento */
 .rk { display: flex; flex-direction: column; gap: 4px; border-radius: 14px; background: var(--s50); padding: 12px 14px 8px; }
 .rk-leg { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 6px; font-size: 12px; color: var(--s600); }
@@ -2009,7 +2009,7 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ex-pp { display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; font-size: 11px; font-weight: 600; color: var(--s500); }
 .ex-pp b { font-size: 20px; line-height: 1; font-weight: 800; color: var(--s900); font-variant-numeric: tabular-nums; }
 /* Exemplos 2: o que a regressão devolve */
-.ex-2 .ex-grade { grid-template-columns: minmax(0, 360px) minmax(0, 1fr); }
+.ex-sai .ex-grade { grid-template-columns: minmax(0, 360px) minmax(0, 1fr); }
 .ex-out { margin: 12px 0 0; padding: 0; list-style: none; counter-reset: o; display: flex; flex-direction: column; }
 .ex-out li { counter-increment: o; position: relative; display: flex; flex-direction: column; gap: 2px; padding: 9px 0 9px 32px; border-top: 1px solid var(--s100); font-size: 13px; line-height: 1.4; color: var(--s600); }
 .ex-out li::before { content: counter(o); position: absolute; left: 0; top: 9px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--s100); font-size: 11.5px; font-weight: 700; color: var(--s700); }
@@ -2040,17 +2040,65 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .sp-acao .ex-marca { width: 18px; height: 18px; margin: 0; }
 .sp-acao .ex-marca .ic { width: 12px; height: 12px; }
 .sp-acao q { font-size: 13px; }
-@media (max-width: 1000px) { .ex-2 .ex-grade { grid-template-columns: minmax(0, 1fr); } .sp-cont, .sp-acoes { grid-template-columns: 1fr; } }
+@media (max-width: 1000px) { .ex-sai .ex-grade { grid-template-columns: minmax(0, 1fr); } .sp-cont, .sp-acoes { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .sp-res { grid-template-columns: 1fr; } }
 @media print { .sp-grupo, .sp-n, .sp-r, .ex-pp { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 .ex-lista { max-width: none; }
 #exemplos .met-lista { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .ex-l1 { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; }
-.ex-1 .ex-porta .ex-l1 .ex-marca { float: none; margin: 0; }
+.ex-reg .ex-porta .ex-l1 .ex-marca { float: none; margin: 0; }
 .ex-l1 .ex-pp { margin: 0; }
-.ex-1 .ex-porta .ex-onde { min-height: 0; padding-top: 0; }
-.ex-2 .ex-grade { grid-template-columns: minmax(0, 400px) minmax(0, 1fr); }
+.ex-reg .ex-porta .ex-onde { min-height: 0; padding-top: 0; }
+.ex-sai .ex-grade { grid-template-columns: minmax(0, 400px) minmax(0, 1fr); }
 .ex-out li { padding: 7px 0 7px 32px; font-size: 12.5px; line-height: 1.35; }
 .ex-out li::before { top: 7px; }
 .ex-out li b { font-size: 13px; }
 .ex-saidas .an-para { font-size: 15.5px; }
+/* Exemplos: cartão em três partes (técnica, o que foi feito, resultado) */
+.ex-tec3 .an-para { font-size: 15px; line-height: 1.4; }
+.ex-passo { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--s100); }
+.ex-passo p:last-child { font-size: 13px; line-height: 1.5; color: var(--s700); }
+.ex-passo-rot { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-bottom: 4px; font-size: 11px !important; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--s500) !important; }
+.ex-passo-rot span { border: 1px dashed var(--ambar-600); border-radius: 6px; padding: 0 6px; font-size: 10px; letter-spacing: 0; text-transform: none; color: var(--ambar-700); }
+.ex-res { border-radius: 12px; border-top: 0; background: var(--s900); padding: 10px 12px; }
+.ex-res .ex-passo-rot { color: #cbd5e1 !important; }
+.ex-res p:last-child { color: #fff; font-weight: 500; }
+.ex-saidas .ex-passo-rot { margin-top: 10px; }
+.ex-out li span { color: var(--s700); }
+.sp-nota { border-radius: 12px; background: var(--s50); padding: 9px 12px; font-size: 12.5px; line-height: 1.5; color: var(--s700); }
+.sp-nota b { color: var(--s900); }
+.px-marco { align-self: flex-start; border-radius: 6px; background: var(--verde-700); padding: 1px 8px; font-size: 11.5px; font-weight: 700; color: #fff; }
+/* qui-quadrado: barras por período */
+.qx { display: flex; flex-direction: column; gap: 12px; }
+.qx-graf { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; align-items: end; border-radius: 14px; background: var(--s50); padding: 14px 16px 10px; }
+.qx-col { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.qx-pct { font-size: 15px; font-weight: 800; color: var(--s900); font-variant-numeric: tabular-nums; }
+.qx-barra { position: relative; width: 56%; height: 170px; border-radius: 8px 8px 0 0; }
+.qx-barra i { position: absolute; left: 0; right: 0; bottom: 0; border-radius: 6px 6px 0 0; background: var(--verde-700); transform-origin: bottom; }
+.ex-tela.entrou .qx-barra i { animation: qx-sobe .6s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--k) * 80ms); }
+@keyframes qx-sobe { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.qx-per { margin-top: 2px; font-size: 12px; font-weight: 600; color: var(--s700); border-top: 1px solid var(--s300); padding-top: 4px; align-self: stretch; text-align: center; }
+.qx-n { font-size: 11.5px; color: var(--s500); }
+.qx-res { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.qx-res .sp-r { background: var(--azul-50); box-shadow: inset 0 0 0 1px #bfdbfe; }
+.qx-res .sp-r b { color: var(--azul-700); font-size: 26px; }
+#exemplos .met-lista button b { font-size: 12px; }
+@media (max-width: 700px) { .qx-graf { gap: 6px; padding: 10px; } .qx-barra { width: 70%; height: 120px; } .qx-res { grid-template-columns: 1fr; } }
+@media print { .ex-res, .qx-barra i, .px-marco, .qx-res .sp-r { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.qx-barra { height: 140px; }
+.ex-reg .ex-grade { grid-template-columns: minmax(0, 290px) minmax(0, 1fr); }
+.ex-reg .ex-tec3 .an-para { font-size: 14px; }
+.ex-reg .ex-nat { margin-top: 3px; }
+.ex-reg .ex-dec { display: inline; }
+.ex-reg .ex-dec + .ex-pre { margin-top: 3px; }
+.ex-reg td .ex-nat { display: inline-block; margin-left: 0; }
+.ex-tip .ex-grade, .ex-ris .ex-grade, .ex-pon .ex-grade, .ex-qui .ex-grade { grid-template-columns: minmax(0, 340px) minmax(0, 1fr); }
+.ex-tec3 .an-para { font-size: 14.5px; }
+.ex-reg .ex-tab { font-size: 12px; }
+.ex-reg .ex-tab tbody th { font-size: 11.5px; }
+.ex-reg .ex-pre { font-size: 11px; }
+.ex-reg .ex-porta q { font-size: 12px; }
+@media (max-width: 1000px) {
+  .ex-tip .ex-grade, .ex-ris .ex-grade, .ex-pon .ex-grade, .ex-qui .ex-grade, .ex-reg .ex-grade, .ex-sai .ex-grade { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) { .qx-pct { font-size: 12px; } .qx-per { font-size: 10.5px; } .qx-graf { gap: 4px; } }
