@@ -2593,3 +2593,123 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .rs-q2 th:nth-child(2) { width: 205px; } .rs-q2 th:nth-child(3) { width: 360px; }
 .rs-corpus { padding-bottom: 4px; margin-bottom: 4px; } .rs-q2 tbody td, .rs-q2 tbody th { padding-top: 2px; padding-bottom: 2px; }
 @media (max-width: 1000px) { .rs-q1 { min-width: 920px; } .rs-q2 { min-width: 1060px; } }
+/* Revisão: Elegibilidade */
+#revisao .rs-1 .rs-card { padding: 30px 40px 32px; }
+.rs-eleg-tit { font-size: 22px; font-weight: 700; line-height: 1.35; color: var(--s900); }
+.rs-cond { margin: 18px 0 0; padding: 0; list-style: none; }
+.rs-cond > li { position: relative; border-top: 1px solid var(--s100); padding: 13px 0 13px 30px; }
+.rs-cond > li:first-child { border-top: 0; }
+.rs-cond > li::before { content: ""; position: absolute; left: 4px; top: 23px; width: 10px; height: 10px; border-radius: 50%; background: var(--s900); }
+.rs-cond > li > p { font-size: 19px; line-height: 1.5; color: var(--s800); }
+.rs-eixos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; margin: 10px 0 2px; padding: 0; list-style: none; }
+.rs-eixos li { border: 1px solid var(--s200); border-radius: 12px; background: var(--s50); padding: 9px 14px; font-size: 16.5px; line-height: 1.45; color: var(--s700); }
+.rs-eixos li b { margin-right: 4px; color: var(--s900); }
+@media (max-width: 700px) { #revisao .rs-1 .rs-card { padding: 22px; } .rs-eleg-tit { font-size: 19px; } .rs-cond > li > p { font-size: 16.5px; } .rs-eixos { grid-template-columns: 1fr; } .rs-eixos li { font-size: 15px; } }
+#revisao .mt-lista button { flex: 1 1 auto; gap: 7px; padding: 5px 8px; } #revisao .mt-lista button b { font-size: 12px; white-space: nowrap; }
+@media (max-width: 1000px) { #revisao .mt-lista button b { white-space: normal; } }
+/* Revisão: faixa de elegibilidade fixa abaixo das subabas */
+.rs-elegb { position: relative; z-index: 5; display: grid; grid-template-columns: 172px minmax(0, 1fr); gap: 4px 14px; align-items: center; margin: 0 0 8px; border: 1px solid var(--s200); border-radius: 12px; background: #fff; padding: 6px 14px; box-shadow: var(--sombra-sm); }
+.rs-elegb-tit { font-size: 11px; font-weight: 700; line-height: 1.3; color: var(--s800); }
+.rs-elegb-l { display: flex; flex-wrap: wrap; gap: 1px 18px; margin: 0; padding: 0; list-style: none; font-size: 12px; line-height: 1.45; color: var(--s700); }
+.rs-elegb-l > li { position: relative; padding-left: 12px; }
+.rs-elegb-l > li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--s800); }
+.rs-eixo-bt { display: inline; border: 0; background: none; padding: 0; font: inherit; color: inherit; text-align: left; cursor: help; text-decoration: underline dotted var(--s400); text-underline-offset: 3px; }
+.rs-eixo-bt .ic { width: 13px; height: 13px; margin-left: 4px; vertical-align: -2px; color: var(--s500); }
+.rs-eixos-pop { position: absolute; left: 0; top: calc(100% + 8px); z-index: 40; display: none; width: 470px; border: 1px solid var(--s200); border-radius: 12px; background: #fff; padding: 10px 14px; box-shadow: 0 12px 32px rgb(15 23 42 / .18); }
+.rs-eixo-li:hover .rs-eixos-pop, .rs-eixo-li:focus-within .rs-eixos-pop { display: block; }
+.rs-eixos-pop ul { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; font-size: 13px; line-height: 1.45; color: var(--s700); }
+.rs-eixos-pop b { margin-right: 4px; color: var(--s900); }
+/* fonte da dissertação e localização na mesma linha, dentro do cartão */
+.rs-pe { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 5px; }
+.rs-pe .rs-fonte { margin: 0; }
+.rs-pe .met-refs { flex: 1; justify-content: flex-end; }
+.rs-pe .met-ir { margin-left: 8px; }
+.rs-pe .met-ir a { padding: 4px 10px; font-size: 12.5px; }
+@media (max-width: 1000px) { .rs-elegb { grid-template-columns: 1fr; } .rs-eixos-pop { width: min(470px, 82vw); } .rs-pe { flex-wrap: wrap; } }
+/* Pergunta, objetivos e hipótese numa só tela */
+#pergunta .po-obj { margin-top: 12px; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 14px 24px 16px; box-shadow: var(--sombra-sm); }
+.po-olho { font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--s500); }
+.po-geral { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 14px; align-items: baseline; }
+.po-g { font-size: 16.5px; line-height: 1.5; font-weight: 600; color: var(--s900); }
+.po-g em { font-style: normal; color: var(--ambar-700); }
+.po-olho-esp { margin-top: 12px; border-top: 1px solid var(--s100); padding-top: 10px; }
+.po-esp { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 8px; }
+.po-card { border: 1px solid var(--s200); border-radius: 14px; background: var(--s50); padding: 9px 14px 11px; }
+.po-card header { display: flex; align-items: center; gap: 8px; }
+.po-n { display: grid; place-items: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--s900); font-size: 12px; font-weight: 800; color: #fff; }
+.po-verbo { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s900); }
+.po-card .po-ir { margin: 0 0 0 auto; padding: 1px 8px; font-size: 11px; text-decoration: none; }
+.po-card p { margin-top: 6px; font-size: 13.5px; line-height: 1.5; color: var(--s700); }
+#pergunta .ob-rodape { margin-top: 10px; }
+@media (max-width: 1000px) { .po-geral { grid-template-columns: 1fr; gap: 4px; } .po-esp { grid-template-columns: 1fr; } }
+#revisao .rs-1 .rs-card { padding: 11px 18px 9px; }
+.pr { grid-template-rows: auto auto 8px auto 8px auto 8px auto 8px auto 8px auto; }
+.pr-cx { padding: 2px 8px; }
+.pr-desce::after { height: 8px; } .pr-desce::before { top: calc(100% + 2px); }
+.pr-m.pr-r5::after, .pr-s.pr-r5::after { height: 5px; }
+.pr-junc::before, .pr-junc::after { top: 4px; }
+.rs-q2 tbody td, .rs-q2 tbody th { padding-top: 1.5px; padding-bottom: 1.5px; }
+.rs-corpus { padding-bottom: 3px; margin-bottom: 2px; }
+.rs-rola { margin-top: 5px; }
+#revisao .rs-card, #revisao .rs-1 .rs-card { padding: 9px 18px 7px; } .rs-pe { margin-top: 3px; } .f2-tit-b { margin-top: 3px; } .rs-num b { font-size: 26px; }
+/* tela única: pergunta, objetivos e hipótese compactos para 1366×768 */
+#pergunta .ph-pergunta.pq3 { padding: 14px 26px 15px; }
+#pergunta .pq3 .olho { font-size: 11px; }
+#pergunta .pq3 h2 { margin-top: 5px; font-size: 19px; line-height: 1.4; }
+#pergunta .pq3-rec { gap: 24px; margin-top: 10px; padding-top: 8px; }
+#pergunta .pq3-rec p { font-size: 13px; line-height: 1.4; }
+#pergunta .pq3-rec small { margin-bottom: 2px; font-size: 10.5px; }
+#pergunta .pq3-lim { margin-top: 8px; padding-top: 7px; font-size: 13px; line-height: 1.45; }
+#pergunta .ph-ic { width: 34px; height: 34px; top: 12px; right: 14px; }
+#pergunta .po-obj { margin-top: 10px; padding: 10px 22px 12px; }
+#pergunta .po-olho { font-size: 10.5px; }
+#pergunta .po-geral { grid-template-columns: 150px minmax(0, 1fr); }
+#pergunta .po-g { font-size: 14.5px; line-height: 1.45; }
+#pergunta .po-olho-esp { margin-top: 8px; padding-top: 7px; }
+#pergunta .po-esp { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr); gap: 10px; margin-top: 6px; }
+#pergunta .po-card { padding: 7px 12px 9px; }
+#pergunta .po-card p { margin-top: 4px; font-size: 12.5px; line-height: 1.42; }
+#pergunta .po-verbo { font-size: 12px; }
+#pergunta .po-n { width: 20px; height: 20px; font-size: 11px; }
+#pergunta .ph-grupo { margin-top: 10px; }
+#pergunta .ph-grupo .ph-hipotese { padding: 11px 26px 12px; }
+#pergunta .ph-hipotese .olho { font-size: 11px; }
+#pergunta .ph-hipotese h2.pq-h { margin-top: 4px; font-size: 15.5px; line-height: 1.5; }
+#pergunta .ph-corpo.pq-corpo { padding: 7px 26px 8px; }
+#pergunta .pq-pesos .balanca { width: 84px; }
+#pergunta .pq-pesos p { font-size: 14.5px; line-height: 1.5; }
+#pergunta .ob-rodape { margin-top: 8px; }
+#pergunta .pq3 h2 { line-height: 1.36; }
+#pergunta .pq3-rec { margin-top: 8px; padding-top: 6px; }
+#pergunta .pq3-lim { margin-top: 6px; padding-top: 5px; }
+#pergunta .ph-pergunta.pq3 { padding: 12px 26px 13px; }
+#pergunta .po-obj { padding: 9px 22px 10px; }
+#pergunta .po-olho-esp { margin-top: 6px; padding-top: 5px; }
+#pergunta .po-esp { margin-top: 4px; grid-template-columns: minmax(0, 1.55fr) minmax(0, .8fr) minmax(0, 1.15fr); }
+#pergunta .po-card { padding: 6px 12px 7px; }
+#pergunta .po-card p { line-height: 1.38; }
+#pergunta .po-card .rl { padding: 0; border: 0; background: none; box-shadow: none; font-weight: 700; }
+#pergunta .ph-grupo .ph-hipotese { padding: 9px 26px 10px; }
+#pergunta .ph-hipotese h2.pq-h { padding-right: 46px; font-size: 15px; line-height: 1.45; }
+#pergunta .ph-corpo.pq-corpo { padding: 5px 26px 6px; }
+#pergunta .pq-pesos { justify-content: flex-start; gap: 14px; }
+#pergunta .pq-pesos .balanca { width: 70px; }
+#pergunta .pq-pesos p { max-width: none; font-size: 14px; }
+#pergunta .ob-rodape { margin-top: 6px; }
+#pergunta .pq-pesos p { font-size: 13.5px; }
+.po-card header { flex-wrap: wrap; row-gap: 4px; }
+#pergunta .ob-rodape { margin-top: 3px; } #pergunta .ph-grupo { margin-top: 8px; } #pergunta .po-obj { margin-top: 8px; }
+/* faixa com os eixos sempre visíveis */
+.rs-elegb { padding: 5px 14px; margin-bottom: 6px; }
+.rs-elegb-l { font-size: 11.5px; line-height: 1.4; gap: 0 16px; }
+.rs-elegb-l > li::before { top: 6px; }
+.rs-eixo b { color: var(--s900); }
+#revisao .mt-lista { margin-bottom: 6px; }
+#revisao .mt-lista button { padding: 3px 8px; }
+.rs-elegb-l { display: block; }
+.rs-elegb-l > li { display: inline; position: static; padding: 0; margin-right: 14px; }
+.rs-elegb-l > li::before { position: static; display: inline-block; margin-right: 6px; vertical-align: 1px; }
+.rs-eixo { white-space: nowrap; }
+/* no PDF, a faixa de elegibilidade se repete em cada página da Revisão */
+.rs-elegb-imp { display: none; }
+@media print { .met-grade > .rs-elegb { display: none; } .rs-elegb.rs-elegb-imp { display: grid; } }
