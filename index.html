@@ -6,7 +6,7 @@
 <title>O que o Supremo fez com os decretos do Presidente?</title>
 <meta name="description" content="Dissertação apresentada ao Mestrado em Direito do Programa de Pós-Graduação em Direito da Universidade Federal Rural do Semi-Árido como requisito parcial para o Exame de Qualificação.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Cpath d='M18 24h28M18 32h28M18 40h18' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/painel.css?v=6fba8d5e">
+<link rel="stylesheet" href="assets/css/painel.css?v=3ac5de3b">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -512,6 +512,7 @@
             <p class="sd-t"><span class="sd-n">1</span>O teste de razão de verossimilhanças</p>
             <div class="sd-vis"><div class="sd-chips"><span class="sd-chip sd-on">período <b>p = 0,0002</b></span><span class="sd-chip">natureza</span><span class="sd-chip">matéria</span><span class="sd-chip">ofensa</span><span class="sd-chip">proponente</span></div></div>
             <p class="sd-txt">No segundo estágio, só o período contribui para o modelo (p = 0,0002).</p>
+            <p class="sd-sig"><b>O que significa.</b> Sem o período, o modelo piora muito. Sem os outros quatro atributos, quase nada muda.</p>
           </li><li class="sd-s" style="--k:1">
             <p class="sd-t"><span class="sd-n">2</span>Os intervalos de confiança por verossimilhança perfilada</p>
             <div class="sd-vis"><div class="sd-ic " aria-hidden="true">
@@ -523,10 +524,12 @@
               <div class="sd-ticks"><span class="sd-tick" style="left:13.1%">1</span><span class="sd-tick" style="left:56.5%">10</span><span class="sd-tick" style="left:100.0%">100</span></div>
             </div></div>
             <p class="sd-txt">Para o período, a razão de chances vai de 2,7 a 52,3. A margem é larga, mas fica toda acima de 1.</p>
+            <p class="sd-sig"><b>O que significa.</b> Desde 2019, as chances de mérito são cerca de 10 vezes maiores, mas o valor exato é incerto.</p>
           </li><li class="sd-s" style="--k:2">
             <p class="sd-t"><span class="sd-n">3</span>A reamostragem</p>
             <div class="sd-vis"><div class="sd-anel" style="--v:93"><b>93%</b></div></div>
             <p class="sd-txt">Em 400 amostras sorteadas da própria base, o período continua significativo em 93% delas.</p>
+            <p class="sd-sig"><b>O que significa.</b> O resultado não depende de meia dúzia de casos.</p>
           </li><li class="sd-s" style="--k:3">
             <p class="sd-t"><span class="sd-n">4</span>A validação cruzada</p>
             <div class="sd-vis"><div class="sd-auc" aria-hidden="true"><div class="sd-auc-t">
@@ -534,10 +537,12 @@
               <em class="sd-auc-a" style="left:70%"><b>0,85</b></em><em class="sd-auc-b" style="left:46%"><b>0,73</b></em></div>
               <div class="sd-ticks sd-auc-esc"><span style="left:0">0,5 · sorteio</span><span style="left:100%">1</span></div></div></div>
             <p class="sd-txt">Em casos que não serviram para estimar o modelo, o acerto cai de 0,85 para 0,73, numa escala em que 0,5 é um sorteio.</p>
+            <p class="sd-sig"><b>O que significa.</b> O modelo separa as ações com e sem mérito bem melhor que o acaso, mas menos do que parecia.</p>
           </li><li class="sd-s" style="--k:4">
             <p class="sd-t"><span class="sd-n">5</span>As probabilidades preditas</p>
             <div class="sd-vis"><div class="sd-pp"><div><span>1988 a 2018</span><i><s style="width:34%"></s></i><b>34%</b></div><div><span>2019 a 2025</span><i><s style="width:72%"></s></i><b>72%</b></div></div></div>
             <p class="sd-txt">Um mesmo perfil de ação passa de 34% para 72% de chance de chegar ao mérito se for ajuizado a partir de 2019.</p>
+            <p class="sd-sig"><b>O que significa.</b> Mudando só o período, a chance de chegar ao mérito mais que dobra.</p>
           </li></ol>
         <div class="sd-sep">
           <div class="sd-sep-cab"><p class="met-rot"><svg class="ic"><use href="#i-scan-text"/></svg>Nos autos</p><p class="sp-tit">a separação entre os desfechos</p></div>
@@ -556,7 +561,7 @@
             </div>
             <div class="sd-comp">
               <div class="sd-r sd-comum"><p>Regressão comum</p><b>sem estimativa finita</b><span>razão de chances infinita</span>
-                <div class="sd-ic sd-inf" aria-hidden="true"><div class="sd-ic-trilha"><span class="sd-um" style="left:12.8%"></span><i></i><span class="sd-infin">∞</span></div><div class="sd-ticks"><span class="sd-tick" style="left:12.8%">1</span><span class="sd-tick" style="left:38.5%">10</span><span class="sd-tick" style="left:64.1%">100</span><span class="sd-tick" style="left:89.7%">1.000</span></div></div>
+                <p class="sd-sig sd-sig-sep"><b>O que significa.</b> Quando todas as ações de um grupo têm o mesmo desfecho, a regressão comum trava. A de Firth chega a um número e mostra, pelo intervalo, quanto ele é incerto.</p>
               </div>
               <div class="sd-r sd-firth"><p>regressão logística penalizada (<span class="ref ref-txt" role="button" tabindex="0" data-ref="FIRTH, David. Bias reduction of maximum">Firth, 1993</span>)</p><b>7,42</b><span>razão de chances, intervalo de 0,56 a 1.050, num modelo só com o governo que editou o decreto</span>
                 <div class="sd-ic sd-ic-f" aria-hidden="true">

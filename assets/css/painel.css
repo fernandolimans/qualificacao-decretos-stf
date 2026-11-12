@@ -3615,3 +3615,56 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .tp-cab span { font-size: 9.5px; text-align: right; }
   .tp-cab span:first-child { text-align: left; }
 }
+
+/* o que a regressão devolve: o que significa cada saída */
+.sd-s { gap: 5px; }
+.sd-vis { min-height: 46px; }
+.sd-txt { font-size: 11px; line-height: 1.35; }
+.sd-sig { margin-top: auto; border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 1px var(--s200); padding: 6px 8px 7px; font-size: 11.5px; line-height: 1.35; font-weight: 600; color: var(--s900); }
+.sd-sig b { display: flex; align-items: center; gap: 4px; margin-bottom: 2px; font-size: 9.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--azul-700); }
+.sd-sig b .ic { width: 11px; height: 11px; }
+.sd { gap: 7px; padding-top: 10px; padding-bottom: 12px; }
+.sd-s { padding: 8px 10px 9px; gap: 4px; }
+.sd-t { min-height: 30px; }
+.sd-vis { min-height: 40px; }
+.sd-ic { padding-top: 15px; }
+.sd-auc { padding-top: 15px; }
+.sd-anel { width: 52px; height: 52px; } .sd-anel::before { width: 38px; height: 38px; } .sd-anel b { font-size: 13px; }
+.sd-sig { font-size: 11px; padding: 5px 8px 6px; }
+.sd-sep { gap: 5px; padding-top: 7px; }
+.sd-grupo { padding: 8px 12px; }
+.sd-grupo .sp-n { width: 34px; height: 34px; font-size: 19px; }
+.sd-acao { padding: 5px 10px; }
+.sd-acao q { font-size: 11.5px; }
+.sd-r { padding: 8px 12px; }
+.sd-r > b { font-size: 24px; }
+.sd .sp-nota { font-size: 11.5px; line-height: 1.4; padding: 6px 12px; }
+.sd-comum > b { font-size: 17px; }
+.sd .sp-nota { font-size: 11px; line-height: 1.38; padding: 5px 12px; }
+.sd-topo { margin-bottom: -2px; }
+.sd-sep-cab .sp-tit, .sd-sep-cab .met-rot { font-size: 10.5px; }
+.sd-sep-grade { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+.sd-r > span { font-size: 11px; }
+.sd-acoes { gap: 4px; margin-top: 2px; }
+.sd-sig b { display: inline; margin: 0; font-size: 11px; letter-spacing: 0; text-transform: none; color: var(--azul-700); }
+.sd-sig { font-weight: 500; }
+.sd-r > p { font-size: 11px; }
+.sd-acao q { font-size: 11px; }
+.sd-acao-id { font-size: 12px; }
+.sd-acoes { flex-direction: row; }
+.sd-acao { flex: 1 1 0; min-width: 0; }
+.sd-acao-id { gap: 1px 8px; }
+.sd-acao-id .sd-onde { flex-basis: 100%; margin: 1px 0 0; }
+.sd-sep { padding-top: 5px; gap: 4px; }
+@media (max-width: 560px) { .sd-acoes { flex-direction: column; } }
+.sd-sep-grade { grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); }
+.sd-grupo { row-gap: 2px; }
+.sd-sep-grade { grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr); }
+.sd-vis { min-height: 36px; }
+.sd-anel { width: 46px; height: 46px; } .sd-anel::before { width: 34px; height: 34px; } .sd-anel b { font-size: 12px; }
+.sd-sig-sep { margin: 6px 0 0; font-size: 10.5px; }
+.sd-sig-sep b { font-size: 10.5px; }
+.sd-comum .sd-ic { margin-top: 4px; padding-top: 6px; }
+.sd-sig-sep { margin-top: 8px; font-size: 11px; } .sd-sig-sep b { font-size: 11px; }
+.sd-grupo { align-content: start; }
+.sd-r > p.sd-sig { font-size: 11px; font-weight: 500; color: var(--s900); }
