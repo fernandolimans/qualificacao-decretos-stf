@@ -3118,3 +3118,33 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .cm-obj { font-size: 13px; }
 .cm-fim { margin-top: 14px; font-size: 16px; }
 .cm-secs { display: grid; gap: 5px; } .cm-p2 { justify-content: flex-start; }
+/* Justificativa, terceira versão */
+#justificativa .js-hero { position: relative; overflow: hidden; border-radius: 24px; background: radial-gradient(120% 150% at 0% 0%, #1e293b 0%, var(--s950) 58%); padding: 30px 40px 32px; box-shadow: var(--sombra-xl); }
+#justificativa .js-hero::after { content: ""; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px; border-radius: 50%; border: 40px solid rgb(217 119 6 / .1); pointer-events: none; }
+.js-olho { position: relative; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--s400); }
+.js-olho span { border-radius: 999px; background: rgb(251 191 36 / .14); box-shadow: inset 0 0 0 1px rgb(251 191 36 / .4); padding: 3px 12px; letter-spacing: .12em; color: #fbbf24; }
+.js-tese { position: relative; margin-top: 14px; max-width: 1060px; font-size: 31px; font-weight: 700; line-height: 1.3; letter-spacing: -0.015em; color: #fff; }
+.js-const { position: relative; margin-top: 14px; max-width: 980px; border-left: 3px solid #f59e0b; padding-left: 16px; font-size: 16px; line-height: 1.55; color: var(--s300); }
+.js-const .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+.js-tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.js-card { position: relative; display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 22px 24px 22px; box-shadow: var(--sombra-sm); }
+.js-card::before { content: ""; position: absolute; left: 24px; right: 24px; top: 0; height: 3px; border-radius: 0 0 3px 3px; background: var(--s300); }
+.js-c3::before { background: #f59e0b; }
+.js-ic { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--s100); color: var(--s700); }
+.js-c3 .js-ic { background: var(--ambar-50); color: var(--ambar-700); box-shadow: inset 0 0 0 1px var(--ambar-200); }
+.js-ic .ic { width: 20px; height: 20px; }
+.js-tit { font-size: 19px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; color: var(--s900); }
+.js-card p { font-size: 14px; line-height: 1.6; color: var(--s600); }
+.js-card p strong { font-weight: 700; color: var(--s900); }
+#justificativa .js-rodape { margin-top: 14px; }
+@media (max-width: 1000px) { .js-tres { grid-template-columns: minmax(0, 1fr); } #justificativa .js-hero { padding: 22px; } .js-tese { font-size: 23px; } .js-const { font-size: 14.5px; } }
+#justificativa .js-hero { padding: 24px 36px 26px; }
+.js-tese { margin-top: 12px; font-size: 29px; }
+.js-const { margin-top: 12px; font-size: 15px; }
+.js-tres { margin-top: 14px; gap: 14px; }
+.js-card { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 12px; row-gap: 8px; align-content: start; padding: 18px 22px 18px; }
+.js-card .js-ic { grid-row: 1; grid-column: 1; }
+.js-card .js-tit { grid-row: 1; grid-column: 2; align-self: center; font-size: 18px; }
+.js-card p { grid-column: 1 / -1; font-size: 13.8px; line-height: 1.55; }
+#justificativa .js-rodape { margin-top: 10px; }
+@media (max-width: 1000px) { .js-card .js-tit { font-size: 17px; } }
