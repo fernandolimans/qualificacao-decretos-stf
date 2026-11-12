@@ -3382,3 +3382,52 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .rg thead th:first-child { padding: 0 !important; }
   .rg-col-es { display: none; }
 }
+
+/* ---------------------------------------------------------------- ponto de mudança (v2): as 194 decisões em ordem de data */
+.pm-caixa { display: flex; flex-direction: column; gap: 8px; }
+.pm-leg { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+.pm-leg li { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 600; color: var(--s700); }
+.pm-leg li.pm-sep { width: 1px; height: 14px; background: var(--s200); }
+.pm-leg i { width: 11px; height: 11px; border-radius: 3px; }
+.pm-leg i.pm-l-col, .pm-leg i.pm-l-mer { width: 18px; height: 3px; border-radius: 2px; }
+.pm-l-col { background: var(--s800); } .pm-l-mer { background: var(--verde-700); }
+.pm { display: block; width: 100%; height: auto; overflow: visible; border-radius: 14px; background: var(--s50); }
+.pm-margem { fill: rgb(30 41 59 / .06); stroke: rgb(30 41 59 / .25); stroke-dasharray: 3 3; }
+.pm-mrot { font-size: 9.5px; font-weight: 600; fill: var(--s500); }
+.pm-mtit { font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; fill: var(--s500); }
+.pm-grade { stroke: var(--s200); stroke-width: 1; }
+.pm-eixo-y { font-size: 9.5px; fill: var(--s400); }
+.pm-linha { fill: none; stroke-width: 2.5; stroke-linejoin: round; }
+.pm-linha.pm-col { stroke: var(--s800); } .pm-linha.pm-mer { stroke: var(--verde-700); }
+.pm-val { font-size: 12px; font-weight: 800; }
+.pm-val.pm-col { fill: var(--s800); } .pm-val.pm-mer { fill: var(--verde-700); }
+.pm-corte { stroke: var(--ambar-600); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.pm-ctit { font-size: 11px; font-weight: 800; fill: var(--ambar-700); }
+.pm-b-m { fill: var(--verde-700); background: var(--verde-700); }
+.pm-b-c { fill: #86d9b4; background: #86d9b4; }
+.pm-b-o { fill: #d6dde6; background: #d6dde6; }
+.pm-mk-a { fill: var(--ambar-600); } .pm-mk-b { fill: var(--verde-700); }
+.pm-tic { stroke: var(--s400); }
+.pm-ano { font-size: 10px; font-weight: 600; fill: var(--s500); }
+.pm-pat { font-size: 10px; font-weight: 600; fill: var(--s500); }
+.pm-cards { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.pm-card { display: flex; flex-direction: column; gap: 4px; border-radius: 14px; padding: 10px 14px; }
+.pm-a { background: var(--ambar-50); box-shadow: inset 0 0 0 1px #fcd34d; }
+.pm-b { background: var(--verde-50); box-shadow: inset 0 0 0 1px #a7f3d0; }
+.pm-cab { display: flex; align-items: center; gap: 6px; font-size: 10.5px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.pm-a .pm-cab { color: var(--ambar-700); } .pm-b .pm-cab { color: var(--verde-700); }
+.pm-mk { width: 8px; height: 8px; border-radius: 50%; }
+.pm-mk.pm-mk-a { background: var(--ambar-600); } .pm-mk.pm-mk-b { background: var(--verde-700); }
+.pm-card .ex-onde { font-size: 11.5px; }
+.pm-card .px-acoes { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; font-size: 14px; font-weight: 700; }
+.pm-card .px-acoes a { color: var(--azul-700); text-decoration: none; border-bottom: 1px solid #bfdbfe; }
+.pm-dec { font-size: 11.5px; font-weight: 600; color: var(--s600); }
+.pm-card q { display: block; font-size: 12.5px; line-height: 1.4; color: var(--s800); quotes: none; }
+.pm-card q::before { content: "“"; } .pm-card q::after { content: "”"; }
+.ex-tela.entrou .pm-linha { stroke-dasharray: 1200; animation: pm-traca 1.1s ease both; }
+@keyframes pm-traca { from { stroke-dashoffset: 1200; } to { stroke-dashoffset: 0; } }
+@media print { .pm, .pm-card, .pm-leg i, .pm-mk { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .pm-linha { animation: none !important; stroke-dasharray: none !important; } }
+@media (max-width: 700px) { .pm-cards { grid-template-columns: minmax(0, 1fr); } .pm-leg li.pm-sep { display: none; } }
+.pm-leg2 { margin-top: -2px; }
+.pm-leg2 li { font-size: 11px; font-weight: 500; color: var(--s600); }
+.pm-leg-rot { font-weight: 700 !important; color: var(--s500) !important; }
