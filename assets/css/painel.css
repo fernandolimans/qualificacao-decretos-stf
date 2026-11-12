@@ -2789,3 +2789,60 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .cf-obst { margin-top: 7px; }
 #resultados .cf-rodape { margin-top: 4px; }
 .cf-porta { font-size: 14.5px; } #resultados .cf-tab .rf-tab thead th { padding: 5px 10px 3px 0; }
+/* Revisão: Resultados da revisão */
+.rr-topo { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 16px; align-items: center; }
+.rr-tit { font-size: 22px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; color: var(--s900); }
+.rr-planos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.rr-planos li { border: 1px solid var(--s200); border-radius: 12px; background: var(--s50); padding: 7px 12px; font-size: 13.5px; line-height: 1.35; font-weight: 600; color: var(--s800); }
+.rr-planos b { margin-right: 4px; color: var(--s900); }
+.rr-duas { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 12px; margin-top: 10px; }
+.rr-col { border-radius: 14px; padding: 10px 16px 12px; }
+.rr-col p:not(.rr-rot) { font-size: 13.5px; line-height: 1.5; color: var(--s700); }
+.rr-col p + p { margin-top: 6px; }
+.rr-rot { margin-bottom: 4px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.rr-mp { border: 1px solid var(--s300); background: var(--s50); }
+.rr-mp .rr-rot { color: var(--s700); }
+.rr-dec { border: 1.5px dashed var(--ambar-500, #f59e0b); background: var(--ambar-50); }
+.rr-dec .rr-rot { color: var(--ambar-700); }
+.rr-prev { margin-top: 10px; border-left: 3px solid var(--s300); padding: 2px 0 2px 14px; font-size: 13.5px; line-height: 1.5; color: var(--s700); }
+.rr-imp { margin-top: 10px; border-radius: 14px; background: var(--s950); padding: 11px 20px; font-size: 15.5px; line-height: 1.5; font-weight: 600; color: #fff; }
+.rr-imp .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+@media (max-width: 1000px) { .rr-topo { grid-template-columns: 1fr; gap: 8px; } .rr-planos, .rr-duas { grid-template-columns: 1fr; } }
+.rr-topo { grid-template-columns: 300px minmax(0, 1fr); } .rr-tit { font-size: 22px; white-space: nowrap; } @media (max-width: 1000px) { .rr-tit { white-space: normal; } }
+@media (max-width: 1000px) { .rr-topo { grid-template-columns: minmax(0, 1fr); } .rr-planos { grid-template-columns: minmax(0, 1fr); } }
+/* Resultados preliminares com duas subabas */
+#resultados .res-lista { max-width: 760px; margin-bottom: 8px; }
+#resultados .res-lista button { padding: 4px 10px; }
+#resultados .met.cf-tela.ativa, #resultados .met.rr-tela.ativa { gap: 0 !important; }
+#resultados .rr-card { padding: 16px 22px 16px; }
+#resultados .rr-tela .mt-rodape { margin-top: 8px; }
+#resultados .rr-tit { font-size: 24px; }
+#resultados .rr-planos li { font-size: 14px; padding: 9px 14px; }
+#resultados .rr-duas { margin-top: 14px; gap: 14px; }
+#resultados .rr-col { padding: 12px 18px 14px; }
+#resultados .rr-col p:not(.rr-rot) { font-size: 14.5px; line-height: 1.55; }
+#resultados .rr-prev { margin-top: 14px; font-size: 14.5px; line-height: 1.55; }
+#resultados .rr-imp { margin-top: 14px; font-size: 16.5px; padding: 13px 22px; }
+#resultados .rr-card { padding: 12px 20px 12px; }
+#resultados .rr-tit { font-size: 22px; }
+#resultados .rr-planos li { font-size: 13px; padding: 6px 12px; }
+#resultados .rr-duas { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); margin-top: 10px; gap: 12px; }
+#resultados .rr-col { padding: 9px 16px 11px; }
+#resultados .rr-col p:not(.rr-rot) { font-size: 13.5px; line-height: 1.48; }
+#resultados .rr-prev { margin-top: 10px; font-size: 13.5px; line-height: 1.48; }
+#resultados .rr-imp { margin-top: 10px; font-size: 15px; padding: 10px 20px; }
+#resultados .rr-tela .mt-rodape { margin-top: 6px; }
+/* Resultados do levantamento com a barra de subabas */
+#resultados .cf-topo { padding: 11px 26px 12px; }
+#resultados .cf-q { font-size: 22px; margin-top: 2px; }
+#resultados .cf-duas { margin-top: 5px; }
+#resultados .cf-resp { font-size: 13.5px; line-height: 1.42; }
+#resultados .cf-vacuo { font-size: 13px; line-height: 1.42; }
+#resultados .cf-virada { margin-top: 7px; }
+#resultados .cf-tab .rf-tab td { line-height: 1.32; }
+#resultados .cf-obst { margin-top: 6px; padding: 6px 16px; }
+#resultados .cf-tab .rf-tab td { padding-top: 3px; padding-bottom: 3px; }
+#resultados .cf-tab .rf-tab th[scope="row"] { padding-top: 3px; padding-bottom: 3px; }
+#resultados .rr-col p:not(.rr-rot), #resultados .rr-prev { font-size: 14px; line-height: 1.5; }
+#resultados .rr-imp { font-size: 15.5px; }
+#resultados .rr-duas, #resultados .rr-prev, #resultados .rr-imp { margin-top: 12px; }
