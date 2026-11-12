@@ -3030,3 +3030,91 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   #metodologia .met-grupos .mg-bts { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #metodologia .met-grupos .mg-0 .mg-cab { display: none; }
 }
+/* Resultados preliminares com quatro subabas */
+#resultados .res-lista { max-width: none; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+#resultados .qs-tela.ativa, #resultados .cm-tela.ativa { gap: 8px !important; }
+/* Seção 2.2: o que se sabe sobre o controle */
+.qs { position: relative; overflow: hidden; border-radius: 22px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 14px 22px 14px; box-shadow: var(--sombra-xl); }
+.qs::after { content: ""; position: absolute; right: -70px; top: -70px; width: 240px; height: 240px; border-radius: 50%; border: 34px solid rgb(217 119 6 / .08); pointer-events: none; }
+.qs-topo { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.06fr); column-gap: 52px; align-items: end; padding-left: 40px; }
+.qs-olho { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.qs-lead { margin-top: 3px; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+.qs-cols { display: none; }
+.qs-lista { position: relative; z-index: 1; display: grid; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; counter-reset: none; }
+.qs-lista::before { content: "Na MP"; position: absolute; left: 40px; top: -18px; font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--s400); }
+.qs-lista::after { content: "E o decreto?"; position: absolute; left: calc(40px + (100% - 40px) * .486 + 26px); top: -18px; font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.qs-l { display: grid; grid-template-columns: 28px minmax(0, 1fr) 26px minmax(0, 1.06fr); gap: 0 12px; align-items: stretch; }
+.qs-n { align-self: center; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; box-shadow: 0 0 0 1.5px rgb(255 255 255 / .3); font-size: 13px; font-weight: 800; color: #fff; }
+.qs-mp { border-radius: 12px; background: rgb(255 255 255 / .05); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .1); padding: 7px 12px; }
+.qs-p { font-size: 13px; font-weight: 600; line-height: 1.35; color: #fff; }
+.qs-ev { margin-top: 2px; font-size: 11.5px; line-height: 1.38; color: var(--s400); }
+.qs-ev b { color: #fde68a; font-weight: 700; }
+.qs-seta { align-self: center; display: flex; justify-content: center; color: var(--s500); }
+.qs-seta .ic { width: 16px; height: 16px; }
+.qs-dec { display: flex; flex-direction: column; justify-content: center; gap: 4px; border-radius: 12px; background: rgb(245 158 11 / .1); box-shadow: inset 0 0 0 1px rgb(245 158 11 / .32); padding: 7px 12px; }
+.qs-dec p { font-size: 12.5px; line-height: 1.4; color: var(--s100); }
+.qs-tag { align-self: flex-start; border-radius: 999px; background: #fbbf24; padding: 1px 9px; font-size: 10.5px; font-weight: 800; color: var(--s950); }
+.qs .ref-txt:hover, .cm .ref-txt:hover { background: rgb(255 255 255 / .12); color: inherit; }
+.qs-l:last-child .qs-mp { box-shadow: inset 0 0 0 1.5px rgb(251 191 36 / .45); }
+@media (max-width: 1000px) {
+  .qs-topo { grid-template-columns: minmax(0, 1fr); padding-left: 0; }
+  .qs-lista::before, .qs-lista::after { display: none; }
+  .qs-l { grid-template-columns: 28px minmax(0, 1fr); gap: 6px 10px; }
+  .qs-seta { display: none; }
+  .qs-dec { grid-column: 2; }
+}
+/* Seção 4: o caminho das ações no Supremo */
+.cm { position: relative; overflow: hidden; border-radius: 22px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 16px 24px 16px; box-shadow: var(--sombra-xl); }
+.cm::after { content: ""; position: absolute; right: -70px; top: -70px; width: 240px; height: 240px; border-radius: 50%; border: 34px solid rgb(217 119 6 / .08); pointer-events: none; }
+.cm-topo { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; }
+.cm-olho { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.cm-lead { margin-top: 4px; font-size: 20px; font-weight: 700; line-height: 1.3; color: #fff; }
+.cm-cod { margin-top: 4px; font-size: 12.5px; line-height: 1.45; color: var(--s400); }
+.cm-242 { display: flex; flex-direction: column; align-items: flex-end; }
+.cm-242 b { font-size: 54px; font-weight: 800; line-height: 1; letter-spacing: -0.03em; color: #fbbf24; }
+.cm-242 span { font-size: 12px; color: var(--ambar-200); }
+.cm-partes { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.35fr) 34px minmax(0, 1fr); margin-top: 14px; }
+.cm-p { display: flex; flex-direction: column; gap: 8px; border-radius: 16px; background: rgb(255 255 255 / .05); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .1); padding: 12px 16px 12px; }
+.cm-p2 { background: rgb(245 158 11 / .08); box-shadow: inset 0 0 0 1px rgb(245 158 11 / .3); }
+.cm-sec { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 13.5px; font-weight: 700; line-height: 1.3; color: #fff; }
+.cm-sec span { border-radius: 7px; background: rgb(255 255 255 / .14); padding: 1px 7px; font-size: 11.5px; font-weight: 800; color: var(--s100); }
+.cm-sec span + * { }
+.cm-p2 .cm-sec span { background: #fbbf24; color: var(--s950); }
+.cm-t { font-size: 12.5px; line-height: 1.45; color: var(--s300); }
+.cm-t strong { color: #fff; font-weight: 700; }
+.cm-chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.cm-chips li { border-radius: 999px; box-shadow: inset 0 0 0 1px rgb(255 255 255 / .18); padding: 1px 9px; font-size: 11px; color: var(--s200); }
+.cm-conf { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.cm-conf li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px; font-size: 11.5px; line-height: 1.4; color: var(--s400); }
+.cm-conf b { font-weight: 700; color: var(--s100); }
+.cm-obj { display: flex; align-items: center; gap: 6px; margin-top: auto; padding-top: 2px; font-size: 12px; font-weight: 700; color: #fde68a; }
+.cm-obj .ic { width: 15px; height: 15px; }
+.cm-seta { align-self: center; display: flex; justify-content: center; color: var(--s500); }
+.cm-seta .ic { width: 18px; height: 18px; }
+.cm-fim { position: relative; z-index: 1; margin-top: 12px; border-left: 3px solid #fbbf24; padding: 2px 0 2px 14px; font-size: 15px; font-weight: 600; line-height: 1.45; color: #fff; }
+@media (max-width: 1000px) {
+  .cm-topo, .cm-partes { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .cm-242 { align-items: flex-start; }
+  .cm-seta { transform: rotate(90deg); }
+  .cm-conf li { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  #resultados .res-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.qs-topo { grid-template-columns: minmax(0, 1fr); }
+.qs-lead { font-size: 22px; }
+.qs-lista { margin-top: 28px; gap: 7px; }
+.qs-lista::before, .qs-lista::after { top: -19px; }
+.qs { padding: 16px 22px 16px; }
+.qs-mp, .qs-dec { padding: 8px 13px; }
+.cm { padding: 18px 26px 18px; }
+.cm-lead { font-size: 21px; }
+.cm-cod { font-size: 13px; }
+.cm-partes { margin-top: 16px; }
+.cm-p { gap: 10px; padding: 14px 18px; }
+.cm-sec { font-size: 14.5px; }
+.cm-t { font-size: 13.5px; line-height: 1.5; }
+.cm-chips li { font-size: 11.5px; padding: 2px 10px; }
+.cm-conf { gap: 6px; }
+.cm-conf li { grid-template-columns: 160px minmax(0, 1fr); font-size: 12.5px; }
+.cm-obj { font-size: 13px; }
+.cm-fim { margin-top: 14px; font-size: 16px; }
+.cm-secs { display: grid; gap: 5px; } .cm-p2 { justify-content: flex-start; }
