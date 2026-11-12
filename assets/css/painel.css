@@ -2005,3 +2005,52 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .rk-ticks { height: 36px; }
 .rk-ticks em { top: 19px; }
 .rk-corte i { background: var(--s50); padding: 0 3px; border-radius: 4px; }
+/* Exemplos 1: probabilidade predita na faixa do primeiro estágio */
+.ex-pp { display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; font-size: 11px; font-weight: 600; color: var(--s500); }
+.ex-pp b { font-size: 20px; line-height: 1; font-weight: 800; color: var(--s900); font-variant-numeric: tabular-nums; }
+/* Exemplos 2: o que a regressão devolve */
+.ex-2 .ex-grade { grid-template-columns: minmax(0, 360px) minmax(0, 1fr); }
+.ex-out { margin: 12px 0 0; padding: 0; list-style: none; counter-reset: o; display: flex; flex-direction: column; }
+.ex-out li { counter-increment: o; position: relative; display: flex; flex-direction: column; gap: 2px; padding: 9px 0 9px 32px; border-top: 1px solid var(--s100); font-size: 13px; line-height: 1.4; color: var(--s600); }
+.ex-out li::before { content: counter(o); position: absolute; left: 0; top: 9px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--s100); font-size: 11.5px; font-weight: 700; color: var(--s700); }
+.ex-out li b { font-size: 13.5px; color: var(--s900); }
+.sp { display: flex; flex-direction: column; gap: 12px; }
+.sp-tit { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--s500); }
+.sp-cont { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: 12px; }
+.sp-grupo { display: flex; flex-direction: column; gap: 6px; border-radius: 14px; background: var(--verde-50); box-shadow: inset 0 0 0 1px #a7f3d0; padding: 12px 14px; }
+.sp-rot { font-size: 13px; font-weight: 700; color: var(--s800); }
+.sp-rot2 { font-size: 12px; font-weight: 600; color: var(--verde-700); }
+.sp-placar { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.sp-n { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; font-size: 24px; font-weight: 800; }
+.sp-sim { background: var(--verde-700); color: #fff; }
+.sp-nao { background: #fff; color: var(--s400); box-shadow: inset 0 0 0 1.5px var(--s300); }
+.sp-x { font-size: 12px; font-weight: 600; color: var(--s600); margin-right: 6px; }
+.sp-res { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sp-r { display: flex; flex-direction: column; gap: 4px; border-radius: 14px; padding: 12px 14px; }
+.sp-r p { font-size: 12px; font-weight: 700; color: var(--s600); }
+.sp-r b { font-size: 22px; line-height: 1.15; font-weight: 800; }
+.sp-r span { font-size: 12px; line-height: 1.35; color: var(--s600); }
+.sp-comum { background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); }
+.sp-comum b { font-size: 17px; color: var(--s500); }
+.sp-firth { background: var(--azul-50); box-shadow: inset 0 0 0 1px #bfdbfe; }
+.sp-firth b { color: var(--azul-700); font-size: 30px; }
+.sp-acoes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sp-acao { display: flex; flex-direction: column; gap: 5px; border: 1px solid var(--s200); border-radius: 14px; padding: 10px 12px; }
+.sp-acao .ex-onde { display: flex; align-items: center; gap: 6px; }
+.sp-acao .ex-marca { width: 18px; height: 18px; margin: 0; }
+.sp-acao .ex-marca .ic { width: 12px; height: 12px; }
+.sp-acao q { font-size: 13px; }
+@media (max-width: 1000px) { .ex-2 .ex-grade { grid-template-columns: minmax(0, 1fr); } .sp-cont, .sp-acoes { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .sp-res { grid-template-columns: 1fr; } }
+@media print { .sp-grupo, .sp-n, .sp-r, .ex-pp { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.ex-lista { max-width: none; }
+#exemplos .met-lista { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.ex-l1 { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; }
+.ex-1 .ex-porta .ex-l1 .ex-marca { float: none; margin: 0; }
+.ex-l1 .ex-pp { margin: 0; }
+.ex-1 .ex-porta .ex-onde { min-height: 0; padding-top: 0; }
+.ex-2 .ex-grade { grid-template-columns: minmax(0, 400px) minmax(0, 1fr); }
+.ex-out li { padding: 7px 0 7px 32px; font-size: 12.5px; line-height: 1.35; }
+.ex-out li::before { top: 7px; }
+.ex-out li b { font-size: 13px; }
+.ex-saidas .an-para { font-size: 15.5px; }
