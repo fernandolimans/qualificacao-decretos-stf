@@ -4149,3 +4149,144 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .cm2-obj { padding-top: 2px; }
 @media (max-width: 760px) { .cm2-conf li { grid-template-columns: minmax(0, 1fr); gap: 1px; padding: 6px 0; } }
 @media (min-width: 761px) { .cm2-conf li { grid-template-columns: 152px 160px minmax(0, 1fr); } }
+@media print { #justificativa .j4-m { animation: none !important; opacity: 1 !important; transform: none !important; } }
+
+/* Considerações finais (Seção 5), tela curta de fechamento (13/11/2026) */
+.cfx { position: relative; overflow: hidden; border-radius: 24px; background: radial-gradient(120% 150% at 0% 0%, #1e293b 0%, var(--s950) 58%); padding: 30px 40px 34px; box-shadow: var(--sombra-xl); }
+.cfx-olho { display: flex; align-items: center; gap: 10px; font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ambar-200); }
+.cfx-olho .ic { width: 16px; height: 16px; }
+.cfx-lista { display: grid; gap: 0; margin: 14px 0 0; padding: 0; list-style: none; }
+.cfx-l { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 24px; align-items: start; padding: 20px 0; }
+.cfx-l + .cfx-l { border-top: 1px solid rgb(255 255 255 / .10); }
+.cfx-rot { display: flex; align-items: center; gap: 10px; padding-top: 4px; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--s400); }
+.cfx-rot span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: rgb(255 255 255 / .08); font-size: 13px; letter-spacing: 0; color: #fff; }
+.cfx-t { font-size: 21px; font-weight: 500; line-height: 1.45; color: var(--s200); text-wrap: pretty; }
+.cfx-t b { font-weight: 700; color: #fff; }
+.cfx-l3 .cfx-rot { color: var(--ambar-200); }
+.cfx-l3 .cfx-rot span { background: #fbbf24; color: var(--s950); }
+.cfx-l3 .cfx-t b { color: #fbbf24; }
+#consideracoes .cfx-rodape { margin-top: 14px; }
+@media (max-width: 760px) {
+  .cfx { padding: 22px 20px; border-radius: 18px; }
+  .cfx-l { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 14px 0; }
+  .cfx-t { font-size: 17px; }
+}
+@media print { .cfx, .cfx-rot span { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+/* sete seções: todas as abas cabem em 1366 */
+@media (min-width: 1001px) { .aba { gap: 5px; padding: 8px 7px; font-size: 13px; } }
+@media (min-width: 1001px) { .abas-trilho { padding: 0 8px; } .aba { gap: 5px; padding: 8px 6px; font-size: 12.5px; } }
+
+/* Considerações finais v2: hipótese, virada e resultado lado a lado (13/11/2026) */
+.cfy { display: grid; gap: 10px; }
+.cfy-topo { border-radius: 20px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 16px 26px 18px; box-shadow: var(--sombra-xl); }
+.cfy-olho { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.cfy-olho .ic { width: 15px; height: 15px; }
+.cfy-tit { margin-top: 4px; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+.cfy-grade { display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; column-gap: 8px; }
+.cfy-b { grid-row: span 4; display: grid; grid-template-rows: subgrid; row-gap: 10px; border: 1px solid var(--s200); border-radius: 18px; background: #fff; padding: 16px 20px 18px; box-shadow: var(--sombra-sm); }
+.cfy-seta { grid-row: 1 / span 4; align-self: center; display: grid; place-items: center; color: var(--s400); }
+.cfy-seta .ic { width: 20px; height: 20px; }
+.cfy-rot { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--s500); }
+.cfy-rot span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--s900); font-size: 11.5px; letter-spacing: 0; color: #fff; }
+.cfy-chave { font-size: 22px; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; color: var(--s900); }
+.cfy-vis { display: flex; flex-direction: column; justify-content: center; gap: 8px; border-radius: 14px; background: var(--s50); padding: 14px 16px; }
+.cfy-frase { border-top: 1px solid var(--s100); padding-top: 10px; font-size: 12.5px; line-height: 1.5; color: var(--s600); }
+.cfy-funil { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cfy-funil li { display: grid; gap: 1px; margin: 0 calc(var(--k) * 16px); border-radius: 10px; background: var(--s900); padding: 6px 12px; color: #fff; }
+.cfy-funil li:nth-child(2) { background: var(--s700); }
+.cfy-funil li:nth-child(3) { background: var(--s500); }
+.cfy-funil span { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-200); }
+.cfy-funil b { font-size: 13px; line-height: 1.3; }
+.cfy-funil b::first-letter { text-transform: uppercase; }
+.cfy-cap { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12.5px; font-weight: 700; color: var(--s700); }
+.cfy-cap .ic { width: 15px; height: 15px; color: var(--ambar-600); }
+.cfy-tag { align-self: flex-start; border-radius: 999px; background: var(--ambar-50); box-shadow: inset 0 0 0 1.5px #fcd34d; padding: 3px 12px; font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--ambar-700); }
+.cfy-graca { font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--s800); }
+.cfy-arg { font-size: 16px; font-weight: 800; color: var(--s900); }
+.cfy-vac { font-size: 13px; line-height: 1.4; color: var(--s600); }
+.cfy-areas { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cfy-areas li { border-radius: 999px; background: #fff; box-shadow: inset 0 0 0 1px var(--s300); padding: 4px 12px; font-size: 13px; font-weight: 700; color: var(--s800); }
+.cfy-b3 { border-color: #fcd34d; background: linear-gradient(180deg, var(--ambar-50), #fff 60%); }
+.cfy-b3 .cfy-rot { color: var(--ambar-700); }
+.cfy-b3 .cfy-rot span { background: #fbbf24; color: var(--s950); }
+.cfy-b3 .cfy-chave { color: var(--ambar-700); }
+.cfy-b3 .cfy-vis { background: #fff; box-shadow: inset 0 0 0 1px #fde68a; }
+@media (max-width: 1000px) {
+  .cfy-grade { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; row-gap: 8px; }
+  .cfy-b { grid-row: auto; grid-template-rows: none; }
+  .cfy-seta { grid-row: auto; transform: rotate(90deg); }
+  .cfy-tit { font-size: 21px; }
+}
+@media print { .cfy-topo, .cfy-funil li, .cfy-rot span, .cfy-b3 { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (min-width: 1001px) {
+  .cfy-grade > * { grid-row: 1 / span 4; }
+  .cfy-grade > :nth-child(1) { grid-column: 1; } .cfy-grade > :nth-child(2) { grid-column: 2; } .cfy-grade > :nth-child(3) { grid-column: 3; }
+  .cfy-grade > :nth-child(4) { grid-column: 4; } .cfy-grade > :nth-child(5) { grid-column: 5; }
+}
+.cfy-areas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.cfy-areas li { display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px #fde68a; padding: 10px 12px; font-size: 14px; font-weight: 700; color: var(--s800); }
+.cfy-areas .ic { flex: none; width: 18px; height: 18px; color: var(--ambar-600); }
+.cfy-b3 .cfy-vis { background: var(--ambar-50); box-shadow: none; }
+.cfy-vac { font-weight: 600; color: var(--s700); }
+.cfy-areas li { white-space: nowrap; font-size: 13.5px; padding: 10px 10px; }
+
+/* Considerações finais v3: as duas fases da hipótese, o resultado e a virada à parte (13/11/2026) */
+.cfz { display: grid; gap: 8px; }
+.cfz-topo { border-radius: 18px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 13px 24px 15px; box-shadow: var(--sombra-xl); }
+.cfz-olho { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.cfz-olho .ic { width: 15px; height: 15px; }
+.cfz-tit { margin-top: 3px; font-size: 24px; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+.cfz-main { display: grid; grid-template-columns: minmax(0, 64fr) 22px minmax(0, 36fr); gap: 8px; align-items: stretch; }
+.cfz-hip, .cfz-res { display: flex; flex-direction: column; border: 1px solid var(--s200); border-radius: 18px; background: #fff; padding: 14px 18px 16px; box-shadow: var(--sombra-sm); }
+.cfz-rot { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--s500); }
+.cfz-chave { margin-top: 3px; font-size: 22px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; color: var(--s900); }
+.cfz-cap { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--s600); }
+.cfz-fases { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1fr); gap: 6px; margin-top: 10px; }
+.cfz-fase { display: flex; flex-direction: column; gap: 5px; border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 12px 14px; }
+.cfz-ftag { align-self: flex-start; border-radius: 999px; background: var(--s900); padding: 2px 10px; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
+.cfz-ftit { font-size: 15px; font-weight: 800; line-height: 1.3; color: var(--s900); }
+.cfz-fsub { font-size: 12.5px; line-height: 1.4; color: var(--s600); }
+.cfz-args { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cfz-args li { border-radius: 10px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--s300); padding: 5px 11px; font-size: 13px; font-weight: 700; color: var(--s800); }
+.cfz-sai { display: flex; align-items: flex-start; gap: 7px; margin-top: auto; border-top: 1px dashed var(--s300); padding-top: 8px; font-size: 12.5px; font-weight: 700; line-height: 1.35; color: #b91c1c; }
+.cfz-sai .ic { flex: none; width: 16px; height: 16px; margin-top: 1px; }
+.cfz-seta { align-self: center; display: grid; place-items: center; color: var(--s400); }
+.cfz-seta .ic { width: 20px; height: 20px; }
+.cfz-res { border-color: #fcd34d; background: linear-gradient(180deg, var(--ambar-50), #fff 70%); }
+.cfz-res .cfz-rot { color: var(--ambar-700); }
+.cfz-se { margin-top: 6px; font-size: 13px; line-height: 1.4; color: var(--s700); }
+.cfz-vac { margin-top: 8px; font-size: 13px; font-weight: 600; line-height: 1.4; color: var(--s800); }
+.cfz-areas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin: 8px 0 0; padding: 0; list-style: none; }
+.cfz-areas li { display: flex; align-items: center; gap: 7px; border-radius: 11px; background: #fff; box-shadow: inset 0 0 0 1px #fde68a; padding: 8px 10px; font-size: 13px; font-weight: 700; white-space: nowrap; color: var(--s800); }
+.cfz-areas .ic { flex: none; width: 17px; height: 17px; color: var(--ambar-600); }
+.cfz-pode { margin-top: auto; padding-top: 10px; font-size: 13px; color: var(--s600); }
+.cfz-deficit { color: var(--ambar-700); font-size: 24px; }
+.cfz-virada { display: grid; grid-template-columns: 170px minmax(0, 1fr) 22px minmax(0, 1.25fr); gap: 14px; align-items: center; border-radius: 18px; background: var(--s950); padding: 12px 20px; box-shadow: var(--sombra-sm); }
+.cfz-virada .cfz-rot { color: var(--s400); }
+.cfz-tag { display: inline-block; margin-top: 4px; border-radius: 999px; background: #fbbf24; padding: 3px 11px; font-size: 11.5px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--s950); }
+.cfz-v2 { font-size: 13.5px; font-weight: 600; line-height: 1.4; color: var(--s200); }
+.cfz-v3 { font-size: 13.5px; line-height: 1.45; color: var(--s300); }
+.cfz-v3 b { color: #fff; }
+.cfz-virada .cfz-seta { color: var(--s500); }
+@media (max-width: 1000px) {
+  .cfz-main, .cfz-fases, .cfz-virada { grid-template-columns: minmax(0, 1fr); }
+  .cfz-seta { transform: rotate(90deg); }
+}
+@media print { .cfz-topo, .cfz-virada, .cfz-ftag, .cfz-tag, .cfz-res { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (min-width: 1001px) {
+  .cfz-tit { font-size: 26px; }
+  .cfz-hip, .cfz-res { padding: 16px 20px 18px; }
+  .cfz-chave { font-size: 26px; }
+  .cfz-cap { font-size: 14px; }
+  .cfz-fase { gap: 7px; padding: 14px 16px; }
+  .cfz-ftit { font-size: 17px; }
+  .cfz-fsub { font-size: 14px; }
+  .cfz-args li { font-size: 14px; padding: 6px 12px; }
+  .cfz-sai { font-size: 13.5px; padding-top: 10px; }
+  .cfz-se, .cfz-vac, .cfz-pode { font-size: 14px; }
+  .cfz-areas li { font-size: 14px; padding: 10px 12px; }
+  .cfz-deficit { font-size: 28px; }
+  .cfz-virada { padding: 14px 22px; }
+  .cfz-v2, .cfz-v3 { font-size: 15px; }
+}
+@media (min-width: 1001px) { .cfz-ftit { font-size: 16px; } }
