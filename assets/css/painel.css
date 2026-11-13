@@ -4290,3 +4290,72 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .cfz-v2, .cfz-v3 { font-size: 15px; }
 }
 @media (min-width: 1001px) { .cfz-ftit { font-size: 16px; } }
+
+/* Três planos da assimetria com uma linha literal da Seção 2.3 cada (13/11/2026) */
+.rj-cima { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.rj-cima .rj-pl { gap: 7px; }
+.rj-cima .rj-pl li { align-items: flex-start; }
+.rj-cima .rj-pl b { margin-top: 1px; }
+.rj-pl li > span { display: grid; gap: 1px; }
+.rj-pl li i { font-style: normal; font-weight: 700; color: #fff; }
+.rj-pl li em { font-style: normal; font-size: 12.5px; line-height: 1.4; color: var(--s300); }
+.rj-cima { margin-bottom: 6px; }
+.rj-cima .rj-planos { padding: 9px 18px; }
+.rj-cima .rj-pl { gap: 4px; margin-top: 6px; }
+.rj-pl li em { font-size: 12px; line-height: 1.35; }
+.rj-cima .ra-prev { padding: 9px 20px; }
+.rj-cima .ra-prev-lead { font-size: 13.5px; line-height: 1.4; }
+.rj-cima .rj-casos { margin-top: 4px; font-size: 12px; line-height: 1.45; }
+.rj-cima .ra-sinal { margin-top: 4px; font-size: 12.5px; }
+.rj .rc { padding-top: 8px; padding-bottom: 6px; }
+.rj .rc-l { padding: 3px 0; }
+.rj .rc .rc-cab { margin-top: 3px; }
+
+/* Resultados da revisão em duas colunas: o que se sabe e por que a MP (13/11/2026) */
+.rk { display: grid; grid-template-columns: minmax(0, 60fr) minmax(0, 40fr); gap: 10px; align-items: stretch; }
+.rk-sabe { position: relative; overflow: hidden; border-radius: 20px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 16px 20px 14px; box-shadow: var(--sombra-xl); color: #fff; }
+.rk-tit { font-size: 19px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; color: #fff; }
+.rk-cab { display: flex; justify-content: space-between; margin: 10px 0 2px 38px; font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--s400); }
+.rk-cab span:last-child { display: flex; align-items: center; gap: 6px; color: var(--ambar-200); }
+.rk-cab .ic { width: 13px; height: 13px; }
+.rk-lista { display: grid; margin: 0; padding: 0; list-style: none; }
+.rk-l { display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: 10px; align-items: start; padding: 9px 0; border-top: 1px solid rgb(255 255 255 / .09); }
+.rk-l .qs-n { margin-top: 1px; }
+.rk-c { display: grid; gap: 6px; }
+.rk-mp { font-size: 13.5px; font-weight: 600; line-height: 1.38; color: #fff; }
+.rk-l:last-child .rk-mp { color: #fde68a; }
+.rk-baixo { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px; align-items: center; }
+.rk-baixo .rc-dado { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.rk-dec { display: flex; align-items: flex-start; gap: 7px; font-size: 12.5px; line-height: 1.45; color: var(--s200); }
+.rk-dec > .ic { flex: none; width: 14px; height: 14px; margin-top: 2px; color: var(--s500); }
+.rk-dir { display: grid; grid-template-rows: auto 1fr; gap: 10px; }
+.rk-planos { border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 16px 20px; box-shadow: var(--sombra-sm); }
+.rk-tit2 { font-size: 16px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.rk-pl { display: grid; gap: 10px; margin: 10px 0 0; padding: 0; list-style: none; }
+.rk-pl li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; }
+.rk-pl b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #fbbf24; font-size: 12px; color: var(--s950); }
+.rk-pn { font-size: 13.5px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.rk-px { margin-top: 2px; font-size: 13px; line-height: 1.4; color: var(--s600); }
+.rk-prev { display: flex; flex-direction: column; gap: 8px; border-radius: 20px; background: var(--ambar-50); box-shadow: inset 0 0 0 1.5px var(--ambar-200), var(--sombra-sm); padding: 14px 20px; }
+.rk-prev-lead { font-size: 13.5px; font-weight: 600; line-height: 1.42; color: var(--s900); }
+.rk-casos { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.rk-casos li { position: relative; padding-left: 14px; font-size: 12.5px; line-height: 1.4; color: var(--s700); }
+.rk-casos li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: #f59e0b; }
+.rk-sinal { margin-top: auto; font-size: 13px; font-weight: 700; line-height: 1.4; color: var(--s900); }
+@media (max-width: 1000px) {
+  .rk { grid-template-columns: minmax(0, 1fr); }
+  .rk-baixo { grid-template-columns: minmax(0, 1fr); }
+}
+@media print { .rk-sabe, .rk-pl b, .rk-prev { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .rk .dica-fonte { display: none !important; } }
+.rk-baixo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.rk-baixo .rc-dado { flex: none; }
+.rk-dec { flex: 1 1 300px; min-width: 0; }
+.rk-l { padding: 7px 0; }
+.rk-c { gap: 5px; }
+.rk-sabe { padding: 14px 20px 10px; }
+.rk-tit { font-size: 18px; }
+.rk-cab { margin-top: 8px; }
+#resultados .rk { display: grid; gap: 10px; border-radius: 0; background: none; padding: 0; }
+@media (max-width: 1000px) { .rk-baixo .rc-dado { flex: 1 1 auto; min-width: 0; } .rk-baixo .rc-par { min-width: 0; } .rk-baixo .rc-par small { white-space: normal; } }
+.rk-prev { justify-content: center; gap: 10px; }
+.rk-sinal { margin-top: 2px; }
