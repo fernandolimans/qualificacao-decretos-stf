@@ -3827,3 +3827,61 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .p4-h { font-size: 13.6px; }
 .p4-h .pq-ef { white-space: normal; }
 .p5-nw { white-space: nowrap; }
+
+/* ---------------------------------------------------------------- Metodologia: a estratégia de análise em uma tabela */
+.et { border: 1px solid var(--s200); border-radius: 20px; background: #fff; padding: 6px 18px 12px; box-shadow: var(--sombra-sm); }
+.et-tab { width: 100%; border-collapse: separate; border-spacing: 0; table-layout: fixed; }
+.et-tab thead th { padding: 8px 12px 7px; text-align: left; font-size: 10.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--s500); border-bottom: 1.5px solid var(--s200); }
+.et-tab thead .et-c0 { width: 128px; }
+.et-tab thead th:nth-child(2) { width: 230px; }
+.et-tab thead th:nth-child(4) { width: 33%; }
+.et-cr { color: var(--ambar-700) !important; }
+.et-cr .ic { width: 13px; height: 13px; margin-right: 5px; vertical-align: -2px; }
+.et-tab tbody th, .et-tab tbody td { padding: 8px 12px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--s100); }
+.et-g { padding: 10px 12px 10px 0 !important; border-bottom: 1.5px solid var(--s200) !important; }
+.et-g b { display: block; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1.35; color: var(--s700); }
+.et-g span { display: block; margin-top: 3px; font-size: 11px; font-weight: 500; line-height: 1.35; color: var(--s500); }
+.et-g0 b { color: #1d4ed8; } .et-g1 b { color: var(--verde-700); } .et-g2 b { color: var(--ambar-700); }
+.et-l:last-child > *, tr.et-l:has(+ tr.et-ini) > * { border-bottom: 1.5px solid var(--s200); }
+.et-t { display: table-cell; }
+.et-t .et-ic { display: inline-grid; place-items: center; width: 28px; height: 28px; margin: 0 9px 0 0; float: left; border-radius: 9px; background: var(--s100); color: var(--s700); }
+.et-lg0 .et-ic { background: #dbeafe; color: #1d4ed8; } .et-lg1 .et-ic { background: var(--verde-50); color: var(--verde-700); } .et-lg2 .et-ic { background: var(--ambar-50); color: var(--ambar-700); }
+.et-t .et-ic .ic { width: 15px; height: 15px; }
+.et-n { display: block; overflow: hidden; padding-top: 1px; font-size: 13.5px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.et-s { font-size: 12.5px; line-height: 1.45; color: var(--s700); }
+.et-s p + p { margin-top: 3px; }
+.et-sai { display: flex; flex-direction: column; gap: 1px; margin: 0; padding: 0; list-style: none; }
+.et-sai li { font-size: 12px; line-height: 1.4; }
+.et-sai b { font-weight: 700; color: var(--s900); }
+.et-r { background: var(--ambar-50); font-size: 12.5px; line-height: 1.45; font-weight: 600; color: var(--s900); }
+.et-tab tbody tr:first-child .et-r { border-top-left-radius: 0; }
+.et-nota { margin-top: 8px; font-size: 11.5px; line-height: 1.45; color: var(--s500); }
+.et-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#metodologia.ativo .et-l { animation: subir .4s ease both; animation-delay: calc(var(--k) * 55ms); }
+@media print { .et-r, .et-ic { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (max-width: 1000px) {
+  .et { padding: 4px 12px 12px; }
+  .et-tab, .et-tab tbody, .et-tab tr, .et-tab th, .et-tab td { display: block; width: auto !important; }
+  .et-tab thead { display: none; }
+  .et-g { padding: 14px 0 4px !important; border: 0 !important; }
+  .et-l { padding: 8px 0; border-bottom: 1px solid var(--s100); }
+  .et-l > * { border: 0 !important; padding: 4px 0 !important; }
+  .et-s::before, .et-r::before { display: block; margin-bottom: 2px; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s500); }
+  .et-s::before { content: "Para que serve"; }
+  .et-r::before { content: "Resultado esperado"; color: var(--ambar-700); }
+  .et-r { border-radius: 10px; padding: 8px 10px !important; }
+}
+.et { padding: 2px 16px 10px; }
+.et-tab thead th { padding: 7px 10px 6px; }
+.et-tab thead .et-c0 { width: 112px; }
+.et-tab thead th:nth-child(2) { width: 196px; }
+.et-tab thead th:nth-child(4) { width: 29%; }
+.et-tab tbody th, .et-tab tbody td { padding: 7px 10px; }
+.et-g { padding: 8px 10px 8px 0 !important; }
+.et-g b { font-size: 10.5px; }
+.et-n { font-size: 13px; }
+.et-t .et-ic { width: 26px; height: 26px; margin-right: 8px; }
+.et-s, .et-r { font-size: 12.3px; line-height: 1.42; }
+.et-sai li { font-size: 12px; line-height: 1.38; }
+.et-nota { margin-top: 6px; font-size: 11px; }
+@media (max-width: 1000px) { .et-t { display: flex !important; align-items: center; } .et-t .et-ic { float: none; flex: none; } }
