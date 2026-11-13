@@ -3785,3 +3785,45 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .j4-71 .g71 { max-width: 150px; }
   #justificativa .j4-hero { padding: 18px; }
 }
+
+/* Pergunta, quinta versão: a pergunta em destaque; objetivo geral no quadro dos objetivos */
+.p4-pergunta { font-size: 27px; line-height: 1.3; margin-top: 8px; }
+.p4-q .p4-rec { margin-top: 14px; }
+.p5-geral { border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 10px 14px 11px; }
+.p5-geral .p4-rot { color: var(--s700); }
+.p5-geral .p4-rot .ic { color: var(--ambar-600); }
+.p5-g { margin-top: 5px; font-size: 13.5px; line-height: 1.5; font-weight: 600; color: var(--s900); }
+.p5-rot-esp { margin-top: 12px; }
+@media (max-width: 1000px) { .p4-pergunta { font-size: 20px; } }
+.p4-pergunta { font-size: 25px; line-height: 1.3; margin-top: 6px; }
+.p4-q { padding: 16px 30px 15px; }
+.p4-q .p4-rec { margin-top: 10px; }
+.p4-lim { margin-top: 9px; padding-top: 8px; font-size: 13px; }
+.p4-rec p { font-size: 13px; }
+.p4-duas { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }
+.p4-obj, .p4-hip { padding: 13px 20px 14px; }
+.p5-geral { padding: 8px 13px 9px; }
+.p5-g { margin-top: 3px; font-size: 13px; line-height: 1.45; }
+.p5-rot-esp { margin-top: 10px; }
+.p4-lista { gap: 7px; margin-top: 6px; }
+.p4-o p { font-size: 12.5px; line-height: 1.45; margin-top: 2px; }
+.p4-h { font-size: 14.5px; line-height: 1.58; }
+@media (max-width: 1000px) { .p4-pergunta { font-size: 20px; } .p4-duas { grid-template-columns: minmax(0, 1fr); } }
+.p4-duas { grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr); }
+.p4-rec { grid-template-columns: minmax(0, .9fr) minmax(0, 1.6fr) minmax(0, .95fr); gap: 22px; }
+.p4-q { padding: 14px 30px 14px; }
+.p4-h { font-size: 14px; line-height: 1.55; }
+.p4-peso p { font-size: 12.5px; }
+@media (max-width: 1000px) { .p4-duas, .p4-rec { grid-template-columns: minmax(0, 1fr); } }
+.p4-duas { grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); margin-top: 10px; }
+.p4-o p { padding-left: 26px; }
+.p4-h { font-size: 13.5px; line-height: 1.55; }
+.p4-peso { gap: 10px; padding-top: 9px; }
+.p4-peso .balanca { width: 76px; }
+.p4-lista { gap: 6px; }
+@media (max-width: 1000px) { .p4-duas { grid-template-columns: minmax(0, 1fr); } .p4-o p { padding-left: 0; } }
+.p4-h { hyphens: manual; }
+.p4-h .pq-ef { white-space: nowrap; }
+.p4-h { font-size: 13.6px; }
+.p4-h .pq-ef { white-space: normal; }
+.p5-nw { white-space: nowrap; }
