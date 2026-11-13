@@ -4071,3 +4071,81 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .aa3-seta .ic { transform: rotate(90deg); }
 }
 @media print { .aa3-cab em { display: none; } }
+
+/* O caminho das ações v2: cada parte do Capítulo 4 com o que será feito (13/11/2026) */
+#resultados .cm-tela.ativa { gap: 8px !important; }
+.cm2 { display: grid; gap: 8px; }
+.cm2-topo { display: flex; align-items: center; gap: 24px; border-radius: 16px; background: radial-gradient(130% 160% at 0% 0%, #1e293b 0%, var(--s950) 60%); padding: 11px 22px; box-shadow: var(--sombra-xl); }
+.cm2-tx { flex: 1; min-width: 0; }
+.cm2-olho { font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ambar-200); }
+.cm2-lead { margin-top: 2px; font-size: 18px; font-weight: 700; line-height: 1.3; color: #fff; }
+.cm2-cod { margin-top: 3px; font-size: 12px; line-height: 1.4; color: var(--s300); }
+.cm2-cod a, .cm2-cod sup a { color: var(--ambar-200); }
+.cm2-242 { flex: none; display: grid; justify-items: end; line-height: 1; }
+.cm2-242 b { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; color: #fbbf24; }
+.cm2-242 span { margin-top: 3px; font-size: 12px; font-weight: 600; color: var(--ambar-200); }
+.cm2-parte { display: grid; grid-template-columns: 236px minmax(0, 1fr); border: 1px solid var(--s200); border-radius: 16px; background: #fff; box-shadow: var(--sombra-sm); overflow: hidden; }
+.cm2-rot { display: flex; flex-direction: column; gap: 6px; border-right: 1px solid var(--s200); background: var(--s50); padding: 12px 16px; }
+.cm2-parte-n { font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--ambar-700); }
+.cm2-parte-n::first-letter { text-transform: uppercase; }
+.cm2-sec { display: flex; align-items: flex-start; gap: 7px; font-size: 13px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.cm2-sec span { flex: none; border-radius: 6px; background: var(--s900); padding: 1px 6px; font-size: 11px; color: #fff; }
+.cm2-tag { align-self: flex-start; border-radius: 999px; background: var(--s200); padding: 2px 10px; font-size: 11.5px; font-weight: 600; color: var(--s700); }
+.cm2-obj { display: flex; align-items: flex-start; gap: 6px; margin-top: auto; padding-top: 6px; font-size: 12px; font-weight: 700; line-height: 1.35; color: var(--ambar-700); }
+.cm2-obj .ic { flex: none; width: 15px; height: 15px; margin-top: 1px; }
+.cm2-corpo { display: grid; align-content: center; gap: 0; padding: 4px 18px; }
+.cm2-sub { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-items: start; gap: 12px; padding: 8px 0; }
+.cm2-sub + .cm2-sub { border-top: 1px solid var(--s100); }
+.cm2-lab { padding-top: 4px; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1.35; color: var(--s500); }
+.cm2-fork { display: flex; flex-wrap: wrap; gap: 8px; }
+.cm2-d { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--s200); border-radius: 10px; background: var(--s50); padding: 4px 12px; font-size: 12.5px; font-weight: 600; color: var(--s700); }
+.cm2-d-sim { border-color: var(--ambar-300, #fcd34d); background: var(--ambar-50); color: var(--s900); }
+.cm2-d-sim .ic { width: 14px; height: 14px; color: var(--ambar-700); }
+.cm2-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.cm2-chips li { border: 1px solid var(--s200); border-radius: 999px; background: #fff; padding: 2px 10px; font-size: 12px; color: var(--s700); }
+.cm2-conf { display: grid; margin: 0; padding: 0; list-style: none; }
+.cm2-conf li { display: grid; grid-template-columns: 168px 150px minmax(0, 1fr); gap: 10px; padding: 4px 0; font-size: 12.5px; line-height: 1.4; }
+.cm2-conf li + li { border-top: 1px dashed var(--s200); }
+.cm2-c { font-weight: 700; color: var(--s900); }
+.cm2-c::first-letter, .cm2-lab::first-letter { text-transform: uppercase; }
+.cm2-v { font-style: italic; color: var(--s500); }
+.cm2-r { color: var(--s700); }
+.cm2-r b { color: var(--ambar-700); }
+.cm2-p2 { font-size: 13px; line-height: 1.4; color: var(--s800); }
+.cm2-p2::first-letter { text-transform: uppercase; }
+.cm2-diag { display: flex; align-items: center; gap: 8px; margin: 10px 0 8px; }
+.cm2-no { flex: none; border: 1px solid var(--s300); border-radius: 10px; background: #fff; padding: 6px 14px; font-size: 13px; font-weight: 700; color: var(--s900); }
+.cm2-no::first-letter { text-transform: uppercase; }
+.cm2-no-fim { border-color: var(--ambar-300, #fcd34d); background: var(--ambar-50); color: var(--ambar-700); }
+.cm2-pass { flex: 1; display: grid; justify-items: center; gap: 1px; min-width: 0; }
+.cm2-pass .cm2-seta { display: block; width: 100%; height: 2px; position: relative; background: var(--s300); }
+.cm2-pass .cm2-seta .ic { position: absolute; right: -4px; top: -7px; width: 16px; height: 16px; color: var(--s400); }
+.cm2-pass em { order: -1; font-style: normal; font-size: 11.5px; line-height: 1.3; text-align: center; color: var(--s600); }
+.cm2-silva { font-size: 12.5px; line-height: 1.4; color: var(--s600); }
+.cm2-parte2 .cm2-corpo { padding: 10px 18px; }
+.cm2-fim { border-left: 3px solid #fbbf24; border-radius: 4px; background: var(--s950); padding: 9px 16px; font-size: 14px; font-weight: 700; line-height: 1.35; color: #fff; }
+@media (max-width: 760px) {
+  .cm2-topo { flex-direction: column; align-items: flex-start; }
+  .cm2-242 { justify-items: start; }
+  .cm2-parte { grid-template-columns: minmax(0, 1fr); }
+  .cm2-rot { border-right: 0; border-bottom: 1px solid var(--s200); }
+  .cm2-sub { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .cm2-conf li { grid-template-columns: minmax(0, 1fr); gap: 1px; }
+  .cm2-diag { flex-direction: column; align-items: stretch; }
+  .cm2-pass .cm2-seta { width: 2px; height: 18px; margin: 0 auto; }
+  .cm2-pass .cm2-seta .ic { right: -7px; top: auto; bottom: -6px; transform: rotate(90deg); }
+}
+.cm2 { gap: 6px; }
+#resultados .cm-tela.ativa { gap: 6px !important; }
+.cm2-topo { padding: 9px 22px; }
+.cm2-242 b { font-size: 40px; }
+.cm2-sub { padding: 6px 0; }
+.cm2-conf li { grid-template-columns: 168px 160px minmax(0, 1fr); padding: 3px 0; }
+.cm2-v { font-size: 12px; }
+.cm2-parte2 .cm2-corpo { padding: 8px 18px; }
+.cm2-diag { margin: 8px 0 6px; }
+.cm2-fim { padding: 8px 16px; }
+.cm2-rot { gap: 4px; padding: 10px 16px; }
+.cm2-obj { padding-top: 2px; }
+@media (max-width: 760px) { .cm2-conf li { grid-template-columns: minmax(0, 1fr); gap: 1px; padding: 6px 0; } }
+@media (min-width: 761px) { .cm2-conf li { grid-template-columns: 152px 160px minmax(0, 1fr); } }
