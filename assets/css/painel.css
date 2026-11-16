@@ -4710,3 +4710,54 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .cf2-vir .cfz-seta { display: none; }
 }
 @media print { .cf2-res, .cf2-vir, .cf2-c-dec { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* Justificativa: o mesmo conteúdo ocupando a tela inteira (pedido do autor em 16/11/2026, "Aproveite melhor o espaço") */
+@media (min-width: 1001px) {
+  #justificativa .j4-hero { padding: 22px 36px 24px; }
+  #justificativa .j4-tese { font-size: 34px; }
+  #justificativa .j4-grade.j4-grade1 { gap: 14px; margin-top: 14px; }
+  #justificativa .j4-q { padding: 18px 28px 20px; border-radius: 20px; }
+  #justificativa .j4-qrot { font-size: 13.5px; }
+  #justificativa .j4-qrot .ic { width: 18px; height: 18px; }
+  #justificativa .j4-q1b .j4-q1-linha { gap: 44px; margin-top: 6px; }
+  #justificativa .j4-q1b .j4-nums { gap: 22px; }
+  #justificativa .j4-q1b .j4-nums > div { max-width: 300px; }
+  #justificativa .j4-q1b .j4-nums b { font-size: 60px; letter-spacing: -0.02em; }
+  #justificativa .j4-q1b .j4-nums span { margin-top: 6px; font-size: 16px; line-height: 1.35; }
+  #justificativa .j4-nseta .ic { width: 26px; height: 26px; }
+  #justificativa .j4-71 { grid-template-columns: 250px minmax(0, 1fr); gap: 22px; }
+  #justificativa .j4-71 .g71 { max-width: 250px; }
+  #justificativa .j4-q1b .j4-q1-t { font-size: 19px; line-height: 1.4; }
+  #justificativa .j4-q3 { padding-top: 16px; padding-bottom: 20px; }
+  #justificativa .j4-linha { gap: 22px; margin-top: 10px; }
+  #justificativa .j4-m { gap: 4px; }
+  #justificativa .j4-ano { font-size: 27px; }
+  #justificativa .j4-pt { width: 16px; height: 16px; margin: 3px 0 6px; }
+  #justificativa .j4-linha::before { top: 41px; }
+  #justificativa .j4-mt { font-size: 16.5px; line-height: 1.3; }
+  #justificativa .j4-mx { font-size: 15px; line-height: 1.45; }
+}
+@media (min-width: 1001px) {
+  #justificativa .j4-hero { padding: 18px 36px 20px; }
+  #justificativa .j4-hero .js-tese { font-size: 32px; }
+  #justificativa .j4-q { padding: 16px 28px 18px; }
+  #justificativa .j4-q1b .j4-q1-linha { gap: 40px; }
+  #justificativa .j4-q1b .j4-nums > div { max-width: 250px; }
+  #justificativa .j4-q1b .j4-nums b { font-size: 56px; }
+  #justificativa .j4-q1b .j4-71 { flex: 1; grid-template-columns: 210px minmax(0, 1fr); }
+  #justificativa .j4-71 .g71 { max-width: 210px; }
+  #justificativa .j4-q1b .j4-q1-t { font-size: 19px; }
+  #justificativa .j4-q3 { padding-top: 14px; padding-bottom: 16px; }
+  #justificativa .j4-linha { gap: 20px; margin-top: 8px; }
+  #justificativa .j4-mt { font-size: 16px; }
+  #justificativa .j4-mx { font-size: 14.5px; line-height: 1.42; }
+}
+@media (min-width: 1001px) {
+  #justificativa .j4-hero { padding: 16px 36px 18px; }
+  #justificativa .j4-q1b .j4-q1-linha { gap: 32px; }
+  #justificativa .j4-q1b .j4-71 { grid-template-columns: 196px minmax(0, 1fr); gap: 18px; }
+  #justificativa .j4-71 .g71 { max-width: 196px; }
+  #justificativa .j4-q1b .j4-q1-t { font-size: 18.5px; }
+  #justificativa .j4-mx { font-size: 14px; line-height: 1.4; }
+  #justificativa .j4-linha { gap: 18px; }
+}
