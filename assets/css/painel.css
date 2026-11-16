@@ -4761,3 +4761,20 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   #justificativa .j4-mx { font-size: 14px; line-height: 1.4; }
   #justificativa .j4-linha { gap: 18px; }
 }
+
+/* Revisão sistemática, Conferência no Zotero (16/11/2026) */
+.rs-zot { display: grid; gap: 10px; }
+.rs-zot-topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.rs-zot-leg { margin: 0; max-width: 900px; font-size: 14px; line-height: 1.45; color: var(--s700); }
+.rs-zot-topo .ex-aviso { flex: none; margin-left: 0; }
+.rs-zot-img { display: block; justify-self: center; border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 1px var(--s200), var(--sombra-lg); }
+.rs-zot-img img { display: block; width: auto; max-width: 100%; height: auto; max-height: 470px; }
+@media print { .rs-zot-img img { max-height: 520px; } }
+@media (min-width: 1001px) {
+  .rs-zot { grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 22px; }
+  .rs-zot-topo { order: 2; flex-direction: column; gap: 12px; padding-top: 4px; }
+  .rs-zot-leg { font-size: 15px; line-height: 1.5; }
+  .rs-zot-img { order: 1; }
+  .rs-zot-img img { max-height: 498px; }
+}
+@media (max-width: 1000px) { .rs-zot-topo { flex-direction: column; gap: 8px; } }
