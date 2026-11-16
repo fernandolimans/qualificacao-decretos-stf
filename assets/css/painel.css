@@ -4405,3 +4405,27 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   #justificativa .j4-q1b .j4-nums b { font-size: 26px; }
   #justificativa .j4-q1b .j4-nseta { margin-top: 6px; }
 }
+
+/* Contraste decreto e medida provisória nas Considerações finais (16/11/2026) */
+#consideracoes .cfz-topo .j4-contra { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 12px; margin-top: 9px; }
+#consideracoes .cfz-topo .j4-c { font-size: 12.5px; line-height: 1.45; padding: 7px 14px 8px; }
+@media (max-width: 1000px) { #consideracoes .cfz-topo .j4-contra { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 1001px) {
+  #consideracoes .cfz { gap: 7px; }
+  #consideracoes .cfz-topo { padding: 11px 24px 12px; }
+  #consideracoes .cfz-tit { font-size: 24px; }
+  #consideracoes .cfz-hip, #consideracoes .cfz-res { padding: 11px 18px 12px; }
+  #consideracoes .cfz-chave { font-size: 23px; }
+  #consideracoes .cfz-cap { margin-top: 4px; }
+  #consideracoes .cfz-fases { margin-top: 8px; }
+  #consideracoes .cfz-fase { gap: 5px; padding: 10px 14px; }
+  #consideracoes .cfz-args li { padding: 4px 11px; }
+  #consideracoes .cfz-sai { padding-top: 7px; }
+  #consideracoes .cfz-se { margin-top: 4px; }
+  #consideracoes .cfz-vac { margin-top: 6px; }
+  #consideracoes .cfz-areas li { padding: 6px 10px; }
+  #consideracoes .cfz-pode { padding-top: 8px; }
+  #consideracoes .cfz-deficit { font-size: 24px; }
+  #consideracoes .cfz-virada { padding: 9px 20px; }
+  #consideracoes .cfz-v2, #consideracoes .cfz-v3 { font-size: 14px; }
+}
