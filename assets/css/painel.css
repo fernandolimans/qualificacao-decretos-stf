@@ -4912,3 +4912,26 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .cq:has(.cq-b[data-n="19"]:hover) .cq-i[data-n="19"] .cq-det { display: block; }
 .cq:has(.cq-b[data-n="20"]:hover) .cq-i[data-n="20"] .cq-det { display: block; }
 .cq:has(.cq-b[data-n="21"]:hover) .cq-i[data-n="21"] .cq-det { display: block; }
+/* Pergunta, objetivos e hipótese, sexta versão (16/11/2026) */
+.p4-olho .pista { border-bottom-color: rgb(253 230 138 / .7); color: inherit; letter-spacing: inherit; }
+.p4-olho .pista:hover, .p4-olho .pista:focus-visible { background: rgb(255 255 255 / .1); }
+.p6-lista { gap: 10px; margin-top: 10px; }
+.p6-o { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; align-items: start; gap: 2px 9px; }
+.p6-o .p4-n { margin-top: 1px; }
+.p6-o p { margin: 0; padding: 0; font-size: 13.2px; line-height: 1.5; color: var(--s600); }
+.p6-o .p6-v { font-weight: 800; color: var(--s900); }
+.p6-o .p4-ir { margin: 0; white-space: nowrap; }
+.p6-o abbr { text-decoration: underline dotted var(--s400); text-underline-offset: 3px; cursor: help; }
+.p6-tres { display: flex; flex-direction: column; gap: 7px; margin: 6px 0 12px; padding: 0; list-style: none; }
+.p6-tres li { padding: 7px 11px 8px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--ambar-200); }
+.p6-tres .pq-cn { display: block; font-size: 14px; line-height: 1.35; color: var(--s900); }
+.p6-ef { display: flex; align-items: baseline; gap: 6px; margin-top: 2px; font-size: 13.2px; line-height: 1.4; color: var(--s600); }
+.p6-ef .ic { flex: none; width: 13px; height: 13px; color: var(--ambar-600); transform: translateY(2px); }
+.p6-ef .pq-ef { font-weight: 700; color: var(--ambar-700); }
+@media (max-width: 1000px) { .p6-o { grid-template-columns: 20px minmax(0, 1fr); } .p6-o .p4-ir { grid-column: 2; justify-self: start; } }
+@media (min-width: 1001px) { .p4-duas.p6-duas { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.p6-duas .p4-h { font-size: 14px; line-height: 1.55; }
+.p6-tres { gap: 5px; margin: 7px 0 10px; }
+.p6-tres li { padding: 2px 0 2px 11px; border-radius: 0; background: none; box-shadow: inset 2.5px 0 0 var(--ambar-300, #fcd34d); }
+.p6-tres .pq-cn { font-size: 13.8px; }
+.p6-ef { margin-top: 1px; font-size: 13px; }
