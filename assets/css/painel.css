@@ -4982,3 +4982,48 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .r2-seta { display: none; }
 }
 @media print { .r2-n, .r2-no .r2-ir, .r2-ir { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+/* Metodologia: levantamento do universo em duas faixas (16/11/2026), com o desenho r2- da Revisão */
+.mp2 { margin-top: 10px; }
+.mp2-funil .r2-lt + .r2-lt { margin-top: -1px; }
+.mp2-dt { display: flex; align-items: center; gap: 5px; margin-top: 5px; font-size: 11px; line-height: 1.3; color: var(--s500); text-align: left; }
+.mp2-dt .r2-n { width: 17px; height: 17px; font-size: 10px; }
+.r2-pt i, .r2-pt b { color: var(--s400); }
+.mp2-f3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .mp2-f3 { grid-template-columns: minmax(0, 1fr); } }
+/* Metodologia: levantamento, terceira forma (16/11/2026): um passo por seta, números em cartões */
+.m3 { display: grid; grid-template-columns: 128px repeat(5, minmax(0, 1fr) auto); grid-template-rows: auto auto auto; padding: 12px 12px 12px; border-radius: 14px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.m3-ini, .m3-seta, .m3-no { display: grid; grid-row: 1 / 4; grid-template-rows: subgrid; }
+.m3-st { display: flex; align-items: flex-start; gap: 6px; align-self: end; padding-bottom: 7px; font-size: 12.3px; font-weight: 700; line-height: 1.25; color: var(--s800); }
+.m3-st > span { min-width: 0; }
+.m3-st small { display: block; margin-top: 1px; font-size: 11px; font-weight: 500; color: var(--s500); }
+.m3-st .r2-n { width: 18px; height: 18px; font-size: 10px; }
+.m3-seta { padding: 0 7px; }
+.m3-linha { position: relative; display: block; align-self: center; height: 2px; margin-right: 3px; border-radius: 2px; background: var(--s300); }
+.m3-linha::after { content: ""; position: absolute; top: 50%; right: -3px; width: 0; height: 0; transform: translateY(-50%); border-left: 8px solid var(--s300); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+.m3-it { align-self: start; margin: 7px 0 0; padding: 0; list-style: none; }
+.m3-it li { display: flex; align-items: baseline; gap: 4px; font-size: 12px; line-height: 1.35; color: var(--s600); }
+.m3-it i { font-style: normal; font-weight: 800; }
+.m3-it b { font-weight: 800; font-variant-numeric: tabular-nums; }
+.m3-mais i, .m3-mais b { color: var(--verde-700); }
+.m3-menos i, .m3-menos b { color: #dc2626; }
+.m3-pt b { color: var(--s700); }
+.m3-no > * { grid-row: 2; }
+.m3-no { align-items: center; }
+.m3-no b, .m3-no span { grid-row: auto; }
+.m3-no { display: flex; flex-direction: column; justify-content: center; align-self: center; grid-row: 2; width: 88px; padding: 8px 6px 7px; border-radius: 12px; background: var(--ambar-50); box-shadow: inset 0 0 0 1px var(--ambar-200); text-align: center; }
+.m3-no b { font-size: 25px; font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--ambar-700); font-variant-numeric: tabular-nums; }
+.m3-no span { margin-top: 3px; font-size: 11px; line-height: 1.25; color: var(--s600); }
+.m3-ini { padding-right: 4px; }
+.m3-pain { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 1px 7px; grid-row: 2 / 4; align-self: start; padding: 7px 10px; border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); }
+.m3-pain p { display: contents; }
+.m3-pain b { font-size: 15px; text-align: right; font-weight: 800; color: var(--s800); font-variant-numeric: tabular-nums; }
+.m3-pain .m3-sem { color: var(--s400); }
+.m3-pain span { align-self: center; font-size: 11.5px; color: var(--s600); }
+@media (max-width: 1000px) {
+  .m3 { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; gap: 8px; }
+  .m3-ini, .m3-seta, .m3-no { display: block; grid-row: auto; }
+  .m3-seta { padding: 2px 0 2px 14px; border-left: 2px solid var(--s300); }
+  .m3-linha { display: none; }
+  .m3-no { display: flex; flex-direction: row; align-items: baseline; gap: 8px; justify-self: start; width: auto; padding: 6px 12px; text-align: left; }
+  .m3-no span { margin-top: 0; }
+}
