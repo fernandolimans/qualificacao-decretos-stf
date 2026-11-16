@@ -4778,3 +4778,21 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .rs-zot-img img { max-height: 498px; }
 }
 @media (max-width: 1000px) { .rs-zot-topo { flex-direction: column; gap: 8px; } }
+/* Estratégia de análise: recorte de cada estágio e atributos (16/11/2026) */
+.et-est { display: flex; flex-direction: column; gap: 2px; margin: 3px 0; padding: 0; list-style: none; }
+.et-est li { display: flex; align-items: flex-start; gap: 7px; }
+.et-en { flex: none; display: inline-grid; place-items: center; width: 17px; height: 17px; margin-top: 1px; border-radius: 50%; background: var(--verde-50); color: var(--verde-700); font-size: 10.5px; font-weight: 800; }
+.et-est b { font-weight: 700; color: var(--s900); }
+.et-at { font-weight: 600; color: var(--s900); }
+@media print { .et-en { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+@media (min-width: 1001px) {
+  .et-tab thead .et-c0 { width: 100px; }
+  .et-tab thead th:nth-child(2) { width: 168px; }
+  .et-tab thead th:nth-child(4) { width: 27.5%; }
+  .et-tab tbody th, .et-tab tbody td { padding: 4px 9px; }
+  .et-g { padding: 6px 8px 6px 0 !important; }
+  .et-s, .et-r { font-size: 12px; line-height: 1.36; }
+  .et-sai li { font-size: 11.8px; line-height: 1.34; }
+  .et-s p + p { margin-top: 2px; }
+  .et-nota { margin-top: 4px; font-size: 10.8px; line-height: 1.4; }
+}
