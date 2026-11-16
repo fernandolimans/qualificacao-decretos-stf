@@ -4669,3 +4669,44 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
   .rp2-tab { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
 @media print { .rp2-tela .dica-fonte, .rp2-tela .dica-fonte[hidden], .ap-tela .dica-fonte, .ap-tela .dica-fonte[hidden] { display: none !important; } }
+/* Considerações finais no formato passo a passo (16/11/2026) */
+.cf2 .cp-olho { display: flex; align-items: center; gap: 6px; }
+.cf2 .cp-olho .ic { width: 13px; height: 13px; }
+.cf2-tit { margin: 0 0 6px; font-size: 21px; font-weight: 800; letter-spacing: -0.01em; color: var(--s900); }
+.cf2-contra { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+.cf2-c { border-radius: 12px; padding: 7px 12px; font-size: 12.5px; line-height: 1.4; color: var(--s700); }
+.cf2-c p { margin: 0; }
+.cf2-c-dec { background: var(--ambar-50, #fffbeb); box-shadow: inset 0 0 0 1px #fde68a; }
+.cf2-c-mp { background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); }
+.cf2-crot { display: flex; align-items: center; gap: 6px; margin-bottom: 2px !important; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s900); }
+.cf2-c-dec .cf2-crot { color: var(--ambar-700); }
+.cf2-crot .ic { width: 13px; height: 13px; }
+.cf2-hip { display: flex; align-items: baseline; gap: 10px; margin: 10px 0 2px; }
+.cf2-rot { margin: 0; flex: none; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.cf2-chave { margin: 0; font-size: 17px; font-weight: 800; line-height: 1.25; color: var(--s900); }
+.cf2-ef { display: flex; align-items: flex-start; gap: 6px; margin: 0; font-size: 12.5px; font-weight: 700; line-height: 1.3; color: #b91c1c; }
+.cf2-ef .ic { flex: none; width: 15px; height: 15px; margin-top: 1px; }
+.cf2-ef small { display: block; font-size: 11px; font-weight: 500; color: var(--s600); }
+.cf2 .pp-r { align-items: center; }
+.cf2-res { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px; align-items: center; margin-top: 8px; border-radius: 14px; background: #fffbeb; box-shadow: inset 0 0 0 1px #fde68a; padding: 10px 16px; }
+.cf2-se { margin: 2px 0 6px; font-size: 13px; line-height: 1.35; color: var(--s800); }
+.cf2-areas { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cf2-pode { margin: 0; font-size: 12.5px; color: var(--s700); }
+.cf2-def { margin: 2px 0 0; font-size: 22px; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; color: var(--ambar-700); }
+.cf2-vir { display: grid; grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1.3fr); gap: 14px; align-items: center; margin-top: 8px; border-radius: 14px; background: var(--s950); padding: 9px 16px; color: #fff; }
+.cf2-vir .cf2-rot { color: var(--s300); margin-bottom: 4px; }
+.cf2-v2 { margin: 0; font-size: 13px; font-weight: 700; line-height: 1.35; }
+.cf2-v3 { margin: 0; font-size: 13px; line-height: 1.4; color: var(--s200); }
+.cf2-v3 b { color: #fff; }
+.cf2-vir .cfz-seta { color: var(--s400); }
+@media (min-width: 1001px) {
+  .cf2 .pp-grade { grid-template-columns: 26px 300px minmax(0, 1fr) 330px; }
+  .cf2 .pp-tit { font-size: 13.5px; }
+}
+@media (max-width: 1000px) {
+  .cf2-contra, .cf2-res, .cf2-vir { grid-template-columns: minmax(0, 1fr); }
+  .cf2-areas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cf2-hip { flex-direction: column; gap: 2px; }
+  .cf2-vir .cfz-seta { display: none; }
+}
+@media print { .cf2-res, .cf2-vir, .cf2-c-dec { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
