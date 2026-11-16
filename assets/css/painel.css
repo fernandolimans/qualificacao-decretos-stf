@@ -5089,3 +5089,103 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .e3-p0 .e3-base { margin-top: 2px; }
 @media (max-width: 1000px) { .e3-seq { grid-template-columns: minmax(0, 1fr); } .e3-seq-seta { transform: rotate(90deg); justify-self: center; } .e3-avisos { grid-template-columns: minmax(0, 1fr); } }
 @media print { .e3-regua, .e3-e, .e3-e p span { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+/* Resultados: caminho das ações e achados 4 e 5 numa aba só (16/11/2026) */
+.c3-cauzas { display: flex; flex-wrap: wrap; gap: 6px; }
+.c3-cz .pista { display: inline-block; border: 1px dashed var(--s300); border-radius: 10px; padding: 3px 10px; background: var(--s50); font-size: 12.5px; font-weight: 700; line-height: 1.4; color: var(--s800); }
+.c3-cz .pista:hover, .c3-cz .pista:focus-visible { background: var(--s100); }
+.c3-autos { margin-top: 10px; padding: 10px 14px 9px; border-radius: 14px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.c3-cab { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.c3-cab .cp-olho { margin: 0; }
+.c3-cab em { margin-left: auto; font-size: 11px; font-style: normal; font-weight: 500; color: var(--s500); }
+.c3-duas { display: grid; grid-template-columns: minmax(0, 1.62fr) minmax(0, 1fr); gap: 16px; }
+.c3-ac { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.c3-at { font-size: 13.5px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.c3-at span { display: block; margin-top: 1px; font-size: 12px; font-weight: 500; color: var(--s500); }
+.c3-ac .aa3-trilha { margin: 0; }
+.c3-txt { display: flex; align-items: flex-start; gap: 6px; margin-top: auto; padding: 5px 9px; border-radius: 8px; background: var(--s50); font-size: 11.8px; line-height: 1.4; color: var(--s700); }
+.c3-txt .ic { flex: none; width: 13px; height: 13px; margin-top: 2px; color: var(--s500); }
+.c3-txt b { margin-right: 3px; font-size: 10.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s600); }
+.c3-txt small { color: var(--s500); }
+.c3-lim { margin-top: 6px; }
+.c3-tela .cp-fim { margin-top: 10px; }
+@media (max-width: 1000px) { .c3-duas { grid-template-columns: minmax(0, 1fr); } .c3-cab { flex-wrap: wrap; } .c3-cab em { margin-left: 0; } }
+.c3-tela .cp-grade > * { padding-top: 5px; padding-bottom: 5px; }
+.c3-tela .cp-topo { margin-bottom: 4px; }
+.c3-autos .aa3-passos li span { white-space: nowrap; }
+.c3-ac .aa3-trilha + .aa3-trilha { margin-top: 0; }
+.c3-atr { display: inline-flex; align-items: center; margin-left: 6px; font-size: 12.5px; color: var(--s700); }
+.c3-autos { padding: 8px 12px 8px; }
+.c3-cab { margin-bottom: 4px; }
+.c3-tela .cp-fim { margin-top: 8px; }
+.c3-ac .aa3-trilha { gap: 8px; }
+.c3-ac .aa3-trilha > .aa-acao.pista { min-width: 78px; font-size: 11.5px; }
+.c3-ac .aa3-passos { flex-wrap: nowrap; gap: 4px; }
+.c3-ac .aa3-p { padding: 2px 8px; font-size: 11.3px; }
+.c3-ac .aa3-seta .ic { width: 12px; height: 12px; }
+.c3-linha { margin-top: 2px; gap: 6px; }
+.c3-linha .aa-m-a { gap: 3px; margin: 2px 0 0; }
+.c3-linha .aa-m-a .aa-acao.pista { padding: 0 6px !important; font-size: 10.5px; }
+.c3-linha > li > b { font-size: 12px; }
+.c3-linha .aa-m-r { font-size: 11px; }
+.c3-txt { padding: 3px 8px; font-size: 11.3px; }
+.c3-tela .cp-grade > * { padding-top: 4px; padding-bottom: 4px; }
+.c3-lead .cp-cod { display: inline; margin-left: 8px; }
+.c3-tela .cp-fim { padding: 6px 14px; font-size: 12.8px; }
+.c3-autos { margin-top: 8px; }
+.c3-cab { margin-bottom: 2px; }
+.c3-tela .cp-pn { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.c3-tela .c3-tag { display: inline-block; margin: 0; padding: 0 7px; font-size: 10.5px; letter-spacing: 0; text-transform: none; }
+.c3-tela .cp-parte { gap: 3px; }
+.c3-tela .cp-parte .cm2-obj { margin-top: 3px; }
+/* aba unida: plano em faixas e marcadores que ligam plano e autos (16/11/2026) */
+.c3-plano { display: flex; flex-direction: column; gap: 0; margin-top: 4px; }
+.c3-parte { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; margin: 6px 0 2px; padding: 4px 10px; border-radius: 8px; background: var(--ambar-50); font-size: 11.5px; color: var(--s600); }
+.c3-parte > b { font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.c3-parte .pista { font-size: 12px; font-weight: 600; color: var(--s800); }
+.c3-tag2 { padding: 0 7px; border-radius: 999px; background: #fff; box-shadow: inset 0 0 0 1px var(--s200); font-size: 10.5px; font-weight: 600; color: var(--s600); }
+.c3-pobj { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; font-size: 11.5px; font-weight: 700; color: var(--ambar-700); }
+.c3-pobj .ic { width: 12px; height: 12px; }
+.c3-ln { display: grid; grid-template-columns: 22px 200px minmax(0, 1fr); align-items: start; gap: 10px; padding: 6px 4px; border-bottom: 1px solid var(--s100); }
+.c3-ln:last-child { border-bottom: 0; }
+.c3-ln .r2-n { margin-top: 1px; }
+.c3-lt { font-size: 13px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.c3-lc .cm2-fork, .c3-lc .c3-cauzas { margin: 0; }
+.c3-lc .cp-p { margin: 0; }
+.c3-liga { position: relative; }
+.c3-liga::after { content: ""; position: absolute; top: -3px; right: -3px; width: 8px; height: 8px; border-radius: 50%; background: var(--ambar-500, #f59e0b); box-shadow: 0 0 0 2px #fff; }
+.c3-mk { display: inline-flex; align-items: center; gap: 5px; margin-right: 8px; padding: 0 7px; border-radius: 999px; background: var(--ambar-50); box-shadow: inset 0 0 0 1px var(--ambar-200); font-size: 10.5px; font-weight: 700; vertical-align: 1px; color: var(--ambar-700); }
+.c3-mk::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ambar-500, #f59e0b); }
+@media (max-width: 1000px) { .c3-ln { grid-template-columns: 22px minmax(0, 1fr); } .c3-lc { grid-column: 2; } .c3-pobj { margin-left: 0; } }
+.c3-at .c3-mk { display: inline-flex; margin-top: 0; font-size: 10.5px; font-weight: 700; color: var(--ambar-700); }
+.c3-lc .cp-p { font-size: 12.8px; line-height: 1.4; }
+.c3-lc .cp-diag { margin-top: 3px; }
+.c3-parte { margin: 4px 0 1px; padding: 3px 10px; }
+.c3-ln { padding: 4px 4px; }
+@media (min-width: 1001px) { .c3-tela .c3-duas { grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr); } }
+.c3-at { font-size: 13px; }
+.c3-s43 { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.c3-ir { padding: 3px 10px; font-size: 11.5px; }
+.c3-lt .c3-liga::after { top: -2px; right: -8px; }
+/* aba unida, paleta uniforme (16/11/2026, escolha do autor): estrutura em cinza e azul-marinho e um só âmbar,
+   sempre nos mesmos três valores (fundo, contorno, tinta), só no que precisa saltar aos olhos */
+.c3-tela { --c3-af: #fffbeb; --c3-al: #fcd34d; --c3-ai: #b45309; }
+.c3-tela .cp-topo .cp-olho { color: var(--s500); }
+.c3-tela .cp-242 b, .c3-tela .cp2-cod { color: var(--c3-ai); }
+.c3-parte { background: var(--s100); box-shadow: inset 3px 0 0 var(--s300); }
+.c3-parte > b { color: var(--s900); }
+.c3-parte .c3-pobj { color: var(--s600); }
+.c3-parte .c3-pobj .ic { color: var(--s500); }
+.c3-tela .cm2-d-sim { border-color: var(--c3-al); background: var(--c3-af); color: var(--s900); }
+.c3-tela .cm2-d-sim .ic { color: var(--c3-ai); }
+.c3-tela .c3-liga::after, .c3-tela .c3-mk::before { background: var(--c3-ai); }
+.c3-tela .c3-mk { background: var(--c3-af); box-shadow: inset 0 0 0 1px var(--c3-al); color: var(--c3-ai); }
+.c3-autos { box-shadow: inset 0 0 0 1.5px var(--c3-al); }
+.c3-autos .cp-olho { color: var(--c3-ai); }
+.c3-autos .ex-aviso { border-color: var(--c3-ai); color: var(--c3-ai); }
+.c3-tela .aa-acao.pista { border-color: var(--c3-al) !important; background: var(--c3-af) !important; }
+.c3-tela .aa-acao.pista:hover, .c3-tela .aa-acao.pista:focus-visible { border-color: var(--c3-ai) !important; background: var(--c3-af) !important; }
+.c3-tela .aa3-fim { border-color: var(--c3-al); background: var(--c3-af); }
+.c3-tela .aa3-fim b, .c3-tela .aa-m-sim .aa-m-r { color: var(--c3-ai); }
+.c3-tela .aa-m-sim::before { background: var(--c3-ai); box-shadow: 0 0 0 3px var(--c3-al); }
+.c3-tela .cm2-fim { border-left: 0; }
+@media print { .c3-parte, .c3-tela .r2-n, .c3-tela .cm2-d-sim, .c3-autos, .c3-mk, .c3-liga::after, .c3-tela .aa-acao, .c3-tela .aa3-fim, .c3-tela .aa-m-sim::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
