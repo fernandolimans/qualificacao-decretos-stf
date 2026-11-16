@@ -4383,3 +4383,25 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .j4-aut-i > .ic { width: 18px; height: 18px; }
 .j4-aut-i b { font-size: 13px; }
 .j4-adv2 { padding: 7px 12px; font-size: 12px; line-height: 1.4; }
+
+/* Justificativa sem o quadro do poder da caneta (16/11/2026): quantidade de decretos em largura total */
+#justificativa .j4-grade.j4-grade1 { grid-template-columns: minmax(0, 1fr); }
+#justificativa .j4-q1b .j4-q1-linha { display: flex; align-items: center; gap: 40px; }
+#justificativa .j4-q1b .j4-nums { flex: 0 0 auto; align-items: center; gap: 16px; margin-top: 0; }
+#justificativa .j4-q1b .j4-nums > div { max-width: 230px; }
+#justificativa .j4-q1b .j4-nums b { font-size: 34px; }
+#justificativa .j4-q1b .j4-71 { flex: 1 1 auto; grid-template-columns: 200px minmax(0, 360px); gap: 16px; padding-left: 40px; border-left: 1px solid var(--s200); }
+#justificativa .j4-q1b .j4-71 .g71 { max-width: 200px; }
+#justificativa .j4-q1b .j4-q1-t { font-size: 13.5px; }
+@media (max-width: 1000px) {
+  #justificativa .j4-q1b .j4-q1-linha { flex-direction: column; align-items: flex-start; gap: 12px; }
+  #justificativa .j4-q1b .j4-71 { padding-left: 0; border-left: 0; grid-template-columns: 150px minmax(0, 1fr); }
+  #justificativa .j4-q1b .j4-71 .g71 { max-width: 150px; }
+  #justificativa .j4-q1b .j4-nums b { font-size: 28px; }
+}
+@media (max-width: 1000px) {
+  #justificativa .j4-q1b .j4-nums { flex-wrap: nowrap; align-items: flex-start; gap: 12px; }
+  #justificativa .j4-q1b .j4-nums > div { max-width: 140px; }
+  #justificativa .j4-q1b .j4-nums b { font-size: 26px; }
+  #justificativa .j4-q1b .j4-nseta { margin-top: 6px; }
+}
