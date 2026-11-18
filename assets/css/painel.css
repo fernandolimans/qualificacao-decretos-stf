@@ -5521,3 +5521,13 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .p3-f, .p3-p { line-height: 1.36; }
 .p3-big { font-size: 21px; }
 @media (max-width: 1000px) { .p3-l { grid-template-columns: minmax(0, 1fr); } .p3-ir { white-space: normal; margin-left: 0; } }
+/* Metodologia, levantamento em passos (18/11/2026): a mesma tabela da revisão, um pouco mais compacta */
+.m4 .p3-l { padding: 3px 0; }
+.m4 .p3-cab, .m4 .p3-l { grid-template-columns: 176px minmax(0, 1.25fr) minmax(0, 1fr) 280px; }
+.m4 .p3-big { font-size: 20px; }
+@media (max-width: 1000px) { .m4 .p3-l { grid-template-columns: minmax(0, 1fr); } }
+.m4 .p3-cab, .m4 .p3-l { grid-template-columns: 170px minmax(0, 1fr) minmax(0, 1fr) 270px; }
+.m4 .p3-cab { padding-bottom: 3px; }
+.m4 .p3-big .pista { border-bottom-color: rgb(180 83 9 / .45); }
+.m4tela .pp-lead { margin-bottom: 2px; }
+@media (max-width: 1000px) { .m4 .p3-l { grid-template-columns: minmax(0, 1fr); } }
