@@ -226,13 +226,20 @@
   .cs-hero, .cs-ponte, .cs-funil li, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
-/* transição entre as telas: a foto de um presidente com ministros do Supremo aparece por um instante antes da tela seguinte */
-.cs-trans { position: fixed; inset: 0; z-index: 30; overflow: hidden; background: #020617; opacity: 0; transition: opacity .35s ease; }
-.cs-trans.on { opacity: 1; }
-.cs-trans.on.sai { opacity: 0; transition-duration: .55s; }
-.cs-trans img { display: block; width: 100%; height: 100%; }
-.cs-trans.on img { animation: cs-kb 2s ease-out both; }
+/* transição entre as telas, como lâminas que deslizam uma sobre a outra: ao avançar, a foto de um julgamento no Supremo
+   entra pela direita por cima da tela atual e, logo depois, a tela seguinte entra pela direita por cima da foto */
+.cs-trans { position: fixed; inset: 0; z-index: 30; overflow: hidden; background: #020617; box-shadow: -18px 0 44px rgb(2 6 23 / .5); }
+.cs-trans.on { animation: cs-lamina .6s cubic-bezier(.22, .61, .36, 1) both; }
+.cs-trans img { display: block; width: 100%; height: 100%; transition: filter .8s ease; }
+.cs-trans.on img { animation: cs-kb 2.2s ease-out both; }
+.cs-trans.cobre img { filter: brightness(.55); }
 .cs-trans::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 58%, rgb(2 6 23 / .55) 100%); }
+.cs.cs-lamina { position: relative; z-index: 31; min-height: 100vh; min-height: 100svh;
+  background: radial-gradient(circle at top left, rgba(148, 163, 184, .18), transparent 32%), radial-gradient(circle at bottom right, rgba(59, 130, 246, .08), transparent 28%), linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  box-shadow: -18px 0 44px rgb(2 6 23 / .45); animation: cs-lamina .85s cubic-bezier(.65, 0, .35, 1) both; }
+.cs-corpo.em-lamina { overflow-x: hidden; }
+.cs-slide.sem-subir > * { animation: none !important; }
+@keyframes cs-lamina { from { transform: translateX(100%); } to { transform: none; } }
 @keyframes cs-kb { from { transform: scale(1.06); } to { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .cs-trans.on img { animation: none; } }
-@media print { .cs-trans { display: none !important; } }
+@media print { .cs-trans { display: none !important; } .cs.cs-lamina { animation: none; box-shadow: none; } }
