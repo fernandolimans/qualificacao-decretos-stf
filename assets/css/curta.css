@@ -230,8 +230,9 @@
    entra pela direita por cima da tela atual e, logo depois, a tela seguinte entra pela direita por cima da foto */
 .cs-trans { position: fixed; inset: 0; z-index: 30; overflow: hidden; background: #020617; box-shadow: -18px 0 44px rgb(2 6 23 / .5); }
 .cs-trans.on { animation: cs-lamina .6s cubic-bezier(.22, .61, .36, 1) both; }
-.cs-trans img { display: block; width: 100%; height: 100%; transition: filter .8s ease; }
-.cs-trans.on img { animation: cs-kb 2.2s ease-out both; }
+.cs-trans img { display: none; width: 100%; height: 100%; transition: filter .8s ease; }
+.cs-trans img.vis { display: block; }
+.cs-trans.on img.vis { animation: cs-kb 2.2s ease-out both; }
 .cs-trans.cobre img { filter: brightness(.55); }
 .cs-trans::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 58%, rgb(2 6 23 / .55) 100%); }
 .cs.cs-lamina { position: relative; z-index: 31; min-height: 100vh; min-height: 100svh;
@@ -241,5 +242,11 @@
 .cs-slide.sem-subir > * { animation: none !important; }
 @keyframes cs-lamina { from { transform: translateX(100%); } to { transform: none; } }
 @keyframes cs-kb { from { transform: scale(1.06); } to { transform: scale(1); } }
-@media (prefers-reduced-motion: reduce) { .cs-trans.on img { animation: none; } }
+/* A pedido do autor, a passagem em lâminas acontece mesmo quando o computador pede menos animação
+   (opção do Windows "Efeitos de animação" desligada). Só o leve zoom da foto fica de fora nesse caso. */
+@media (prefers-reduced-motion: reduce) {
+  .cs-corpo .cs-trans.on { animation: cs-lamina .6s cubic-bezier(.22, .61, .36, 1) both !important; }
+  .cs-corpo .cs.cs-lamina { animation: cs-lamina .85s cubic-bezier(.65, 0, .35, 1) both !important; }
+  .cs-corpo .cs-trans img { transition: filter .8s ease !important; }
+}
 @media print { .cs-trans { display: none !important; } .cs.cs-lamina { animation: none; box-shadow: none; } }

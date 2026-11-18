@@ -22,9 +22,18 @@
   /* Ao avançar para uma tela que tem foto de transição, a foto entra pela direita por cima da tela atual e, logo depois,
      a tela seguinte entra pela direita por cima da foto, como lâminas. Tudo acontece sozinho, sem segundo clique.
      Outra tecla durante a transição a encerra na hora. Voltar, Home, End e o endereço da tela não passam pela foto. */
-  var trans = document.getElementById("cs-trans"), trImg = trans && trans.querySelector("img"), emTrans = null;
+  var trans = document.getElementById("cs-trans"), emTrans = null;
   var palco = document.getElementById("cs"), corpo = document.body;
   var FOTO_SO = 1150, LAMINA = 850;
+  /* uma imagem para cada foto, criada e carregada logo, para que nunca apareça por um instante a foto da transição anterior */
+  var fotos = {};
+  if (trans) telas.forEach(function (t, j) {
+    if (!t.dataset.trans) return;
+    var im = document.createElement("img");
+    im.alt = ""; im.decoding = "async"; im.src = t.dataset.trans;
+    im.style.objectFit = t.dataset.transFit || "cover"; im.style.objectPosition = t.dataset.transPos || "center";
+    trans.appendChild(im); fotos[j] = im;
+  });
   function limparTrans() {
     palco.classList.remove("cs-lamina"); corpo.classList.remove("em-lamina");
     trans.classList.remove("on", "cobre"); trans.hidden = true;
@@ -39,12 +48,10 @@
     if (emTrans) { fimTrans(); return; }
     var k = atual + 1;
     if (k >= telas.length) return;
-    var src = trans && telas[k].dataset.trans;
-    if (!src) { mostrar(k); return; }
+    var im = fotos[k];
+    if (!im) { mostrar(k); return; }
     var este = emTrans = { alvo: k };
-    trImg.style.objectFit = telas[k].dataset.transFit || "cover";
-    trImg.style.objectPosition = telas[k].dataset.transPos || "center";
-    trImg.src = src;
+    Object.keys(fotos).forEach(function (j) { fotos[j].classList.toggle("vis", +j === k); });
     /* a lâmina só começa a entrar quando a foto já está pronta para ser desenhada, para não passar uma faixa escura */
     function comecar() {
       if (emTrans !== este || este.iniciou) return;
@@ -57,14 +64,12 @@
       }, FOTO_SO);
       este.t2 = setTimeout(function () { limparTrans(); emTrans = null; }, FOTO_SO + LAMINA + 40);
     }
-    if (trImg.decode) trImg.decode().then(comecar, comecar); else comecar();
-    setTimeout(comecar, 300);
+    var pronto = im.complete && im.naturalWidth
+      ? (im.decode ? im.decode() : Promise.resolve())
+      : new Promise(function (r) { im.addEventListener("load", r, { once: true }); im.addEventListener("error", r, { once: true }); });
+    pronto.then(comecar, comecar);
+    setTimeout(comecar, 900);
   }
-  /* as fotos de transição são carregadas logo, para aparecerem sem espera */
-  window.addEventListener("load", function () {
-    telas.forEach(function (t) { if (t.dataset.trans) { var i = new Image(); i.src = t.dataset.trans; } });
-  });
-
   function abrir(id, tela) {
     var alvo = id || (telas[atual] && telas[atual].dataset.reserva) || "justificativa";
     var p = document.getElementById(alvo);
