@@ -5608,3 +5608,10 @@ a.ob-ir:hover, a.ob-ir:focus-visible { background: var(--s950); border-color: va
 .ix-rev .ix-l { padding: 3px 0 4px; }
 .ix-art .mt-rodape { margin-top: 6px; }
 @media (max-width: 1000px) { .ix-rev .ix-cab, .ix-rev .ix-l, .ix-cam .ix-l { grid-template-columns: 22px minmax(0, 1fr); } }
+
+/* proposta 18/11: causas de extinção à vista na aba do caminho */
+.ix-causas { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 5px; }
+.ix-causas li { position: relative; padding-left: 12px; }
+.ix-causas li::before { content: ""; position: absolute; left: 0; top: .55em; width: 5px; height: 5px; border-radius: 50%; background: #b45309; }
+.ix-causas b { color: var(--s900); font-weight: 700; }
+.e3-desc { margin: 2px 0 8px; font-size: 12.5px; line-height: 1.45; color: var(--s700); }
