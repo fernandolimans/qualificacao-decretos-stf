@@ -170,6 +170,21 @@
 .cs-hero-foto > .cs-hero-cred { position: absolute; right: 14px; bottom: 6px; z-index: 1; font-size: 10px; line-height: 1.2; letter-spacing: .01em; color: rgb(255 255 255 / .62); text-shadow: 0 1px 3px rgb(2 6 23 / .9); pointer-events: none; }
 .cs-hero-foto .cs-hero-f, .cs-hero-foto .cs-hero-s { text-shadow: 0 1px 3px rgb(2 6 23 / .9), 0 0 18px rgb(2 6 23 / .85); }
 
+/* tela 7, referências: as entradas literais da lista da dissertação, em duas colunas, e os créditos das fotos */
+.cs-7 .cs-hero { padding-top: 16px; padding-bottom: 16px; }
+.cs-7 .cs-hero-f { font-size: clamp(22px, 2.2vw, 30px); }
+.cs-refs { column-count: 3; column-gap: 28px; padding: 14px 20px 6px; font-size: 11px; line-height: 1.36; color: var(--s700); }
+/* telas cheias: altura fixa e colunas preenchidas em ordem; a última tela equilibra as colunas */
+.cs-refs-cheia { height: 600px; column-fill: auto; }
+.cs-medir { overflow: visible; }
+.cs-refs p { break-inside: avoid; margin: 0 0 7px; overflow-wrap: anywhere; }
+.cs-refs strong { color: var(--s900); }
+.cs-refs a { color: inherit; text-decoration: underline; text-decoration-color: var(--s300); text-underline-offset: 2px; }
+.cs-cred { padding: 0 6px; font-size: 11px; line-height: 1.4; color: var(--s500); }
+.cs-cred > p { margin-bottom: 2px; font-weight: 700; letter-spacing: .02em; color: var(--s600); }
+.cs-cred ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 0 34px; margin: 0; padding: 0; list-style: none; }
+.cs-cred li span { margin-right: 6px; font-weight: 700; color: var(--s600); }
+
 /* número da página: é também, sem aviso, a porta das telas de reserva */
 .cs-n { position: fixed; right: 22px; bottom: 12px; z-index: 5; border: 0; background: none; padding: 4px 6px; font-size: 12.5px; font-weight: 600; letter-spacing: .04em; color: var(--s400); cursor: default; }
 .cs-n:focus-visible { outline: 2px solid var(--s300); border-radius: 6px; }
@@ -187,6 +202,9 @@
   .cs-slide:not(.cs-capa) { width: calc(100vw - 28px); height: auto; min-height: 100vh; padding: 18px 0 56px; }
   .cs-hero { grid-template-columns: minmax(0, 1fr); padding: 18px 20px; }
   .cs-hero-bg { opacity: .3; }
+  .cs-refs { column-count: 1; }
+  .cs-refs-cheia { height: auto; }
+  .cs-cred ul { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; }
   .cs-tl, .cs-duas, .cs-duas-3, .cs-planos, .cs-filtros, .cs-lev { grid-template-columns: minmax(0, 1fr); }
   .cs-tl::before { display: none; }
   .cs-nums-c, .cs-pipe, .cs-est, .cs-diag { flex-direction: column; align-items: flex-start; }
