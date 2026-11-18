@@ -186,7 +186,8 @@
 .cs-refs a { color: inherit; text-decoration: underline; text-decoration-color: var(--s300); text-underline-offset: 2px; }
 .cs-cred { padding: 0 6px; font-size: 11px; line-height: 1.4; color: var(--s500); }
 .cs-cred > p { margin-bottom: 2px; font-weight: 700; letter-spacing: .02em; color: var(--s600); }
-.cs-cred ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 0 34px; margin: 0; padding: 0; list-style: none; }
+.cs-cred ul { column-count: 2; column-gap: 34px; margin: 0; padding: 0; list-style: none; }
+.cs-cred li { break-inside: avoid; }
 .cs-cred li span { margin-right: 6px; font-weight: 700; color: var(--s600); }
 
 /* número da página: é também, sem aviso, a porta das telas de reserva */
@@ -208,7 +209,7 @@
   .cs-hero-bg { opacity: .3; }
   .cs-refs { column-count: 1; }
   .cs-refs-cheia { height: auto; }
-  .cs-cred ul { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; }
+  .cs-cred ul { column-count: 1; }
   .cs-tl, .cs-duas, .cs-duas-3, .cs-planos, .cs-filtros, .cs-lev { grid-template-columns: minmax(0, 1fr); }
   .cs-tl::before { display: none; }
   .cs-nums-c, .cs-pipe, .cs-est, .cs-diag { flex-direction: column; align-items: flex-start; }
@@ -224,3 +225,14 @@
   .cs-n, .cs-reserva, .cs-fechar { display: none !important; }
   .cs-hero, .cs-ponte, .cs-funil li, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* transição entre as telas: a foto de um presidente com ministros do Supremo aparece por um instante antes da tela seguinte */
+.cs-trans { position: fixed; inset: 0; z-index: 30; overflow: hidden; background: #020617; opacity: 0; transition: opacity .35s ease; }
+.cs-trans.on { opacity: 1; }
+.cs-trans.on.sai { opacity: 0; transition-duration: .55s; }
+.cs-trans img { display: block; width: 100%; height: 100%; }
+.cs-trans.on img { animation: cs-kb 2s ease-out both; }
+.cs-trans::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 58%, rgb(2 6 23 / .55) 100%); }
+@keyframes cs-kb { from { transform: scale(1.06); } to { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .cs-trans.on img { animation: none; } }
+@media print { .cs-trans { display: none !important; } }
