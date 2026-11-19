@@ -30,6 +30,16 @@
     var disp = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
     var gap = parseFloat(cs.rowGap) || 0;
     function alt() { var a = gap * (filhos.length - 1); filhos.forEach(function (c) { a += c.getBoundingClientRect().height; }); return a; }
+    if (alt() > disp * 0.97) {
+      /* não cabe: reduz por igual, no máximo até 85% */
+      var a0 = 0.85, b0 = 1;
+      for (var j = 0; j < 7; j++) {
+        var q = (a0 + b0) / 2; t.style.setProperty("--z", String(q));
+        if (alt() <= disp * 0.97) a0 = q; else b0 = q;
+      }
+      t.style.setProperty("--z", String(a0));
+      return;
+    }
     if (alt() >= disp * 0.94) return;
     var lo = 1, hi = 1.4;
     for (var i = 0; i < 8; i++) {
