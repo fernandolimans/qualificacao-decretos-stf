@@ -76,7 +76,28 @@
 .cs-obj ol { display: grid; gap: 14px; }
 .cs-obj li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; align-items: start; font-size: 15px; line-height: 1.42; color: var(--s700); }
 .cs-obj li b { color: var(--s950); }
-.cs-sec { grid-column: 2; justify-self: start; border: 1px solid var(--s200); border-radius: 999px; background: var(--s50); padding: 1px 10px; font-size: 11.5px; font-weight: 700; color: var(--s600); }
+/* tela 2 como mapa (19/11/2026): cada objetivo e cada parte da hipótese numa linha, com a técnica na coluna da direita */
+.cs-mapa-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.cs-mapa-cab .cs-rot { margin-bottom: 10px; }
+.cs-mapa-cab > span { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ambar-700); }
+.cs-mapa ol, .cs-mapa .cs-tres { display: grid; gap: 0; }
+.cs-mapa.cs-obj li { grid-template-columns: auto minmax(0, 1fr) 176px; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--s200); font-size: 13.5px; line-height: 1.4; }
+.cs-mapa.cs-obj li:first-child { border-top: 0; padding-top: 2px; }
+.cs-o-v { font-size: 15.5px; }
+.cs-o-r { color: var(--s600); }
+.cs-mapa .cs-sec { display: inline-block; margin-left: 2px; padding: 0 8px; font-size: 11px; vertical-align: 1px; }
+.cs-tec { display: flex; align-items: center; gap: 7px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--ambar-200), var(--sombra-sm); padding: 7px 10px; font-size: 12.5px; line-height: 1.25; color: var(--s900); }
+.cs-tec > .ic { flex: none; width: 15px; height: 15px; color: var(--ambar-700); }
+.cs-tec b { font-weight: 700; }
+.cs-mapa .cs-tres .cs-tec { display: flex; align-items: center; gap: 7px; font-size: 12.5px; line-height: 1.25; color: var(--s900); }
+.cs-mapa .cs-tres .cs-tec .ic { width: 15px; height: 15px; transform: none; }
+.cs-mapa .cs-tres .cs-tec b { display: inline; font-size: inherit; }
+.cs-mapa .cs-tres { margin: 8px 0 0; }
+.cs-mapa .cs-tres li { display: grid; grid-template-columns: minmax(0, 1fr) 176px; gap: 12px; align-items: center; border-left: 0; border-radius: 0; background: none; padding: 9px 0; border-top: 1px solid var(--ambar-200); }
+.cs-mapa .cs-tres li > div { border-left: 3px solid var(--ambar-600); padding-left: 10px; }
+.cs-mapa .cs-tres .cs-mapa-mais > div { border-left-style: dashed; }
+.cs-mapa .cs-tres .cs-mapa-mais > div > span { display: block; font-size: 13.5px; line-height: 1.35; color: var(--s700); }
+.cs-sec { justify-self: start; border: 1px solid var(--s200); border-radius: 999px; background: var(--s50); padding: 1px 10px; font-size: 11.5px; font-weight: 700; color: var(--s600); }
 
 /* 3. revisão */
 .cs-duas-3 { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); }
