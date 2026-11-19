@@ -273,6 +273,29 @@
 .cs-f-t b { font-size: 16.5px; line-height: 1.25; color: var(--s900); }
 .cs-f-e { display: flex; align-items: center; gap: 7px; margin-top: auto; border-top: 1px solid var(--s100); padding-top: 8px; font-weight: 700; color: var(--s900); }
 .cs-f-e .ic { color: #b91c1c; }
+/* considerações finais (19/11/2026): três barreiras antes do julgamento de mérito no colegiado */
+.cs-bxs { display: flex; align-items: stretch; gap: 6px; }
+.cs-bx { display: flex; flex-direction: column; gap: 8px; flex: 1 1 0; min-width: 0; border: 1px solid var(--s200); border-radius: 18px; background: #fff; padding: 15px 16px; box-shadow: var(--sombra-sm); }
+.cs-bx-t { display: flex; align-items: flex-start; gap: 8px; min-height: 62px; }
+.cs-bx-t span, .cs-bx-t .ic { margin-top: 1px; }
+.cs-bx-t span { display: grid; place-items: center; flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--s950); color: #fff; font-size: 12px; font-weight: 800; }
+.cs-bx-t .ic { flex: none; width: 21px; height: 21px; color: var(--ambar-700); }
+.cs-bx-t b { font-size: 16px; line-height: 1.25; color: var(--s950); }
+.cs-bx-e { display: flex; align-items: flex-start; gap: 7px; border-radius: 10px; background: #fef2f2; padding: 7px 10px; font-size: 14px; font-weight: 700; line-height: 1.32; color: #7f1d1d; }
+.cs-bx-e .ic { flex: none; width: 16px; height: 16px; margin-top: 1px; color: #b91c1c; }
+.cs-bx-d { font-size: 13px; line-height: 1.4; color: var(--s600); }
+.cs-bx-s { display: grid; place-items: center; flex: none; color: var(--s400); }
+.cs-bx-s .ic { width: 16px; height: 16px; }
+.cs-bx-s-fim { color: #b91c1c; opacity: .55; }
+.cs-bx-fim { display: flex; flex-direction: column; gap: 10px; flex: 1.15 1 0; min-width: 0; border: 2px dashed var(--s300); border-radius: 18px; background: rgb(255 255 255 / .55); padding: 15px 16px; }
+.cs-bx-m { display: flex; align-items: flex-start; gap: 9px; min-height: 62px; color: var(--s500); }
+.cs-bx-m .ic { flex: none; width: 24px; height: 24px; color: var(--s400); }
+.cs-bx-m b { font-size: 16px; line-height: 1.25; color: var(--s600); }
+.cs-bx-x { margin-top: auto; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px #fcd34d; padding: 9px 12px; font-size: 13.5px; line-height: 1.4; color: var(--s800); }
+.cs-bx-x span { display: block; margin-bottom: 3px; font-size: 10.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.cs-abre-pe { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; line-height: 1.4; color: var(--s600); }
+.cs-abre-pe .ic { flex: none; width: 15px; height: 15px; margin-top: 2px; color: var(--ambar-700); }
+.cs-abre-pe b { color: var(--s800); }
 .cs-exc { display: flex; align-items: center; gap: 12px; border: 1px solid var(--s200); border-radius: 14px; background: #fff; padding: 10px 16px; font-size: 14.5px; line-height: 1.4; color: var(--s800); }
 .cs-exc span { flex: none; border-radius: 999px; background: var(--ambar-50); box-shadow: inset 0 0 0 1px #fcd34d; padding: 2px 11px; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
 
@@ -351,6 +374,8 @@
   .cs-fx-n i { transform: rotate(90deg); }
   .cs-dl { grid-template-columns: minmax(0, 1fr); }
   .cs-mt, .cs-mt-3 { grid-template-columns: minmax(0, 1fr); }
+  .cs-bxs { flex-direction: column; }
+  .cs-bx-s { transform: rotate(90deg); }
   .cs-slide.cs-2 .cs-mapa-larga.cs-obj li { grid-template-columns: auto minmax(0, 1fr); }
   .cs-slide.cs-2 .cs-mapa-larga.cs-obj li > .cs-tec { grid-column: 2; }
   .cs-slide.cs-2 .cs-mapa-larga .cs-tres li { grid-template-columns: minmax(0, 1fr); }
