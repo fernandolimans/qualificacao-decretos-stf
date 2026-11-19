@@ -77,11 +77,19 @@
 .cs-obj li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; align-items: start; font-size: 15px; line-height: 1.42; color: var(--s700); }
 .cs-obj li b { color: var(--s950); }
 /* tela 2 como mapa (19/11/2026): cada objetivo e cada parte da hipótese numa linha, com a técnica na coluna da direita */
+.cs-etapas { display: grid; gap: 6px; margin-top: 14px; }
+.cs-etapas li { display: flex; align-items: center; gap: 10px; font-size: 14.5px; line-height: 1.35; color: var(--s800); }
+.cs-etapas li span { display: grid; place-items: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--s950); font-size: 11.5px; font-weight: 800; color: #fcd34d; }
+.cs-passa { margin-top: 14px; border-top: 1px dashed var(--s200); padding-top: 10px; }
+.cs-og { margin-bottom: 12px; border-radius: 14px; background: var(--s950); padding: 11px 14px 12px; color: #e2e8f0; font-size: 14px; line-height: 1.4; }
+.cs-og .cs-rot { margin-bottom: 5px; color: #fcd34d; }
+.cs-og .cs-rot .ic { color: #fcd34d; }
+.cs-og b { font-size: 15.5px; color: #fff; }
 .cs-mapa-cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .cs-mapa-cab .cs-rot { margin-bottom: 10px; }
 .cs-mapa-cab > span { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ambar-700); }
 .cs-mapa ol, .cs-mapa .cs-tres { display: grid; gap: 0; }
-.cs-mapa.cs-obj li { grid-template-columns: auto minmax(0, 1fr) 176px; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--s200); font-size: 13.5px; line-height: 1.4; }
+.cs-mapa.cs-obj li { grid-template-columns: auto minmax(0, 1fr) 236px; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--s200); font-size: 13.5px; line-height: 1.4; }
 .cs-mapa.cs-obj li:first-child { border-top: 0; padding-top: 2px; }
 .cs-o-v { font-size: 15.5px; }
 .cs-o-r { color: var(--s600); }
@@ -89,14 +97,44 @@
 .cs-tec { display: flex; align-items: center; gap: 7px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--ambar-200), var(--sombra-sm); padding: 7px 10px; font-size: 12.5px; line-height: 1.25; color: var(--s900); }
 .cs-tec > .ic { flex: none; width: 15px; height: 15px; color: var(--ambar-700); }
 .cs-tec b { font-weight: 700; }
+.cs-tec > span { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.cs-tec i { font-style: normal; font-weight: 400; font-size: 11.5px; line-height: 1.32; color: var(--s600); }
+.cs-tec > .ic { align-self: flex-start; margin-top: 1px; }
+.cs-mapa .cs-tres li > div > .cs-sec { display: inline-block; margin: 4px 0 0; padding: 0 8px; font-size: 11px; }
+.cs-mapa .cs-tres .cs-tec > span { display: flex; }
+.cs-mapa .cs-tres .cs-tec b { display: block; }
+.cs-mapa .cs-tres .cs-tec i { display: block; }
+.cs-mapa .cs-tres .cs-tec .ic { align-self: flex-start; }
 .cs-mapa .cs-tres .cs-tec { display: flex; align-items: center; gap: 7px; font-size: 12.5px; line-height: 1.25; color: var(--s900); }
 .cs-mapa .cs-tres .cs-tec .ic { width: 15px; height: 15px; transform: none; }
 .cs-mapa .cs-tres .cs-tec b { display: inline; font-size: inherit; }
 .cs-mapa .cs-tres { margin: 8px 0 0; }
-.cs-mapa .cs-tres li { display: grid; grid-template-columns: minmax(0, 1fr) 176px; gap: 12px; align-items: center; border-left: 0; border-radius: 0; background: none; padding: 9px 0; border-top: 1px solid var(--ambar-200); }
+.cs-mapa .cs-tres li { display: grid; grid-template-columns: minmax(0, 1fr) 236px; gap: 12px; align-items: center; border-left: 0; border-radius: 0; background: none; padding: 9px 0; border-top: 1px solid var(--ambar-200); }
 .cs-mapa .cs-tres li > div { border-left: 3px solid var(--ambar-600); padding-left: 10px; }
 .cs-mapa .cs-tres .cs-mapa-mais > div { border-left-style: dashed; }
 .cs-mapa .cs-tres .cs-mapa-mais > div > span { display: block; font-size: 13.5px; line-height: 1.35; color: var(--s700); }
+/* tela 2 dividida em duas (19/11/2026): cada quadro ocupa a largura toda */
+.cs-slide.cs-2 .cs-og-larga { margin: 0; padding: 13px 20px 14px; font-size: 16px; }
+.cs-slide.cs-2 .cs-og-larga b { font-size: 17px; }
+.cs-slide.cs-2 .cs-mapa-larga.cs-obj li { grid-template-columns: auto minmax(0, 1fr) 380px; gap: 18px; padding: 12px 0; font-size: 15px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-o-v { font-size: 17px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres li { grid-template-columns: minmax(0, 1fr) 430px; gap: 18px; padding: 6px 0; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres b { font-size: 16px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres li > div > span:not(.cs-sec) { font-size: 14.5px; }
+.cs-slide.cs-2 > .cs-hero { zoom: 1 !important; }  /* as duas telas da pergunta mostram a mesma faixa, do mesmo tamanho */
+.cs-slide.cs-2 .cs-mapa-larga .cs-tec { padding: 7px 12px; font-size: 14px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tec i { font-size: 13px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres .cs-tec { font-size: 14px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres .cs-tec i { font-size: 12.5px; }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres .cs-mapa-mais > div > span { font-size: 14.5px; }
+.cs-slide.cs-2 .cs-mapa-larga.cs-hip .cs-hip-f { font-size: 17px; }
+.cs-tec small { display: block; margin-bottom: 1px; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.cs-slide.cs-2 .cs-mapa-larga .cs-tres .cs-tec small { font-size: 10.5px; }
+.cs-raiz { display: flex; gap: 10px; margin: 8px 0 2px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--ambar-200); padding: 9px 13px; font-size: 14px; line-height: 1.38; color: var(--s700); }
+.cs-raiz > .ic { flex: none; width: 16px; height: 16px; margin-top: 2px; color: var(--ambar-700); }
+.cs-raiz p:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 2px; }
+.cs-raiz b { color: var(--s950); }
+.cs-raiz .cs-sec { padding: 0 8px; font-size: 11px; }
 .cs-sec { justify-self: start; border: 1px solid var(--s200); border-radius: 999px; background: var(--s50); padding: 1px 10px; font-size: 11.5px; font-weight: 700; color: var(--s600); }
 
 /* 3. revisão */
@@ -313,6 +351,9 @@
   .cs-fx-n i { transform: rotate(90deg); }
   .cs-dl { grid-template-columns: minmax(0, 1fr); }
   .cs-mt, .cs-mt-3 { grid-template-columns: minmax(0, 1fr); }
+  .cs-slide.cs-2 .cs-mapa-larga.cs-obj li { grid-template-columns: auto minmax(0, 1fr); }
+  .cs-slide.cs-2 .cs-mapa-larga.cs-obj li > .cs-tec { grid-column: 2; }
+  .cs-slide.cs-2 .cs-mapa-larga .cs-tres li { grid-template-columns: minmax(0, 1fr); }
   .cs-px { flex-direction: column; }
   .cs-px-s { transform: rotate(90deg); }
   .cs-pipe .cs-seta, .cs-est > .ic, .cs-diag > .ic { transform: rotate(90deg); }
@@ -322,7 +363,7 @@
   .cs-corpo { overflow: visible; }
   .cs-slide, .cs-slide:not(.cs-capa) { display: flex !important; break-after: page; }
   .cs-n, .cs-reserva, .cs-fechar { display: none !important; }
-  .cs-hero, .cs-ponte, .cs-funil li, .cs-fx-fim, .cs-dl-n, .cs-px-fim, .cs-mt-h > span, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cs-hero, .cs-ponte, .cs-funil li, .cs-fx-fim, .cs-dl-n, .cs-px-fim, .cs-mt-h > span, .cs-og, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* transição entre as telas, como lâminas que deslizam uma sobre a outra: ao avançar, a foto de um julgamento no Supremo
