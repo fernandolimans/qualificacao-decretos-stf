@@ -90,7 +90,29 @@
 .cs-funil li:last-child b { color: #fcd34d; }
 .cs-funil span { font-size: 14px; line-height: 1.3; color: var(--s700); }
 .cs-funil li:last-child span { color: var(--s200); }
-.cs-3 .cs-rot { text-transform: none; letter-spacing: 0; font-size: 14.5px; color: var(--s900); }
+/* tela 3, 19/11/2026 (o autor pediu uma diagramação limpa, com destaque às descobertas): o funil em faixa horizontal,
+   como os números da tela 4, e as cinco descobertas em cinco blocos lado a lado */
+.cs-fx { display: flex; align-items: stretch; }
+.cs-fx-e { display: flex; flex-direction: column; justify-content: flex-start; flex: 1.1 1 0; min-width: 0; padding: 2px 0; }
+.cs-fx-e b { font-size: clamp(20px, 1.8vw, 25px); font-weight: 800; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; color: var(--s900); }
+.cs-fx-e span { margin-top: 4px; font-size: 11.5px; line-height: 1.3; color: var(--s600); }
+.cs-fx-fim { flex-grow: 1.6; justify-content: center; border-radius: 12px; background: var(--s950); padding: 8px 14px; }
+.cs-fx-fim b { color: #fcd34d; }
+.cs-fx-fim span { color: var(--s200); }
+.cs-fx-n { display: flex; align-items: flex-start; gap: 7px; flex: 1.25 1 0; min-width: 0; padding: 4px 12px 0 4px; font-size: 10.5px; line-height: 1.25; color: var(--s500); }
+.cs-fx-n > span { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.cs-fx-n i { flex: none; display: grid; color: var(--s400); }
+.cs-fx-n i .ic { width: 15px; height: 15px; }
+.cs-fx-n b { margin-right: 3px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--s600); }
+.cs-desc-t { display: flex; align-items: center; gap: 10px; margin: 4px 4px 12px; font-size: clamp(19px, 1.7vw, 23px); font-weight: 800; line-height: 1.2; letter-spacing: -.015em; color: var(--s950); }
+.cs-desc-t .ic { flex: none; width: 22px; height: 22px; color: var(--ambar-700); }
+.cs-dl { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.cs-dl li { display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--s200); border-radius: 18px; background: #fff; padding: 16px 14px 15px 16px; box-shadow: var(--sombra-sm); }
+.cs-rev { padding: 11px 18px 10px; }
+.cs-rev .cs-aviso-i { margin-top: 7px; font-size: 12px; }
+.cs-dl-n { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--s950); font-size: 14px; font-weight: 800; color: #fcd34d; }
+.cs-dl p { font-size: 15px; line-height: 1.4; color: var(--s800); }
+.cs-dl .cs-tag { align-self: flex-start; margin: auto 0 0; border-radius: 10px; padding: 3px 8px; font-size: 11px; line-height: 1.3; white-space: normal; }
 .cs-pontos { display: grid; gap: 9px; }
 .cs-pontos li { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.38; color: var(--s800); }
 .cs-tag { display: inline-block; margin-left: 4px; border-radius: 999px; background: var(--ambar-50); box-shadow: inset 0 0 0 1px #fcd34d; padding: 0 8px; font-size: 11.5px; font-style: normal; font-weight: 700; color: var(--ambar-700); white-space: nowrap; }
@@ -154,7 +176,6 @@
 .cs-aviso-i .ic { flex: none; width: 14px; height: 14px; margin-top: 2px; color: var(--ambar-700); }
 .cs-71 > div { display: flex; flex-direction: column; }
 .cs-71 .cs-aviso { max-width: 360px; font-weight: 400; }
-.cs-3 .cs-hero-f { font-size: clamp(17px, 1.65vw, 22px); line-height: 1.3; font-weight: 600; }
 .cs-un { margin-top: 2px; font-weight: 700; color: var(--s900); }
 .cs-lista3 span { font-weight: 400; color: var(--s700); }
 .cs-lista3 b { font-weight: 700; color: var(--s900); }
@@ -219,6 +240,10 @@
   .cs-71 { padding-left: 0; border-left: 0; flex-direction: column; align-items: flex-start; }
   .cs-lev-x { border-left: 0; padding-left: 0; }
   .cs-funil li { width: 100%; }
+  .cs-fx { flex-direction: column; align-items: stretch; gap: 6px; }
+  .cs-fx-n { padding: 0 0 0 4px; }
+  .cs-fx-n i { transform: rotate(90deg); }
+  .cs-dl { grid-template-columns: minmax(0, 1fr); }
   .cs-pipe .cs-seta, .cs-est > .ic, .cs-diag > .ic { transform: rotate(90deg); }
   .cs-exc { flex-direction: column; align-items: flex-start; }
 }
@@ -226,7 +251,7 @@
   .cs-corpo { overflow: visible; }
   .cs-slide, .cs-slide:not(.cs-capa) { display: flex !important; break-after: page; }
   .cs-n, .cs-reserva, .cs-fechar { display: none !important; }
-  .cs-hero, .cs-ponte, .cs-funil li, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .cs-hero, .cs-ponte, .cs-funil li, .cs-fx-fim, .cs-dl-n, .cs-est > span, .cs-diag > span, .cs-on, .cs-f-t span { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* transição entre as telas, como lâminas que deslizam uma sobre a outra: ao avançar, a foto de um julgamento no Supremo
