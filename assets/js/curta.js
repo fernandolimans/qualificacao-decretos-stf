@@ -17,7 +17,29 @@
     n.hidden = atual === 0;
     n.textContent = pad(atual) + " / " + pad(telas.length - 1);
     if (history.replaceState) history.replaceState(null, "", atual ? "#tela-" + atual : location.pathname + location.search);
+    caber(telas[atual]);
   }
+
+  /* Com menos texto (19/11/2026), o conteúdo de cada tela cresce por igual até ocupar a altura disponível,
+     sem passar dela e sem mudar nenhuma palavra. A capa, as Referências e as telas estreitas (celular) não mudam. */
+  function caber(t) {
+    if (!t || t.classList.contains("cs-capa") || t.classList.contains("cs-7")) return;
+    t.style.setProperty("--z", "1");
+    if (innerWidth <= 900) return;
+    var filhos = Array.prototype.slice.call(t.children), cs = getComputedStyle(t);
+    var disp = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    var gap = parseFloat(cs.rowGap) || 0;
+    function alt() { var a = gap * (filhos.length - 1); filhos.forEach(function (c) { a += c.getBoundingClientRect().height; }); return a; }
+    if (alt() >= disp * 0.94) return;
+    var lo = 1, hi = 1.4;
+    for (var i = 0; i < 8; i++) {
+      var m = (lo + hi) / 2; t.style.setProperty("--z", String(m));
+      if (alt() <= disp * 0.94) lo = m; else hi = m;
+    }
+    t.style.setProperty("--z", String(lo));
+  }
+  var tRes = null;
+  window.addEventListener("resize", function () { clearTimeout(tRes); tRes = setTimeout(function () { caber(telas[atual]); }, 120); });
 
   /* Ao avançar para uma tela que tem foto de transição, a foto entra pela direita por cima da tela atual e, logo depois,
      a tela seguinte entra pela direita por cima da foto, como lâminas. Tudo acontece sozinho, sem segundo clique.

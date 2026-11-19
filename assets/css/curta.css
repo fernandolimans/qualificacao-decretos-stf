@@ -14,6 +14,8 @@
 .cs-slide.ativo:not(.cs-capa) > :nth-child(4) { animation-delay: .21s; }
 .cs-slide.ativo:not(.cs-capa) > :nth-child(5) { animation-delay: .28s; }
 .cs-capa .capa-descer { cursor: pointer; }
+/* 19/11/2026: o conteúdo de cada tela cresce por igual até ocupar a altura (fator calculado em curta.js) */
+.cs-slide:not(.cs-capa):not(.cs-7) > * { zoom: var(--z, 1); }
 
 /* faixa escura de abertura */
 .cs-hero { position: relative; overflow: hidden; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 20px;
@@ -157,6 +159,7 @@
 .cs-lista3 span { font-weight: 400; color: var(--s700); }
 .cs-lista3 b { font-weight: 700; color: var(--s900); }
 .cs-planos { grid-template-columns: .7fr 1.3fr 1.5fr; }
+.cs-planos:has(> :nth-child(2):last-child) { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }  /* 19/11/2026, dois cartões depois de enxugar */
 .cs-abre { font-size: 15.5px; line-height: 1.45; color: var(--s700); }
 .cs-abre b { color: var(--s950); }
 .cs-6 .cs-rot { margin-bottom: 8px; }
