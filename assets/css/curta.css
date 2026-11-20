@@ -547,3 +547,17 @@ body .cs-45 .cs-mini { margin-top: 2px; }
 body .cs-45 { gap: 9px; }
 body .cs-45 .cs-duas .cs-card { padding-top: 12px; padding-bottom: 12px; }
 body .cs-45 .cs-parte { width: fit-content; max-width: 100%; }
+
+/* 20/11/2026, o autor escolheu "Duas telas": telas separadas, com as melhorias da tela juntada e as letras no tamanho das outras telas */
+body .cs-45.cs-so { gap: 12px; }
+body .cs-45.cs-so .cs-hero { padding-top: 20px; padding-bottom: 20px; }
+body .cs-45.cs-so .cs-hero-ic { width: 48px; height: 48px; }
+body .cs-45.cs-so .cs-hero-f { font-size: clamp(20px, 2.05vw, 29px); line-height: 1.2; }
+body .cs-45.cs-so .cs-ponte { font-size: clamp(16px, 1.45vw, 20px); padding: 14px 24px; }
+body .cs-45.cs-so .cs-px-n { font-size: clamp(24px, 2.1vw, 30px); }
+body .cs-45.cs-so .cs-px-r { font-size: 15px; }
+body .cs-45.cs-so .cs-px-c { font-size: 14px; }
+body .cs-45.cs-so .cs-px-pe { font-size: 15px; }
+body .cs-45.cs-so .cs-px-p { padding: 12px 15px 13px; }
+body .cs-45.cs-so .cs-lim li { font-size: 15px; }
+body .cs-45.cs-so .cs-px-fim::after { display: none; }
