@@ -536,3 +536,14 @@ body .cs-45 .cs-diag { margin-top: 8px; }
 body .cs-45 .cs-diag > span { font-size: 15.5px; padding: 7px 15px; }
 body .cs-45 .cs-etapas { margin-top: 12px; gap: 8px; }
 body .cs-45 .cs-etapas li { font-size: 15px; }
+
+/* 20/11/2026, o autor: destaque aos títulos 4.1, 4.2 e 4.3 e à frase "A primeira parte (Seções 4.1 e 4.2) será descritiva." */
+body .cs-45 .cs-s { gap: 10px; font-size: 17.5px; font-weight: 800; line-height: 1.25; color: var(--s950); }
+body .cs-45 .cs-s span { border-radius: 7px; background: var(--s950); padding: 2px 8px; font-size: 13px; font-weight: 800; color: #fcd34d; }
+body .cs-45 .cs-s + .cs-s { margin-top: 2px; }
+body .cs-45 .cs-parte { align-self: flex-start; margin-top: 6px; border-radius: 8px; background: #fef3c7; box-shadow: inset 3px 0 0 var(--ambar-600); padding: 5px 12px 5px 13px; font-size: 16px; font-weight: 800; color: var(--s950); }
+body .cs-45 .cs-mini { margin-top: 2px; }
+@media print { body .cs-45 .cs-s span, body .cs-45 .cs-parte { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+body .cs-45 { gap: 9px; }
+body .cs-45 .cs-duas .cs-card { padding-top: 12px; padding-bottom: 12px; }
+body .cs-45 .cs-parte { width: fit-content; max-width: 100%; }
