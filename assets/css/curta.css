@@ -482,3 +482,57 @@ body .cs-45 .cs-ponte { padding: 9px 18px; font-size: clamp(14.5px, 1.2vw, 17px)
 body .cs-45 .cs-lim li { font-size: 13.5px; }
 @media (max-width: 900px) { .cs-fl { grid-template-columns: minmax(0, 1fr); gap: 6px; } .cs-fl-n { justify-self: start; } .cs-fl-a::after, .cs-fl-a::before { display: none; } }
 @media print { .cs-fl-a i, .cs-fl-fim { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* 20/11/2026, orientação do professor Ulisses ("não é o que vai mostrado, mas como se mostra"), sem tirar palavras:
+   a lista do polo passivo em linhas, os números alinhados em coluna, o 242 ligado ao caminho, os atributos em tom neutro
+   e a tela dividida em duas partes visíveis, o levantamento e o caminho */
+.cs-pp { display: flex; flex-wrap: wrap; gap: 1px 12px; margin-top: 3px; }
+.cs-pp span { position: relative; padding-left: 12px; }
+.cs-pp span::before { content: ""; position: absolute; left: 1px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--ambar-600); }
+body .cs-45 .cs-px-p:nth-of-type(1) { flex-grow: .8; }
+body .cs-45 .cs-px-p:nth-of-type(2) { flex-grow: 2.1; }
+body .cs-45 .cs-px-p:nth-of-type(3), body .cs-45 .cs-px-p:nth-of-type(4) { flex-grow: 1.3; }
+.cs-nc > span { display: grid; grid-template-columns: 3.1em minmax(0, 1fr); align-items: baseline; }
+.cs-nc > span > b { text-align: right; padding-right: 7px; font-variant-numeric: tabular-nums; }
+.cs-nc > .cs-nc-t { display: block; margin-top: 3px; padding-top: 4px; border-top: 1px solid rgb(255 255 255 / .18); font-weight: 600; color: #fff; }
+body .cs-45 .cs-px-fim { position: relative; box-shadow: 0 0 0 3px #fcd34d; }
+body .cs-45 .cs-px-fim::after { content: ""; position: absolute; left: 50%; bottom: -15px; transform: translateX(-50%); border: 9px solid transparent; border-top: 9px solid var(--s950); border-bottom: 0; }
+.cs-45-m { background: linear-gradient(transparent 55%, #fde68a 55%); padding: 0 2px; color: var(--s950); }
+body .cs-45 .cs-45-cab { position: relative; padding-top: 4px; }
+body .cs-45 .cs-chip { background: #fff; box-shadow: inset 0 0 0 1px var(--s300); color: var(--s800); font-weight: 600; }
+body .cs-45 .cs-parte { color: var(--s950); }
+body .cs-45 .cs-s { color: var(--s800); }
+@media print { .cs-pp span::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+body .cs-45 .cs-px-c { font-size: 13px; }
+
+/* 20/11/2026, com menos texto na tela 5: letras maiores e mais ar */
+body .cs-45 { gap: 11px; }
+body .cs-45 .cs-hero-f { font-size: clamp(18px, 1.6vw, 22px); }
+body .cs-45 .cs-px-pe { font-size: 14px; }
+body .cs-45 .cs-px-n { font-size: clamp(21px, 1.8vw, 26px); }
+body .cs-45 .cs-px-r { font-size: 14px; }
+body .cs-45 .cs-px-c { font-size: 13.5px; }
+body .cs-45 .cs-px-p { padding: 9px 13px 10px; }
+.cs-45-t { font-size: 17px; font-weight: 800; line-height: 1.25; color: var(--s950); }
+body .cs-45 .cs-45-cab > .ic { width: 22px; height: 22px; }
+body .cs-45 .cs-s { font-size: 15.5px; }
+body .cs-45 .cs-parte { font-size: 15.5px; }
+body .cs-45 .cs-mini { font-size: 14.5px; }
+body .cs-45 .cs-chip { font-size: 14px; padding: 2px 11px; }
+body .cs-45 .cs-chips { gap: 6px; }
+body .cs-45 .cs-fl { margin-top: 10px; }
+body .cs-45 .cs-fl-n { font-size: 15.5px; padding: 8px 14px; }
+body .cs-45 .cs-fl-a { font-size: 14px; }
+body .cs-45 .cs-duas .cs-card { padding: 13px 17px 14px; gap: 7px; }
+body .cs-45 .cs-ponte { font-size: clamp(16px, 1.35vw, 19px); padding: 11px 20px; }
+body .cs-45 .cs-lim li { font-size: 14.5px; }
+body .cs-45 .cs-px-p:nth-of-type(1) { flex-grow: 1; }
+body .cs-45 .cs-px-p:nth-of-type(2) { flex-grow: 2.45; }
+body .cs-45 .cs-px-p:nth-of-type(3) { flex-grow: 1.4; }
+body .cs-45 .cs-px-p:nth-of-type(4) { flex-grow: 1.05; }
+body .cs-45 .cs-duas { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+body .cs-45 .cs-duas > .cs-card:last-child { display: flex; flex-direction: column; }
+body .cs-45 .cs-diag { margin-top: 8px; }
+body .cs-45 .cs-diag > span { font-size: 15.5px; padding: 7px 15px; }
+body .cs-45 .cs-etapas { margin-top: 12px; gap: 8px; }
+body .cs-45 .cs-etapas li { font-size: 15px; }
