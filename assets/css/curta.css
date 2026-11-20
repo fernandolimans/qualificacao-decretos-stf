@@ -434,3 +434,10 @@ body .cs-slide.cs-2 .cs-mapa-larga.cs-obj li { font-size: 15px; }
   .cs-corpo .cs-trans img { transition: filter .8s ease !important; }
 }
 @media print { .cs-trans { display: none !important; } .cs.cs-lamina { animation: none; box-shadow: none; } }
+
+/* 20/11/2026, o autor: o enunciado da hipótese é a primeira linha do mapa. O "principalmente" fica em destaque e, na coluna
+   da técnica, entram o qui-quadrado, o V de Cramér e a regressão de Firth, que o testam (Seção 3.2). */
+body .cs-slide.cs-2 .cs-hip-linha { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 20px; align-items: center; padding: 2px 0 10px; }
+body .cs-slide.cs-2 .cs-hip-linha .cs-hip-f { margin: 0; }
+.cs-princ { background: linear-gradient(transparent 58%, #fde68a 58%); padding: 0 2px; font-weight: 700; color: var(--s950); }
+@media (max-width: 900px) { body .cs-slide.cs-2 .cs-hip-linha { grid-template-columns: minmax(0, 1fr); } }
