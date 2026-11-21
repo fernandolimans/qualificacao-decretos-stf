@@ -561,3 +561,17 @@ body .cs-45.cs-so .cs-px-pe { font-size: 15px; }
 body .cs-45.cs-so .cs-px-p { padding: 12px 15px 13px; }
 body .cs-45.cs-so .cs-lim li { font-size: 15px; }
 body .cs-45.cs-so .cs-px-fim::after { display: none; }
+
+/* 21/11/2026, o autor: "que eu olhe e já passe a mensagem". As duas telas se leem em voz alta na ordem em que aparecem.
+   Literatura sem etiquetas, com o ponto 5 como fecho. Considerações finais com cada filtro na ordem nome, explicação e
+   consequência, sem setas nem quadro de destino, e a exceção conhecida logo abaixo dos três filtros. */
+.cs-dl li.cs-dl-fim { border-color: var(--s950); background: var(--s950); }
+.cs-dl li.cs-dl-fim .cs-dl-n { background: #fcd34d; color: var(--s950); }
+.cs-dl li.cs-dl-fim p { font-weight: 700; color: #fff; }
+.cs-bxs { gap: 14px; }
+.cs-bx { gap: 10px; }
+.cs-bx-t { min-height: 0; }
+.cs-bx-d { font-size: 14px; color: var(--s700); }
+.cs-bx-e { margin-top: auto; font-size: 15px; }
+.cs-bx-exc { margin: 14px 2px 0; border-radius: 14px; background: #fff; box-shadow: inset 0 0 0 1px #fcd34d; padding: 11px 16px; font-size: 15px; line-height: 1.45; color: var(--s800); }
+.cs-bx-exc span { font-weight: 800; color: var(--ambar-700); }
