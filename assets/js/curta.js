@@ -119,6 +119,13 @@
   var descer = document.getElementById("descer");
   if (descer) descer.addEventListener("click", function () { if (atual === 0) avancar(); else mostrar(1); });
 
+  /* 21/11/2026: o nome de cada técnica nas telas 02 e 03 abre, na reserva, a tela de exemplo daquela técnica */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest(".cs-slide a.cs-tq");
+    if (!a) return;
+    e.preventDefault(); fimTrans(); abrir(a.getAttribute("href").slice(1), a.dataset.tq);
+  });
+
   /* links entre seções dentro da reserva */
   reserva.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest('a[href^="#"]');

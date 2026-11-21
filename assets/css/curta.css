@@ -583,3 +583,171 @@ body .cs-45.cs-so .cs-px-fim::after { display: none; }
 .cs-lim li.cs-lim-l { flex-basis: 100%; align-items: flex-start; line-height: 1.4; }
 .cs-lim li.cs-lim-l .ic { margin-top: 3px; }
 .cs-3 > .cs-lim li { font-size: 15px; }
+
+/* 21/11/2026, o autor: tela de reserva "As técnicas em exemplo", com números fictícios. Abre ao clicar no nome da técnica
+   nas telas 02 e 03, já na tela daquela técnica.
+   Uma tela para cada técnica, percorridas com as setas ou pelas abas. Todas com o mesmo desenho: para que serve (frase da
+   Seção 3.2), uma figura que um leigo lê sozinho e, na faixa escura, o porquê ou o lugar na hipótese de trabalho. */
+.painel.tq > * + * { margin-top: 0; }
+.tq-lista { margin-bottom: 14px; }
+.tq-lista .met-n { background: var(--ambar-100); color: var(--ambar-700); box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.tq-lista button[aria-selected="true"] .met-n { background: #fcd34d; color: var(--s950); box-shadow: none; }
+.tq-lista button b { font-size: 13px; }
+.js .met.tq-tela.ativa { display: block; }
+.met.tq-tela { border: 0; border-radius: 0; background: none; box-shadow: none; padding: 0; }
+.tq-tela > * + * { margin-top: 14px; }
+
+.tq-topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.tq-olho { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--ambar-700); }
+.tq-h { margin-top: 5px; font-size: 29px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; color: var(--s950); }
+.tq-obj { margin-top: 7px; max-width: 860px; font-size: 16px; line-height: 1.45; color: var(--s700); }
+.tq-obj b { margin-right: 8px; border-radius: 6px; background: var(--s950); padding: 2px 8px; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #fcd34d; vertical-align: 2px; }
+.tq-fict { flex: none; display: flex; align-items: center; gap: 8px; border: 1px solid var(--ambar-200); border-radius: 999px; background: var(--ambar-100); padding: 9px 16px; font-size: 14.5px; font-weight: 800; color: var(--ambar-700); white-space: nowrap; }
+.tq-fict .ic { width: 18px; height: 18px; }
+.tq-quadro { border-radius: 20px; background: #fff; box-shadow: var(--sombra-lg); padding: 16px 24px 14px; }
+
+.tq-leg { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; font-size: 13.5px; font-weight: 600; color: var(--s700); }
+.tq-leg span { display: inline-flex; align-items: center; gap: 7px; }
+.tq-leg i, .tq-pts i { display: block; width: 7px; height: 7px; border-radius: 50%; background: var(--s200); }
+.tq-leg i { width: 11px; height: 11px; }
+.tq-leg i.on, .tq-pts i.on { background: var(--ambar-600); }
+.tq-leg-c { font-weight: 500; color: var(--s500); }
+.tq-attr { font-size: 12.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s700); }
+.tq-g { font-size: 14.5px; font-weight: 600; line-height: 1.25; color: var(--s800); }
+.tq-c { font-size: 13px; color: var(--s500); white-space: nowrap; }
+.tq-c b { margin-right: 3px; font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-q { display: flex; align-items: center; gap: 8px; border-radius: 12px; padding: 10px 12px; font-size: 15px; font-weight: 800; line-height: 1.2; }
+.tq-q .ic { flex: none; width: 20px; height: 20px; }
+.tq-sim { background: var(--s950); color: #fff; }
+.tq-sim .ic { color: #fcd34d; }
+.tq-nao { background: var(--s100); color: var(--s600); }
+.tq-fim { display: flex; align-items: center; gap: 14px; border-radius: 16px; background: var(--s950); padding: 14px 20px; color: #fff; }
+.tq-fim > .ic { flex: none; width: 22px; height: 22px; color: #fcd34d; }
+.tq-fim small { display: block; margin-bottom: 2px; font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #fcd34d; }
+.tq-fim > span { font-size: 16.5px; font-weight: 600; line-height: 1.4; }
+.tq-fonte { margin-top: 10px !important; }
+
+/* 1. Tipologia */
+.tq-q1 .tq-attr { margin-top: 14px; color: var(--ambar-700); }
+.tq-tip { display: grid; grid-template-columns: minmax(0, 1fr) 250px; grid-template-rows: auto auto; column-gap: 24px; row-gap: 14px; align-items: center; margin-top: 12px; }
+.tq-tl { grid-column: 1; display: grid; grid-template-columns: 250px auto minmax(60px, 1fr); align-items: center; column-gap: 16px; }
+.tq-tr1 { grid-column: 2; grid-row: 1 / 3; }
+.tq-docs { display: flex; gap: 6px; }
+.tq-doc { display: grid; place-items: center; width: 34px; height: 40px; border-radius: 7px; background: var(--s100); color: var(--s400); }
+.tq-doc .ic { width: 20px; height: 20px; }
+.tq-doc.on { background: var(--ambar-100); color: var(--ambar-700); box-shadow: inset 0 0 0 1.5px var(--ambar-600); }
+.tq-leg .tq-doc { width: 20px; height: 24px; border-radius: 5px; }
+.tq-leg .tq-doc .ic { width: 13px; height: 13px; }
+
+/* 2. Qui-quadrado e V de Cramér */
+.tq-cab, .tq-caso { display: grid; grid-template-columns: minmax(0, 1fr) 164px 184px; column-gap: 20px; align-items: center; }
+.tq-cab { padding-bottom: 10px; align-items: start; }
+.tq-cab .tq-leg { align-self: end; }
+.tq-tec { font-size: 13px; line-height: 1.35; color: var(--s600); }
+.tq-tec b { display: block; margin-bottom: 2px; font-size: 14px; font-weight: 800; color: var(--s950); }
+.tq-caso { border-top: 1px solid var(--s200); padding: 9px 0 10px; row-gap: 4px; }
+.tq-caso .tq-attr { grid-column: 1 / -1; }
+.tq-forte .tq-attr { color: var(--ambar-700); }
+.tq-ls { display: grid; gap: 10px; padding-top: 17px; }
+.tq-l { display: grid; grid-template-columns: 200px auto minmax(60px, 1fr); align-items: center; column-gap: 14px; }
+.tq-pw { position: relative; }
+.tq-pts { display: flex; gap: 3px; }
+.tq-acaso { position: absolute; top: -8px; bottom: -8px; left: calc(var(--a) * 10px - 2.5px); border-left: 2px dashed var(--s700); }
+.tq-acaso span { position: absolute; bottom: 100%; left: 0; transform: translateX(-50%); margin-bottom: 2px; font-size: 11.5px; font-weight: 700; color: var(--s700); white-space: nowrap; }
+.tq-r { padding-top: 18px; }
+.tq-esc { display: grid; gap: 4px; }
+.tq-tr { position: relative; display: block; height: 10px; border-radius: 99px; background: var(--s200); overflow: hidden; }
+.tq-tr i { position: absolute; inset: 0 auto 0 0; width: max(7px, calc(var(--v) * 100%)); border-radius: 99px; background: var(--ambar-600); }
+.tq-ex { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--s500); }
+.tq-vv { margin-top: 2px; font-size: 24px; line-height: 1; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-caso:not(.tq-forte) .tq-vv { color: var(--s500); }
+
+/* 3. Regressão de Firth */
+.tq-est { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border-bottom: 1px solid var(--s200); padding-bottom: 14px; }
+.tq-est-r { margin-right: 6px; font-size: 12.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s700); }
+.tq-e { display: inline-flex; align-items: center; gap: 8px; border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 8px 14px 8px 8px; font-size: 14.5px; font-weight: 700; color: var(--s900); }
+.tq-e b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--s950); font-size: 12px; color: #fcd34d; }
+.tq-e .ic { width: 17px; height: 17px; color: var(--ambar-700); }
+.tq-est-s .ic { display: block; width: 18px; height: 18px; color: var(--s400); }
+.tq-rl { display: grid; grid-template-columns: 230px minmax(0, 1fr) minmax(0, 1fr) 190px; column-gap: 22px; align-items: center; padding: 9px 0; }
+.tq-rl + .tq-rl:not(.tq-rl-cab) { border-top: 1px solid var(--s100); }
+.tq-rl-cab { padding: 14px 0 4px; }
+.tq-rl-p { font-size: 12.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s600); }
+.tq-i1, .tq-i2 { border-radius: 3px !important; }
+.tq-leg .tq-i1 { background: var(--s300); }
+.tq-leg .tq-i2 { background: var(--ambar-600); }
+.tq-b { position: relative; display: block; height: 16px; border-radius: 99px; background: var(--s100); }
+.tq-b i { position: absolute; inset: 0 auto 0 0; width: max(10px, calc(var(--v) * 100%)); border-radius: 99px; }
+.tq-b1 i { background: var(--s300); }
+.tq-b2 i { background: var(--ambar-600); }
+.tq-rl .tq-q { padding: 7px 12px; font-size: 14px; }
+.tq-rl.tq-forte .tq-g { color: var(--ambar-700); font-weight: 800; }
+
+/* 4. Riscos competitivos */
+.tq-leg4 { margin-bottom: 14px; }
+.tq-m { display: grid !important; place-items: center; width: 22px !important; height: 22px !important; border-radius: 50% !important; }
+.tq-m .ic { width: 13px; height: 13px; }
+.tq-m.tq-perda, .tq-raia.tq-perda .tq-fimr { background: var(--ambar-600); color: #fff; }
+.tq-m.tq-merito, .tq-raia.tq-merito .tq-fimr { background: var(--s950); color: #fcd34d; }
+.tq-m.tq-pend, .tq-raia.tq-pend .tq-fimr { background: #fff; color: var(--s500); box-shadow: inset 0 0 0 2px var(--s300); }
+.tq-raias { position: relative; display: grid; gap: 4px; margin-left: 10px; margin-right: 18px; padding-bottom: 24px;
+  background: repeating-linear-gradient(90deg, var(--s100) 0 1px, transparent 1px calc(100% / 8)); }
+.tq-raia { position: relative; height: 20px; }
+.tq-fio { position: absolute; top: 50%; left: 0; width: calc(var(--t) / 8 * 100%); height: 4px; margin-top: -2px; border-radius: 99px; background: var(--s300); }
+.tq-perda .tq-fio { background: #f6c98a; }
+.tq-merito .tq-fio { background: var(--s400); }
+.tq-pend .tq-fio { background: repeating-linear-gradient(90deg, var(--s300) 0 8px, transparent 8px 13px); }
+.tq-fimr { position: absolute; top: 50%; left: calc(var(--t) / 8 * 100%); display: grid; place-items: center; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; }
+.tq-fimr .ic { width: 12px; height: 12px; }
+.tq-eixo { position: absolute; left: 0; right: 0; bottom: 0; height: 18px; border-top: 1px solid var(--s300); }
+.tq-eixo span { position: absolute; top: 3px; left: calc(var(--t) / 8 * 100%); transform: translateX(-50%); font-size: 12px; font-weight: 600; color: var(--s500); font-variant-numeric: tabular-nums; }
+.tq-eixo-r { margin-top: 4px; text-align: right; font-size: 12.5px; font-weight: 600; color: var(--s500); }
+
+/* 5. Ponto de mudança */
+.tq-leg .tq-esc5 { margin-left: -4px; background: var(--s700); }
+.tq-g5 { position: relative; margin-top: 6px; }
+.tq-svg { display: block; width: 100%; height: auto; }
+.tq-svg .g { stroke: var(--s200); stroke-width: 1; }
+.tq-svg .ty { font-size: 13px; font-weight: 600; fill: var(--s500); text-anchor: end; }
+.tq-svg .tx { font-size: 13px; font-weight: 600; fill: var(--s500); text-anchor: end; }
+.tq-svg circle { stroke: #fff; stroke-width: 2; }
+.tq-svg circle.a { fill: var(--ambar-600); }
+.tq-svg circle.b { fill: var(--s700); }
+.tq-svg .n1, .tq-svg .n2 { stroke-width: 4; stroke-linecap: round; opacity: .35; }
+.tq-svg .n1 { stroke: var(--ambar-600); }
+.tq-svg .n2 { stroke: var(--s700); }
+.tq-svg .corte { stroke: var(--s950); stroke-width: 2.5; stroke-dasharray: 7 6; }
+.tq-corte { position: absolute; top: -4px; left: var(--xc); transform: translateX(10px); display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; background: var(--s950); padding: 6px 12px; font-size: 13.5px; font-weight: 800; color: #fff; white-space: nowrap; }
+.tq-corte .ic { width: 15px; height: 15px; color: #fcd34d; }
+
+@media (max-width: 1150px) {
+  .tq-cab, .tq-caso { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .tq-cab .tq-leg, .tq-ls { grid-column: 1 / -1; }
+  .tq-r { padding-top: 8px; }
+  .tq-tip { grid-template-columns: minmax(0, 1fr); }
+  .tq-tr1 { grid-column: 1; grid-row: auto; }
+  .tq-rl { grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1fr) 160px; column-gap: 14px; }
+}
+@media (max-width: 760px) {
+  .tq-lista { flex-wrap: wrap; }
+  .tq-lista button { flex: 1 1 45%; }
+  .tq-topo { flex-direction: column; }
+  .tq-fict { white-space: normal; }
+  .tq-l { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .tq-l .tq-g { grid-column: 1 / -1; }
+  .tq-pts { flex-wrap: wrap; width: calc(25 * 10px - 3px); row-gap: 3px; }
+  .tq-acaso { display: none; }
+  .tq-ls { padding-top: 6px; }
+  .tq-tl { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .tq-tl .tq-g { grid-column: 1 / -1; }
+  .tq-docs { flex-wrap: wrap; gap: 4px; }
+  .tq-doc { width: 26px; height: 30px; }
+  .tq-rl { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .tq-rl .tq-g, .tq-rl .tq-b { grid-column: 1 / -1; }
+  .tq-rl-cab { display: none; }
+  .tq-corte { position: static; transform: none; margin-top: 8px; }
+}
+
+/* o nome da técnica no slide abre a sua tela de exemplo; parado, não muda nada na tela */
+.cs-tq { color: inherit; text-decoration: none; cursor: pointer; }
+.cs-tq:hover, .cs-tq:focus-visible { outline: none; text-decoration: underline dotted var(--ambar-600); text-decoration-thickness: 2px; text-underline-offset: 3px; }
