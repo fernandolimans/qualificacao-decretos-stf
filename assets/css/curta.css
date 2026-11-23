@@ -751,3 +751,35 @@ body .cs-45.cs-so .cs-px-fim::after { display: none; }
 /* o nome da técnica no slide abre a sua tela de exemplo; parado, não muda nada na tela */
 .cs-tq { color: inherit; text-decoration: none; cursor: pointer; }
 .cs-tq:hover, .cs-tq:focus-visible { outline: none; text-decoration: underline dotted var(--ambar-600); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* 23/11/2026, o autor: considerações finais em três cartões, na ordem da fala. O que a revisão mostra, o que a hipótese
+   aponta e o ponto fora da curva, este marcado como leitura teórica ainda não demonstrada. */
+.cs-cfs { display: grid; grid-template-columns: 1fr 1.12fr 1fr; gap: 14px; }
+.cs-cf { display: flex; flex-direction: column; gap: 10px; border-radius: 18px; background: #fff; box-shadow: var(--sombra-lg); padding: 14px 16px 15px; }
+.cs-cf-o { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--ambar-700); }
+.cs-cf-o .ic { width: 15px; height: 15px; }
+.cs-cf-h { font-size: 17px; font-weight: 800; line-height: 1.3; letter-spacing: -.01em; color: var(--s950); }
+.cs-cf-par { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cs-cf-par > div { border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 9px 11px; }
+.cs-cf-par > .cs-cf-dec { background: #fef3c7; box-shadow: inset 0 0 0 1px var(--ambar-200); }
+.cs-cf-l { margin-bottom: 5px; font-size: 13px; font-weight: 800; color: var(--s950); }
+.cs-cf-par ul { display: grid; gap: 5px; }
+.cs-cf-par li { position: relative; padding-left: 11px; font-size: 13.5px; line-height: 1.3; color: var(--s800); }
+.cs-cf-par li::before { content: ""; position: absolute; left: 0; top: .5em; width: 5px; height: 5px; border-radius: 50%; background: var(--s400); }
+.cs-cf-dec li::before { background: var(--ambar-600); }
+.cs-cf-obs { display: grid; gap: 5px; }
+.cs-cf-obs li { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; line-height: 1.3; color: var(--s900); }
+.cs-cf-obs li span { display: grid; place-items: center; flex: none; width: 21px; height: 21px; border-radius: 50%; background: var(--s950); font-size: 11px; font-weight: 800; color: #fcd34d; }
+.cs-cf-dif { font-size: 13.5px; line-height: 1.75; color: var(--s700); }
+.cs-cf-c { display: inline-block; margin: 0 3px; border: 1px solid var(--s200); border-radius: 999px; background: var(--s50); padding: 0 9px; font-size: 12.5px; font-weight: 700; line-height: 1.6; color: var(--s800); }
+.cs-cf-e { display: flex; align-items: flex-start; gap: 7px; margin-top: auto; border-radius: 10px; background: #fef2f2; padding: 8px 11px; font-size: 13.5px; font-weight: 700; line-height: 1.35; color: #991b1b; }
+.cs-cf-e .ic { flex: none; width: 15px; height: 15px; margin-top: 2px; }
+.cs-cf-x { background: var(--s950); }
+.cs-cf-x .cs-cf-o { color: #fcd34d; }
+.cs-cf-x .cs-cf-h { color: #fff; }
+.cs-cf-ref { margin-left: auto; border-radius: 999px; background: rgba(255,255,255,.12); padding: 2px 9px; font-size: 11px; letter-spacing: .02em; text-transform: none; color: #fff; }
+.cs-cf-auto { font-size: 15px; font-weight: 600; line-height: 1.4; color: #fcd34d; }
+.cs-cf-lt { display: flex; align-items: center; gap: 6px; margin-top: auto; font-size: 12.5px; font-weight: 600; color: var(--s300); }
+.cs-cf-lt .ic { flex: none; width: 14px; height: 14px; color: #fcd34d; }
+@media (max-width: 900px) { .cs-cfs { grid-template-columns: 1fr; } }
+@media print { .cs-cf-x, .cs-cf-dec, .cs-cf-e, .cs-cf-obs li span { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
