@@ -1083,3 +1083,86 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .tq-q4d .tq-fio { overflow: visible; }
 .tq-q4d .tq-fio::before, .tq-cal-in { content: ""; position: absolute; top: 50%; left: -4px; width: 8px; height: 8px; margin-top: -4px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 2px var(--s500); }
 .tq-leg .tq-cal-in { position: static; display: inline-block; margin: 0 2px 0 0; }
+
+/* 23/11/2026, ponto de mudança v2, conforme a página 46: todas as ações com data conhecida, inclusive as que seguem em
+   tramitação, tratadas como ainda sem desfecho na data de corte. Cada ponto é uma ação, empilhada no ano de ajuizamento,
+   como os pontos do qui-quadrado. A linha do momento da mudança sai dos dados, e 2019 aparece só como referência. */
+.tq-q5b .tq-leg { margin-bottom: 6px; }
+.tq-pm-m, .tq-pm-s, .tq-pm-p { display: block; width: 12px; height: 12px; border-radius: 50%; }
+.tq-pm-m, .tq-leg i.tq-pm-m { background: var(--ambar-600); }
+.tq-pm-s, .tq-leg i.tq-pm-s { background: var(--s300); }
+.tq-pm-p, .tq-leg i.tq-pm-p { background: #fff; box-shadow: inset 0 0 0 2px var(--s400); }
+.tq-leg i.tq-pm-m, .tq-leg i.tq-pm-s, .tq-leg i.tq-pm-p { width: 12px; height: 12px; }
+.tq-pm-g { position: relative; height: 236px; margin: 0 14px 0 6px; }
+.tq-pm-c { position: absolute; bottom: 0; display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; }
+.tq-pm-l { position: absolute; top: 0; bottom: -4px; width: 0; }
+.tq-pm-l b { position: absolute; white-space: nowrap; }
+.tq-pm-mud { border-left: 2px dashed var(--s950); }
+.tq-pm-mud b { top: 0; right: -1px; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; background: var(--s950); padding: 6px 12px; font-size: 13.5px; font-weight: 800; color: #fff; }
+.tq-pm-mud b .ic { width: 15px; height: 15px; color: #fcd34d; }
+.tq-pm-ref { top: 40px; border-left: 1.5px dotted var(--s400); }
+.tq-pm-ref b { top: 0; left: 6px; font-size: 12px; font-weight: 700; color: var(--s500); }
+.tq-pm-corte { top: 0; border-left: 2px dashed var(--s500); }
+.tq-pm-corte b { top: 6px; right: 6px; font-size: 12px; font-weight: 800; color: var(--s700); }
+.tq-pm-ax { position: relative; height: 22px; margin: 0 14px 0 6px; border-top: 1px solid var(--s300); }
+.tq-pm-ax span { position: absolute; top: 3px; transform: translateX(-50%); font-size: 12px; font-weight: 600; color: var(--s500); font-variant-numeric: tabular-nums; }
+.tq-q5b .tq-eixo-r { margin: 0 14px 0 0; }
+@media (max-width: 760px) {
+  .tq-pm-m, .tq-pm-s, .tq-pm-p { width: 6px; height: 6px; }
+  .tq-pm-c { gap: 2px; }
+  .tq-pm-g { height: 200px; }
+  .tq-pm-ref b { display: none; }
+  .tq-pm-corte b { top: 40px; }
+  .tq-pm-ax span:nth-child(even) { display: none; }
+}
+.tq-pm-g { height: 212px; }
+
+/* 23/11/2026, qui-quadrado v2, conforme as páginas 45 e 46: entram as ações decididas até 30 de junho de 2026,
+   as ainda sem desfecho ficam de fora deste recorte. Cada grupo é um bloco de 50 pontos que se enche de baixo para cima,
+   e a linha "se fosse acaso" atravessa os dois blocos. Ao lado, o veredito do qui-quadrado e a intensidade do V de Cramér. */
+.tq-qq-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; border-bottom: 1px solid var(--s200); padding-bottom: 12px; }
+.tq-qq-ent { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ambar-700); }
+.tq-qq-fora { color: var(--s500); }
+.tq-qq-fora i { position: relative; }
+.tq-qq-fora i::after { content: ""; position: absolute; top: 50%; left: -3px; right: -3px; height: 2px; margin-top: -1px; background: var(--s600); transform: rotate(-35deg); }
+.tq-leg .tq-qq-fora i.tq-pm-p { width: 12px; height: 12px; }
+.tq-qq { display: grid; grid-template-columns: 1fr 1fr; margin-top: 12px; }
+.tq-qq-b + .tq-qq-b { border-left: 1px solid var(--s200); padding-left: 26px; }
+.tq-qq-b { padding-right: 20px; }
+.tq-qq-b .tq-attr { margin-bottom: 12px; }
+.tq-qq-cx { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: 26px; }
+.tq-qq-w { position: relative; display: flex; gap: 56px; padding: 0 30px; }
+.tq-wf { display: grid; grid-template-columns: repeat(5, 11px); grid-auto-rows: 11px; gap: 3px; }
+.tq-wf i { display: block; border-radius: 50%; background: var(--s200); }
+.tq-wf i.on { background: var(--ambar-600); }
+.tq-qq-ac { position: absolute; left: 0; right: -6px; bottom: calc(var(--nv) * 14px - 1.5px); height: 0; border-top: 2px dashed var(--s950); }
+.tq-qq-ac span { position: absolute; right: 0; bottom: 3px; white-space: nowrap; font-size: 11.5px; font-weight: 800; color: var(--s950); }
+.tq-qq-ls { display: flex; gap: 14px; margin-top: 8px; }
+.tq-qq-g { width: 125px; text-align: center; }
+.tq-qq-g b { display: block; font-size: 22px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-qq-g b small { font-size: 12px; font-weight: 600; color: var(--s500); }
+.tq-qq-g span { display: block; margin-top: 2px; font-size: 12.5px; font-weight: 600; line-height: 1.3; color: var(--s700); }
+.tq-qq-r { display: grid; gap: 16px; }
+.tq-qq-t { margin-bottom: 6px; font-size: 13px; font-weight: 800; color: var(--s950); }
+.tq-qq-t span { display: block; font-size: 12px; font-weight: 600; color: var(--s500); }
+.tq-qq-r .tq-q { font-size: 14px; white-space: normal; }
+.tq-qq-m { position: relative; display: block; height: 10px; overflow: hidden; border-radius: 99px; background: var(--s100); }
+.tq-qq-m i { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--ambar-600); }
+.tq-qq-ex { display: flex; justify-content: space-between; margin-top: 3px; font-size: 11.5px; font-weight: 600; color: var(--s500); }
+.tq-qq-b:not(.tq-qq-forte) .tq-vv { color: var(--s500); }
+@media (max-width: 1150px) {
+  .tq-qq { grid-template-columns: 1fr; row-gap: 18px; }
+  .tq-qq-b + .tq-qq-b { border-left: 0; padding-left: 0; border-top: 1px solid var(--s200); padding-top: 16px; }
+}
+@media (max-width: 560px) {
+  .tq-qq-cx { grid-template-columns: 1fr; row-gap: 16px; }
+  .tq-qq-w { gap: 40px; padding: 0 22px; }
+  .tq-qq-g { width: 110px; }
+}
+/* qui-quadrado v2, ajuste: bloco, contagem e nome na mesma coluna; a linha do acaso vai para a legenda */
+.tq-qq-w { gap: 18px; padding: 0; }
+.tq-qq-g { display: flex; flex-direction: column; align-items: center; }
+.tq-qq-g .tq-wf { margin-bottom: 8px; }
+.tq-qq-ac { left: 14px; right: 14px; top: calc(137px - var(--nv) * 14px + 0.5px); bottom: auto; }
+.tq-qq-lac i { display: block; width: 22px !important; height: 0 !important; border-radius: 0 !important; background: none !important; border-top: 2px dashed var(--s950); }
+.tq-qq-g .tq-wf { display: grid; margin-top: 0; font-size: 0; }
