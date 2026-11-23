@@ -1198,3 +1198,36 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .tq-vf-cv-f:nth-child(3) .ic { color: var(--s500); }
 .tq-vf-cv .tq-q { margin-left: auto; }
 @media (max-width: 900px) { .tq-vf { grid-template-columns: 1fr; } .tq-vf-t, .tq-vf-v { margin-left: 0; } .tq-vf-ir { grid-template-columns: 1fr; row-gap: 4px; } }
+
+/* 23/11/2026, tipologia v2, conforme a página 46: a forma como o proponente apresenta o decreto na petição inicial,
+   à esquerda, e o reconhecimento da ofensa reflexa, à direita. A tipologia recai sobre as petições iniciais, por isso
+   as das ações ainda sem desfecho na data de corte aparecem, separadas, sem reconhecimento a mostrar. */
+.tq-q1b .tq-leg { border-bottom: 1px solid var(--s200); padding-bottom: 12px; }
+.tq-tp { display: grid; grid-template-columns: 270px 40px auto minmax(0, 1fr); align-items: center; row-gap: 12px; margin-top: 14px; }
+.tq-tp .tq-attr { margin: 0; color: var(--ambar-700); }
+.tq-tp-h1 { grid-column: 1 / 3; }
+.tq-tp-h2 { grid-column: 3; }
+.tq-tp-pi { grid-column: 1; display: flex; align-items: center; gap: 12px; border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 12px 14px; font-size: 15px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.tq-tp-pi > .ic { flex: none; width: 26px; height: 26px; color: var(--s700); }
+.tq-tp-s { grid-column: 2; display: grid; place-items: center; }
+.tq-tp-s .ic { width: 22px; height: 22px; color: var(--ambar-600); }
+.tq-tp-r { grid-column: 3; display: flex; align-items: center; gap: 12px; }
+.tq-q1b .tq-docs { gap: 5px; }
+.tq-q1b .tq-doc { width: 30px; height: 36px; }
+.tq-q1b .tq-doc .ic { width: 18px; height: 18px; }
+.tq-q1b .tq-c { width: 62px; }
+.tq-tp-pd { display: flex; gap: 5px; border-left: 2px dashed var(--s300); padding-left: 12px; }
+.tq-doc.tq-doc-pend { background: #fff; color: var(--s300); box-shadow: inset 0 0 0 1.5px var(--s300); }
+.tq-leg .tq-doc.tq-doc-pend { box-shadow: inset 0 0 0 1.5px var(--s300); }
+.tq-tp-res { grid-column: 4; grid-row: 2 / 4; justify-self: end; max-width: 250px; margin-left: 16px; font-size: 15px; line-height: 1.3; white-space: normal !important; }
+@media (max-width: 1150px) {
+  .tq-tp { grid-template-columns: minmax(0, 1fr); }
+  .tq-tp-h1, .tq-tp-h2, .tq-tp-pi, .tq-tp-r, .tq-tp-res { grid-column: 1; grid-row: auto; }
+  .tq-tp-s { grid-column: 1; justify-self: start; }
+  .tq-tp-s .ic { transform: rotate(90deg); }
+  .tq-tp-r { flex-wrap: wrap; }
+  .tq-tp-res { justify-self: start; margin: 4px 0 0; }
+}
+.tq-q1b .tq-leg .tq-doc { width: 20px; height: 24px; border-radius: 5px; }
+.tq-q1b .tq-leg .tq-doc .ic { width: 13px; height: 13px; }
+.tq-q1b .tq-leg .tq-doc.on { background: var(--ambar-100); color: var(--ambar-700); box-shadow: inset 0 0 0 1.5px var(--ambar-600); }
