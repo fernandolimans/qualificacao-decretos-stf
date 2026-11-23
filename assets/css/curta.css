@@ -853,3 +853,9 @@ body .cs-45 .cs-cm-p { display: flex; flex-direction: column; gap: 11px; padding
 body .cs-45 .cs-cm .cs-diag { margin-top: 2px; }
 body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 @media (max-width: 900px) { body .cs-45 .cs-cm { grid-template-columns: 1fr; } .cs-cm-seta { transform: rotate(90deg); } }
+
+/* 23/11/2026, o autor: a fonte do número de decretos e a ressalva do universo de ações, com as palavras do texto (p. 9 e 43). */
+.cs-nums-f, .cs-nums-r { display: flex; align-items: flex-start; gap: 5px; margin-top: 7px; font-size: 12.5px; line-height: 1.35; }
+.cs-nums-f { color: var(--s500); }
+.cs-nums-r { font-weight: 600; color: var(--ambar-700); }
+.cs-nums-f .ic, .cs-nums-r .ic { flex: none; width: 13px; height: 13px; margin-top: 2px; }
