@@ -783,3 +783,52 @@ body .cs-45.cs-so .cs-px-fim::after { display: none; }
 .cs-cf-lt .ic { flex: none; width: 14px; height: 14px; color: #fcd34d; }
 @media (max-width: 900px) { .cs-cfs { grid-template-columns: 1fr; } }
 @media print { .cs-cf-x, .cs-cf-dec, .cs-cf-e, .cs-cf-obs li span { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* 23/11/2026, o autor: revisão sistemática e levantamento numa só tela (cs-rl). Os dois funis com a mesma escala de letra. */
+body .cs-rl .cs-fx-e b { font-size: clamp(21px, 1.8vw, 26px); }
+body .cs-rl .cs-fx-e span { font-size: 13.5px; line-height: 1.3; }
+body .cs-rl .cs-fx-n span { font-size: 12.5px; line-height: 1.3; }
+body .cs-rl .cs-fx-fim span { font-size: 13.5px; }
+body .cs-rl .cs-rev { padding: 10px 16px 12px; }
+body .cs-rl .cs-px-fim::after { display: none; }
+body .cs-rl .cs-lim li { font-size: 14.5px; }
+
+/* 23/11/2026, o autor achou a tela apertada: os dois funis só com os passos principais, mais ar e letra maior. */
+body .cs-rl { gap: 14px; }
+body .cs-rl .cs-rev { padding: 16px 22px 18px; }
+body .cs-rl .cs-rot { margin-bottom: 12px; }
+body .cs-rl .cs-px-topo { margin-bottom: 0; }
+body .cs-rl .cs-px-topo .cs-rot { margin-bottom: 12px; }
+.cs-fx-l { align-items: stretch; gap: 10px; }
+.cs-fx-l .cs-fx-n { flex: none; align-self: center; width: auto; }
+.cs-fx-l .cs-fx-n i .ic { width: 18px; height: 18px; color: var(--s400); }
+body .cs-rl .cs-fx-l .cs-fx-e { flex: 1 1 0; padding: 4px 0; }
+body .cs-rl .cs-fx-l .cs-fx-e b { font-size: clamp(24px, 2.1vw, 30px); }
+body .cs-rl .cs-fx-l .cs-fx-e span { margin-top: 6px; font-size: 14.5px; line-height: 1.32; }
+body .cs-rl .cs-fx-l .cs-fx-fim { flex-grow: 1.5; padding: 10px 16px; }
+body .cs-rl .cs-fx-l .cs-fx-fim small { margin-top: 6px; font-size: 12.5px; line-height: 1.3; color: var(--s300); }
+
+/* 23/11/2026, o autor: "muito imprensadinho", mas com o passo a passo à mostra. Os dois funis em colunas, de cima para
+   baixo, cada passo numa linha e o que entrou ou saiu entre um passo e outro. */
+body .cs-rl .cs-dois { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: 16px; align-items: stretch; }
+body .cs-rl .cs-pa { display: flex; flex-direction: column; gap: 10px; padding: 14px 18px 14px; }
+.cs-pa-cab { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 14px; }
+.cs-pa-cab .cs-rot { margin-bottom: 0; }
+.cs-pa-u { display: flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 700; color: var(--s900); }
+.cs-pa-u .ic { width: 15px; height: 15px; color: var(--ambar-700); }
+.cs-pa-l { display: flex; flex-direction: column; }
+.cs-pa-p { display: grid; grid-template-columns: 74px minmax(0, 1fr); align-items: baseline; column-gap: 12px; border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 6px 14px 7px 10px; }
+.cs-pa-p > b { text-align: right; font-size: 22px; font-weight: 800; line-height: 1.1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; color: var(--s900); }
+.cs-pa-p > span { font-size: 14.5px; line-height: 1.3; color: var(--s800); }
+.cs-pa-p small { display: block; margin-top: 2px; font-size: 12.5px; line-height: 1.35; color: var(--s600); }
+.cs-pa-fim { background: var(--s950); box-shadow: 0 0 0 2px #fcd34d; }
+.cs-pa-fim > b { color: #fcd34d; }
+.cs-pa-fim > span { font-weight: 700; color: #fff; }
+.cs-pa-d { position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 1px 16px; padding: 5px 10px 5px 96px; font-size: 13px; line-height: 1.3; color: var(--s600); }
+.cs-pa-d > i { position: absolute; left: 66px; top: 50%; transform: translateY(-50%); color: var(--ambar-600); }
+.cs-pa-d > i .ic { display: block; width: 15px; height: 15px; }
+.cs-pa-d b { font-weight: 800; font-variant-numeric: tabular-nums; color: var(--s900); }
+body .cs-rl .cs-pa .cs-lim { margin-top: auto; padding-top: 4px; }
+body .cs-rl .cs-pa .cs-lim li { font-size: 13.5px; }
+@media (max-width: 900px) { body .cs-rl .cs-dois { grid-template-columns: 1fr; } }
+@media print { .cs-pa-fim { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
