@@ -1166,3 +1166,35 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .tq-qq-ac { left: 14px; right: 14px; top: calc(137px - var(--nv) * 14px + 0.5px); bottom: auto; }
 .tq-qq-lac i { display: block; width: 22px !important; height: 0 !important; border-radius: 0 !important; background: none !important; border-top: 2px dashed var(--s950); }
 .tq-qq-g .tq-wf { display: grid; margin-top: 0; font-size: 0; }
+
+/* 23/11/2026, aba 6 da reserva: as quatro verificações do modelo descritas na página 46, cada uma com um desenho simples. */
+.tq-vf { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; background: none; box-shadow: none; padding: 0; }
+.tq-vf-c { display: flex; flex-direction: column; border-radius: 18px; background: #fff; box-shadow: var(--sombra-lg); padding: 14px 18px; }
+.tq-vf-h { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; line-height: 1.25; color: var(--s950); }
+.tq-vf-h > .ic { flex: none; width: 17px; height: 17px; color: var(--ambar-600); }
+.tq-vf-t { margin: 4px 0 10px 32px; font-size: 13.5px; font-weight: 600; line-height: 1.35; color: var(--s600); }
+.tq-vf-v { margin-left: 32px; }
+.tq-vf-lr { display: flex; flex-wrap: wrap; gap: 8px; }
+.tq-vf-lr .tq-q, .tq-vf .tq-q { padding: 6px 11px; font-size: 13.5px; }
+.tq-vf-tr { position: relative; display: block; height: 10px; border-radius: 99px; background: var(--s100); }
+.tq-vf-ir { display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: center; column-gap: 12px; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--s800); }
+.tq-vf-b { position: absolute; top: 0; bottom: 0; border-radius: 99px; background: #f6c98a; }
+.tq-vf-e { position: absolute; top: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--ambar-600); box-shadow: 0 0 0 2px #fff; }
+.tq-leg i.tq-vf-le { background: var(--ambar-600); }
+.tq-leg i.tq-vf-lb { width: 24px; height: 8px; border-radius: 99px; background: #f6c98a; }
+.tq-vf-c:nth-child(3) .tq-vf-v { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 18px; }
+.tq-vf-rs { display: grid; gap: 4px; }
+.tq-vf-rs .tq-vf-tr { height: 7px; }
+.tq-vf-rs .tq-vf-tr i { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--ambar-600); }
+.tq-vf-rs-l { display: grid; justify-items: start; gap: 8px; }
+.tq-leg i.tq-vf-le2, .tq-vf-cv-d i { background: var(--s500); }
+.tq-leg i.tq-vf-lo, .tq-vf-cv-f i { background: #fff; box-shadow: inset 0 0 0 2px var(--ambar-600); }
+.tq-vf-cv { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 10px; }
+.tq-vf-cv-d, .tq-vf-cv-o { display: flex; gap: 5px; }
+.tq-vf-cv-d i, .tq-vf-cv-f i { display: block; width: 13px; height: 13px; border-radius: 50%; }
+.tq-vf-cv-o { border-left: 2px dashed var(--s300); padding-left: 14px; }
+.tq-vf-cv-f { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.tq-vf-cv-f .ic { width: 13px; height: 13px; color: var(--ambar-700); }
+.tq-vf-cv-f:nth-child(3) .ic { color: var(--s500); }
+.tq-vf-cv .tq-q { margin-left: auto; }
+@media (max-width: 900px) { .tq-vf { grid-template-columns: 1fr; } .tq-vf-t, .tq-vf-v { margin-left: 0; } .tq-vf-ir { grid-template-columns: 1fr; row-gap: 4px; } }
