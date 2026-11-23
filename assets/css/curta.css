@@ -859,3 +859,194 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .cs-nums-f { color: var(--s500); }
 .cs-nums-r { font-weight: 600; color: var(--ambar-700); }
 .cs-nums-f .ic, .cs-nums-r .ic { flex: none; width: 13px; height: 13px; margin-top: 2px; }
+
+/* 23/11/2026, o autor: o exemplo da regressão de Firth estava confuso. Agora é um antes e depois: à esquerda cada atributo
+   isolado, à direita todos considerados em conjunto, e só o que continua de pé permanece. Os dois estágios ficam embaixo. */
+.tq-ab { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.25fr); gap: 14px; align-items: stretch; }
+.tq-ab-p { border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 12px 16px 10px; }
+.tq-ab-p2 { background: #fff; box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.tq-ab-h { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 14px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s950); }
+.tq-ab-h span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--s950); font-size: 12px; color: #fcd34d; letter-spacing: 0; }
+.tq-ab-r { display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: center; column-gap: 14px; min-height: 46px; border-top: 1px solid var(--s200); }
+.tq-ab-p2 .tq-ab-r { grid-template-columns: 170px minmax(0, 1fr) auto; }
+.tq-ab-r .tq-q { padding: 6px 11px; font-size: 13.5px; white-space: nowrap; }
+.tq-ab-r.tq-forte .tq-g { font-weight: 800; color: var(--ambar-700); }
+.tq-ab-s { display: grid; place-items: center; color: var(--ambar-600); }
+.tq-ab-s .ic { width: 22px; height: 22px; }
+.tq-ab-leg { margin-top: 8px; text-align: right; font-size: 12.5px; font-weight: 600; color: var(--s500); }
+.tq-q3b .tq-est { margin-top: 12px; border-top: 1px solid var(--s200); border-bottom: 0; padding: 12px 0 0; }
+@media (max-width: 1150px) { .tq-ab { grid-template-columns: 1fr; } .tq-ab-s { transform: rotate(90deg); } }
+@media (max-width: 760px) { .tq-ab-r, .tq-ab-p2 .tq-ab-r { grid-template-columns: minmax(0, 1fr); row-gap: 4px; padding: 6px 0; } }
+
+/* 23/11/2026, o autor: "continua confuso". O exemplo da regressão vira um caso concreto. Olhando só o governo, parece que
+   ele pesa. Separando por tipo de ofensa, os dois governos ficam iguais: o que pesava era o tipo de ofensa. */
+.tq-sx { display: grid; grid-template-columns: minmax(0, .9fr) auto minmax(0, 1.25fr); gap: 14px; align-items: stretch; margin-top: 8px; }
+.tq-sx-p:first-child { display: flex; flex-direction: column; justify-content: center; }
+.tq-sx-p:first-child .tq-ab-h { margin-bottom: auto; }
+.tq-sx-p:first-child .tq-sx-r:last-child { margin-bottom: auto; }
+.tq-sx-p { border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 12px 16px; }
+.tq-sx-p2 { background: #fff; box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.tq-sx-a { margin-bottom: 8px; font-size: 13px; font-weight: 700; color: var(--ambar-700); }
+.tq-sx-r { display: grid; grid-template-columns: 82px minmax(0, 1fr) 104px; align-items: center; column-gap: 10px; padding: 3px 0; }
+.tq-sx-g { font-size: 14px; font-weight: 600; color: var(--s800); }
+.tq-sx-b { position: relative; height: 14px; border-radius: 99px; background: var(--s100); }
+.tq-sx-b i { position: absolute; inset: 0 auto 0 0; width: calc(var(--p) * 2%); border-radius: 99px; background: var(--ambar-600); }
+.tq-sx-v { font-size: 12.5px; color: var(--s500); white-space: nowrap; }
+.tq-sx-v b { margin-right: 4px; font-size: 16px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-sx-gr + .tq-sx-gr { margin-top: 6px; border-top: 1px solid var(--s200); padding-top: 6px; }
+.tq-sx-gr > p { margin-bottom: 2px; font-size: 13px; font-weight: 700; color: var(--s700); }
+.tq-sx-res { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 10px; }
+.tq-sx-res .tq-q { font-size: 14.5px; }
+@media (max-width: 1150px) { .tq-sx { grid-template-columns: 1fr; } }
+
+/* 23/11/2026, o autor: deixar claro ao leigo que a regressão responde ao objetivo 3, nos dois estágios, e que a hipótese
+   a usa no primeiro, o exame do relator. O exemplo passa a ser do primeiro estágio. */
+.tq-m3 { display: grid; grid-template-columns: max-content auto max-content 1fr; grid-template-rows: auto auto auto; align-items: center; column-gap: 10px; row-gap: 0; }
+.tq-m3-obj { grid-column: 1 / 4; grid-row: 1; position: relative; margin-bottom: 8px; border-top: 2px solid var(--s950); padding-top: 6px; font-size: 13.5px; line-height: 1.3; color: var(--s700); }
+.tq-m3-obj::before, .tq-m3-obj::after { content: ""; position: absolute; top: -2px; width: 2px; height: 9px; background: var(--s950); }
+.tq-m3-obj::before { left: 0; } .tq-m3-obj::after { right: 0; }
+.tq-m3-obj b, .tq-m3-hip b { margin-right: 8px; border-radius: 6px; padding: 1px 8px; font-size: 11.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.tq-m3-obj b { background: var(--s950); color: #fcd34d; }
+.tq-m3-e1 { grid-column: 1; grid-row: 2; box-shadow: inset 0 0 0 2px var(--ambar-600) !important; background: #fffbeb !important; }
+.tq-m3-s { grid-column: 2; grid-row: 2; }
+.tq-m3-e2 { grid-column: 3; grid-row: 2; }
+.tq-m3-hip { grid-column: 1 / 2; grid-row: 3; position: relative; margin-top: 8px; border-bottom: 2px solid var(--ambar-600); padding-bottom: 6px; font-size: 13.5px; line-height: 1.3; color: var(--s800); }
+.tq-m3-hip::before, .tq-m3-hip::after { content: ""; position: absolute; bottom: -2px; width: 2px; height: 9px; background: var(--ambar-600); }
+.tq-m3-hip::before { left: 0; } .tq-m3-hip::after { right: 0; }
+.tq-m3-hip b { display: inline-block; margin-bottom: 3px; background: #fef3c7; color: var(--ambar-700); }
+.tq-ex3 { margin-top: 14px; border-top: 1px solid var(--s200); padding-top: 12px; }
+.tq-ex3-h { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px; }
+.tq-ex3-h > span:first-child { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--s950); }
+@media (max-width: 1150px) { .tq-m3 { grid-template-columns: 1fr; } .tq-m3-obj, .tq-m3-e1, .tq-m3-s, .tq-m3-e2, .tq-m3-hip { grid-column: 1; grid-row: auto; } .tq-m3-s { transform: rotate(90deg); justify-self: start; } }
+.tq-sx-grs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.tq-sx-grs .tq-sx-gr + .tq-sx-gr { margin-top: 0; border-top: 0; padding-top: 0; border-left: 1px solid var(--s200); padding-left: 14px; }
+.tq-sx-grs .tq-sx-gr > p { min-height: 2.6em; }
+.tq-sx-grs .tq-sx-r { grid-template-columns: 74px minmax(0, 1fr) 84px; column-gap: 8px; }
+.tq-sx-grs .tq-sx-v b { font-size: 15px; }
+.tq-ex3 .tq-sx-p { padding: 10px 14px; }
+.tq-ex3 .tq-ab-h { margin-bottom: 4px; }
+@media (max-width: 1150px) { .tq-sx-grs { grid-template-columns: 1fr; } .tq-sx-grs .tq-sx-gr + .tq-sx-gr { border-left: 0; padding-left: 0; } }
+
+/* 23/11/2026, o autor: "quais os atributos? veja como proponho usar a regressão". A figura segue a Seção 3.2: entram os
+   atributos em conjunto, a estimação se faz em dois estágios (o primeiro é o da hipótese) e saem probabilidades preditas
+   para perfis típicos de ação. Os perfis e as porcentagens são fictícios. */
+.tq-rg { display: grid; grid-template-columns: minmax(0, .85fr) auto minmax(0, 1.05fr) auto minmax(0, 1fr); gap: 12px; align-items: stretch; }
+.tq-rg-c { display: flex; flex-direction: column; gap: 8px; border-radius: 14px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 12px 14px; }
+.tq-rg-m { background: #fff; box-shadow: inset 0 0 0 1.5px var(--ambar-200); }
+.tq-rg-h { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s950); }
+.tq-rg-h span { display: grid; place-items: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--s950); font-size: 12px; letter-spacing: 0; color: #fcd34d; }
+.tq-rg-s { font-size: 13px; line-height: 1.35; color: var(--s600); }
+.tq-rg-obj { align-self: flex-start; border-radius: 6px; background: var(--s950); padding: 1px 8px; font-size: 11.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #fcd34d; }
+.tq-rg-at { display: grid; gap: 4px; }
+.tq-rg-at li { position: relative; padding-left: 12px; font-size: 13.5px; font-weight: 600; line-height: 1.3; color: var(--s900); }
+.tq-rg-at li::before { content: ""; position: absolute; left: 0; top: .5em; width: 6px; height: 6px; border-radius: 50%; background: var(--ambar-600); }
+.tq-rg-e { border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 8px 11px; }
+.tq-rg-e1 { background: #fffbeb; box-shadow: inset 0 0 0 2px var(--ambar-600); }
+.tq-rg-e p { display: flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 700; line-height: 1.3; color: var(--s950); }
+.tq-rg-e p b { display: grid; place-items: center; flex: none; width: 21px; height: 21px; border-radius: 50%; background: var(--s950); font-size: 11.5px; color: #fcd34d; }
+.tq-rg-e p .ic { flex: none; width: 15px; height: 15px; color: var(--ambar-700); }
+.tq-rg-e small { display: block; margin-top: 3px; font-size: 12.5px; line-height: 1.35; color: var(--s600); }
+.tq-rg-e em { display: inline-block; margin-top: 6px; border-radius: 6px; background: #fef3c7; padding: 2px 8px; font-size: 12px; font-style: normal; font-weight: 800; color: var(--ambar-700); }
+.tq-rg-d { display: grid; place-items: center; color: var(--ambar-600); }
+.tq-rg-d .ic { width: 18px; height: 18px; }
+.tq-rg-x { margin-top: 2px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ambar-700); }
+.tq-pf { border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--s200); padding: 8px 11px; }
+.tq-pf-t { display: flex; flex-direction: column; font-size: 13px; font-weight: 700; line-height: 1.3; color: var(--s900); }
+.tq-pf-t span + span { font-weight: 500; color: var(--s600); }
+.tq-pf-b { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px; margin-top: 6px; }
+.tq-pf-b b { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--s950); }
+@media (max-width: 1150px) { .tq-rg { grid-template-columns: 1fr; } .tq-rg > .tq-ab-s { transform: rotate(90deg); } }
+
+/* 23/11/2026, o autor: "visualmente compreensível ao leigo, como as demais". Pontos para as ações, como no qui-quadrado.
+   Três perfis típicos de ação: trocar o governo quase não muda quantas sobrevivem ao relator, trocar o tipo de ofensa muda. */
+.tq-st { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; border-bottom: 1px solid var(--s200); padding-bottom: 12px; }
+.tq-st .tq-rg-obj { align-self: center; }
+.tq-st-1 { background: #fffbeb !important; box-shadow: inset 0 0 0 2px var(--ambar-600) !important; }
+.tq-st-1 em { margin-left: 6px; border-radius: 6px; background: #fef3c7; padding: 1px 7px; font-size: 11.5px; font-style: normal; font-weight: 800; color: var(--ambar-700); }
+.tq-st-2 { opacity: .7; }
+.tq-at4 { margin-top: 10px; font-size: 13px; line-height: 1.45; color: var(--s700); }
+.tq-at4 b { margin-right: 8px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--s950); }
+.tq-p4-cab { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px; margin-top: 12px; border-top: 1px solid var(--s200); padding-top: 10px; }
+.tq-p4 { display: grid; grid-template-columns: minmax(0, 1fr) auto 104px; align-items: center; column-gap: 18px; padding: 9px 0; }
+.tq-p4 + .tq-p4 { border-top: 1px dashed var(--s200); }
+.tq-p4-c { display: flex; flex-wrap: wrap; gap: 6px; }
+.tq-pc { border-radius: 999px; background: var(--s100); padding: 3px 10px; font-size: 13px; font-weight: 600; color: var(--s800); }
+.tq-pc-m { background: #fef3c7; box-shadow: inset 0 0 0 2px var(--ambar-600); font-weight: 800; color: var(--ambar-700); }
+.tq-p4-v { display: flex; flex-direction: column; font-size: 12px; color: var(--s500); }
+.tq-p4-v b { font-size: 22px; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-q3e .tq-sx-res { margin-top: 8px; }
+@media (max-width: 1150px) { .tq-p4 { grid-template-columns: 1fr auto; row-gap: 6px; } .tq-p4-c { grid-column: 1 / -1; } }
+@media (max-width: 760px) { .tq-p4 .tq-pts { flex-wrap: wrap; width: calc(25 * 10px - 3px); row-gap: 3px; } }
+
+/* ajuste de altura para caber em 1280x720, e amostra do atributo trocado na legenda */
+.tq-st { padding-bottom: 9px; }
+.tq-at4 { margin-top: 8px; }
+.tq-p4-cab { margin-top: 9px; padding-top: 8px; }
+.tq-p4 { padding: 6px 0; }
+.tq-leg .tq-leg-t { display: inline-flex; align-items: center; gap: 6px; }
+.tq-leg i.tq-pc.tq-pc-m { display: inline-block; width: 22px; height: 12px; padding: 0; border-radius: 999px; }
+
+/* 23/11/2026, v6. Fluxo da esquerda para a direita, como nas demais telas um único gráfico:
+   os oito atributos entram juntos, passam pelo primeiro estágio e saem como probabilidades de perfis típicos. */
+.tq-fx { display: grid; grid-template-columns: 300px 64px minmax(0, 230px) 40px minmax(0, 1fr); grid-template-rows: auto auto; align-items: center; column-gap: 0; row-gap: 10px; }
+.tq-fx-h { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ambar-700); }
+.tq-fx-h1 { grid-column: 1; grid-row: 1; align-self: end; }
+.tq-fx-h2 { grid-column: 5; grid-row: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; align-self: end; }
+.tq-fx-h2 p { width: 100%; }
+.tq-fx-h2 span { font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--s600); }
+.tq-fx-lg { display: inline-flex; align-items: center; gap: 6px; }
+.tq-fx-lg i.tq-pc { display: inline-block; width: 22px; height: 12px; padding: 0; }
+.tq-fx-at { grid-column: 1; grid-row: 2; display: grid; grid-auto-rows: 30px; row-gap: 6px; margin: 0; padding: 0; list-style: none; }
+.tq-fx-at li { display: flex; align-items: center; gap: 8px; overflow: hidden; border-radius: 9px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 0 10px; font-size: 13px; font-weight: 600; white-space: nowrap; color: var(--s800); }
+.tq-fx-at .ic { flex: none; width: 15px; height: 15px; color: var(--ambar-600); }
+.tq-fx-fio { grid-column: 2; grid-row: 2; display: block; width: 64px; height: 282px; overflow: visible; }
+.tq-fx-fio path { fill: none; stroke: #f5c48a; stroke-width: 1.6; vector-effect: non-scaling-stroke; }
+.tq-fx-mod { grid-column: 3; grid-row: 2; position: relative; }
+.tq-fx-g1 { display: flex; align-items: center; gap: 9px; border-radius: 14px; background: #fffbeb; box-shadow: inset 0 0 0 2px var(--ambar-600); padding: 12px 12px 12px 10px; }
+.tq-fx-g1 > .ic { flex: none; width: 20px; height: 20px; color: var(--ambar-700); }
+.tq-fx-g1 b { display: block; font-size: 15px; font-weight: 800; line-height: 1.25; color: var(--s950); }
+.tq-fx-g1 em { display: inline-block; margin-top: 6px; border-radius: 6px; background: #fef3c7; padding: 1px 7px; font-size: 11.5px; font-style: normal; font-weight: 800; color: var(--ambar-700); }
+.tq-fx-n { display: grid; flex: none; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--s950); font-size: 12px; font-weight: 800; color: #fcd34d; }
+.tq-fx-g2 { position: absolute; top: calc(100% + 30px); left: 0; right: 0; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: var(--s50); box-shadow: inset 0 0 0 1px var(--s200); padding: 9px 10px; font-size: 13.5px; font-weight: 700; line-height: 1.25; color: var(--s600); opacity: .75; }
+.tq-fx-g2 > .ic { flex: none; width: 16px; height: 16px; color: var(--s500); }
+.tq-fx-g2 > .ic:first-child { position: absolute; top: -25px; left: 50%; width: 18px; height: 18px; margin-left: -9px; color: var(--s400); }
+.tq-fx-g2 .tq-fx-n { background: var(--s500); color: #fff; }
+.tq-fx-seta { grid-column: 4; grid-row: 2; display: grid; place-items: center; }
+.tq-fx-seta .ic { width: 22px; height: 22px; color: var(--ambar-600); }
+.tq-fx-out { grid-column: 5; grid-row: 2; }
+.tq-fx-p { padding: 7px 0; }
+.tq-fx-p + .tq-fx-p { border-top: 1px dashed var(--s200); }
+.tq-fx-b { display: flex; align-items: center; gap: 12px; margin-top: 7px; }
+.tq-fx-tr { position: relative; flex: 1; height: 14px; overflow: hidden; border-radius: 999px; background: var(--s100); }
+.tq-fx-tr i { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: var(--ambar-600); }
+.tq-fx-b b { width: 62px; font-size: 24px; font-weight: 800; line-height: 1; text-align: right; font-variant-numeric: tabular-nums; color: var(--s950); }
+.tq-q3f .tq-sx-res { margin-top: 10px; }
+@media (max-width: 1150px) {
+  .tq-fx { grid-template-columns: 1fr; row-gap: 12px; }
+  .tq-fx-h1, .tq-fx-at, .tq-fx-mod, .tq-fx-seta, .tq-fx-h2, .tq-fx-out { grid-column: 1; grid-row: auto; }
+  .tq-fx-at { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); column-gap: 6px; }
+  .tq-fx-fio { display: none; }
+  .tq-fx-g2 { position: static; margin-top: 30px; }
+  .tq-fx-seta .ic { transform: rotate(90deg); }
+}
+
+/* v6, ajuste de larguras: rótulos inteiros à esquerda e os dois selos numa linha só */
+.tq-fx { grid-template-columns: 318px 44px minmax(0, 196px) 30px minmax(0, 1fr); }
+.tq-fx-at li { font-size: 12.5px; }
+.tq-fx-fio { width: 44px; }
+.tq-fx-g1 b { font-size: 14.5px; }
+.tq-q3f .tq-sx-res { flex-wrap: nowrap; gap: 8px; }
+.tq-q3f .tq-sx-res .tq-q { padding: 6px 10px; font-size: 13px; }
+.tq-fx-p { padding: 6px 0; }
+.tq-fx-b { margin-top: 6px; }
+
+/* v6, estágios sem ícone extra, para o primeiro caber em duas linhas e o segundo ficar dentro do quadro */
+.tq-fx { grid-template-columns: 302px 40px minmax(0, 226px) 28px minmax(0, 1fr); }
+.tq-fx-fio { width: 40px; }
+.tq-fx-g1 { padding: 11px 12px 11px 10px; }
+.tq-fx-g2 { top: calc(100% + 28px); }
+.tq-q3f .tq-sx-res .tq-q { font-size: 12.5px; }
+.tq-fx { grid-template-columns: 314px 36px minmax(0, 224px) 28px minmax(0, 1fr); }
+.tq-fx-fio { width: 36px; }
+@media (max-width: 1150px) { .tq-q3f .tq-sx-res { flex-wrap: wrap; } .tq-q3f .tq-sx-res .tq-q { white-space: normal; } }
+@media (max-width: 1150px) { .tq-fx-h1 { order: 1; } .tq-fx-at { order: 2; } .tq-fx-mod { order: 3; } .tq-fx-seta { order: 4; } .tq-fx-h2 { order: 5; } .tq-fx-out { order: 6; } }
