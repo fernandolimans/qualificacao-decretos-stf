@@ -1050,3 +1050,36 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .tq-fx-fio { width: 36px; }
 @media (max-width: 1150px) { .tq-q3f .tq-sx-res { flex-wrap: wrap; } .tq-q3f .tq-sx-res .tq-q { white-space: normal; } }
 @media (max-width: 1150px) { .tq-fx-h1 { order: 1; } .tq-fx-at { order: 2; } .tq-fx-mod { order: 3; } .tq-fx-seta { order: 4; } .tq-fx-h2 { order: 5; } .tq-fx-out { order: 6; } }
+
+/* 23/11/2026, riscos competitivos, conforme a página 46: as datas de ajuizamento e de decisão de todas as ações,
+   inclusive das que seguem em tramitação, tratadas como ainda sem desfecho na data de corte. À esquerda o calendário,
+   à direita as mesmas linhas alinhadas pelo ajuizamento, para acompanhar cada ação ao longo do tempo. */
+.tq-q4d .tq-leg4 { margin-bottom: 12px; }
+.tq-cal { display: grid; grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr); align-items: start; }
+.tq-cal-h { margin-bottom: 24px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ambar-700); }
+.tq-cal-l { position: relative; display: grid; gap: 3px; margin: 0 12px 0 10px;
+  background: repeating-linear-gradient(90deg, var(--s100) 0 1px, transparent 1px calc(100% / 5.5)); }
+.tq-cal-l0 { background: repeating-linear-gradient(90deg, var(--s100) 0 1px, transparent 1px calc(100% / 7)); }
+.tq-q4d .tq-raia { height: 19px; }
+.tq-cal-corte { position: absolute; top: -8px; bottom: -4px; width: 0; border-left: 2px dashed var(--s950); }
+.tq-cal-corte b { position: absolute; bottom: 100%; right: -1px; margin-bottom: 3px; white-space: nowrap; font-size: 12px; font-weight: 800; color: var(--s950); }
+.tq-cal-ax { position: relative; height: 22px; margin: 0 12px 0 10px; border-top: 1px solid var(--s300); }
+.tq-cal-ax span { position: absolute; top: 3px; transform: translateX(-50%); font-size: 12px; font-weight: 600; color: var(--s500); font-variant-numeric: tabular-nums; }
+.tq-cal-seta { display: grid; place-items: center; align-self: center; }
+.tq-cal-seta .ic { width: 26px; height: 26px; color: var(--ambar-600); }
+.tq-cal-res { position: absolute; top: 0; right: 0; max-width: 62%; font-size: 13.5px; line-height: 1.3; white-space: normal !important; }
+.tq-q4d .tq-eixo-r { margin: 0 12px 0 0; }
+.tq-fim2 { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1.25fr); column-gap: 22px; }
+.tq-fim2 > span { font-size: 15.5px; }
+.tq-fim2 > span + span { border-left: 1px solid rgba(255,255,255,.18); padding-left: 22px; }
+@media (max-width: 900px) {
+  .tq-cal { grid-template-columns: minmax(0, 1fr); row-gap: 10px; }
+  .tq-cal-seta .ic { transform: rotate(90deg); }
+  .tq-cal-res { position: static; max-width: none; margin-top: 6px; }
+  .tq-fim2 { grid-template-columns: auto minmax(0, 1fr); row-gap: 12px; }
+  .tq-fim2 > span + span { grid-column: 2; border-left: 0; padding-left: 0; }
+}
+.tq-q4d .tq-raia { height: 18px; }
+.tq-q4d .tq-fio { overflow: visible; }
+.tq-q4d .tq-fio::before, .tq-cal-in { content: ""; position: absolute; top: 50%; left: -4px; width: 8px; height: 8px; margin-top: -4px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 2px var(--s500); }
+.tq-leg .tq-cal-in { position: static; display: inline-block; margin: 0 2px 0 0; }
