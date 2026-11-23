@@ -832,3 +832,24 @@ body .cs-rl .cs-pa .cs-lim { margin-top: auto; padding-top: 4px; }
 body .cs-rl .cs-pa .cs-lim li { font-size: 13.5px; }
 @media (max-width: 900px) { body .cs-rl .cs-dois { grid-template-columns: 1fr; } }
 @media print { .cs-pa-fim { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+
+/* 23/11/2026, o autor: tela "O caminho das ações" com as duas partes no mesmo desenho, como na tela da revisão e do levantamento. */
+body .cs-45 .cs-cm { display: grid; grid-template-columns: minmax(0, 1.12fr) auto minmax(0, 1fr); gap: 10px; align-items: stretch; }
+body .cs-45 .cs-cm-p { display: flex; flex-direction: column; gap: 11px; padding: 15px 18px 15px; }
+.cs-cm-o { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--ambar-700); }
+.cs-cm-o .ic { width: 16px; height: 16px; }
+.cs-cm-o span { border-radius: 999px; background: #fef3c7; padding: 2px 9px; font-size: 11px; letter-spacing: .06em; color: var(--ambar-700); }
+.cs-cm-s { display: grid; gap: 5px; }
+.cs-cm-s li { display: flex; align-items: baseline; gap: 9px; font-size: 16px; font-weight: 800; line-height: 1.3; color: var(--s950); }
+.cs-cm-s b { flex: none; border-radius: 6px; background: var(--s950); padding: 1px 7px; font-size: 12.5px; color: #fcd34d; }
+.cs-cm-l { border-left: 3px solid var(--ambar-600); padding-left: 10px; font-size: 14.5px; font-weight: 600; line-height: 1.38; color: var(--s800); }
+.cs-cm-at { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 14px; }
+.cs-cm-at li { position: relative; padding-left: 12px; font-size: 13.5px; line-height: 1.3; color: var(--s800); }
+.cs-cm-at li::before { content: ""; position: absolute; left: 0; top: .5em; width: 6px; height: 6px; border-radius: 50%; background: var(--ambar-600); }
+.cs-cm-ob { display: flex; align-items: center; gap: 7px; margin-top: auto; border-top: 1px solid var(--s200); padding-top: 9px; font-size: 13.5px; font-weight: 700; color: var(--s950); }
+.cs-cm-ob .ic { flex: none; width: 15px; height: 15px; color: var(--ambar-700); }
+.cs-cm-seta { display: grid; place-items: center; color: var(--ambar-600); }
+.cs-cm-seta .ic { width: 20px; height: 20px; }
+body .cs-45 .cs-cm .cs-diag { margin-top: 2px; }
+body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
+@media (max-width: 900px) { body .cs-45 .cs-cm { grid-template-columns: 1fr; } .cs-cm-seta { transform: rotate(90deg); } }
