@@ -1231,3 +1231,31 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .tq-q1b .tq-leg .tq-doc { width: 20px; height: 24px; border-radius: 5px; }
 .tq-q1b .tq-leg .tq-doc .ic { width: 13px; height: 13px; }
 .tq-q1b .tq-leg .tq-doc.on { background: var(--ambar-100); color: var(--ambar-700); box-shadow: inset 0 0 0 1.5px var(--ambar-600); }
+
+/* 25/11/2026, tela do sumário antes das referências, com o sumário da versão enviada à banca */
+.cs-sum .cs-hero { padding-top: 16px; padding-bottom: 16px; }
+.cs-sum .cs-hero-f { font-size: clamp(22px, 2.2vw, 30px); }
+.cs-sumario { display: grid; gap: 9px; width: 100%; max-width: 980px; margin: 0 auto; padding: 22px 34px 24px; list-style: none; }
+.cs-sumario li { display: grid; grid-template-columns: 46px minmax(0, auto) minmax(24px, 1fr) auto; align-items: baseline; column-gap: 10px; }
+.cs-sumario li::after { content: ""; grid-column: 3; grid-row: 1; align-self: end; margin-bottom: 5px; border-bottom: 2px dotted var(--s300); }
+.cs-su-n { grid-column: 1; font-variant-numeric: tabular-nums; color: var(--ambar-700); font-weight: 800; }
+.cs-su-t { grid-column: 2; }
+.cs-su-p { grid-column: 4; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--s900); }
+.cs-su-c { font-size: 16.5px; font-weight: 800; letter-spacing: .01em; color: var(--s950); }
+.cs-su-c + .cs-su-c, .cs-su-s + .cs-su-c { margin-top: 6px; }
+.cs-su-s { font-size: 16px; font-weight: 500; color: var(--s700); }
+.cs-su-s .cs-su-t { padding-left: 22px; }
+.cs-su-s .cs-su-n { padding-left: 22px; font-weight: 700; color: var(--s500); }
+.cs-su-s { grid-template-columns: 68px minmax(0, auto) minmax(24px, 1fr) auto !important; }
+@media (max-width: 760px) {
+  .cs-sumario { padding: 16px 16px 18px; }
+  .cs-sumario li, .cs-su-s { grid-template-columns: 38px minmax(0, 1fr) auto !important; }
+  .cs-sumario li::after { display: none; }
+  .cs-su-p { grid-column: 3; }
+  .cs-su-s .cs-su-t, .cs-su-s .cs-su-n { padding-left: 0; }
+}
+/* como no sumário do texto: números numa coluna e títulos alinhados, sem recuo nas subseções */
+.cs-su-s { grid-template-columns: 46px minmax(0, auto) minmax(24px, 1fr) auto !important; }
+.cs-su-s .cs-su-t, .cs-su-s .cs-su-n { padding-left: 0; }
+.cs-sumario li { grid-template-columns: 52px minmax(0, auto) minmax(24px, 1fr) auto; }
+.cs-su-s { grid-template-columns: 52px minmax(0, auto) minmax(24px, 1fr) auto !important; }
