@@ -1259,3 +1259,10 @@ body .cs-45 .cs-cm .cs-etapas { margin-top: 0; }
 .cs-su-s .cs-su-t, .cs-su-s .cs-su-n { padding-left: 0; }
 .cs-sumario li { grid-template-columns: 52px minmax(0, auto) minmax(24px, 1fr) auto; }
 .cs-su-s { grid-template-columns: 52px minmax(0, auto) minmax(24px, 1fr) auto !important; }
+/* sumário com faixa de foto, como as telas 01 a 06 */
+.cs-sum .cs-hero.cs-hero-foto { padding-top: 16px; padding-bottom: 16px; }
+/* 25/11/2026, o autor: fundo do sumário com foto do Supremo, clareada para manter a leitura.
+   É a mesma foto da transição de entrada, que assim se desfaz no fundo. */
+.cs-sum.ativo::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(rgb(241 245 249 / .80), rgb(226 232 240 / .86)), url(../img/tr-4.jpg) center 45% / cover no-repeat; }
+.cs-sum .cs-sumario { background: rgb(255 255 255 / .9); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
